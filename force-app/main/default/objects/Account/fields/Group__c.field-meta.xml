@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Group__c</fullName>
+    <description>INFOWELDERS</description>
+    <externalId>false</externalId>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Channel__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>B=Bar</fullName>
+                <default>false</default>
+                <label>B=Bar</label>
+            </value>
+            <value>
+                <fullName>BAR</fullName>
+                <default>false</default>
+                <label>BAR</label>
+            </value>
+            <value>
+                <fullName>Bar / Pub</fullName>
+                <default>false</default>
+                <label>Bar / Pub</label>
+            </value>
+            <value>
+                <fullName>Bars</fullName>
+                <default>false</default>
+                <label>Bars</label>
+            </value>
+            <value>
+                <fullName>Bars de Nuit</fullName>
+                <default>false</default>
+                <label>Bars de Nuit</label>
+            </value>
+            <value>
+                <fullName>Beer Bar</fullName>
+                <default>false</default>
+                <label>Beer Bar</label>
+            </value>
+            <value>
+                <fullName>Boate</fullName>
+                <default>false</default>
+                <label>Boate</label>
+            </value>
+            <value>
+                <fullName>Boate/Nigthclub</fullName>
+                <default>false</default>
+                <label>Boate/Nigthclub</label>
+            </value>
+            <value>
+                <fullName>Casa de shows</fullName>
+                <default>false</default>
+                <label>Casa de shows</label>
+            </value>
+            <value>
+                <fullName>Casas de Eventos</fullName>
+                <default>false</default>
+                <label>Casas de Eventos</label>
+            </value>
+            <value>
+                <fullName>Cash and Carry</fullName>
+                <default>false</default>
+                <label>Cash &amp; Carry</label>
+            </value>
+            <value>
+                <fullName>Cavistes</fullName>
+                <default>false</default>
+                <label>Cavistes</label>
+            </value>
+            <value>
+                <fullName>CB=Cocktail Bar</fullName>
+                <default>false</default>
+                <label>CB=Cocktail Bar</label>
+            </value>
+            <value>
+                <fullName>Clubs</fullName>
+                <default>false</default>
+                <label>Clubs</label>
+            </value>
+            <value>
+                <fullName>Convenience Store</fullName>
+                <default>false</default>
+                <label>Convenience Store</label>
+            </value>
+            <value>
+                <fullName>D=Discoteca</fullName>
+                <default>false</default>
+                <label>D=Discoteca</label>
+            </value>
+            <value>
+                <fullName>Dance Club</fullName>
+                <default>false</default>
+                <label>Dance Club</label>
+            </value>
+            <value>
+                <fullName>DB=Dinner Bar</fullName>
+                <default>false</default>
+                <label>DB=Dinner Bar</label>
+            </value>
+            <value>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+                <label>Department Store</label>
+            </value>
+            <value>
+                <fullName>Disco / Hip Hop</fullName>
+                <default>false</default>
+                <label>Disco / Hip Hop</label>
+            </value>
+            <value>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+                <label>Distributor</label>
+            </value>
+            <value>
+                <fullName>Drink</fullName>
+                <default>false</default>
+                <label>Drink</label>
+            </value>
+            <value>
+                <fullName>Duty Free</fullName>
+                <default>false</default>
+                <label>Duty Free</label>
+            </value>
+            <value>
+                <fullName>eCommerce</fullName>
+                <default>false</default>
+                <label>eCommerce</label>
+            </value>
+            <value>
+                <fullName>e-Commerce</fullName>
+                <default>false</default>
+                <label>e-Commerce</label>
+            </value>
+            <value>
+                <fullName>Entretenimento Adulto</fullName>
+                <default>false</default>
+                <label>Entretenimento Adulto</label>
+            </value>
+            <value>
+                <fullName>Event</fullName>
+                <default>false</default>
+                <label>Event</label>
+            </value>
+            <value>
+                <fullName>FKTV</fullName>
+                <default>false</default>
+                <label>FKTV</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Grossiste</fullName>
+                <default>false</default>
+                <label>Grossiste</label>
+            </value>
+            <value>
+                <fullName>Hotel / Resort</fullName>
+                <default>false</default>
+                <label>Hotel / Resort</label>
+            </value>
+            <value>
+                <fullName>Hoteles</fullName>
+                <default>false</default>
+                <label>Hoteles</label>
+            </value>
+            <value>
+                <fullName>Hyper &gt; 5000 m²</fullName>
+                <default>false</default>
+                <label>Hyper &gt; 5000 m²</label>
+            </value>
+            <value>
+                <fullName>Hyper from 2500 to 5000 m²</fullName>
+                <default>false</default>
+                <label>Hyper from 2500 to 5000 m²</label>
+            </value>
+            <value>
+                <fullName>Hyper Market</fullName>
+                <default>false</default>
+                <label>Hyper Market</label>
+            </value>
+            <value>
+                <fullName>Independent</fullName>
+                <default>false</default>
+                <label>Independent</label>
+            </value>
+            <value>
+                <fullName>Independent Group</fullName>
+                <default>false</default>
+                <label>Independent Group</label>
+            </value>
+            <value>
+                <fullName>JDs Tannenbaum</fullName>
+                <default>false</default>
+                <label>JDs Tannenbaum</label>
+            </value>
+            <value>
+                <fullName>Karaoke</fullName>
+                <default>false</default>
+                <label>Karaoke</label>
+            </value>
+            <value>
+                <fullName>Kühlschrank</fullName>
+                <default>false</default>
+                <label>Kühlschrank</label>
+            </value>
+            <value>
+                <fullName>Kühlschrank + JDs Tannenbaum</fullName>
+                <default>false</default>
+                <label>Kühlschrank + JDs Tannenbaum</label>
+            </value>
+            <value>
+                <fullName>Life</fullName>
+                <default>false</default>
+                <label>Life</label>
+            </value>
+            <value>
+                <fullName>Liquor Store</fullName>
+                <default>false</default>
+                <label>Liquor Store</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>National Chain</fullName>
+                <default>false</default>
+                <label>National Chain</label>
+            </value>
+            <value>
+                <fullName>NC=non classificato</fullName>
+                <default>false</default>
+                <label>NC=non classificato</label>
+            </value>
+            <value>
+                <fullName>Night Club / Salon</fullName>
+                <default>false</default>
+                <label>Night Club / Salon</label>
+            </value>
+            <value>
+                <fullName>Other Store</fullName>
+                <default>false</default>
+                <label>Other Store</label>
+            </value>
+            <value>
+                <fullName>P=Pub</fullName>
+                <default>false</default>
+                <label>P=Pub</label>
+            </value>
+            <value>
+                <fullName>Prestige</fullName>
+                <default>false</default>
+                <label>Prestige</label>
+            </value>
+            <value>
+                <fullName>Private</fullName>
+                <default>false</default>
+                <label>Private</label>
+            </value>
+            <value>
+                <fullName>PUB</fullName>
+                <default>false</default>
+                <label>PUB</label>
+            </value>
+            <value>
+                <fullName>Quiosque de Praia</fullName>
+                <default>false</default>
+                <label>Quiosque de Praia</label>
+            </value>
+            <value>
+                <fullName>Regional Chain</fullName>
+                <default>false</default>
+                <label>Regional Chain</label>
+            </value>
+            <value>
+                <fullName>Restaurant / Cafe</fullName>
+                <default>false</default>
+                <label>Restaurant / Cafe</label>
+            </value>
+            <value>
+                <fullName>Restaurante</fullName>
+                <default>false</default>
+                <label>Restaurante</label>
+            </value>
+            <value>
+                <fullName>Room Salon</fullName>
+                <default>false</default>
+                <label>Room Salon</label>
+            </value>
+            <value>
+                <fullName>RTD Hotspot</fullName>
+                <default>false</default>
+                <label>RTD Hotspot</label>
+            </value>
+            <value>
+                <fullName>Slow Food</fullName>
+                <default>false</default>
+                <label>Slow Food</label>
+            </value>
+            <value>
+                <fullName>Small Food / Bistro</fullName>
+                <default>false</default>
+                <label>Small Food / Bistro</label>
+            </value>
+            <value>
+                <fullName>Sports / Darts</fullName>
+                <default>false</default>
+                <label>Sports / Darts</label>
+            </value>
+            <value>
+                <fullName>Sub Wholesalers</fullName>
+                <default>false</default>
+                <label>Sub Wholesalers</label>
+            </value>
+            <value>
+                <fullName>Supermarché &lt; 800 m²</fullName>
+                <default>false</default>
+                <label>Supermarché &lt; 800 m²</label>
+            </value>
+            <value>
+                <fullName>Supermarché &gt; 1200 m²</fullName>
+                <default>false</default>
+                <label>Supermarché &gt; 1200 m²</label>
+            </value>
+            <value>
+                <fullName>Supermarché from 800 to 1200 m²</fullName>
+                <default>false</default>
+                <label>Supermarché from 800 to 1200 m²</label>
+            </value>
+            <value>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+                <label>Supermarket</label>
+            </value>
+            <value>
+                <fullName>T2 Distributor</fullName>
+                <default>false</default>
+                <label>T2 Distributor</label>
+            </value>
+            <value>
+                <fullName>T3 Distributor</fullName>
+                <default>false</default>
+                <label>T3 Distributor</label>
+            </value>
+            <value>
+                <fullName>Tienda</fullName>
+                <default>false</default>
+                <label>Tienda</label>
+            </value>
+            <value>
+                <fullName>Tienda Especializada</fullName>
+                <default>false</default>
+                <label>Tienda Especializada</label>
+            </value>
+            <value>
+                <fullName>TOT</fullName>
+                <default>false</default>
+                <label>TOT</label>
+            </value>
+            <value>
+                <fullName>Varejo</fullName>
+                <default>false</default>
+                <label>Varejo</label>
+            </value>
+            <value>
+                <fullName>Wholesalers</fullName>
+                <default>false</default>
+                <label>Wholesalers</label>
+            </value>
+            <value>
+                <fullName>WithMeal</fullName>
+                <default>false</default>
+                <label>WithMeal</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <valueName>T2 Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Distributor</controllingFieldValue>
+            <valueName>T3 Distributor</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>B=Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>BAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Bar / Pub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Bars</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Bars de Nuit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Boate</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Casa de shows</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Casas de Eventos</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Cash and Carry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Cavistes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>CB=Cocktail Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Clubs</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>D=Discoteca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Dance Club</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>DB=Dinner Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Disco / Hip Hop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Drink</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Entretenimento Adulto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Event</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>FKTV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Grossiste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Hotel / Resort</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Hoteles</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Independent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Independent Group</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Karaoke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Life</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Lodging</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>National Chain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>NC=non classificato</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Night Club / Salon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Other Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>P=Pub</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Prestige</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>PUB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Regional Chain</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Restaurant / Cafe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Restaurante</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Room Salon</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Slow Food</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Small Food / Bistro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Sports / Darts</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Tienda Especializada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>TOT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>WithMeal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <controllingFieldValue>OFF PREMISE</controllingFieldValue>
+            <valueName>Convenience Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Department Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Duty Free</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <controllingFieldValue>eCommerce</controllingFieldValue>
+            <valueName>eCommerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Government</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Hyper &gt; 5000 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Hyper from 2500 to 5000 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <controllingFieldValue>OFF PREMISE</controllingFieldValue>
+            <valueName>Hyper Market</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>JDs Tannenbaum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Kühlschrank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Kühlschrank + JDs Tannenbaum</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Liquor Store</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Private</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>RTD Hotspot</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Sub Wholesalers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Supermarché &lt; 800 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Supermarché &gt; 1200 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Supermarché from 800 to 1200 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <controllingFieldValue>OFF PREMISE</controllingFieldValue>
+            <valueName>Supermarket</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>Varejo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <controllingFieldValue>Wholesaler</controllingFieldValue>
+            <valueName>Wholesalers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>eCommerce</controllingFieldValue>
+            <valueName>e-Commerce</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Beer Bar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ON PREMISE</controllingFieldValue>
+            <valueName>Boate/Nigthclub</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

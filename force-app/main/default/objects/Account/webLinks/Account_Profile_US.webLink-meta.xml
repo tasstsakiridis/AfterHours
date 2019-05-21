@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Profile_US</fullName>
+    <availability>online</availability>
+    <description>Account Profile - US report link</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Account Profile</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>http://sapprdis.b-f.com/irj~ipprd/servlet/prt/portal/prtroot/pcd!3aportal_content!2fcom.sap.pct!2fplatform_add_ons!2fcom.sap.ip.bi!2fiViews!2fcom.sap.ip.bi.bex?tEMPLATE=YWT_ACCTPROFILE_POC_001&amp;BI_COMMAND_1-BI_COMMAND_TYPE=SET_VARIABLES_STATE&amp;BI_COMMAND_1-VARIABLE_VALUES-VARIABLE_VALUE_1-VARIABLE_TYPE=VARIABLE_INPUT_STRING&amp;BI_COMMAND_1-VARIABLE_VALUES-VARIABLE_VALUE_1-VARIABLE_TYPE-VARIABLE_INPUT_STRING={!Account.TDLinx_ID__c}&amp;BI_COMMAND_1-VARIABLE_VALUES-VARIABLE_VALUE_1-VARIABLE=ZVTDLNXU&amp;BI_COMMAND_2-BI_COMMAND_TYPE=SET_VARIABLES_STATE&amp;BI_COMMAND_2-VARIABLE_VALUES-VARIABLE_VALUE_2-VARIABLE_TYPE=VARIABLE_INPUT_STRING&amp;BI_COMMAND_2-VARIABLE_VALUES-VARIABLE_VALUE_2-VARIABLE_TYPE-VARIABLE_INPUT_STRING={!Account.Markets_Code__c}&amp;BI_COMMAND_2-VARIABLE_VALUES-VARIABLE_VALUE_2-VARIABLE=ZTERRVAR&amp;BI_COMMAND_3-BI_COMMAND_TYPE=SET_ITEM_PARAMETERS&amp;BI_COMMAND_3-TARGET_ITEM_REF=ACCOUNT_SUMMARY&amp;BI_COMMAND_3-INIT_PARAMETERS-WITH_TRAY-TRAY_SETTINGS-EXPANDED=0</url>
+</WebLink>

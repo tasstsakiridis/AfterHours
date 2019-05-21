@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Suppliers</fullName>
+    <columns>Market__c</columns>
+    <columns>Region__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>English_Name__c</columns>
+    <columns>Legacy_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Supplier__c</columns>
+    <columns>Area__c</columns>
+    <columns>City__c</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Wholesalers</value>
+    </filters>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Japan</value>
+    </filters>
+    <label>Japan Suppliers</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>JPNAllUsers</group>
+    </sharedTo>
+</ListView>

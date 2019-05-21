@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>selling_spirits_in_general__c</fullName>
+    <description>Germany:On-Trade</description>
+    <externalId>false</externalId>
+    <inlineHelpText>yearly general spirit consumption</inlineHelpText>
+    <label>Selling Spirits in General</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-100 Liter</fullName>
+                <default>false</default>
+                <label>1-100 Liter</label>
+            </value>
+            <value>
+                <fullName>101-500 Liter</fullName>
+                <default>false</default>
+                <label>101-500 Liter</label>
+            </value>
+            <value>
+                <fullName>501-1999 Liter</fullName>
+                <default>false</default>
+                <label>501-1999 Liter</label>
+            </value>
+            <value>
+                <fullName>2000-3999 Liter</fullName>
+                <default>false</default>
+                <label>2000-3999 Liter</label>
+            </value>
+            <value>
+                <fullName>4000-7999 Liter</fullName>
+                <default>false</default>
+                <label>4000-7999 Liter</label>
+            </value>
+            <value>
+                <fullName>&gt;8000 Liter</fullName>
+                <default>false</default>
+                <label>&gt;8000 Liter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

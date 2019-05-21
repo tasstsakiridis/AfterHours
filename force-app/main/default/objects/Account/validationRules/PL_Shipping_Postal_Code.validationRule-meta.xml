@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Shipping_Postal_Code</fullName>
+    <active>true</active>
+    <description>6 characters with dash</description>
+    <errorConditionFormula>AND( OR( if( RecordTypeId = &quot;012a0000001NZsU&quot;, true, false), if( RecordTypeId =&quot;012a0000001NZsV&quot;, true, false),if( RecordTypeId = &quot;01213000001NdrN&quot;, true, false)),NOT(REGEX(ShippingPostalCode,&quot;^(\\d{2}\\-\\d{3})&quot;)))</errorConditionFormula>
+    <errorDisplayField>ShippingPostalCode</errorDisplayField>
+    <errorMessage>Podaj poprawny kod w formacie XX-XXX</errorMessage>
+</ValidationRule>

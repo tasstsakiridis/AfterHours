@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spain_Off_Premise</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Group__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>Owner_Full_Name__c</columns>
+    <columns>Visit_Frequency__c</columns>
+    <columns>Last_Visit_Date__c</columns>
+    <columns>GD_Group__c</columns>
+    <columns>Group_US__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Spain</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>Off</value>
+    </filters>
+    <label>Spain - Off Premise</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>CRM_Spain_Sales_Community</group>
+    </sharedTo>
+</ListView>

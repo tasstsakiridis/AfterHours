@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Australia_Called_On_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Called On</value>
+    </filters>
+    <label>Australia Called On Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>AUD_Asset_Managers</group>
+        <group>AUD_Asset_Reports</group>
+        <group>AUD_Customer_Service</group>
+        <group>AUD_Data_Validation</group>
+        <group>AUD_Deal_Approvers</group>
+        <group>AUD_IT</group>
+        <group>AUD_NSW_Office_Supervisor</group>
+        <group>AUD_Office_Supervisors</group>
+        <group>AUD_QLD_Office_Supervisor</group>
+        <group>AUD_SA_NT_Office_Supervisor</group>
+        <group>AUD_Sales_Support</group>
+        <group>AUD_VIC_TAS_Office_Supervisor</group>
+        <group>AUD_WA_Office_Supervisor</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEU_Alle_Jahresbsprachen_FY_15_Outlets</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>PARENT_NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Substitution__c</columns>
+    <columns>Account_Characteristics__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Account_Characteristics__c</field>
+        <operation>includes</operation>
+        <value>ON-Jahresabsprache FY17</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Subgroup__c</field>
+        <operation>notEqual</operation>
+        <value>Disco</value>
+    </filters>
+    <filters>
+        <field>Select_for_Deletion__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EUR_Outlets</value>
+    </filters>
+    <label>ON-Jahresabsprache FY17 Kneipe Pub</label>
+    <language>de</language>
+    <sharedTo>
+        <roleAndSubordinatesInternal>DEUSalesDirector</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

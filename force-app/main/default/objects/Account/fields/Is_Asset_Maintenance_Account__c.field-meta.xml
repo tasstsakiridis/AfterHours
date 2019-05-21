@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Asset_Maintenance_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Flag that when checked displays account in Fridge Depot lookups.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check to display account in Fridge Depot lookups.</inlineHelpText>
+    <label>Is Asset Maintenance Account</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

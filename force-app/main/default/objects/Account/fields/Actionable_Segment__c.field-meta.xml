@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actionable_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Actionable Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>AB-A</fullName>
+                <default>false</default>
+                <label>AB-A</label>
+            </value>
+            <value>
+                <fullName>AB-B</fullName>
+                <default>false</default>
+                <label>AB-B</label>
+            </value>
+            <value>
+                <fullName>AB-C</fullName>
+                <default>false</default>
+                <label>AB-C</label>
+            </value>
+            <value>
+                <fullName>AB-D</fullName>
+                <default>false</default>
+                <label>AB-D</label>
+            </value>
+            <value>
+                <fullName>AB-E</fullName>
+                <default>false</default>
+                <label>AB-E</label>
+            </value>
+            <value>
+                <fullName>AB-HIGH ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>AB-HIGH ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>AB-HIGH ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>AB-HIGH ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>AB-LOW ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>AB-LOW ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>AB-LOW ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>AB-LOW ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>AB-LOW ENERGY BAR-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>AB-LOW ENERGY BAR-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>AB-NIGHTCLUB</fullName>
+                <default>false</default>
+                <label>AB-NIGHTCLUB</label>
+            </value>
+            <value>
+                <fullName>AB-Other</fullName>
+                <default>false</default>
+                <label>AB-Other</label>
+            </value>
+            <value>
+                <fullName>AB-RESTAURANT-PREMIUM</fullName>
+                <default>false</default>
+                <label>AB-RESTAURANT-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>AB-RESTAURANT-STANDARD</fullName>
+                <default>false</default>
+                <label>AB-RESTAURANT-STANDARD</label>
+            </value>
+            <value>
+                <fullName>AB-RESTAURANT-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>AB-RESTAURANT-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>AU ALL</fullName>
+                <default>false</default>
+                <label>AU ALL</label>
+            </value>
+            <value>
+                <fullName>AU KEY ACCOUNT</fullName>
+                <default>false</default>
+                <label>AU KEY ACCOUNT</label>
+            </value>
+            <value>
+                <fullName>AU ON PREMISE</fullName>
+                <default>false</default>
+                <label>AU ON PREMISE</label>
+            </value>
+            <value>
+                <fullName>AU REGIONAL</fullName>
+                <default>false</default>
+                <label>AU REGIONAL</label>
+            </value>
+            <value>
+                <fullName>BC-A-BCLDB</fullName>
+                <default>false</default>
+                <label>BC-A-BCLDB</label>
+            </value>
+            <value>
+                <fullName>BC-A-LRS</fullName>
+                <default>false</default>
+                <label>BC-A-LRS</label>
+            </value>
+            <value>
+                <fullName>BC-B-BCLDB</fullName>
+                <default>false</default>
+                <label>BC-B-BCLDB</label>
+            </value>
+            <value>
+                <fullName>BC-B-LRS</fullName>
+                <default>false</default>
+                <label>BC-B-LRS</label>
+            </value>
+            <value>
+                <fullName>BC-C-BCLDB</fullName>
+                <default>false</default>
+                <label>BC-C-BCLDB</label>
+            </value>
+            <value>
+                <fullName>BC-C-LRS</fullName>
+                <default>false</default>
+                <label>BC-C-LRS</label>
+            </value>
+            <value>
+                <fullName>BC-D-BCLDB</fullName>
+                <default>false</default>
+                <label>BC-D-BCLDB</label>
+            </value>
+            <value>
+                <fullName>BC-D-LRS</fullName>
+                <default>false</default>
+                <label>BC-D-LRS</label>
+            </value>
+            <value>
+                <fullName>BC-E-BCLDB</fullName>
+                <default>false</default>
+                <label>BC-E-BCLDB</label>
+            </value>
+            <value>
+                <fullName>BC-E-LRS</fullName>
+                <default>false</default>
+                <label>BC-E-LRS</label>
+            </value>
+            <value>
+                <fullName>BC-HIGH ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>BC-HIGH ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>BC-HIGH ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>BC-HIGH ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>BC-LOW ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>BC-LOW ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>BC-LOW ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>BC-LOW ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>BC-LOW ENERGY BAR-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>BC-LOW ENERGY BAR-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>BC-NIGHTCLUB</fullName>
+                <default>false</default>
+                <label>BC-NIGHTCLUB</label>
+            </value>
+            <value>
+                <fullName>BC-Other</fullName>
+                <default>false</default>
+                <label>BC-Other</label>
+            </value>
+            <value>
+                <fullName>BC-RESTAURANT-PREMIUM</fullName>
+                <default>false</default>
+                <label>BC-RESTAURANT-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>BC-RESTAURANT-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>BC-RESTAURANT-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>BODEGA</fullName>
+                <default>false</default>
+                <label>BODEGA</label>
+            </value>
+            <value>
+                <fullName>Casual Dining</fullName>
+                <default>false</default>
+                <label>Casual Dining</label>
+            </value>
+            <value>
+                <fullName>ENREJADO</fullName>
+                <default>false</default>
+                <label>ENREJADO</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR ALTA</fullName>
+                <default>false</default>
+                <label>ESTANDAR ALTA</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR BAJA</fullName>
+                <default>false</default>
+                <label>ESTANDAR BAJA</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR CHICO MEDIANO</fullName>
+                <default>false</default>
+                <label>ESTANDAR CHICO MEDIANO</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR CLUB</fullName>
+                <default>false</default>
+                <label>ESTANDAR CLUB</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR GRANDE</fullName>
+                <default>false</default>
+                <label>ESTANDAR GRANDE</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR MEDIA</fullName>
+                <default>false</default>
+                <label>ESTANDAR MEDIA</label>
+            </value>
+            <value>
+                <fullName>Events &amp; Entertainment</fullName>
+                <default>false</default>
+                <label>Events &amp; Entertainment</label>
+            </value>
+            <value>
+                <fullName>Large Multi-Purpose</fullName>
+                <default>false</default>
+                <label>Large Multi-Purpose</label>
+            </value>
+            <value>
+                <fullName>Licensed Club</fullName>
+                <default>false</default>
+                <label>Licensed Club</label>
+            </value>
+            <value>
+                <fullName>Lodging</fullName>
+                <default>false</default>
+                <label>Lodging</label>
+            </value>
+            <value>
+                <fullName>Modern Bar or Pub</fullName>
+                <default>false</default>
+                <label>Modern Bar or Pub</label>
+            </value>
+            <value>
+                <fullName>Nightclub</fullName>
+                <default>false</default>
+                <label>Nightclub</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>ON-A-LCBO</fullName>
+                <default>false</default>
+                <label>ON-A-LCBO</label>
+            </value>
+            <value>
+                <fullName>ON-B-LCBO</fullName>
+                <default>false</default>
+                <label>ON-B-LCBO</label>
+            </value>
+            <value>
+                <fullName>ON-C-LCBO</fullName>
+                <default>false</default>
+                <label>ON-C-LCBO</label>
+            </value>
+            <value>
+                <fullName>ON-D-LCBO</fullName>
+                <default>false</default>
+                <label>ON-D-LCBO</label>
+            </value>
+            <value>
+                <fullName>ON-E-LCBO</fullName>
+                <default>false</default>
+                <label>ON-E-LCBO</label>
+            </value>
+            <value>
+                <fullName>ON-HIGH ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>ON-HIGH ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>ON-HIGH ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>ON-HIGH ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>ON-LOW ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>ON-LOW ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>ON-LOW ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>ON-LOW ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>ON-LOW ENERGY BAR-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>ON-LOW ENERGY BAR-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>ON-NIGHTCLUB</fullName>
+                <default>false</default>
+                <label>ON-NIGHTCLUB</label>
+            </value>
+            <value>
+                <fullName>ON-Other</fullName>
+                <default>false</default>
+                <label>ON-Other</label>
+            </value>
+            <value>
+                <fullName>ON-RESTAURANT-PREMIUM</fullName>
+                <default>false</default>
+                <label>ON-RESTAURANT-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>ON-RESTAURANT-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>ON-RESTAURANT-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>PicOS</fullName>
+                <default>false</default>
+                <label>PicOS</label>
+            </value>
+            <value>
+                <fullName>PLUS CHICO</fullName>
+                <default>false</default>
+                <label>PLUS CHICO</label>
+            </value>
+            <value>
+                <fullName>PLUS CLUB</fullName>
+                <default>false</default>
+                <label>PLUS CLUB</label>
+            </value>
+            <value>
+                <fullName>PLUS GRANDE</fullName>
+                <default>false</default>
+                <label>PLUS GRANDE</label>
+            </value>
+            <value>
+                <fullName>PLUS MEDIANO</fullName>
+                <default>false</default>
+                <label>PLUS MEDIANO</label>
+            </value>
+            <value>
+                <fullName>PREMIUM</fullName>
+                <default>false</default>
+                <label>PREMIUM</label>
+            </value>
+            <value>
+                <fullName>PREMIUM ALTA</fullName>
+                <default>false</default>
+                <label>PREMIUM ALTA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM BAJA</fullName>
+                <default>false</default>
+                <label>PREMIUM BAJA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM CLUB</fullName>
+                <default>false</default>
+                <label>PREMIUM CLUB</label>
+            </value>
+            <value>
+                <fullName>PREMIUM LICORERO BAJA</fullName>
+                <default>false</default>
+                <label>PREMIUM LICORERO BAJA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM LIMITED</fullName>
+                <default>false</default>
+                <label>PREMIUM LIMITED</label>
+            </value>
+            <value>
+                <fullName>PREMIUM MEDIA</fullName>
+                <default>false</default>
+                <label>PREMIUM MEDIA</label>
+            </value>
+            <value>
+                <fullName>QC-A-Classique</fullName>
+                <default>false</default>
+                <label>QC-A-Classique</label>
+            </value>
+            <value>
+                <fullName>QC-A-Depot</fullName>
+                <default>false</default>
+                <label>QC-A-Depot</label>
+            </value>
+            <value>
+                <fullName>QC-A-Express</fullName>
+                <default>false</default>
+                <label>QC-A-Express</label>
+            </value>
+            <value>
+                <fullName>QC-A-Selection</fullName>
+                <default>false</default>
+                <label>QC-A-Selection</label>
+            </value>
+            <value>
+                <fullName>QC-B-Classique</fullName>
+                <default>false</default>
+                <label>QC-B-Classique</label>
+            </value>
+            <value>
+                <fullName>QC-B-Depot</fullName>
+                <default>false</default>
+                <label>QC-B-Depot</label>
+            </value>
+            <value>
+                <fullName>QC-B-Express</fullName>
+                <default>false</default>
+                <label>QC-B-Express</label>
+            </value>
+            <value>
+                <fullName>QC-B-Selection</fullName>
+                <default>false</default>
+                <label>QC-B-Selection</label>
+            </value>
+            <value>
+                <fullName>QC-C-Classique</fullName>
+                <default>false</default>
+                <label>QC-C-Classique</label>
+            </value>
+            <value>
+                <fullName>QC-C-Depot</fullName>
+                <default>false</default>
+                <label>QC-C-Depot</label>
+            </value>
+            <value>
+                <fullName>QC-C-Express</fullName>
+                <default>false</default>
+                <label>QC-C-Express</label>
+            </value>
+            <value>
+                <fullName>QC-C-Selection</fullName>
+                <default>false</default>
+                <label>QC-C-Selection</label>
+            </value>
+            <value>
+                <fullName>QC-C-Signature</fullName>
+                <default>false</default>
+                <label>QC-C-Signature</label>
+            </value>
+            <value>
+                <fullName>QC-D-Classique</fullName>
+                <default>false</default>
+                <label>QC-D-Classique</label>
+            </value>
+            <value>
+                <fullName>QC-D-Depot</fullName>
+                <default>false</default>
+                <label>QC-D-Depot</label>
+            </value>
+            <value>
+                <fullName>QC-D-Express</fullName>
+                <default>false</default>
+                <label>QC-D-Express</label>
+            </value>
+            <value>
+                <fullName>QC-D-Selection</fullName>
+                <default>false</default>
+                <label>QC-D-Selection</label>
+            </value>
+            <value>
+                <fullName>QC-D-Signature</fullName>
+                <default>false</default>
+                <label>QC-D-Signature</label>
+            </value>
+            <value>
+                <fullName>QC-E-Classique</fullName>
+                <default>false</default>
+                <label>QC-E-Classique</label>
+            </value>
+            <value>
+                <fullName>QC-E-Express</fullName>
+                <default>false</default>
+                <label>QC-E-Express</label>
+            </value>
+            <value>
+                <fullName>QC-E-Selection</fullName>
+                <default>false</default>
+                <label>QC-E-Selection</label>
+            </value>
+            <value>
+                <fullName>QC-HIGH ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>QC-HIGH ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>QC-HIGH ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>QC-HIGH ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>QC-LOW ENERGY BAR-PREMIUM</fullName>
+                <default>false</default>
+                <label>QC-LOW ENERGY BAR-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>QC-LOW ENERGY BAR-STANDARD</fullName>
+                <default>false</default>
+                <label>QC-LOW ENERGY BAR-STANDARD</label>
+            </value>
+            <value>
+                <fullName>QC-LOW ENERGY BAR-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>QC-LOW ENERGY BAR-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>QC-NIGHTCLUB</fullName>
+                <default>false</default>
+                <label>QC-NIGHTCLUB</label>
+            </value>
+            <value>
+                <fullName>QC-Other</fullName>
+                <default>false</default>
+                <label>QC-Other</label>
+            </value>
+            <value>
+                <fullName>QC-RESTAURANT-PREMIUM</fullName>
+                <default>false</default>
+                <label>QC-RESTAURANT-PREMIUM</label>
+            </value>
+            <value>
+                <fullName>QC-RESTAURANT-SUPER PREMIUM</fullName>
+                <default>false</default>
+                <label>QC-RESTAURANT-SUPER PREMIUM</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Small Bar</fullName>
+                <default>false</default>
+                <label>Small Bar</label>
+            </value>
+            <value>
+                <fullName>Traditional Pub</fullName>
+                <default>false</default>
+                <label>Traditional Pub</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

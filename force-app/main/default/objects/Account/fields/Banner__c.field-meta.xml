@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Banner__c</fullName>
+    <externalId>false</externalId>
+    <label>Banner</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Customer_Group_FRN__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>8 A HUIT</fullName>
+                <default>false</default>
+                <label>8 A HUIT</label>
+            </value>
+            <value>
+                <fullName>AUCHAN</fullName>
+                <default>false</default>
+                <label>AUCHAN</label>
+            </value>
+            <value>
+                <fullName>AUCHAN CITY</fullName>
+                <default>false</default>
+                <label>AUCHAN CITY</label>
+            </value>
+            <value>
+                <fullName>AUCHAN DRIVE</fullName>
+                <default>false</default>
+                <label>AUCHAN DRIVE</label>
+            </value>
+            <value>
+                <fullName>AUCHAN - SCHIEVER</fullName>
+                <default>false</default>
+                <label>AUCHAN - SCHIEVER</label>
+            </value>
+            <value>
+                <fullName>AUCHAN SUPERMARCHE</fullName>
+                <default>false</default>
+                <label>AUCHAN SUPERMARCHE</label>
+            </value>
+            <value>
+                <fullName>C10 - CAVISTES</fullName>
+                <default>false</default>
+                <label>C10 - CAVISTES</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR CITY</fullName>
+                <default>false</default>
+                <label>CARREFOUR CITY</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR CONTACT</fullName>
+                <default>false</default>
+                <label>CARREFOUR CONTACT</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR DRIVE</fullName>
+                <default>false</default>
+                <label>CARREFOUR DRIVE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR EXPRESS</fullName>
+                <default>false</default>
+                <label>CARREFOUR EXPRESS</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR HYPERMARCHES</fullName>
+                <default>false</default>
+                <label>CARREFOUR HYPERMARCHES</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR MARKET</fullName>
+                <default>false</default>
+                <label>CARREFOUR MARKET</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR MONTAGNE</fullName>
+                <default>false</default>
+                <label>CARREFOUR MONTAGNE</label>
+            </value>
+            <value>
+                <fullName>CASINO</fullName>
+                <default>false</default>
+                <label>CASINO</label>
+            </value>
+            <value>
+                <fullName>CASINO DRIVE</fullName>
+                <default>false</default>
+                <label>CASINO DRIVE</label>
+            </value>
+            <value>
+                <fullName>CASINO SUPERMARCHE</fullName>
+                <default>false</default>
+                <label>CASINO SUPERMARCHE</label>
+            </value>
+            <value>
+                <fullName>CENTRE LECLERC</fullName>
+                <default>false</default>
+                <label>CENTRE LECLERC</label>
+            </value>
+            <value>
+                <fullName>CHAMPION</fullName>
+                <default>false</default>
+                <label>CHAMPION</label>
+            </value>
+            <value>
+                <fullName>CHRONODRIVE</fullName>
+                <default>false</default>
+                <label>CHRONODRIVE</label>
+            </value>
+            <value>
+                <fullName>COCCIMARKET</fullName>
+                <default>false</default>
+                <label>COCCIMARKET</label>
+            </value>
+            <value>
+                <fullName>COCCINELLE</fullName>
+                <default>false</default>
+                <label>COCCINELLE</label>
+            </value>
+            <value>
+                <fullName>COCCINELLE EXPRESS</fullName>
+                <default>false</default>
+                <label>COCCINELLE EXPRESS</label>
+            </value>
+            <value>
+                <fullName>COLRUYT</fullName>
+                <default>false</default>
+                <label>COLRUYT</label>
+            </value>
+            <value>
+                <fullName>COOP</fullName>
+                <default>false</default>
+                <label>COOP</label>
+            </value>
+            <value>
+                <fullName>CORA</fullName>
+                <default>false</default>
+                <label>CORA</label>
+            </value>
+            <value>
+                <fullName>CORA DRIVE</fullName>
+                <default>false</default>
+                <label>CORA DRIVE</label>
+            </value>
+            <value>
+                <fullName>DIAGONAL</fullName>
+                <default>false</default>
+                <label>DIAGONAL</label>
+            </value>
+            <value>
+                <fullName>ECO 1</fullName>
+                <default>false</default>
+                <label>ECO 1</label>
+            </value>
+            <value>
+                <fullName>ECO 2</fullName>
+                <default>false</default>
+                <label>ECO 2</label>
+            </value>
+            <value>
+                <fullName>ECO 3</fullName>
+                <default>false</default>
+                <label>ECO 3</label>
+            </value>
+            <value>
+                <fullName>FRANPRIX</fullName>
+                <default>false</default>
+                <label>FRANPRIX</label>
+            </value>
+            <value>
+                <fullName>G20</fullName>
+                <default>false</default>
+                <label>G20</label>
+            </value>
+            <value>
+                <fullName>GALERIES LA FAYETTE</fullName>
+                <default>false</default>
+                <label>GALERIES LA FAYETTE</label>
+            </value>
+            <value>
+                <fullName>GEANT</fullName>
+                <default>false</default>
+                <label>GEANT</label>
+            </value>
+            <value>
+                <fullName>HALLE D&#39;AUCHAN</fullName>
+                <default>false</default>
+                <label>HALLE D&#39;AUCHAN</label>
+            </value>
+            <value>
+                <fullName>HYPER CASINO</fullName>
+                <default>false</default>
+                <label>HYPER CASINO</label>
+            </value>
+            <value>
+                <fullName>HYPER U</fullName>
+                <default>false</default>
+                <label>HYPER U</label>
+            </value>
+            <value>
+                <fullName>INNO</fullName>
+                <default>false</default>
+                <label>INNO</label>
+            </value>
+            <value>
+                <fullName>INTERMARCHE CONTACT</fullName>
+                <default>false</default>
+                <label>INTERMARCHE CONTACT</label>
+            </value>
+            <value>
+                <fullName>INTERMARCHE EXPRESS</fullName>
+                <default>false</default>
+                <label>INTERMARCHE EXPRESS</label>
+            </value>
+            <value>
+                <fullName>INTERMARCHE HYPER</fullName>
+                <default>false</default>
+                <label>INTERMARCHE HYPER</label>
+            </value>
+            <value>
+                <fullName>INTERMARCHE SUPER</fullName>
+                <default>false</default>
+                <label>INTERMARCHE SUPER</label>
+            </value>
+            <value>
+                <fullName>LECLERC  / LECLERC DRIVE</fullName>
+                <default>false</default>
+                <label>LECLERC  / LECLERC DRIVE</label>
+            </value>
+            <value>
+                <fullName>LECLERC EXPRESS</fullName>
+                <default>false</default>
+                <label>LECLERC EXPRESS</label>
+            </value>
+            <value>
+                <fullName>Marché</fullName>
+                <default>false</default>
+                <label>Marché</label>
+            </value>
+            <value>
+                <fullName>MARKET</fullName>
+                <default>false</default>
+                <label>MARKET</label>
+            </value>
+            <value>
+                <fullName>MATCH</fullName>
+                <default>false</default>
+                <label>MATCH</label>
+            </value>
+            <value>
+                <fullName>Match France</fullName>
+                <default>false</default>
+                <label>Match France</label>
+            </value>
+            <value>
+                <fullName>MAXIMARCHÉ</fullName>
+                <default>false</default>
+                <label>MAXIMARCHÉ</label>
+            </value>
+            <value>
+                <fullName>MAXIMO</fullName>
+                <default>false</default>
+                <label>MAXIMO</label>
+            </value>
+            <value>
+                <fullName>METRO</fullName>
+                <default>false</default>
+                <label>METRO</label>
+            </value>
+            <value>
+                <fullName>MIGROS</fullName>
+                <default>false</default>
+                <label>MIGROS</label>
+            </value>
+            <value>
+                <fullName>MONOP&#39;</fullName>
+                <default>false</default>
+                <label>MONOP&#39;</label>
+            </value>
+            <value>
+                <fullName>MONOPRIX</fullName>
+                <default>false</default>
+                <label>MONOPRIX</label>
+            </value>
+            <value>
+                <fullName>PETIT CASINO</fullName>
+                <default>false</default>
+                <label>PETIT CASINO</label>
+            </value>
+            <value>
+                <fullName>PRIXBAS</fullName>
+                <default>false</default>
+                <label>PRIXBAS</label>
+            </value>
+            <value>
+                <fullName>PROMOCASH</fullName>
+                <default>false</default>
+                <label>PROMOCASH</label>
+            </value>
+            <value>
+                <fullName>PROXI</fullName>
+                <default>false</default>
+                <label>PROXI</label>
+            </value>
+            <value>
+                <fullName>RECORD</fullName>
+                <default>false</default>
+                <label>RECORD</label>
+            </value>
+            <value>
+                <fullName>RELAIS DES MOUSQUETAIRES</fullName>
+                <default>false</default>
+                <label>RELAIS DES MOUSQUETAIRES</label>
+            </value>
+            <value>
+                <fullName>SHERPA</fullName>
+                <default>false</default>
+                <label>SHERPA</label>
+            </value>
+            <value>
+                <fullName>SHOPI</fullName>
+                <default>false</default>
+                <label>SHOPI</label>
+            </value>
+            <value>
+                <fullName>SITIS</fullName>
+                <default>false</default>
+                <label>SITIS</label>
+            </value>
+            <value>
+                <fullName>SPAR</fullName>
+                <default>false</default>
+                <label>SPAR</label>
+            </value>
+            <value>
+                <fullName>Super</fullName>
+                <default>false</default>
+                <label>Super</label>
+            </value>
+            <value>
+                <fullName>SUPER U</fullName>
+                <default>false</default>
+                <label>SUPER U</label>
+            </value>
+            <value>
+                <fullName>TRAD</fullName>
+                <default>false</default>
+                <label>TRAD</label>
+            </value>
+            <value>
+                <fullName>U EXPRESS</fullName>
+                <default>false</default>
+                <label>U EXPRESS</label>
+            </value>
+            <value>
+                <fullName>UTILE</fullName>
+                <default>false</default>
+                <label>UTILE</label>
+            </value>
+            <value>
+                <fullName>VIVAL</fullName>
+                <default>false</default>
+                <label>VIVAL</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>C10</controllingFieldValue>
+            <valueName>C10 - CAVISTES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>CASINO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>FRANPRIX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>GEANT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>HYPER CASINO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>INNO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>MONOP&#39;</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>MONOPRIX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EMC Distribution</controllingFieldValue>
+            <valueName>PETIT CASINO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GALEC</controllingFieldValue>
+            <valueName>CENTRE LECLERC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U</controllingFieldValue>
+            <valueName>HYPER U</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U</controllingFieldValue>
+            <valueName>SUPER U</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U</controllingFieldValue>
+            <valueName>U EXPRESS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>PROMOCASH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN FRANCE</controllingFieldValue>
+            <valueName>AUCHAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN FRANCE</controllingFieldValue>
+            <valueName>AUCHAN - SCHIEVER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN FRANCE</controllingFieldValue>
+            <valueName>AUCHAN SUPERMARCHE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN FRANCE</controllingFieldValue>
+            <valueName>HALLE D&#39;AUCHAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN FRANCE</controllingFieldValue>
+            <valueName>PRIXBAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>8 A HUIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR CITY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR CONTACT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR DRIVE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR EXPRESS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR HYPERMARCHES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR MARKET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>CARREFOUR MONTAGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>MARKET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>PROXI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR France</controllingFieldValue>
+            <valueName>SHOPI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITM</controllingFieldValue>
+            <valueName>INTERMARCHE CONTACT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITM</controllingFieldValue>
+            <valueName>INTERMARCHE EXPRESS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITM</controllingFieldValue>
+            <valueName>INTERMARCHE HYPER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ITM</controllingFieldValue>
+            <valueName>INTERMARCHE SUPER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROVERA FRANCE</controllingFieldValue>
+            <valueName>CORA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROVERA FRANCE</controllingFieldValue>
+            <valueName>G20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROVERA FRANCE</controllingFieldValue>
+            <valueName>MATCH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROVERA FRANCE</controllingFieldValue>
+            <valueName>MAXIMO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>METRO</controllingFieldValue>
+            <valueName>METRO</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

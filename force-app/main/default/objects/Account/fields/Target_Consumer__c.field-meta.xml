@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target_Consumer__c</fullName>
+    <description>Primary target consumer group for the establishment</description>
+    <externalId>false</externalId>
+    <label>Target Consumer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>LDA - 24</fullName>
+                <default>false</default>
+                <label>LDA - 24</label>
+            </value>
+            <value>
+                <fullName>25-39</fullName>
+                <default>false</default>
+                <label>25-39</label>
+            </value>
+            <value>
+                <fullName>40+</fullName>
+                <default>false</default>
+                <label>40+</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

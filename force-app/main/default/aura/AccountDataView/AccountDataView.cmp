@@ -1,0 +1,5 @@
+<aura:component>
+    <aura:attribute name="objectApiName" type="String" default="Account" />
+    
+    <c:LightningDataView object="{!v.objectApiName}"  />
+</aura:component>	

@@ -1,0 +1,2 @@
+<apex:page standardController="Account" extensions="AfterHoursApp_Controller" action="{!redirect}">
+</apex:page>

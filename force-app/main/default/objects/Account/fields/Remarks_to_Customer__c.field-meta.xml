@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remarks_to_Customer__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>if possible or if available type in information about assortment catalogue/inhouse trade fair/flyer</inlineHelpText>
+    <label>Remarks to Customer Related Facts</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

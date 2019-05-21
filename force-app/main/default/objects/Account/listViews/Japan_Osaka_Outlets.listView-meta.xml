@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Japan_Osaka_Outlets</fullName>
+    <columns>Region__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>City__c</columns>
+    <columns>Area__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>English_Name__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>Segmentation__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>Supplier__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>JPN-Osaka</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Outlets</value>
+    </filters>
+    <label>Japan Osaka Outlets</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>JPNAllUsers</group>
+    </sharedTo>
+</ListView>

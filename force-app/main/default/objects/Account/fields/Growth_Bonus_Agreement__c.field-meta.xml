@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Growth_Bonus_Agreement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To indicate if a Growth Bonus has been agreed with this outlet for current FY</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is a Growth Bonus Agreement in place?</inlineHelpText>
+    <label>Growth Bonus Agreement</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ABK__c</fullName>
+    <description>Infowelders</description>
+    <externalId>false</externalId>
+    <label>ABK</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>111 – SBW Gross &gt; 5000qm</fullName>
+                <default>false</default>
+                <label>111 – SBW Gross &gt; 5000qm</label>
+            </value>
+            <value>
+                <fullName>112 – VM Gross 1500 – 5000qm</fullName>
+                <default>false</default>
+                <label>112 – VM Gross 1500 – 5000qm</label>
+            </value>
+            <value>
+                <fullName>113  –VM klein  800 – 1500 qm</fullName>
+                <default>false</default>
+                <label>113  –VM klein  800 – 1500 qm</label>
+            </value>
+            <value>
+                <fullName>114 – SM 400 – 800 qm</fullName>
+                <default>false</default>
+                <label>114 – SM 400 – 800 qm</label>
+            </value>
+            <value>
+                <fullName>115 – SM &lt; 400 qm</fullName>
+                <default>false</default>
+                <label>115 – SM &lt; 400 qm</label>
+            </value>
+            <value>
+                <fullName>121 – LEH GH Laeger</fullName>
+                <default>false</default>
+                <label>121 – LEH GH Laeger</label>
+            </value>
+            <value>
+                <fullName>131 – Dicounter</fullName>
+                <default>false</default>
+                <label>131 – Dicounter</label>
+            </value>
+            <value>
+                <fullName>141 – K&amp;W &gt; 5000 qm</fullName>
+                <default>false</default>
+                <label>141 – K&amp;W &gt; 5000 qm</label>
+            </value>
+            <value>
+                <fullName>142 – K&amp;W 1500 -  5000 qm</fullName>
+                <default>false</default>
+                <label>142 – K&amp;W 1500 -  5000 qm</label>
+            </value>
+            <value>
+                <fullName>143 – K&amp;W 800 – 1500 qm</fullName>
+                <default>false</default>
+                <label>143 – K&amp;W 800 – 1500 qm</label>
+            </value>
+            <value>
+                <fullName>144 – K&amp;W 400 – 800 qm</fullName>
+                <default>false</default>
+                <label>144 – K&amp;W 400 – 800 qm</label>
+            </value>
+            <value>
+                <fullName>145 – K&amp;W &lt; 400 qm</fullName>
+                <default>false</default>
+                <label>145 – K&amp;W &lt; 400 qm</label>
+            </value>
+            <value>
+                <fullName>199 – LEH Zentrale/Verwaltung</fullName>
+                <default>false</default>
+                <label>199 – LEH Zentrale/Verwaltung</label>
+            </value>
+            <value>
+                <fullName>211 – Facheinzelhandel</fullName>
+                <default>false</default>
+                <label>211 – Facheinzelhandel</label>
+            </value>
+            <value>
+                <fullName>221 – Fachgrosshandel mit Spirituosen</fullName>
+                <default>false</default>
+                <label>221 – Fachgrosshandel mit Spirituosen</label>
+            </value>
+            <value>
+                <fullName>222 – Fachgrosshandelslager ohne Spirituosen</fullName>
+                <default>false</default>
+                <label>222 – Fachgrosshandelslager ohne Spirituosen</label>
+            </value>
+            <value>
+                <fullName>301 – Gastro Grosshandel Deutsch</fullName>
+                <default>false</default>
+                <label>301 – Gastro Grosshandel Deutsch</label>
+            </value>
+            <value>
+                <fullName>302 – Gastrogrosshandel Italienisch</fullName>
+                <default>false</default>
+                <label>302 – Gastrogrosshandel Italienisch</label>
+            </value>
+            <value>
+                <fullName>303 – Gastrogrosshandel International</fullName>
+                <default>false</default>
+                <label>303 – Gastrogrosshandel International</label>
+            </value>
+            <value>
+                <fullName>304 – Zwischengrosshandel</fullName>
+                <default>false</default>
+                <label>304 – Zwischengrosshandel</label>
+            </value>
+            <value>
+                <fullName>306 – Inaktiv Gastro Grosshandel</fullName>
+                <default>false</default>
+                <label>306 – Inaktiv Gastro Grosshandel</label>
+            </value>
+            <value>
+                <fullName>322 – Restaurants</fullName>
+                <default>false</default>
+                <label>322 – Restaurants</label>
+            </value>
+            <value>
+                <fullName>323 – Cafe/Bisto</fullName>
+                <default>false</default>
+                <label>323 – Cafe/Bisto</label>
+            </value>
+            <value>
+                <fullName>324 – Erlebnis/Kommunikation</fullName>
+                <default>false</default>
+                <label>324 – Erlebnis/Kommunikation</label>
+            </value>
+            <value>
+                <fullName>325 – Szene</fullName>
+                <default>false</default>
+                <label>325 – Szene</label>
+            </value>
+            <value>
+                <fullName>326 – Events</fullName>
+                <default>false</default>
+                <label>326 – Events</label>
+            </value>
+            <value>
+                <fullName>335 – Top Clients (B2B)</fullName>
+                <default>false</default>
+                <label>335 – Top Clients (B2B)</label>
+            </value>
+            <value>
+                <fullName>341 – Grossraumdiskothek</fullName>
+                <default>false</default>
+                <label>341 – Grossraumdiskothek</label>
+            </value>
+            <value>
+                <fullName>343 – Clubdiskothek</fullName>
+                <default>false</default>
+                <label>343 – Clubdiskothek</label>
+            </value>
+            <value>
+                <fullName>344 – Sonstige Diskothek</fullName>
+                <default>false</default>
+                <label>344 – Sonstige Diskothek</label>
+            </value>
+            <value>
+                <fullName>351 – Bar</fullName>
+                <default>false</default>
+                <label>351 – Bar</label>
+            </value>
+            <value>
+                <fullName>361 – Schienenverkehr</fullName>
+                <default>false</default>
+                <label>361 – Schienenverkehr</label>
+            </value>
+            <value>
+                <fullName>362 – Flugverkehr</fullName>
+                <default>false</default>
+                <label>362 – Flugverkehr</label>
+            </value>
+            <value>
+                <fullName>363 – Schiffsverkehr</fullName>
+                <default>false</default>
+                <label>363 – Schiffsverkehr</label>
+            </value>
+            <value>
+                <fullName>364 – Autoverkehr</fullName>
+                <default>false</default>
+                <label>364 – Autoverkehr</label>
+            </value>
+            <value>
+                <fullName>371 – Bowlingcenter</fullName>
+                <default>false</default>
+                <label>371 – Bowlingcenter</label>
+            </value>
+            <value>
+                <fullName>372 – Sonstige Channels &amp; Verbaende</fullName>
+                <default>false</default>
+                <label>372 – Sonstige Channels &amp; Verbaende</label>
+            </value>
+            <value>
+                <fullName>373 – Hotel</fullName>
+                <default>false</default>
+                <label>373 – Hotel</label>
+            </value>
+            <value>
+                <fullName>374 – Kino</fullName>
+                <default>false</default>
+                <label>374 – Kino</label>
+            </value>
+            <value>
+                <fullName>375 – Multifunktionsarena</fullName>
+                <default>false</default>
+                <label>375 – Multifunktionsarena</label>
+            </value>
+            <value>
+                <fullName>376 – Musical/Theater</fullName>
+                <default>false</default>
+                <label>376 – Musical/Theater</label>
+            </value>
+            <value>
+                <fullName>377 – Messe/Caterer</fullName>
+                <default>false</default>
+                <label>377 – Messe/Caterer</label>
+            </value>
+            <value>
+                <fullName>378 – Erlebnispark</fullName>
+                <default>false</default>
+                <label>378 – Erlebnispark</label>
+            </value>
+            <value>
+                <fullName>379 – Eventveranstalter</fullName>
+                <default>false</default>
+                <label>379 – Eventveranstalter</label>
+            </value>
+            <value>
+                <fullName>381 – Inaktiv Golfclub</fullName>
+                <default>false</default>
+                <label>381 – Inaktiv Golfclub</label>
+            </value>
+            <value>
+                <fullName>382 – Inaktiv Sport/Freizeit</fullName>
+                <default>false</default>
+                <label>382 – Inaktiv Sport/Freizeit</label>
+            </value>
+            <value>
+                <fullName>383 – Inaktiv Kino</fullName>
+                <default>false</default>
+                <label>383 – Inaktiv Kino</label>
+            </value>
+            <value>
+                <fullName>411 – Cash &amp; Carry</fullName>
+                <default>false</default>
+                <label>411 – Cash &amp; Carry</label>
+            </value>
+            <value>
+                <fullName>511 – Duty Free</fullName>
+                <default>false</default>
+                <label>511 – Duty Free</label>
+            </value>
+            <value>
+                <fullName>522 – Faehre national</fullName>
+                <default>false</default>
+                <label>522 – Faehre national</label>
+            </value>
+            <value>
+                <fullName>523 – Schiffsausruester</fullName>
+                <default>false</default>
+                <label>523 – Schiffsausruester</label>
+            </value>
+            <value>
+                <fullName>524 – Kreuzfahrtschiff</fullName>
+                <default>false</default>
+                <label>524 – Kreuzfahrtschiff</label>
+            </value>
+            <value>
+                <fullName>531 – Diplomatenhandel</fullName>
+                <default>false</default>
+                <label>531 – Diplomatenhandel</label>
+            </value>
+            <value>
+                <fullName>541 – US-Streitkraefte</fullName>
+                <default>false</default>
+                <label>541 – US-Streitkraefte</label>
+            </value>
+            <value>
+                <fullName>542 – Kanadische Streitkraefte</fullName>
+                <default>false</default>
+                <label>542 – Kanadische Streitkraefte</label>
+            </value>
+            <value>
+                <fullName>543 - Sonstige Streitkraefte</fullName>
+                <default>false</default>
+                <label>543 - Sonstige Streitkraefte</label>
+            </value>
+            <value>
+                <fullName>551 – Airportshops</fullName>
+                <default>false</default>
+                <label>551 – Airportshops</label>
+            </value>
+            <value>
+                <fullName>552 – Airlines Caterer</fullName>
+                <default>false</default>
+                <label>552 – Airlines Caterer</label>
+            </value>
+            <value>
+                <fullName>591 – Lager Grosshandel</fullName>
+                <default>false</default>
+                <label>591 – Lager Grosshandel</label>
+            </value>
+            <value>
+                <fullName>611 – Homeservice</fullName>
+                <default>false</default>
+                <label>611 – Homeservice</label>
+            </value>
+            <value>
+                <fullName>612 – Versandhandel</fullName>
+                <default>false</default>
+                <label>612 – Versandhandel</label>
+            </value>
+            <value>
+                <fullName>613 – Teleshopping</fullName>
+                <default>false</default>
+                <label>613 – Teleshopping</label>
+            </value>
+            <value>
+                <fullName>621 – Universitaet/Mensa</fullName>
+                <default>false</default>
+                <label>621 – Universitaet/Mensa</label>
+            </value>
+            <value>
+                <fullName>622 – Truppenkantine</fullName>
+                <default>false</default>
+                <label>622 – Truppenkantine</label>
+            </value>
+            <value>
+                <fullName>623 – Altenpflegeeinrichtung</fullName>
+                <default>false</default>
+                <label>623 – Altenpflegeeinrichtung</label>
+            </value>
+            <value>
+                <fullName>624 – Partyservice (Handel)</fullName>
+                <default>false</default>
+                <label>624 – Partyservice (Handel)</label>
+            </value>
+            <value>
+                <fullName>631 – Sonderpostenmarkt</fullName>
+                <default>false</default>
+                <label>631 – Sonderpostenmarkt</label>
+            </value>
+            <value>
+                <fullName>641 – Getraenkemarkt</fullName>
+                <default>false</default>
+                <label>641 – Getraenkemarkt</label>
+            </value>
+            <value>
+                <fullName>651 – Drogerie</fullName>
+                <default>false</default>
+                <label>651 – Drogerie</label>
+            </value>
+            <value>
+                <fullName>661 – Kiosk</fullName>
+                <default>false</default>
+                <label>661 – Kiosk</label>
+            </value>
+            <value>
+                <fullName>671 – Tankstelle</fullName>
+                <default>false</default>
+                <label>671 – Tankstelle</label>
+            </value>
+            <value>
+                <fullName>681 – Baeckerei</fullName>
+                <default>false</default>
+                <label>681 – Baeckerei</label>
+            </value>
+            <value>
+                <fullName>811 – Lebensmittelindustrie</fullName>
+                <default>false</default>
+                <label>811 – Lebensmittelindustrie</label>
+            </value>
+            <value>
+                <fullName>812 – Genussmittelindustrie</fullName>
+                <default>false</default>
+                <label>812 – Genussmittelindustrie</label>
+            </value>
+            <value>
+                <fullName>813 – KfZ-Handel</fullName>
+                <default>false</default>
+                <label>813 – KfZ-Handel</label>
+            </value>
+            <value>
+                <fullName>814 – Bank</fullName>
+                <default>false</default>
+                <label>814 – Bank</label>
+            </value>
+            <value>
+                <fullName>815 – Versicherung</fullName>
+                <default>false</default>
+                <label>815 – Versicherung</label>
+            </value>
+            <value>
+                <fullName>816 – Verlag</fullName>
+                <default>false</default>
+                <label>816 – Verlag</label>
+            </value>
+            <value>
+                <fullName>911 – Privatkunde</fullName>
+                <default>false</default>
+                <label>911 – Privatkunde</label>
+            </value>
+            <value>
+                <fullName>969 - Bacardi Intern</fullName>
+                <default>false</default>
+                <label>969 - Bacardi Intern</label>
+            </value>
+            <value>
+                <fullName>989 – Bacardi Intercompany</fullName>
+                <default>false</default>
+                <label>989 – Bacardi Intercompany</label>
+            </value>
+            <value>
+                <fullName>999 - Sonstige</fullName>
+                <default>false</default>
+                <label>999 - Sonstige</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mexico_Off_Corparativo</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Group__c</columns>
+    <columns>GD_Group__c</columns>
+    <columns>Group_US__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.MX_Parents_Off_Modern_Traditional</value>
+    </filters>
+    <label>Mexico - Off Corparativo</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>GlobalAdministrator</role>
+        <roleAndSubordinates>Mexico_National_Level</roleAndSubordinates>
+    </sharedTo>
+</ListView>

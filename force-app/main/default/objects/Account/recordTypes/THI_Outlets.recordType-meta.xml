@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>THI_Outlets</fullName>
+    <active>true</active>
+    <description>Thailand Outlets</description>
+    <label>THI - Outlets</label>
+    <picklistValues>
+        <picklist>Approval_Status__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Submitted</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Area__c</picklist>
+        <values>
+            <fullName>BKK Central</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BKK North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BKK South</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chiang Mai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chonburi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lampang</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phuket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pisanulok</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prachubkirikhan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rayong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Suratthani</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trat</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>BF_Potential__c</picklist>
+        <values>
+            <fullName>A%09Over 80 k%E2%82%AC %2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B%0940-80 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C%0920-40 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%0912-20 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E%098-12 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>F%095-8 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G%09%3C5 k%E2%82%AC</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Banner__c</picklist>
+        <values>
+            <fullName>Super</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Brazil_Tax_Calc__c</picklist>
+        <values>
+            <fullName>0 - Not Taxable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Normal Taxes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Zona Franca - ICMS</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CIF_Depletion_Indicator__c</picklist>
+        <values>
+            <fullName>BDN Reported Depls - B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Historical Data - H</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual Entry Depls - M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA for Depletions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On%2FBefore Ship Date - 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipper %28Depls%3DShip%29 - S</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Categories_Sold__c</picklist>
+        <values>
+            <fullName>American Whiskey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cognac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gift Packs</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gin</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imported Liquors</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Imported Vodka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irish Whisky</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low-Proof</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mainstream Vodka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Malt%26Scotch 12YO%2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Vodka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Scotch Standard</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Super Premium Vodka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tequila</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Chain__c</picklist>
+        <values>
+            <fullName>Chain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Channel__c</picklist>
+        <values>
+            <fullName>OFF PREMISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ON PREMISE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>City__c</picklist>
+        <values>
+            <fullName>BKK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC North</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC North East</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UPC South</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_Division__c</picklist>
+        <values>
+            <fullName>AUCHAN AFFILIES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUCHAN DRIVE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AUCHAN HYPERMARCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARREFOUR HYPERMARCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARREFOUR PARTENAIRES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARREFOUR PROXIMITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASINO PARIS OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASINO PROXIMITE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CASINO SUPERMARCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CORA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CSF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANCAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANPRIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GEANT HYPERMARCHES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LECASUD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MATCH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MIGROS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MONOPRIX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCACENTRE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCACHAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCADIF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCALANDES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCANORMANDE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAOUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAPALSACE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAPARTOIS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAPEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCAPNOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCASO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIMPLY MARKET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOCAMAINE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOCAMIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOCARA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPAR FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYSTEME U EST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYSTEME U NORD OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYSTEME U OUEST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYSTEME U SUD</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_FRN__c</picklist>
+        <values>
+            <fullName>AUCHAN FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CARREFOUR France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DISTRIBOISSONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EMC Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>France BOISSONS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GALEC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INDEPENDENT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ITM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>METRO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROVERA FRANCE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SYSTEME U</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_Region__c</picklist>
+        <values>
+            <fullName>CSF LAGNIEU</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group_Type__c</picklist>
+        <values>
+            <fullName>10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>20</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>8</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A%2FB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>G</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>P</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S0</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>S4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>T7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Y</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Delivery_Type__c</picklist>
+        <values>
+            <fullName>Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Indirect</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expense__c</picklist>
+        <values>
+            <fullName>%24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24%24</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%24%24%24</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FN__Mapping_Status__c</picklist>
+        <values>
+            <fullName>Bad Google Key</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google Exhausted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Located</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Located Yet</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Problem with Address</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FN__Which_Address__c</picklist>
+        <values>
+            <fullName>Billing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Do Not Map</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Goods_Services_Tax__c</picklist>
+        <values>
+            <fullName>0 - Non Taxable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Taxable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Non Taxable %28Export%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Group__c</picklist>
+        <values>
+            <fullName>Bar %2F Pub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beer Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Convenience Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Department Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disco %2F Hip Hop</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel %2F Resort</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyper Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karaoke</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquor Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Night Club %2F Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant %2F Cafe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesalers</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>IEPS_Alc_Tax_MX__c</picklist>
+        <values>
+            <fullName>0 - Not Relevant</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Key_Product_Ranging__c</picklist>
+        <values>
+            <fullName>Agency Brands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BenRiach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chambord</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Collingwood Canadian</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EJ RTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Jimador</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>El Jimador RTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finlandia Vodka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GJ %26 Cola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gentleman Jack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GlenDronach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Glenglassaugh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heradura Ultra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Herradura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Herradura Seleccion Suprema</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD %26 Cola</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD 1907</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD 1907 RTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD American Serve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Craft Rye</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD RTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Sinatra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Single Barrel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Tennessee Fire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Tennessee Rye</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JD Winter Jack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jack Daniel%27s</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jack Daniel%27s Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jack Daniel%27s Honey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jagermeister</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Forester</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Forester 100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old Forester Single Barrel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodford Reserve</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodford Reserve Double Oak</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Woodford Reserve Rye</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Key_States__c</picklist>
+        <values>
+            <fullName>AL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ID</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ME</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NJ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TX</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WY</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LMAA_Channel__c</picklist>
+        <values>
+            <fullName>Combera</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EVENTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INTEGRATED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LKA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NON RETAIL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Sellable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OFF PREMISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ON PREMISE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off DH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Modern</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Off Traditional</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub_Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UNCLASSIFIED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesaler</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Influence_Order__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Influence_POSM__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Influence_Price__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Influence_Range__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Level_of_Influence_Shelf__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Managed_by__c</picklist>
+        <values>
+            <fullName>B-F</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outsourced</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ownership</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Private</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsidiary</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PL_Undeclared_VAT__c</picklist>
+        <values>
+            <fullName>0 - Not Relevant</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Excise Whse %28Taxable%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Premiumness__c</picklist>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>THA</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Area_EXT__c</picklist>
+        <values>
+            <fullName>100</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>200</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Force__c</picklist>
+        <values>
+            <fullName>BF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Org_Picklst__c</picklist>
+        <values>
+            <fullName>1000 - BF Corporation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3500 - BF Mexico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3610 - BF BenRiach</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4043 - BF Taiwan</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4060 - BF Hong Kong</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4140 - BF Shanghai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4145 - BF China</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4157 - BF Korea</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4170 - BF Thailand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4190 - BF Ukraine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4260 - BF Australia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4645 - BF Brazil</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4810 - BF Czech</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4830 - BF Netherlands</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4840 - BF Russia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4860 - BF Slane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4965 - BF Turkey</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5510 - BF France</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5540 - BF Beverage Europe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5554 - BF Nordic DF</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5560 - BF Germany</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5590 - BF Poland</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5960 - BF FVW%2E LTD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6080 - BF Spain</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sales_Route__c</picklist>
+        <values>
+            <fullName>COMBOURG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MAYENNE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RENNES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Seasonality__c</picklist>
+        <values>
+            <fullName>All Seasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Winter</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Segmentation__c</picklist>
+        <values>
+            <fullName>Q</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Q4</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Active</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Inactive</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Store_Sub_Type__c</picklist>
+        <values>
+            <fullName>Mexican</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Store_Type__c</picklist>
+        <values>
+            <fullName>HYPER %3E 5000 m%C2%B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HYPER From 2500 to 5000 m%C2%B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRESTIGE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPERMARCHE %3E 1200 m%C2%B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SUPERMARCHE from 800 to 1200 m%C2%B2</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Subgroup__c</picklist>
+        <values>
+            <fullName>American Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Authentic Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bar%2FPub</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Beer Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CVS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cafe%2FDeli</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Darts Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Depart</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dinning Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Disco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Duty Free</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ethnic Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family KTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Family Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Res</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Girls Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HeadOffice</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hostess Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hotel Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hyper Market</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Irish Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Italian Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Izakaya Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Japanese Club %2F KTV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Liquor Store</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Live Band Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lounge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Massage Salon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Off</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pool Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Restaurant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Salon Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shot Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Snack%2FLounge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sousaku Dining</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sports Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sub Wholesaler</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Supermarket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tachinomiya%2FBarr</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Theme Res%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Western Bar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wholesalers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yakiniku Res%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Tax_Trigger__c</picklist>
+        <values>
+            <fullName>0 - Tax Exempt</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - Liable for Taxes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Total_Spirits_Revenue_Annual__c</picklist>
+        <values>
+            <fullName>Range 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range 5</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Range 6</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Analyst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Integrator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Investor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Press</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospect</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reseller</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>VAT_Tax_MX__c</picklist>
+        <values>
+            <fullName>0 - Not Relevant</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Full VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Reduced VAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Export</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Val_Ad_Tax_Return_TR__c</picklist>
+        <values>
+            <fullName>0 - Not Relevant</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Excise Whse %28Taxable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Customs Bond %28Exempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Export %28Exempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Not Rel FET%2FRel VAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Value_Added_Tax_TR__c</picklist>
+        <values>
+            <fullName>0 - Not Relevant</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Excise Whse %28Taxable%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Customs Bond %28Exempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Export %28Exempt%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Not Rel FET%2FRel VAT</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Warehouse_pick__c</picklist>
+        <values>
+            <fullName>Need Pick List Values</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Wine_Equl_Tax__c</picklist>
+        <values>
+            <fullName>0 - Non Taxable</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>1 - Taxable</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

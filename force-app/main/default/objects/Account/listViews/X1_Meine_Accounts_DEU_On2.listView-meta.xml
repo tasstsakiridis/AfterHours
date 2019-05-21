@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_Meine_Accounts_DEU_On2</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>Status__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>Account_Characteristics__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>On,On Trade</value>
+    </filters>
+    <label>1 - Meine Accounts (DEU-On)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>DEUONTradeLeasedMgrNorth</role>
+        <role>DEUONTradeLeasedMgrRessourcenreich</role>
+        <role>DEUONTradeLeasedMgrSouth</role>
+        <role>DEUONTradeLeasedRepNorth</role>
+        <role>DEUONTradeLeasedRepRessourcenreich</role>
+        <role>DEUONTradeLeasedRepSouth</role>
+        <role>DEUOnTradeMangers</role>
+        <role>DEUOnTradeMgr</role>
+        <role>DEUOnTradeSlsMgrNorth</role>
+        <role>DEUOnTradeSlsMgrSouth</role>
+        <role>DEUOnTradeSlsRepNorth</role>
+        <role>DEUOnTradeSlsRepSouth</role>
+    </sharedTo>
+</ListView>

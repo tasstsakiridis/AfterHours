@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Used by CRM.
+NPA Rollout: Used to store the Market reference.</description>
+    <externalId>false</externalId>
+    <label>Market</label>
+    <referenceTo>Market__c</referenceTo>
+    <relationshipLabel>Accounts</relationshipLabel>
+    <relationshipName>Accounts</relationshipName>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Lookup</type>
+</CustomField>

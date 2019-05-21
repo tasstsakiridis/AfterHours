@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_Mandatory_Shipping_Address</fullName>
+    <active>true</active>
+    <description>Makes the Shipping Address fields mandatory</description>
+    <errorConditionFormula>AND(  OR( if( RecordTypeId   = &quot;012a0000001ZJ8E&quot;, true, false), if( RecordTypeId  =&quot;012a0000001ZJ8F&quot;, true, false)) ,OR( ShippingStreet = NULL, ShippingCity = NULL,  ShippingPostalCode = NULL)
+)</errorConditionFormula>
+    <errorMessage>Shipping Street, City and Post Code are required.</errorMessage>
+</ValidationRule>

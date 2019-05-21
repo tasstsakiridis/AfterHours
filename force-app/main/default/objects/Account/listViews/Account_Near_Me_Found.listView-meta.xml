@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Near_Me_Found</fullName>
+    <columns>FN__Mapping_Status__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>FN__Lat__c</columns>
+    <columns>FN__Lon__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>FN__Mapping_Status__c</field>
+        <operation>equals</operation>
+        <value>Located</value>
+    </filters>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>equals</operation>
+        <value>Hamburg</value>
+    </filters>
+    <label>Account Near Me (Found)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>GlobalAdministrator</role>
+    </sharedTo>
+</ListView>

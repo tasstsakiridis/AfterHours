@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equipage_proj__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Equip - projector/large screens with DVD</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

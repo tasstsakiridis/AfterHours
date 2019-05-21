@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Nielsen_Alcohol_Share__c</fullName>
+    <externalId>false</externalId>
+    <label>Nielsen Alcohol Share</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Nielsen_Space__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt;50</fullName>
+                <default>false</default>
+                <label>&lt;50%</label>
+            </value>
+            <value>
+                <fullName>&gt;50</fullName>
+                <default>false</default>
+                <label>&gt;50%</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>0-40</controllingFieldValue>
+            <controllingFieldValue>40-100</controllingFieldValue>
+            <controllingFieldValue>100-200</controllingFieldValue>
+            <controllingFieldValue>200-300</controllingFieldValue>
+            <valueName>&lt;50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>0-40</controllingFieldValue>
+            <controllingFieldValue>40-100</controllingFieldValue>
+            <controllingFieldValue>100-200</controllingFieldValue>
+            <controllingFieldValue>200-300</controllingFieldValue>
+            <valueName>&gt;50</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1_Alle_meine_aktiven_Accounts_DEU_On</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Status__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>Yearly_Consultation__c</columns>
+    <columns>Yearly_Consultation2__c</columns>
+    <columns>Growth_Bonus_Agreement__c</columns>
+    <columns>Drink_Menu_Agreement__c</columns>
+    <columns>JD_Yearly_Agreement__c</columns>
+    <columns>SoCo__c</columns>
+    <columns>Chambord_Category__c</columns>
+    <columns>el_Jimador_Category__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>On,On Trade</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EUR_Outlets</value>
+    </filters>
+    <label>2 - Meine aktiven Accounts (DEU-On)</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>DEUONTradeLeasedMgrNorth</roleAndSubordinates>
+        <roleAndSubordinates>DEUONTradeLeasedMgrRessourcenreich</roleAndSubordinates>
+        <roleAndSubordinates>DEUONTradeLeasedMgrSouth</roleAndSubordinates>
+        <roleAndSubordinates>DEUONTradeLeasedRepNorth</roleAndSubordinates>
+        <roleAndSubordinates>DEUONTradeLeasedRepRessourcenreich</roleAndSubordinates>
+        <roleAndSubordinates>DEUONTradeLeasedRepSouth</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeMangers</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeMgr</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeSlsMgrNorth</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeSlsMgrSouth</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeSlsRepNorth</roleAndSubordinates>
+        <roleAndSubordinates>DEUOnTradeSlsRepSouth</roleAndSubordinates>
+    </sharedTo>
+</ListView>

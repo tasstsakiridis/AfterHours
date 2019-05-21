@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Wingman</fullName>
+    <availability>online</availability>
+    <description>Wingman</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Wingman</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://wingman.poweredbyinsight.com/business-review/{!IF( ISPICKVAL (Account.Region__c, &quot;CAD-Ontario&quot;),&#39;on&#39;,IF( ISPICKVAL (Account.Region__c, &quot;CAD-Quebec&quot;),&#39;qc&#39;,IF( ISPICKVAL (Account.Region__c, &quot;CAD-Manitoba&quot;),&#39;mb&#39;,IF( ISPICKVAL (Account.Region__c, &quot;CAD-Saskatchewan&quot;),&#39;sk&#39;,IF( ISPICKVAL (Account.Region__c, &quot;CAD-Alberta&quot;),&#39;ab&#39;,IF( ISPICKVAL (Account.Region__c, &quot;CAD-British Columbia&quot;),&#39;bc&#39;,&#39;&#39;))))))}{!IF( ISPICKVAL (Account.Region__c, &quot;CAD-Alberta&quot;), &#39;Store&#39;, IF( ISPICKVAL(Account.Channel__c, &quot;Off&quot;),IF( ISPICKVAL(Account.Activity_Segment__c,&quot;LRS&quot;),&#39;Licensee&#39;,&#39;Store&#39;),&#39;Licensee&#39;))}{!Account.AccountNumber}</url>
+</WebLink>

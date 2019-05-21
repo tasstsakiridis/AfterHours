@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIF_Shipping_Conditions__c</fullName>
+    <externalId>false</externalId>
+    <label>Shipping Conditions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>10 - Freight Prepaid</fullName>
+                <default>false</default>
+                <label>10 - Freight Prepaid</label>
+            </value>
+            <value>
+                <fullName>11 - Freight Collect</fullName>
+                <default>false</default>
+                <label>11 - Freight Collect</label>
+            </value>
+            <value>
+                <fullName>12 - Prepaid No Autofrt</fullName>
+                <default>false</default>
+                <label>12 - Prepaid No Autofrt</label>
+            </value>
+            <value>
+                <fullName>90 - No Transportation</fullName>
+                <default>false</default>
+                <label>90 - No Transportation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

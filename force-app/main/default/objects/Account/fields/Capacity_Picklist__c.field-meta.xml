@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Capacity_Picklist__c</fullName>
+    <externalId>false</externalId>
+    <label>Capacity</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>&lt; 50</fullName>
+                <default>false</default>
+                <label>&lt; 50</label>
+            </value>
+            <value>
+                <fullName>50-99</fullName>
+                <default>false</default>
+                <label>50-99</label>
+            </value>
+            <value>
+                <fullName>100-199</fullName>
+                <default>false</default>
+                <label>100-199</label>
+            </value>
+            <value>
+                <fullName>200-499</fullName>
+                <default>false</default>
+                <label>200-499</label>
+            </value>
+            <value>
+                <fullName>500 and more</fullName>
+                <default>false</default>
+                <label>500 and more</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

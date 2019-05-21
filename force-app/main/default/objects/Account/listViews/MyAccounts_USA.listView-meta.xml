@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyAccounts_USA</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Primary_Contact__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>Actionable_Segment__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Accounts - USA</label>
+    <sharedTo>
+        <role>GlobalAdministrator</role>
+        <roleAndSubordinatesInternal>US_National_Level</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

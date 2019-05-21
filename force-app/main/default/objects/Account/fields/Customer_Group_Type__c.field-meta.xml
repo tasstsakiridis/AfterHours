@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Group Type</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Banner__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>10</fullName>
+                <default>false</default>
+                <label>10</label>
+            </value>
+            <value>
+                <fullName>1000</fullName>
+                <default>false</default>
+                <label>1000</label>
+            </value>
+            <value>
+                <fullName>10PZ</fullName>
+                <default>false</default>
+                <label>10PZ</label>
+            </value>
+            <value>
+                <fullName>11</fullName>
+                <default>false</default>
+                <label>11</label>
+            </value>
+            <value>
+                <fullName>20</fullName>
+                <default>false</default>
+                <label>20</label>
+            </value>
+            <value>
+                <fullName>20PZ</fullName>
+                <default>false</default>
+                <label>20PZ</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>30</fullName>
+                <default>false</default>
+                <label>30</label>
+            </value>
+            <value>
+                <fullName>30PZ</fullName>
+                <default>false</default>
+                <label>30PZ</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>40</fullName>
+                <default>false</default>
+                <label>40</label>
+            </value>
+            <value>
+                <fullName>400</fullName>
+                <default>false</default>
+                <label>400</label>
+            </value>
+            <value>
+                <fullName>40PZ</fullName>
+                <default>false</default>
+                <label>40PZ</label>
+            </value>
+            <value>
+                <fullName>42</fullName>
+                <default>false</default>
+                <label>42</label>
+            </value>
+            <value>
+                <fullName>45</fullName>
+                <default>false</default>
+                <label>45</label>
+            </value>
+            <value>
+                <fullName>46</fullName>
+                <default>false</default>
+                <label>46</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>50</fullName>
+                <default>false</default>
+                <label>50</label>
+            </value>
+            <value>
+                <fullName>50PZ</fullName>
+                <default>false</default>
+                <label>50PZ</label>
+            </value>
+            <value>
+                <fullName>51</fullName>
+                <default>false</default>
+                <label>51</label>
+            </value>
+            <value>
+                <fullName>55</fullName>
+                <default>false</default>
+                <label>55</label>
+            </value>
+            <value>
+                <fullName>56</fullName>
+                <default>false</default>
+                <label>56</label>
+            </value>
+            <value>
+                <fullName>5PZ</fullName>
+                <default>false</default>
+                <label>5PZ</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6</label>
+            </value>
+            <value>
+                <fullName>60</fullName>
+                <default>false</default>
+                <label>60</label>
+            </value>
+            <value>
+                <fullName>600</fullName>
+                <default>false</default>
+                <label>600</label>
+            </value>
+            <value>
+                <fullName>7</fullName>
+                <default>false</default>
+                <label>7</label>
+            </value>
+            <value>
+                <fullName>70</fullName>
+                <default>false</default>
+                <label>70</label>
+            </value>
+            <value>
+                <fullName>700</fullName>
+                <default>false</default>
+                <label>700</label>
+            </value>
+            <value>
+                <fullName>8</fullName>
+                <default>false</default>
+                <label>8</label>
+            </value>
+            <value>
+                <fullName>80</fullName>
+                <default>false</default>
+                <label>80</label>
+            </value>
+            <value>
+                <fullName>800</fullName>
+                <default>false</default>
+                <label>800</label>
+            </value>
+            <value>
+                <fullName>9</fullName>
+                <default>false</default>
+                <label>9</label>
+            </value>
+            <value>
+                <fullName>90</fullName>
+                <default>false</default>
+                <label>90</label>
+            </value>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>A/B</fullName>
+                <default>false</default>
+                <label>A/B</label>
+            </value>
+            <value>
+                <fullName>A0</fullName>
+                <default>false</default>
+                <label>A0</label>
+            </value>
+            <value>
+                <fullName>A1</fullName>
+                <default>false</default>
+                <label>A1</label>
+            </value>
+            <value>
+                <fullName>A2</fullName>
+                <default>false</default>
+                <label>A2</label>
+            </value>
+            <value>
+                <fullName>A3</fullName>
+                <default>false</default>
+                <label>A3</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>C1000</fullName>
+                <default>false</default>
+                <label>C1000</label>
+            </value>
+            <value>
+                <fullName>C650</fullName>
+                <default>false</default>
+                <label>C650</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR CITY</fullName>
+                <default>false</default>
+                <label>CARREFOUR CITY</label>
+            </value>
+            <value>
+                <fullName>COMPTOIR DES VIGNES</fullName>
+                <default>false</default>
+                <label>COMPTOIR DES VIGNES</label>
+            </value>
+            <value>
+                <fullName>DN</fullName>
+                <default>false</default>
+                <label>DN</label>
+            </value>
+            <value>
+                <fullName>E1000</fullName>
+                <default>false</default>
+                <label>E1000</label>
+            </value>
+            <value>
+                <fullName>E 400</fullName>
+                <default>false</default>
+                <label>E 400</label>
+            </value>
+            <value>
+                <fullName>E700</fullName>
+                <default>false</default>
+                <label>E700</label>
+            </value>
+            <value>
+                <fullName>ECO1</fullName>
+                <default>false</default>
+                <label>ECO1</label>
+            </value>
+            <value>
+                <fullName>ECO2</fullName>
+                <default>false</default>
+                <label>ECO2</label>
+            </value>
+            <value>
+                <fullName>ECO3</fullName>
+                <default>false</default>
+                <label>ECO3</label>
+            </value>
+            <value>
+                <fullName>Franprix</fullName>
+                <default>false</default>
+                <label>Franprix</label>
+            </value>
+            <value>
+                <fullName>G</fullName>
+                <default>false</default>
+                <label>G</label>
+            </value>
+            <value>
+                <fullName>H</fullName>
+                <default>false</default>
+                <label>H</label>
+            </value>
+            <value>
+                <fullName>H1</fullName>
+                <default>false</default>
+                <label>H1</label>
+            </value>
+            <value>
+                <fullName>H10</fullName>
+                <default>false</default>
+                <label>H10</label>
+            </value>
+            <value>
+                <fullName>H11</fullName>
+                <default>false</default>
+                <label>H11</label>
+            </value>
+            <value>
+                <fullName>H12</fullName>
+                <default>false</default>
+                <label>H12</label>
+            </value>
+            <value>
+                <fullName>H13</fullName>
+                <default>false</default>
+                <label>H13</label>
+            </value>
+            <value>
+                <fullName>H14</fullName>
+                <default>false</default>
+                <label>H14</label>
+            </value>
+            <value>
+                <fullName>H15</fullName>
+                <default>false</default>
+                <label>H15</label>
+            </value>
+            <value>
+                <fullName>H16</fullName>
+                <default>false</default>
+                <label>H16</label>
+            </value>
+            <value>
+                <fullName>H17</fullName>
+                <default>false</default>
+                <label>H17</label>
+            </value>
+            <value>
+                <fullName>H18</fullName>
+                <default>false</default>
+                <label>H18</label>
+            </value>
+            <value>
+                <fullName>H2</fullName>
+                <default>false</default>
+                <label>H2</label>
+            </value>
+            <value>
+                <fullName>H3</fullName>
+                <default>false</default>
+                <label>H3</label>
+            </value>
+            <value>
+                <fullName>H3500</fullName>
+                <default>false</default>
+                <label>H3500</label>
+            </value>
+            <value>
+                <fullName>H4</fullName>
+                <default>false</default>
+                <label>H4</label>
+            </value>
+            <value>
+                <fullName>H4200</fullName>
+                <default>false</default>
+                <label>H4200</label>
+            </value>
+            <value>
+                <fullName>H5</fullName>
+                <default>false</default>
+                <label>H5</label>
+            </value>
+            <value>
+                <fullName>H6</fullName>
+                <default>false</default>
+                <label>H6</label>
+            </value>
+            <value>
+                <fullName>H7</fullName>
+                <default>false</default>
+                <label>H7</label>
+            </value>
+            <value>
+                <fullName>H8</fullName>
+                <default>false</default>
+                <label>H8</label>
+            </value>
+            <value>
+                <fullName>H9</fullName>
+                <default>false</default>
+                <label>H9</label>
+            </value>
+            <value>
+                <fullName>HU1</fullName>
+                <default>false</default>
+                <label>HU1</label>
+            </value>
+            <value>
+                <fullName>HU2</fullName>
+                <default>false</default>
+                <label>HU2</label>
+            </value>
+            <value>
+                <fullName>HY 3500</fullName>
+                <default>false</default>
+                <label>HY 3500</label>
+            </value>
+            <value>
+                <fullName>HY 4200</fullName>
+                <default>false</default>
+                <label>HY 4200</label>
+            </value>
+            <value>
+                <fullName>LECASUD</fullName>
+                <default>false</default>
+                <label>LECASUD</label>
+            </value>
+            <value>
+                <fullName>M</fullName>
+                <default>false</default>
+                <label>M</label>
+            </value>
+            <value>
+                <fullName>P</fullName>
+                <default>false</default>
+                <label>P</label>
+            </value>
+            <value>
+                <fullName>P10</fullName>
+                <default>false</default>
+                <label>P10</label>
+            </value>
+            <value>
+                <fullName>P11</fullName>
+                <default>false</default>
+                <label>P11</label>
+            </value>
+            <value>
+                <fullName>P12</fullName>
+                <default>false</default>
+                <label>P12</label>
+            </value>
+            <value>
+                <fullName>P13</fullName>
+                <default>false</default>
+                <label>P13</label>
+            </value>
+            <value>
+                <fullName>PZ</fullName>
+                <default>false</default>
+                <label>PZ</label>
+            </value>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>S</label>
+            </value>
+            <value>
+                <fullName>S0</fullName>
+                <default>false</default>
+                <label>S0</label>
+            </value>
+            <value>
+                <fullName>S1</fullName>
+                <default>false</default>
+                <label>S1</label>
+            </value>
+            <value>
+                <fullName>S1500</fullName>
+                <default>false</default>
+                <label>S1500</label>
+            </value>
+            <value>
+                <fullName>S2</fullName>
+                <default>false</default>
+                <label>S2</label>
+            </value>
+            <value>
+                <fullName>S2000</fullName>
+                <default>false</default>
+                <label>S2000</label>
+            </value>
+            <value>
+                <fullName>S2500</fullName>
+                <default>false</default>
+                <label>S2500</label>
+            </value>
+            <value>
+                <fullName>S3</fullName>
+                <default>false</default>
+                <label>S3</label>
+            </value>
+            <value>
+                <fullName>S3000</fullName>
+                <default>false</default>
+                <label>S3000</label>
+            </value>
+            <value>
+                <fullName>S4</fullName>
+                <default>false</default>
+                <label>S4</label>
+            </value>
+            <value>
+                <fullName>SASG 1500</fullName>
+                <default>false</default>
+                <label>SASG 1500</label>
+            </value>
+            <value>
+                <fullName>SASG 2000</fullName>
+                <default>false</default>
+                <label>SASG 2000</label>
+            </value>
+            <value>
+                <fullName>SASG 2500</fullName>
+                <default>false</default>
+                <label>SASG 2500</label>
+            </value>
+            <value>
+                <fullName>SASG 3000</fullName>
+                <default>false</default>
+                <label>SASG 3000</label>
+            </value>
+            <value>
+                <fullName>SCA</fullName>
+                <default>false</default>
+                <label>SCA</label>
+            </value>
+            <value>
+                <fullName>SCACENTRE</fullName>
+                <default>false</default>
+                <label>SCACENTRE</label>
+            </value>
+            <value>
+                <fullName>SCACHAP</fullName>
+                <default>false</default>
+                <label>SCACHAP</label>
+            </value>
+            <value>
+                <fullName>SCADIF</fullName>
+                <default>false</default>
+                <label>SCADIF</label>
+            </value>
+            <value>
+                <fullName>SCALANDES</fullName>
+                <default>false</default>
+                <label>SCALANDES</label>
+            </value>
+            <value>
+                <fullName>SCANORMANDE</fullName>
+                <default>false</default>
+                <label>SCANORMANDE</label>
+            </value>
+            <value>
+                <fullName>SCAOUEST</fullName>
+                <default>false</default>
+                <label>SCAOUEST</label>
+            </value>
+            <value>
+                <fullName>SCAPALSACE</fullName>
+                <default>false</default>
+                <label>SCAPALSACE</label>
+            </value>
+            <value>
+                <fullName>SCAPARTOIS</fullName>
+                <default>false</default>
+                <label>SCAPARTOIS</label>
+            </value>
+            <value>
+                <fullName>SCAPEST</fullName>
+                <default>false</default>
+                <label>SCAPEST</label>
+            </value>
+            <value>
+                <fullName>SCAPNOR</fullName>
+                <default>false</default>
+                <label>SCAPNOR</label>
+            </value>
+            <value>
+                <fullName>SCARMOR</fullName>
+                <default>false</default>
+                <label>SCARMOR</label>
+            </value>
+            <value>
+                <fullName>SCASO</fullName>
+                <default>false</default>
+                <label>SCASO</label>
+            </value>
+            <value>
+                <fullName>SCHIEVER</fullName>
+                <default>false</default>
+                <label>SCHIEVER</label>
+            </value>
+            <value>
+                <fullName>SOCAMAINE</fullName>
+                <default>false</default>
+                <label>SOCAMAINE</label>
+            </value>
+            <value>
+                <fullName>SOCAMIL</fullName>
+                <default>false</default>
+                <label>SOCAMIL</label>
+            </value>
+            <value>
+                <fullName>SOCARA</fullName>
+                <default>false</default>
+                <label>SOCARA</label>
+            </value>
+            <value>
+                <fullName>SU1</fullName>
+                <default>false</default>
+                <label>SU1</label>
+            </value>
+            <value>
+                <fullName>SU2</fullName>
+                <default>false</default>
+                <label>SU2</label>
+            </value>
+            <value>
+                <fullName>SU3</fullName>
+                <default>false</default>
+                <label>SU3</label>
+            </value>
+            <value>
+                <fullName>SU4</fullName>
+                <default>false</default>
+                <label>SU4</label>
+            </value>
+            <value>
+                <fullName>SU5</fullName>
+                <default>false</default>
+                <label>SU5</label>
+            </value>
+            <value>
+                <fullName>T1</fullName>
+                <default>false</default>
+                <label>T1</label>
+            </value>
+            <value>
+                <fullName>T2</fullName>
+                <default>false</default>
+                <label>T2</label>
+            </value>
+            <value>
+                <fullName>T3</fullName>
+                <default>false</default>
+                <label>T3</label>
+            </value>
+            <value>
+                <fullName>T4</fullName>
+                <default>false</default>
+                <label>T4</label>
+            </value>
+            <value>
+                <fullName>T5</fullName>
+                <default>false</default>
+                <label>T5</label>
+            </value>
+            <value>
+                <fullName>T6</fullName>
+                <default>false</default>
+                <label>T6</label>
+            </value>
+            <value>
+                <fullName>T7</fullName>
+                <default>false</default>
+                <label>T7</label>
+            </value>
+            <value>
+                <fullName>TRAD</fullName>
+                <default>false</default>
+                <label>TRAD</label>
+            </value>
+            <value>
+                <fullName>Y</fullName>
+                <default>false</default>
+                <label>Y</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>U EXPRESS</controllingFieldValue>
+            <valueName>800</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE HYPER</controllingFieldValue>
+            <valueName>HY 3500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE HYPER</controllingFieldValue>
+            <valueName>HY 4200</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>METRO</controllingFieldValue>
+            <valueName>ECO1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>METRO</controllingFieldValue>
+            <valueName>ECO2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>METRO</controllingFieldValue>
+            <valueName>ECO3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>METRO</controllingFieldValue>
+            <valueName>TRAD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HYPER U</controllingFieldValue>
+            <valueName>HU1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>HYPER U</controllingFieldValue>
+            <valueName>HU2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKET</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>T1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKET</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>T2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKET</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>T3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKET</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <valueName>T4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MARKET</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <controllingFieldValue>8 A HUIT</controllingFieldValue>
+            <valueName>T5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>10PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>20</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>20PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>30</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>30PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>PETIT CASINO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <controllingFieldValue>CASINO</controllingFieldValue>
+            <controllingFieldValue>HYPER CASINO</controllingFieldValue>
+            <valueName>40</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>40PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>PETIT CASINO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <controllingFieldValue>CASINO</controllingFieldValue>
+            <controllingFieldValue>HYPER CASINO</controllingFieldValue>
+            <valueName>50</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>50PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INNO</controllingFieldValue>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>5PZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANPRIX</controllingFieldValue>
+            <valueName>Franprix</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <valueName>DN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>LECASUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <valueName>SCA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCACENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCACHAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCADIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCALANDES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCANORMANDE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCAOUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCAPALSACE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCAPARTOIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCAPEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCARMOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCASO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SOCAMAINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SOCAMIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECLERC  / LECLERC DRIVE</controllingFieldValue>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SOCARA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Marché</controllingFieldValue>
+            <valueName>42</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PETIT CASINO</controllingFieldValue>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <controllingFieldValue>HYPER CASINO</controllingFieldValue>
+            <valueName>45</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PETIT CASINO</controllingFieldValue>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <controllingFieldValue>HYPER CASINO</controllingFieldValue>
+            <valueName>55</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Match France</controllingFieldValue>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>G</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Match France</controllingFieldValue>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>M</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Match France</controllingFieldValue>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>P</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Match France</controllingFieldValue>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>S</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CENTRE LECLERC</controllingFieldValue>
+            <valueName>SCAPNOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H14</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H15</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H16</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H17</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H18</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <valueName>H9</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN</controllingFieldValue>
+            <controllingFieldValue>AUCHAN - SCHIEVER</controllingFieldValue>
+            <valueName>SCHIEVER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>T7</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR MARKET</controllingFieldValue>
+            <controllingFieldValue>PROMOCASH</controllingFieldValue>
+            <valueName>T6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <valueName>46</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <valueName>51</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHE</controllingFieldValue>
+            <valueName>56</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT</controllingFieldValue>
+            <controllingFieldValue>CASINO</controllingFieldValue>
+            <valueName>80</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT</controllingFieldValue>
+            <valueName>90</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>C10 - CAVISTES</controllingFieldValue>
+            <valueName>COMPTOIR DES VIGNES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>S0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>S1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>S2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>S3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SUPER U</controllingFieldValue>
+            <valueName>SU1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SUPER U</controllingFieldValue>
+            <valueName>SU2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SUPER U</controllingFieldValue>
+            <valueName>SU3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SUPER U</controllingFieldValue>
+            <valueName>SU4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SUPER U</controllingFieldValue>
+            <valueName>SU5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR CITY</controllingFieldValue>
+            <valueName>CARREFOUR CITY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRIXBAS</controllingFieldValue>
+            <valueName>A0</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRIXBAS</controllingFieldValue>
+            <valueName>A1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRIXBAS</controllingFieldValue>
+            <valueName>A2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRIXBAS</controllingFieldValue>
+            <valueName>A3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO</controllingFieldValue>
+            <valueName>60</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO</controllingFieldValue>
+            <valueName>70</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN SUPERMARCHE</controllingFieldValue>
+            <valueName>P10</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN SUPERMARCHE</controllingFieldValue>
+            <valueName>P11</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN SUPERMARCHE</controllingFieldValue>
+            <valueName>P12</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN SUPERMARCHE</controllingFieldValue>
+            <valueName>P13</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE CONTACT</controllingFieldValue>
+            <controllingFieldValue>INTERMARCHE EXPRESS</controllingFieldValue>
+            <valueName>1000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE CONTACT</controllingFieldValue>
+            <valueName>600</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE EXPRESS</controllingFieldValue>
+            <valueName>400</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE EXPRESS</controllingFieldValue>
+            <valueName>700</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE SUPER</controllingFieldValue>
+            <valueName>SASG 1500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE SUPER</controllingFieldValue>
+            <valueName>SASG 2000</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE SUPER</controllingFieldValue>
+            <valueName>SASG 2500</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE SUPER</controllingFieldValue>
+            <valueName>SASG 3000</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

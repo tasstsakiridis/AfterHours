@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brazil_Tax_Calc__c</fullName>
+    <externalId>false</externalId>
+    <label>Brazil Tax Calc</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>0 - Not Taxable</fullName>
+                <default>true</default>
+                <label>0 - Not Taxable</label>
+            </value>
+            <value>
+                <fullName>1 - Normal Taxes</fullName>
+                <default>false</default>
+                <label>1 - Normal Taxes</label>
+            </value>
+            <value>
+                <fullName>2 - Zona Franca - ICMS</fullName>
+                <default>false</default>
+                <label>2 - Zona Franca - ICMS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

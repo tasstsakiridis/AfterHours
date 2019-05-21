@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brand_Focus__c</fullName>
+    <description>The Field &quot;Brand Focus&quot; contains information to classify  On Trade outlets for sales and marketing purposes!</description>
+    <externalId>false</externalId>
+    <label>Brand Focus</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CH Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>CH Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>EJ Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>EJ Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>SC Lime Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>SC Lime Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>JD Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>JD Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>SC Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>SC Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>FV Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>FV Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>GJ Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>GJ Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>Absolute</fullName>
+                <default>false</default>
+                <label>Absolute</label>
+            </value>
+            <value>
+                <fullName>Bacardi Breezer</fullName>
+                <default>false</default>
+                <label>Bacardi Breezer</label>
+            </value>
+            <value>
+                <fullName>Baileys</fullName>
+                <default>false</default>
+                <label>Baileys</label>
+            </value>
+            <value>
+                <fullName>Ballantine&#39;s Finest</fullName>
+                <default>false</default>
+                <label>Ballantine&#39;s Finest</label>
+            </value>
+            <value>
+                <fullName>BEL ARBOR</fullName>
+                <default>false</default>
+                <label>BEL ARBOR</label>
+            </value>
+            <value>
+                <fullName>BOLLA</fullName>
+                <default>false</default>
+                <label>BOLLA</label>
+            </value>
+            <value>
+                <fullName>Bombay</fullName>
+                <default>false</default>
+                <label>Bombay</label>
+            </value>
+            <value>
+                <fullName>BONTERRA</fullName>
+                <default>false</default>
+                <label>BONTERRA</label>
+            </value>
+            <value>
+                <fullName>Canadian Mist</fullName>
+                <default>false</default>
+                <label>Canadian Mist</label>
+            </value>
+            <value>
+                <fullName>Chambord</fullName>
+                <default>false</default>
+                <label>Chambord</label>
+            </value>
+            <value>
+                <fullName>Chivas Regal</fullName>
+                <default>false</default>
+                <label>Chivas Regal</label>
+            </value>
+            <value>
+                <fullName>Dewars</fullName>
+                <default>false</default>
+                <label>Dewars</label>
+            </value>
+            <value>
+                <fullName>Early Times</fullName>
+                <default>false</default>
+                <label>Early Times</label>
+            </value>
+            <value>
+                <fullName>Early Times Brown</fullName>
+                <default>false</default>
+                <label>Early Times Brown</label>
+            </value>
+            <value>
+                <fullName>Early Times Yellow</fullName>
+                <default>false</default>
+                <label>Early Times Yellow</label>
+            </value>
+            <value>
+                <fullName>El Jimador</fullName>
+                <default>false</default>
+                <label>El Jimador</label>
+            </value>
+            <value>
+                <fullName>ET KY Bluegrass</fullName>
+                <default>false</default>
+                <label>ET KY Bluegrass</label>
+            </value>
+            <value>
+                <fullName>Finlandia Vodka</fullName>
+                <default>false</default>
+                <label>Finlandia Vodka</label>
+            </value>
+            <value>
+                <fullName>Gentleman Jack</fullName>
+                <default>false</default>
+                <label>Gentleman Jack</label>
+            </value>
+            <value>
+                <fullName>Glenfiddich</fullName>
+                <default>false</default>
+                <label>Glenfiddich</label>
+            </value>
+            <value>
+                <fullName>Herradura</fullName>
+                <default>false</default>
+                <label>Herradura</label>
+            </value>
+            <value>
+                <fullName>Iichiko</fullName>
+                <default>false</default>
+                <label>Iichiko</label>
+            </value>
+            <value>
+                <fullName>IW Harper</fullName>
+                <default>false</default>
+                <label>IW Harper</label>
+            </value>
+            <value>
+                <fullName>Jack Daniel&#39;s</fullName>
+                <default>false</default>
+                <label>Jack Daniel&#39;s</label>
+            </value>
+            <value>
+                <fullName>JD &amp; Cola Concentrate</fullName>
+                <default>false</default>
+                <label>JD &amp; Cola Concentrate</label>
+            </value>
+            <value>
+                <fullName>JD RTD</fullName>
+                <default>false</default>
+                <label>JD RTD</label>
+            </value>
+            <value>
+                <fullName>JD Single Barrel</fullName>
+                <default>false</default>
+                <label>JD Single Barrel</label>
+            </value>
+            <value>
+                <fullName>Jim Beam</fullName>
+                <default>false</default>
+                <label>Jim Beam</label>
+            </value>
+            <value>
+                <fullName>Jinro</fullName>
+                <default>false</default>
+                <label>Jinro</label>
+            </value>
+            <value>
+                <fullName>Jose Quervo</fullName>
+                <default>false</default>
+                <label>Jose Quervo</label>
+            </value>
+            <value>
+                <fullName>Kahlua</fullName>
+                <default>false</default>
+                <label>Kahlua</label>
+            </value>
+            <value>
+                <fullName>Kakubin</fullName>
+                <default>false</default>
+                <label>Kakubin</label>
+            </value>
+            <value>
+                <fullName>KORBEL PRIV LABEL</fullName>
+                <default>false</default>
+                <label>KORBEL PRIV LABEL</label>
+            </value>
+            <value>
+                <fullName>Kyogetsu</fullName>
+                <default>false</default>
+                <label>Kyogetsu</label>
+            </value>
+            <value>
+                <fullName>Maker&#39;s Mark</fullName>
+                <default>false</default>
+                <label>Maker&#39;s Mark</label>
+            </value>
+            <value>
+                <fullName>Malibu</fullName>
+                <default>false</default>
+                <label>Malibu</label>
+            </value>
+            <value>
+                <fullName>Midori</fullName>
+                <default>false</default>
+                <label>Midori</label>
+            </value>
+            <value>
+                <fullName>O F COMB PRF</fullName>
+                <default>false</default>
+                <label>O F COMB PRF</label>
+            </value>
+            <value>
+                <fullName>Old Forester</fullName>
+                <default>false</default>
+                <label>Old Forester</label>
+            </value>
+            <value>
+                <fullName>Pepe Lopez</fullName>
+                <default>false</default>
+                <label>Pepe Lopez</label>
+            </value>
+            <value>
+                <fullName>REMY</fullName>
+                <default>false</default>
+                <label>REMY</label>
+            </value>
+            <value>
+                <fullName>Roses Black</fullName>
+                <default>false</default>
+                <label>Roses Black</label>
+            </value>
+            <value>
+                <fullName>Roses Yellow</fullName>
+                <default>false</default>
+                <label>Roses Yellow</label>
+            </value>
+            <value>
+                <fullName>Sierra</fullName>
+                <default>false</default>
+                <label>Sierra</label>
+            </value>
+            <value>
+                <fullName>Skyy</fullName>
+                <default>false</default>
+                <label>Skyy</label>
+            </value>
+            <value>
+                <fullName>Skyy Blue</fullName>
+                <default>false</default>
+                <label>Skyy Blue</label>
+            </value>
+            <value>
+                <fullName>Smirnoff</fullName>
+                <default>false</default>
+                <label>Smirnoff</label>
+            </value>
+            <value>
+                <fullName>Smirnoff Ice</fullName>
+                <default>false</default>
+                <label>Smirnoff Ice</label>
+            </value>
+            <value>
+                <fullName>Southern Comfort</fullName>
+                <default>false</default>
+                <label>Southern Comfort</label>
+            </value>
+            <value>
+                <fullName>Stolichnaya</fullName>
+                <default>false</default>
+                <label>Stolichnaya</label>
+            </value>
+            <value>
+                <fullName>Suaza</fullName>
+                <default>false</default>
+                <label>Suaza</label>
+            </value>
+            <value>
+                <fullName>Suntory Royal</fullName>
+                <default>false</default>
+                <label>Suntory Royal</label>
+            </value>
+            <value>
+                <fullName>Tanquery</fullName>
+                <default>false</default>
+                <label>Tanquery</label>
+            </value>
+            <value>
+                <fullName>The Famous Groose</fullName>
+                <default>false</default>
+                <label>The Famous Groose</label>
+            </value>
+            <value>
+                <fullName>Walker Black</fullName>
+                <default>false</default>
+                <label>Walker Black</label>
+            </value>
+            <value>
+                <fullName>Walker Red</fullName>
+                <default>false</default>
+                <label>Walker Red</label>
+            </value>
+            <value>
+                <fullName>Wild Turkey</fullName>
+                <default>false</default>
+                <label>Wild Turkey</label>
+            </value>
+            <value>
+                <fullName>Woodford Reserve</fullName>
+                <default>false</default>
+                <label>Woodford Reserve</label>
+            </value>
+            <value>
+                <fullName>Yamazaki</fullName>
+                <default>false</default>
+                <label>Yamazaki</label>
+            </value>
+            <value>
+                <fullName>Zima</fullName>
+                <default>false</default>
+                <label>Zima</label>
+            </value>
+            <value>
+                <fullName>Chambord Test Outlet [D&#39;dorf]</fullName>
+                <default>false</default>
+                <label>Chambord Test Outlet [D&#39;dorf]</label>
+            </value>
+            <value>
+                <fullName>WR Aktivierungsoutlet</fullName>
+                <default>false</default>
+                <label>WR Aktivierungsoutlet</label>
+            </value>
+            <value>
+                <fullName>Santa Dose</fullName>
+                <default>false</default>
+                <label>Santa Dose</label>
+            </value>
+            <value>
+                <fullName>Jack Daniel&#39;s Honey</fullName>
+                <default>false</default>
+                <label>Jack Daniel&#39;s Honey</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

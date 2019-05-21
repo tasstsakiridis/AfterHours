@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Inventory_MX</fullName>
+    <availability>online</availability>
+    <description>Link to a google script that displays Inventory and Take Away by store</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Account Inventory(MX)</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>{!URLFOR($Site.Prefix + &#39;/apex/GenericPageRedirect?link=https://script.google.com/macros/s/AKfycbxWWjU03VaO854Id9k_jAle1q1uJ4stVN0f0oIqiQOab6S4XW4/exec?storeNum=&#39; + Account.Callbook_Number__c)}</url>
+</WebLink>

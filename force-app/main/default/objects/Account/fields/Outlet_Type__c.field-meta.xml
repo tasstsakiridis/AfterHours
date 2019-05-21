@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outlet_Type__c</fullName>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Outlet Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>restaurant cocktail bar</fullName>
+                <default>false</default>
+                <label>restaurant cocktail bar</label>
+            </value>
+            <value>
+                <fullName>night bar</fullName>
+                <default>false</default>
+                <label>night bar</label>
+            </value>
+            <value>
+                <fullName>club - live music</fullName>
+                <default>false</default>
+                <label>club - live music</label>
+            </value>
+            <value>
+                <fullName>disco club</fullName>
+                <default>false</default>
+                <label>disco club</label>
+            </value>
+            <value>
+                <fullName>casino - night club</fullName>
+                <default>false</default>
+                <label>casino - night club</label>
+            </value>
+            <value>
+                <fullName>relaxation - active fun</fullName>
+                <default>false</default>
+                <label>relaxation - active fun</label>
+            </value>
+            <value>
+                <fullName>hotel bar - lobby</fullName>
+                <default>false</default>
+                <label>hotel bar - lobby</label>
+            </value>
+            <value>
+                <fullName>HQ restaurant</fullName>
+                <default>false</default>
+                <label>HQ restaurant</label>
+            </value>
+            <value>
+                <fullName>theme restaurant</fullName>
+                <default>false</default>
+                <label>theme restaurant</label>
+            </value>
+            <value>
+                <fullName>cafe - day bar</fullName>
+                <default>false</default>
+                <label>cafe - day bar</label>
+            </value>
+            <value>
+                <fullName>wine bar</fullName>
+                <default>false</default>
+                <label>wine bar</label>
+            </value>
+            <value>
+                <fullName>pub restaurant</fullName>
+                <default>false</default>
+                <label>pub restaurant</label>
+            </value>
+            <value>
+                <fullName>beer bar</fullName>
+                <default>false</default>
+                <label>beer bar</label>
+            </value>
+            <value>
+                <fullName>non stop - gambling bar</fullName>
+                <default>false</default>
+                <label>non stop - gambling bar</label>
+            </value>
+            <value>
+                <fullName>fast food - kiosk</fullName>
+                <default>false</default>
+                <label>fast food - kiosk</label>
+            </value>
+            <value>
+                <fullName>VO přímý</fullName>
+                <default>false</default>
+                <label>VO přímý</label>
+            </value>
+            <value>
+                <fullName>VO nepřímý</fullName>
+                <default>false</default>
+                <label>VO nepřímý</label>
+            </value>
+            <value>
+                <fullName>C &amp; C</fullName>
+                <default>false</default>
+                <label>C &amp; C</label>
+            </value>
+            <value>
+                <fullName>Hypermarket</fullName>
+                <default>false</default>
+                <label>Hypermarket</label>
+            </value>
+            <value>
+                <fullName>Supermarket</fullName>
+                <default>false</default>
+                <label>Supermarket</label>
+            </value>
+            <value>
+                <fullName>Ostatní</fullName>
+                <default>false</default>
+                <label>Ostatní</label>
+            </value>
+            <value>
+                <fullName>Disco/Music Club</fullName>
+                <default>false</default>
+                <label>Disco/Music Club</label>
+            </value>
+            <value>
+                <fullName>Bar</fullName>
+                <default>false</default>
+                <label>Bar</label>
+            </value>
+            <value>
+                <fullName>Cocktail Bar</fullName>
+                <default>false</default>
+                <label>Cocktail Bar</label>
+            </value>
+            <value>
+                <fullName>Premium/Expensive Restaurant</fullName>
+                <default>false</default>
+                <label>Premium/Expensive Restaurant</label>
+            </value>
+            <value>
+                <fullName>restaurant</fullName>
+                <default>false</default>
+                <label>restaurant</label>
+            </value>
+            <value>
+                <fullName>Restaurant old</fullName>
+                <default>false</default>
+                <label>Restaurant old</label>
+            </value>
+            <value>
+                <fullName>Pub/Beer Bar</fullName>
+                <default>false</default>
+                <label>Pub/Beer Bar</label>
+            </value>
+            <value>
+                <fullName>Non-Stop Gambling Bar</fullName>
+                <default>false</default>
+                <label>Non-Stop Gambling Bar</label>
+            </value>
+            <value>
+                <fullName>Live Casino/Night Club</fullName>
+                <default>false</default>
+                <label>Live Casino/Night Club</label>
+            </value>
+            <value>
+                <fullName>Bowling/Billiard</fullName>
+                <default>false</default>
+                <label>Bowling/Billiard</label>
+            </value>
+            <value>
+                <fullName>Hotel Bar Lobby</fullName>
+                <default>false</default>
+                <label>Hotel Bar Lobby</label>
+            </value>
+            <value>
+                <fullName>Cafe</fullName>
+                <default>false</default>
+                <label>Cafe</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

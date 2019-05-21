@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chain__c</fullName>
+    <description>INFOWELDERS</description>
+    <externalId>false</externalId>
+    <label>Chain</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>4IN</fullName>
+                <default>false</default>
+                <label>4IN</label>
+            </value>
+            <value>
+                <fullName>82 Ale House</fullName>
+                <default>false</default>
+                <label>82 Ale House</label>
+            </value>
+            <value>
+                <fullName>aloalo kitchen</fullName>
+                <default>false</default>
+                <label>aloalo kitchen</label>
+            </value>
+            <value>
+                <fullName>ALSUPER</fullName>
+                <default>false</default>
+                <label>ALSUPER</label>
+            </value>
+            <value>
+                <fullName>Anderson&#39;s</fullName>
+                <default>false</default>
+                <label>Anderson&#39;s</label>
+            </value>
+            <value>
+                <fullName>Applebee&#39;s</fullName>
+                <default>false</default>
+                <label>Applebee&#39;s</label>
+            </value>
+            <value>
+                <fullName>Aristocrat</fullName>
+                <default>false</default>
+                <label>Aristocrat</label>
+            </value>
+            <value>
+                <fullName>BAGUS</fullName>
+                <default>false</default>
+                <label>BAGUS</label>
+            </value>
+            <value>
+                <fullName>Baton Rouge</fullName>
+                <default>false</default>
+                <label>Baton Rouge</label>
+            </value>
+            <value>
+                <fullName>Bee</fullName>
+                <default>false</default>
+                <label>Bee</label>
+            </value>
+            <value>
+                <fullName>BIP</fullName>
+                <default>false</default>
+                <label>BIP</label>
+            </value>
+            <value>
+                <fullName>Boston Pizza</fullName>
+                <default>false</default>
+                <label>Boston Pizza</label>
+            </value>
+            <value>
+                <fullName>Brewsters</fullName>
+                <default>false</default>
+                <label>Brewsters</label>
+            </value>
+            <value>
+                <fullName>Buffalo Wild Wing</fullName>
+                <default>false</default>
+                <label>Buffalo Wild Wing</label>
+            </value>
+            <value>
+                <fullName>Cactus Club</fullName>
+                <default>false</default>
+                <label>Cactus Club</label>
+            </value>
+            <value>
+                <fullName>Canadian Brewhouse</fullName>
+                <default>false</default>
+                <label>Canadian Brewhouse</label>
+            </value>
+            <value>
+                <fullName>Canyon Creek</fullName>
+                <default>false</default>
+                <label>Canyon Creek</label>
+            </value>
+            <value>
+                <fullName>CASA LEY, S.A. DE C.V.</fullName>
+                <default>false</default>
+                <label>CASA LEY, S.A. DE C.V.</label>
+            </value>
+            <value>
+                <fullName>Casey’s Bar and Grill</fullName>
+                <default>false</default>
+                <label>Casey’s Bar and Grill</label>
+            </value>
+            <value>
+                <fullName>C-CUBE</fullName>
+                <default>false</default>
+                <label>C-CUBE</label>
+            </value>
+            <value>
+                <fullName>CENTRAL DETALLISTA SA DE CV</fullName>
+                <default>false</default>
+                <label>CENTRAL DETALLISTA SA DE CV</label>
+            </value>
+            <value>
+                <fullName>Chain</fullName>
+                <default>false</default>
+                <label>Chain</label>
+            </value>
+            <value>
+                <fullName>Chili&#39;S</fullName>
+                <default>false</default>
+                <label>Chili&#39;S</label>
+            </value>
+            <value>
+                <fullName>CITY CLUB</fullName>
+                <default>false</default>
+                <label>CITY CLUB</label>
+            </value>
+            <value>
+                <fullName>COMERCIAL CITY FRESKO S de RL de CV</fullName>
+                <default>false</default>
+                <label>COMERCIAL CITY FRESKO S de RL de CV</label>
+            </value>
+            <value>
+                <fullName>Companhia Brasileira de Distribuicao</fullName>
+                <default>false</default>
+                <label>Companhia Brasileira de Distribuicao</label>
+            </value>
+            <value>
+                <fullName>Concorde Group</fullName>
+                <default>false</default>
+                <label>Concorde Group</label>
+            </value>
+            <value>
+                <fullName>Co-Op</fullName>
+                <default>false</default>
+                <label>Co-Op</label>
+            </value>
+            <value>
+                <fullName>Costco</fullName>
+                <default>false</default>
+                <label>Costco</label>
+            </value>
+            <value>
+                <fullName>Crowfoot</fullName>
+                <default>false</default>
+                <label>Crowfoot</label>
+            </value>
+            <value>
+                <fullName>Delta</fullName>
+                <default>false</default>
+                <label>Delta</label>
+            </value>
+            <value>
+                <fullName>DISTRIBUIDORA LIVERPOOL, S.A. DE</fullName>
+                <default>false</default>
+                <label>DISTRIBUIDORA LIVERPOOL, S.A. DE</label>
+            </value>
+            <value>
+                <fullName>DOS</fullName>
+                <default>false</default>
+                <label>DOS</label>
+            </value>
+            <value>
+                <fullName>Dream Works</fullName>
+                <default>false</default>
+                <label>Dream Works</label>
+            </value>
+            <value>
+                <fullName>Earl&#39;s</fullName>
+                <default>false</default>
+                <label>Earl&#39;s</label>
+            </value>
+            <value>
+                <fullName>EAT MAN</fullName>
+                <default>false</default>
+                <label>EAT MAN</label>
+            </value>
+            <value>
+                <fullName>EL PALACIO DE HIERRO, S.A. DE C.V.</fullName>
+                <default>false</default>
+                <label>EL PALACIO DE HIERRO, S.A. DE C.V.</label>
+            </value>
+            <value>
+                <fullName>Fairmont</fullName>
+                <default>false</default>
+                <label>Fairmont</label>
+            </value>
+            <value>
+                <fullName>Firkin Pubs</fullName>
+                <default>false</default>
+                <label>Firkin Pubs</label>
+            </value>
+            <value>
+                <fullName>FLATNINE</fullName>
+                <default>false</default>
+                <label>FLATNINE</label>
+            </value>
+            <value>
+                <fullName>FLC</fullName>
+                <default>false</default>
+                <label>FLC</label>
+            </value>
+            <value>
+                <fullName>Four Seasons</fullName>
+                <default>false</default>
+                <label>Four Seasons</label>
+            </value>
+            <value>
+                <fullName>GB&#39;s CAFÉ</fullName>
+                <default>false</default>
+                <label>GB&#39;s CAFÉ</label>
+            </value>
+            <value>
+                <fullName>GlassGroup</fullName>
+                <default>false</default>
+                <label>GlassGroup</label>
+            </value>
+            <value>
+                <fullName>Global Dining</fullName>
+                <default>false</default>
+                <label>Global Dining</label>
+            </value>
+            <value>
+                <fullName>Goldfinger East</fullName>
+                <default>false</default>
+                <label>Goldfinger East</label>
+            </value>
+            <value>
+                <fullName>Hilton</fullName>
+                <default>false</default>
+                <label>Hilton</label>
+            </value>
+            <value>
+                <fullName>HUB</fullName>
+                <default>false</default>
+                <label>HUB</label>
+            </value>
+            <value>
+                <fullName>Hudsons</fullName>
+                <default>false</default>
+                <label>Hudsons</label>
+            </value>
+            <value>
+                <fullName>HY</fullName>
+                <default>false</default>
+                <label>HY</label>
+            </value>
+            <value>
+                <fullName>Hyatt</fullName>
+                <default>false</default>
+                <label>Hyatt</label>
+            </value>
+            <value>
+                <fullName>ID</fullName>
+                <default>false</default>
+                <label>ID</label>
+            </value>
+            <value>
+                <fullName>Il Fornello</fullName>
+                <default>false</default>
+                <label>Il Fornello</label>
+            </value>
+            <value>
+                <fullName>IMAC</fullName>
+                <default>false</default>
+                <label>IMAC</label>
+            </value>
+            <value>
+                <fullName>Intercontinental</fullName>
+                <default>false</default>
+                <label>Intercontinental</label>
+            </value>
+            <value>
+                <fullName>IT&#39;S INC</fullName>
+                <default>false</default>
+                <label>IT&#39;S INC</label>
+            </value>
+            <value>
+                <fullName>Jack Astor&#39;s</fullName>
+                <default>false</default>
+                <label>Jack Astor&#39;s</label>
+            </value>
+            <value>
+                <fullName>Joey&#39;s</fullName>
+                <default>false</default>
+                <label>Joey&#39;s</label>
+            </value>
+            <value>
+                <fullName>JPS</fullName>
+                <default>false</default>
+                <label>JPS</label>
+            </value>
+            <value>
+                <fullName>KANAME</fullName>
+                <default>false</default>
+                <label>KANAME</label>
+            </value>
+            <value>
+                <fullName>Kelsey&#39;s</fullName>
+                <default>false</default>
+                <label>Kelsey&#39;s</label>
+            </value>
+            <value>
+                <fullName>KENTO&#39;S</fullName>
+                <default>false</default>
+                <label>KENTO&#39;S</label>
+            </value>
+            <value>
+                <fullName>KICHIRI</fullName>
+                <default>false</default>
+                <label>KICHIRI</label>
+            </value>
+            <value>
+                <fullName>KIDO inc</fullName>
+                <default>false</default>
+                <label>KIDO inc</label>
+            </value>
+            <value>
+                <fullName>KYOTO SHION</fullName>
+                <default>false</default>
+                <label>KYOTO SHION</label>
+            </value>
+            <value>
+                <fullName>LCBO</fullName>
+                <default>false</default>
+                <label>LCBO</label>
+            </value>
+            <value>
+                <fullName>Liquor Depot</fullName>
+                <default>false</default>
+                <label>Liquor Depot</label>
+            </value>
+            <value>
+                <fullName>Liquor Town</fullName>
+                <default>false</default>
+                <label>Liquor Town</label>
+            </value>
+            <value>
+                <fullName>Lonestar</fullName>
+                <default>false</default>
+                <label>Lonestar</label>
+            </value>
+            <value>
+                <fullName>METRO GROUP</fullName>
+                <default>false</default>
+                <label>METRO GROUP</label>
+            </value>
+            <value>
+                <fullName>Milestones</fullName>
+                <default>false</default>
+                <label>Milestones</label>
+            </value>
+            <value>
+                <fullName>Montana&#39;s</fullName>
+                <default>false</default>
+                <label>Montana&#39;s</label>
+            </value>
+            <value>
+                <fullName>mouton</fullName>
+                <default>false</default>
+                <label>mouton</label>
+            </value>
+            <value>
+                <fullName>Moxies</fullName>
+                <default>false</default>
+                <label>Moxies</label>
+            </value>
+            <value>
+                <fullName>Mucho Burrito</fullName>
+                <default>false</default>
+                <label>Mucho Burrito</label>
+            </value>
+            <value>
+                <fullName>MYU Planning</fullName>
+                <default>false</default>
+                <label>MYU Planning</label>
+            </value>
+            <value>
+                <fullName>NewAge</fullName>
+                <default>false</default>
+                <label>NewAge</label>
+            </value>
+            <value>
+                <fullName>Oil City Hospitality Gp</fullName>
+                <default>false</default>
+                <label>Oil City Hospitality Gp</label>
+            </value>
+            <value>
+                <fullName>Olive Garden</fullName>
+                <default>false</default>
+                <label>Olive Garden</label>
+            </value>
+            <value>
+                <fullName>Olympia</fullName>
+                <default>false</default>
+                <label>Olympia</label>
+            </value>
+            <value>
+                <fullName>OPERADORA FUTURAMA, S.A. DE C.V.</fullName>
+                <default>false</default>
+                <label>OPERADORA FUTURAMA, S.A. DE C.V.</label>
+            </value>
+            <value>
+                <fullName>orbit</fullName>
+                <default>false</default>
+                <label>orbit</label>
+            </value>
+            <value>
+                <fullName>Original Joes</fullName>
+                <default>false</default>
+                <label>Original Joes</label>
+            </value>
+            <value>
+                <fullName>OutBack Steak</fullName>
+                <default>false</default>
+                <label>OutBack Steak</label>
+            </value>
+            <value>
+                <fullName>Ovation Plus</fullName>
+                <default>false</default>
+                <label>Ovation Plus</label>
+            </value>
+            <value>
+                <fullName>Ple</fullName>
+                <default>false</default>
+                <label>Ple</label>
+            </value>
+            <value>
+                <fullName>PM Home</fullName>
+                <default>false</default>
+                <label>PM Home</label>
+            </value>
+            <value>
+                <fullName>POTOMAK</fullName>
+                <default>false</default>
+                <label>POTOMAK</label>
+            </value>
+            <value>
+                <fullName>PRONTO</fullName>
+                <default>false</default>
+                <label>PRONTO</label>
+            </value>
+            <value>
+                <fullName>RCD</fullName>
+                <default>false</default>
+                <label>RCD</label>
+            </value>
+            <value>
+                <fullName>RCLS</fullName>
+                <default>false</default>
+                <label>RCLS</label>
+            </value>
+            <value>
+                <fullName>Red Lobster</fullName>
+                <default>false</default>
+                <label>Red Lobster</label>
+            </value>
+            <value>
+                <fullName>Rics</fullName>
+                <default>false</default>
+                <label>Rics</label>
+            </value>
+            <value>
+                <fullName>Safeway</fullName>
+                <default>false</default>
+                <label>Safeway</label>
+            </value>
+            <value>
+                <fullName>SAM&amp;DAVE</fullName>
+                <default>false</default>
+                <label>SAM&amp;DAVE</label>
+            </value>
+            <value>
+                <fullName>SAMS</fullName>
+                <default>false</default>
+                <label>SAMS</label>
+            </value>
+            <value>
+                <fullName>Sheraton</fullName>
+                <default>false</default>
+                <label>Sheraton</label>
+            </value>
+            <value>
+                <fullName>Sign</fullName>
+                <default>false</default>
+                <label>Sign</label>
+            </value>
+            <value>
+                <fullName>SK</fullName>
+                <default>false</default>
+                <label>SK</label>
+            </value>
+            <value>
+                <fullName>SMART FINAL DEL NOROESTE</fullName>
+                <default>false</default>
+                <label>SMART FINAL DEL NOROESTE</label>
+            </value>
+            <value>
+                <fullName>Sobey&#39;s</fullName>
+                <default>false</default>
+                <label>Sobey&#39;s</label>
+            </value>
+            <value>
+                <fullName>Solo</fullName>
+                <default>false</default>
+                <label>Solo</label>
+            </value>
+            <value>
+                <fullName>Souls</fullName>
+                <default>false</default>
+                <label>Souls</label>
+            </value>
+            <value>
+                <fullName>Spirits</fullName>
+                <default>false</default>
+                <label>Spirits</label>
+            </value>
+            <value>
+                <fullName>Splash</fullName>
+                <default>false</default>
+                <label>Splash</label>
+            </value>
+            <value>
+                <fullName>StarDiner</fullName>
+                <default>false</default>
+                <label>StarDiner</label>
+            </value>
+            <value>
+                <fullName>STRAIN PROJECT</fullName>
+                <default>false</default>
+                <label>STRAIN PROJECT</label>
+            </value>
+            <value>
+                <fullName>SUPERMERCADOS INTERNACIONALES HEB</fullName>
+                <default>false</default>
+                <label>SUPERMERCADOS INTERNACIONALES HEB</label>
+            </value>
+            <value>
+                <fullName>TGIF</fullName>
+                <default>false</default>
+                <label>TGIF</label>
+            </value>
+            <value>
+                <fullName>The Keg</fullName>
+                <default>false</default>
+                <label>The Keg</label>
+            </value>
+            <value>
+                <fullName>TIENDAS CHEDRAUI, S.A. DE C.V.</fullName>
+                <default>false</default>
+                <label>TIENDAS CHEDRAUI, S.A. DE C.V.</label>
+            </value>
+            <value>
+                <fullName>TIENDAS COMERCIAL MEXICANA SA DE CV</fullName>
+                <default>false</default>
+                <label>TIENDAS COMERCIAL MEXICANA SA DE CV</label>
+            </value>
+            <value>
+                <fullName>TIENDAS SORIANA SA DE CV</fullName>
+                <default>false</default>
+                <label>TIENDAS SORIANA SA DE CV</label>
+            </value>
+            <value>
+                <fullName>Total Food Service</fullName>
+                <default>false</default>
+                <label>Total Food Service</label>
+            </value>
+            <value>
+                <fullName>Turtle Jack&#39;s</fullName>
+                <default>false</default>
+                <label>Turtle Jack&#39;s</label>
+            </value>
+            <value>
+                <fullName>Vintage</fullName>
+                <default>false</default>
+                <label>Vintage</label>
+            </value>
+            <value>
+                <fullName>WAL MART</fullName>
+                <default>false</default>
+                <label>WAL MART</label>
+            </value>
+            <value>
+                <fullName>WDI</fullName>
+                <default>false</default>
+                <label>WDI</label>
+            </value>
+            <value>
+                <fullName>Westin</fullName>
+                <default>false</default>
+                <label>Westin</label>
+            </value>
+            <value>
+                <fullName>Willow Park</fullName>
+                <default>false</default>
+                <label>Willow Park</label>
+            </value>
+            <value>
+                <fullName>Wolfgang Puck</fullName>
+                <default>false</default>
+                <label>Wolfgang Puck</label>
+            </value>
+            <value>
+                <fullName>ZEN</fullName>
+                <default>false</default>
+                <label>ZEN</label>
+            </value>
+            <value>
+                <fullName>ZEST Group</fullName>
+                <default>false</default>
+                <label>ZEST Group</label>
+            </value>
+            <value>
+                <fullName>かまどか</fullName>
+                <default>false</default>
+                <label>かまどか</label>
+            </value>
+            <value>
+                <fullName>がぜん</fullName>
+                <default>false</default>
+                <label>がぜん</label>
+            </value>
+            <value>
+                <fullName>ちゅらり</fullName>
+                <default>false</default>
+                <label>ちゅらり</label>
+            </value>
+            <value>
+                <fullName>のり吉くん</fullName>
+                <default>false</default>
+                <label>のり吉くん</label>
+            </value>
+            <value>
+                <fullName>ぶらべ</fullName>
+                <default>false</default>
+                <label>ぶらべ</label>
+            </value>
+            <value>
+                <fullName>ももじろう</fullName>
+                <default>false</default>
+                <label>ももじろう</label>
+            </value>
+            <value>
+                <fullName>アゴスト</fullName>
+                <default>false</default>
+                <label>アゴスト</label>
+            </value>
+            <value>
+                <fullName>アルカポーネ</fullName>
+                <default>false</default>
+                <label>アルカポーネ</label>
+            </value>
+            <value>
+                <fullName>アートグローバー</fullName>
+                <default>false</default>
+                <label>アートグローバー</label>
+            </value>
+            <value>
+                <fullName>イマージアム</fullName>
+                <default>false</default>
+                <label>イマージアム</label>
+            </value>
+            <value>
+                <fullName>エイベックス・プランニング</fullName>
+                <default>false</default>
+                <label>エイベックス・プランニング</label>
+            </value>
+            <value>
+                <fullName>エスエルディー</fullName>
+                <default>false</default>
+                <label>エスエルディー</label>
+            </value>
+            <value>
+                <fullName>エバンス</fullName>
+                <default>false</default>
+                <label>エバンス</label>
+            </value>
+            <value>
+                <fullName>エムテイ商事</fullName>
+                <default>false</default>
+                <label>エムテイ商事</label>
+            </value>
+            <value>
+                <fullName>エルトリート</fullName>
+                <default>false</default>
+                <label>エルトリート</label>
+            </value>
+            <value>
+                <fullName>エーシーオペレーションズ</fullName>
+                <default>false</default>
+                <label>エーシーオペレーションズ</label>
+            </value>
+            <value>
+                <fullName>カラオケの鉄人</fullName>
+                <default>false</default>
+                <label>カラオケの鉄人</label>
+            </value>
+            <value>
+                <fullName>カラオケ館</fullName>
+                <default>false</default>
+                <label>カラオケ館</label>
+            </value>
+            <value>
+                <fullName>ガリバー企画</fullName>
+                <default>false</default>
+                <label>ガリバー企画</label>
+            </value>
+            <value>
+                <fullName>グリップ</fullName>
+                <default>false</default>
+                <label>グリップ</label>
+            </value>
+            <value>
+                <fullName>コロワイド</fullName>
+                <default>false</default>
+                <label>コロワイド</label>
+            </value>
+            <value>
+                <fullName>コートダジュール</fullName>
+                <default>false</default>
+                <label>コートダジュール</label>
+            </value>
+            <value>
+                <fullName>サポートグループ</fullName>
+                <default>false</default>
+                <label>サポートグループ</label>
+            </value>
+            <value>
+                <fullName>シダックス</fullName>
+                <default>false</default>
+                <label>シダックス</label>
+            </value>
+            <value>
+                <fullName>ジェリーフィッシュドット</fullName>
+                <default>false</default>
+                <label>ジェリーフィッシュドット</label>
+            </value>
+            <value>
+                <fullName>スリーフィールド</fullName>
+                <default>false</default>
+                <label>スリーフィールド</label>
+            </value>
+            <value>
+                <fullName>ダイスマネージ</fullName>
+                <default>false</default>
+                <label>ダイスマネージ</label>
+            </value>
+            <value>
+                <fullName>ダイナック</fullName>
+                <default>false</default>
+                <label>ダイナック</label>
+            </value>
+            <value>
+                <fullName>ダイヤモンドダイニング</fullName>
+                <default>false</default>
+                <label>ダイヤモンドダイニング</label>
+            </value>
+            <value>
+                <fullName>ダイワエクシード</fullName>
+                <default>false</default>
+                <label>ダイワエクシード</label>
+            </value>
+            <value>
+                <fullName>ティエスカンパニー</fullName>
+                <default>false</default>
+                <label>ティエスカンパニー</label>
+            </value>
+            <value>
+                <fullName>ティエヌケー</fullName>
+                <default>false</default>
+                <label>ティエヌケー</label>
+            </value>
+            <value>
+                <fullName>トウキョウ・ゴーゴー</fullName>
+                <default>false</default>
+                <label>トウキョウ・ゴーゴー</label>
+            </value>
+            <value>
+                <fullName>トューズ</fullName>
+                <default>false</default>
+                <label>トューズ</label>
+            </value>
+            <value>
+                <fullName>トラベルカフェ</fullName>
+                <default>false</default>
+                <label>トラベルカフェ</label>
+            </value>
+            <value>
+                <fullName>ドリームコーポレーション</fullName>
+                <default>false</default>
+                <label>ドリームコーポレーション</label>
+            </value>
+            <value>
+                <fullName>ドリームダブル</fullName>
+                <default>false</default>
+                <label>ドリームダブル</label>
+            </value>
+            <value>
+                <fullName>ハードロックカフェ</fullName>
+                <default>false</default>
+                <label>ハードロックカフェ</label>
+            </value>
+            <value>
+                <fullName>バルニバービ</fullName>
+                <default>false</default>
+                <label>バルニバービ</label>
+            </value>
+            <value>
+                <fullName>パセラ</fullName>
+                <default>false</default>
+                <label>パセラ</label>
+            </value>
+            <value>
+                <fullName>ヒューマンウェブ</fullName>
+                <default>false</default>
+                <label>ヒューマンウェブ</label>
+            </value>
+            <value>
+                <fullName>ファイブグループ</fullName>
+                <default>false</default>
+                <label>ファイブグループ</label>
+            </value>
+            <value>
+                <fullName>ブックフーズ</fullName>
+                <default>false</default>
+                <label>ブックフーズ</label>
+            </value>
+            <value>
+                <fullName>プライム・リンク</fullName>
+                <default>false</default>
+                <label>プライム・リンク</label>
+            </value>
+            <value>
+                <fullName>ポイントプラス</fullName>
+                <default>false</default>
+                <label>ポイントプラス</label>
+            </value>
+            <value>
+                <fullName>モンテローザ</fullName>
+                <default>false</default>
+                <label>モンテローザ</label>
+            </value>
+            <value>
+                <fullName>ヤサカメイト</fullName>
+                <default>false</default>
+                <label>ヤサカメイト</label>
+            </value>
+            <value>
+                <fullName>リキッド</fullName>
+                <default>false</default>
+                <label>リキッド</label>
+            </value>
+            <value>
+                <fullName>リープ</fullName>
+                <default>false</default>
+                <label>リープ</label>
+            </value>
+            <value>
+                <fullName>レストランモア</fullName>
+                <default>false</default>
+                <label>レストランモア</label>
+            </value>
+            <value>
+                <fullName>ロフトプロジェクト</fullName>
+                <default>false</default>
+                <label>ロフトプロジェクト</label>
+            </value>
+            <value>
+                <fullName>ワイズクル－</fullName>
+                <default>false</default>
+                <label>ワイズクル－</label>
+            </value>
+            <value>
+                <fullName>ワンダーテーブル</fullName>
+                <default>false</default>
+                <label>ワンダーテーブル</label>
+            </value>
+            <value>
+                <fullName>ワールド・ワン</fullName>
+                <default>false</default>
+                <label>ワールド・ワン</label>
+            </value>
+            <value>
+                <fullName>一家ダイニング</fullName>
+                <default>false</default>
+                <label>一家ダイニング</label>
+            </value>
+            <value>
+                <fullName>一瑳</fullName>
+                <default>false</default>
+                <label>一瑳</label>
+            </value>
+            <value>
+                <fullName>串まん</fullName>
+                <default>false</default>
+                <label>串まん</label>
+            </value>
+            <value>
+                <fullName>佐世保バーガー</fullName>
+                <default>false</default>
+                <label>佐世保バーガー</label>
+            </value>
+            <value>
+                <fullName>千年の宴</fullName>
+                <default>false</default>
+                <label>千年の宴</label>
+            </value>
+            <value>
+                <fullName>和民</fullName>
+                <default>false</default>
+                <label>和民</label>
+            </value>
+            <value>
+                <fullName>坐・和民</fullName>
+                <default>false</default>
+                <label>坐・和民</label>
+            </value>
+            <value>
+                <fullName>小倉直営</fullName>
+                <default>false</default>
+                <label>小倉直営</label>
+            </value>
+            <value>
+                <fullName>小島商事</fullName>
+                <default>false</default>
+                <label>小島商事</label>
+            </value>
+            <value>
+                <fullName>日石興業</fullName>
+                <default>false</default>
+                <label>日石興業</label>
+            </value>
+            <value>
+                <fullName>柏山室</fullName>
+                <default>false</default>
+                <label>柏山室</label>
+            </value>
+            <value>
+                <fullName>歌広場</fullName>
+                <default>false</default>
+                <label>歌広場</label>
+            </value>
+            <value>
+                <fullName>浪漫家</fullName>
+                <default>false</default>
+                <label>浪漫家</label>
+            </value>
+            <value>
+                <fullName>海峡</fullName>
+                <default>false</default>
+                <label>海峡</label>
+            </value>
+            <value>
+                <fullName>焼酎Barえんぜる</fullName>
+                <default>false</default>
+                <label>焼酎Barえんぜる</label>
+            </value>
+            <value>
+                <fullName>狼煙</fullName>
+                <default>false</default>
+                <label>狼煙</label>
+            </value>
+            <value>
+                <fullName>甲羅</fullName>
+                <default>false</default>
+                <label>甲羅</label>
+            </value>
+            <value>
+                <fullName>白木屋</fullName>
+                <default>false</default>
+                <label>白木屋</label>
+            </value>
+            <value>
+                <fullName>真</fullName>
+                <default>false</default>
+                <label>真</label>
+            </value>
+            <value>
+                <fullName>翠商事</fullName>
+                <default>false</default>
+                <label>翠商事</label>
+            </value>
+            <value>
+                <fullName>際</fullName>
+                <default>false</default>
+                <label>際</label>
+            </value>
+            <value>
+                <fullName>駒八</fullName>
+                <default>false</default>
+                <label>駒八</label>
+            </value>
+            <value>
+                <fullName>鼠小僧</fullName>
+                <default>false</default>
+                <label>鼠小僧</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

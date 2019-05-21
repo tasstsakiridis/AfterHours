@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FV_Flavour_Facing__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>FV Flavour
+FV Frost</inlineHelpText>
+    <label>FV Flavour Facing</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

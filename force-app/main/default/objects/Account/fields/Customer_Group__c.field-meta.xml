@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group__c</fullName>
+    <description>BFA - Not Required as replaced by banner group. Chris</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Customer Group - (Manager Group) ?? Does this come from ECC or BI 
+ 
+This will be used for Marketing promotions.</inlineHelpText>
+    <label>Customer Group</label>
+    <length>15</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

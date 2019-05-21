@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIF_Street_Address</fullName>
+    <active>true</active>
+    <description>CIF_Street_Address</description>
+    <errorConditionFormula>RecordType.Name = &quot;CIF&quot; &amp;&amp; ISBLANK(ShippingStreet)</errorConditionFormula>
+    <errorMessage>Please enter a Street Address</errorMessage>
+</ValidationRule>

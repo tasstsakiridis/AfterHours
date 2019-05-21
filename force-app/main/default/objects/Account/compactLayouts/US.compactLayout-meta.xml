@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>US</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>Channel__c</fields>
+    <fields>Outlet_Class__c</fields>
+    <fields>ParentId</fields>
+    <fields>Chain__c</fields>
+    <label>US</label>
+</CompactLayout>

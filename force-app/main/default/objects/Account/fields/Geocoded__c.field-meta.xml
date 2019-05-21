@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Geocoded__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>flagged by Ben &amp; Jon&#39;s geocoding utility</description>
+    <externalId>false</externalId>
+    <label>Geocoded?</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FN__Find_Nearby__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( FN__Mapping_Status__c  , &#39;Located&#39;), HYPERLINK( &quot;apex/FN__FindNearbymap?lid=null&amp;aid=&quot; &amp; Id,&quot;Map it!&quot;,&quot;_parent&quot;) , HYPERLINK( &quot;apex/FN__AGeoCode?id=&quot; &amp; Id,&quot;Locate Account&quot;,&quot;_parent&quot;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Find Nearby</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

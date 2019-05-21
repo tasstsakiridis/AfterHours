@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Data_Quality_Score__c</fullName>
+    <description>INFOWELDERS - Billing Address should be completely filled in.</description>
+    <externalId>false</externalId>
+    <formula>IF ( Market__r.Name = &quot;France&quot;,  IF(ISBLANK(Preferred_Visit_Day_Time__c), 0, 1) + IF( TEXT(Customer_Group_Type__c) = &#39; &#39;, 0, 1) + IF( Primary_Contact_Maintained__c = False, 0, 1),
+IF(ISBLANK(BillingStreet), 0,1) + 
+IF(ISBLANK(BillingCity  ), 0,1) +
+IF(ISBLANK(BillingState  ), 0,1) +
+IF(ISBLANK(BillingPostalCode  ), 0,1) +
+IF(ISBLANK(BillingCountry ), 0,1)+
+IF(ISBLANK( Website  ), 0,1)+
+IF(ISBLANK( Fax   ), 0,1)+
+IF(ISBLANK(  Phone  ), 0,1)+
+IF(ISBLANK(  Outlet_Class__c   ), 0,1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>If less than 5, the Billing Address is not complete.</inlineHelpText>
+    <label>Data Quality Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Region__c</fullName>
+    <description>INFOWELDERS</description>
+    <externalId>false</externalId>
+    <label>Region</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>TWN North</fullName>
+                <default>false</default>
+                <label>TWN North</label>
+            </value>
+            <value>
+                <fullName>TWN South</fullName>
+                <default>false</default>
+                <label>TWN South</label>
+            </value>
+            <value>
+                <fullName>TWN Center</fullName>
+                <default>false</default>
+                <label>TWN Center</label>
+            </value>
+            <value>
+                <fullName>CHN</fullName>
+                <default>false</default>
+                <label>CHN</label>
+            </value>
+            <value>
+                <fullName>West</fullName>
+                <default>false</default>
+                <label>West</label>
+            </value>
+            <value>
+                <fullName>East</fullName>
+                <default>false</default>
+                <label>East</label>
+            </value>
+            <value>
+                <fullName>South</fullName>
+                <default>false</default>
+                <label>South</label>
+            </value>
+            <value>
+                <fullName>Africa</fullName>
+                <default>false</default>
+                <label>Africa</label>
+            </value>
+            <value>
+                <fullName>Americas – Canada</fullName>
+                <default>false</default>
+                <label>Americas – Canada</label>
+            </value>
+            <value>
+                <fullName>Asia Pacific</fullName>
+                <default>false</default>
+                <label>Asia Pacific</label>
+            </value>
+            <value>
+                <fullName>Caribbean</fullName>
+                <default>false</default>
+                <label>Caribbean</label>
+            </value>
+            <value>
+                <fullName>Central America</fullName>
+                <default>false</default>
+                <label>Central America</label>
+            </value>
+            <value>
+                <fullName>Central / Eastern Europe</fullName>
+                <default>false</default>
+                <label>Central / Eastern Europe</label>
+            </value>
+            <value>
+                <fullName>Czech Republic</fullName>
+                <default>false</default>
+                <label>Czech Republic</label>
+            </value>
+            <value>
+                <fullName>Dusan Savic</fullName>
+                <default>false</default>
+                <label>Dusan Savic</label>
+            </value>
+            <value>
+                <fullName>Greater Europe</fullName>
+                <default>false</default>
+                <label>Greater Europe</label>
+            </value>
+            <value>
+                <fullName>John Accardo – Prague</fullName>
+                <default>false</default>
+                <label>John Accardo – Prague</label>
+            </value>
+            <value>
+                <fullName>Monte Wilson</fullName>
+                <default>false</default>
+                <label>Monte Wilson</label>
+            </value>
+            <value>
+                <fullName>Northern Europe – Dirk Sass</fullName>
+                <default>false</default>
+                <label>Northern Europe – Dirk Sass</label>
+            </value>
+            <value>
+                <fullName>No. America</fullName>
+                <default>false</default>
+                <label>No. America</label>
+            </value>
+            <value>
+                <fullName>Region 2 – VP – Thomas Hinrichs</fullName>
+                <default>false</default>
+                <label>Region 2 – VP – Thomas Hinrichs</label>
+            </value>
+            <value>
+                <fullName>Region 4 – VP – Joe Manero</fullName>
+                <default>false</default>
+                <label>Region 4 – VP – Joe Manero</label>
+            </value>
+            <value>
+                <fullName>Region 5 – VP – Andrew Wilby</fullName>
+                <default>false</default>
+                <label>Region 5 – VP – Andrew Wilby</label>
+            </value>
+            <value>
+                <fullName>RUC – OPEN</fullName>
+                <default>false</default>
+                <label>RUC – OPEN</label>
+            </value>
+            <value>
+                <fullName>SEMA – Endre Szabo</fullName>
+                <default>false</default>
+                <label>SEMA – Endre Szabo</label>
+            </value>
+            <value>
+                <fullName>So. America</fullName>
+                <default>false</default>
+                <label>So. America</label>
+            </value>
+            <value>
+                <fullName>TWN</fullName>
+                <default>false</default>
+                <label>TWN</label>
+            </value>
+            <value>
+                <fullName>CHN_South</fullName>
+                <default>false</default>
+                <label>CHN_South</label>
+            </value>
+            <value>
+                <fullName>CHN_East</fullName>
+                <default>false</default>
+                <label>CHN_East</label>
+            </value>
+            <value>
+                <fullName>CHN_North</fullName>
+                <default>false</default>
+                <label>CHN_North</label>
+            </value>
+            <value>
+                <fullName>CHN_West</fullName>
+                <default>false</default>
+                <label>CHN_West</label>
+            </value>
+            <value>
+                <fullName>THA</fullName>
+                <default>false</default>
+                <label>THA</label>
+            </value>
+            <value>
+                <fullName>India</fullName>
+                <default>false</default>
+                <label>India</label>
+            </value>
+            <value>
+                <fullName>JPN-Tokyo</fullName>
+                <default>false</default>
+                <label>JPN-Tokyo</label>
+            </value>
+            <value>
+                <fullName>JPN-Osaka</fullName>
+                <default>false</default>
+                <label>JPN-Osaka</label>
+            </value>
+            <value>
+                <fullName>JPN-Sapporo</fullName>
+                <default>false</default>
+                <label>JPN-Sapporo</label>
+            </value>
+            <value>
+                <fullName>CAD-Alberta</fullName>
+                <default>false</default>
+                <label>CAD-Alberta</label>
+            </value>
+            <value>
+                <fullName>CAD-British Columbia</fullName>
+                <default>false</default>
+                <label>CAD-British Columbia</label>
+            </value>
+            <value>
+                <fullName>CAD-Manitoba</fullName>
+                <default>false</default>
+                <label>CAD-Manitoba</label>
+            </value>
+            <value>
+                <fullName>CAD-Ontario</fullName>
+                <default>false</default>
+                <label>CAD-Ontario</label>
+            </value>
+            <value>
+                <fullName>CAD-Quebec</fullName>
+                <default>false</default>
+                <label>CAD-Quebec</label>
+            </value>
+            <value>
+                <fullName>CAD-Saskatchewan</fullName>
+                <default>false</default>
+                <label>CAD-Saskatchewan</label>
+            </value>
+            <value>
+                <fullName>Nord</fullName>
+                <default>false</default>
+                <label>Nord</label>
+            </value>
+            <value>
+                <fullName>Ost</fullName>
+                <default>false</default>
+                <label>Ost</label>
+            </value>
+            <value>
+                <fullName>Süd</fullName>
+                <default>false</default>
+                <label>Süd</label>
+            </value>
+            <value>
+                <fullName>New South Wales</fullName>
+                <default>false</default>
+                <label>New South Wales</label>
+            </value>
+            <value>
+                <fullName>Victoria</fullName>
+                <default>false</default>
+                <label>Victoria</label>
+            </value>
+            <value>
+                <fullName>South Australia</fullName>
+                <default>false</default>
+                <label>South Australia</label>
+            </value>
+            <value>
+                <fullName>Tasmania</fullName>
+                <default>false</default>
+                <label>Tasmania</label>
+            </value>
+            <value>
+                <fullName>Western Australia</fullName>
+                <default>false</default>
+                <label>Western Australia</label>
+            </value>
+            <value>
+                <fullName>Northern Territory</fullName>
+                <default>false</default>
+                <label>Northern Territory</label>
+            </value>
+            <value>
+                <fullName>Queensland</fullName>
+                <default>false</default>
+                <label>Queensland</label>
+            </value>
+            <value>
+                <fullName>Australian Capital Territory</fullName>
+                <default>false</default>
+                <label>Australian Capital Territory</label>
+            </value>
+            <value>
+                <fullName>ALL</fullName>
+                <default>false</default>
+                <label>ALL</label>
+            </value>
+            <value>
+                <fullName>BRA - Centro Oeste</fullName>
+                <default>false</default>
+                <label>BRA - Centro Oeste</label>
+            </value>
+            <value>
+                <fullName>BRA - Norte / Nordeste</fullName>
+                <default>false</default>
+                <label>BRA - Norte / Nordeste</label>
+            </value>
+            <value>
+                <fullName>BRA - SPC</fullName>
+                <default>false</default>
+                <label>BRA - SPC</label>
+            </value>
+            <value>
+                <fullName>BRA - SPI</fullName>
+                <default>false</default>
+                <label>BRA - SPI</label>
+            </value>
+            <value>
+                <fullName>BRA - Sul</fullName>
+                <default>false</default>
+                <label>BRA - Sul</label>
+            </value>
+            <value>
+                <fullName>BRA - Sudeste</fullName>
+                <default>false</default>
+                <label>BRA - Sudeste</label>
+            </value>
+            <value>
+                <fullName>ABRUZZO</fullName>
+                <default>false</default>
+                <label>ABRUZZO</label>
+            </value>
+            <value>
+                <fullName>BASILICATA</fullName>
+                <default>false</default>
+                <label>BASILICATA</label>
+            </value>
+            <value>
+                <fullName>CALABRIA</fullName>
+                <default>false</default>
+                <label>CALABRIA</label>
+            </value>
+            <value>
+                <fullName>CAMPANIA</fullName>
+                <default>false</default>
+                <label>CAMPANIA</label>
+            </value>
+            <value>
+                <fullName>E.ROMAGNA</fullName>
+                <default>false</default>
+                <label>E.ROMAGNA</label>
+            </value>
+            <value>
+                <fullName>FRIULI</fullName>
+                <default>false</default>
+                <label>FRIULI</label>
+            </value>
+            <value>
+                <fullName>LAZIO</fullName>
+                <default>false</default>
+                <label>LAZIO</label>
+            </value>
+            <value>
+                <fullName>LIGURIA</fullName>
+                <default>false</default>
+                <label>LIGURIA</label>
+            </value>
+            <value>
+                <fullName>LOMBARDIA</fullName>
+                <default>false</default>
+                <label>LOMBARDIA</label>
+            </value>
+            <value>
+                <fullName>MARCHE</fullName>
+                <default>false</default>
+                <label>MARCHE</label>
+            </value>
+            <value>
+                <fullName>PIEMONTE</fullName>
+                <default>false</default>
+                <label>PIEMONTE</label>
+            </value>
+            <value>
+                <fullName>PUGLIA</fullName>
+                <default>false</default>
+                <label>PUGLIA</label>
+            </value>
+            <value>
+                <fullName>SICILIA</fullName>
+                <default>false</default>
+                <label>SICILIA</label>
+            </value>
+            <value>
+                <fullName>TOSCANA</fullName>
+                <default>false</default>
+                <label>TOSCANA</label>
+            </value>
+            <value>
+                <fullName>TRENTINO</fullName>
+                <default>false</default>
+                <label>TRENTINO</label>
+            </value>
+            <value>
+                <fullName>UMBRIA</fullName>
+                <default>false</default>
+                <label>UMBRIA</label>
+            </value>
+            <value>
+                <fullName>V. D&#39;AOSTA</fullName>
+                <default>false</default>
+                <label>V. D&#39;AOSTA</label>
+            </value>
+            <value>
+                <fullName>VENETO</fullName>
+                <default>false</default>
+                <label>VENETO</label>
+            </value>
+            <value>
+                <fullName>National</fullName>
+                <default>false</default>
+                <label>National</label>
+            </value>
+            <value>
+                <fullName>Seoul Capital Area</fullName>
+                <default>false</default>
+                <label>Seoul Capital Area</label>
+            </value>
+            <value>
+                <fullName>Regions - Korea</fullName>
+                <default>false</default>
+                <label>Regions - Korea</label>
+            </value>
+            <value>
+                <fullName>Bajio</fullName>
+                <default>false</default>
+                <label>Bajio</label>
+            </value>
+            <value>
+                <fullName>Centro Sur</fullName>
+                <default>false</default>
+                <label>Centro Sur</label>
+            </value>
+            <value>
+                <fullName>Guadalajara</fullName>
+                <default>false</default>
+                <label>Guadalajara</label>
+            </value>
+            <value>
+                <fullName>Norte</fullName>
+                <default>false</default>
+                <label>Norte</label>
+            </value>
+            <value>
+                <fullName>Valle de México 1</fullName>
+                <default>false</default>
+                <label>Valle de México 1</label>
+            </value>
+            <value>
+                <fullName>Valle de México 2</fullName>
+                <default>false</default>
+                <label>Valle de México 2</label>
+            </value>
+            <value>
+                <fullName>VdM/Toluca</fullName>
+                <default>false</default>
+                <label>VdM/Toluca</label>
+            </value>
+            <value>
+                <fullName>CDMX</fullName>
+                <default>false</default>
+                <label>CDMX</label>
+            </value>
+            <value>
+                <fullName>West Indonesia</fullName>
+                <default>false</default>
+                <label>West Indonesia</label>
+            </value>
+            <value>
+                <fullName>East Indonesia</fullName>
+                <default>false</default>
+                <label>East Indonesia</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

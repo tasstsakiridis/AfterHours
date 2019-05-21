@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_FRN__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Group (France)</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>AUCHAN FRANCE</fullName>
+                <default>false</default>
+                <label>AUCHAN FRANCE</label>
+            </value>
+            <value>
+                <fullName>C10</fullName>
+                <default>false</default>
+                <label>C10</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR France</fullName>
+                <default>false</default>
+                <label>CARREFOUR France</label>
+            </value>
+            <value>
+                <fullName>DISTRIBOISSONS</fullName>
+                <default>false</default>
+                <label>DISTRIBOISSONS</label>
+            </value>
+            <value>
+                <fullName>France BOISSONS</fullName>
+                <default>false</default>
+                <label>France BOISSONS</label>
+            </value>
+            <value>
+                <fullName>INDEPENDENT</fullName>
+                <default>false</default>
+                <label>INDEPENDENT</label>
+            </value>
+            <value>
+                <fullName>ITM</fullName>
+                <default>false</default>
+                <label>ITM</label>
+            </value>
+            <value>
+                <fullName>METRO</fullName>
+                <default>false</default>
+                <label>METRO</label>
+            </value>
+            <value>
+                <fullName>PROVERA FRANCE</fullName>
+                <default>false</default>
+                <label>PROVERA FRANCE</label>
+            </value>
+            <value>
+                <fullName>SELECTIFS</fullName>
+                <default>false</default>
+                <label>SELECTIFS</label>
+            </value>
+            <value>
+                <fullName>GALEC</fullName>
+                <default>false</default>
+                <label>GALEC</label>
+            </value>
+            <value>
+                <fullName>EMC Distribution</fullName>
+                <default>false</default>
+                <label>EMC Distribution</label>
+            </value>
+            <value>
+                <fullName>SYSTEME U</fullName>
+                <default>false</default>
+                <label>SYSTEME U</label>
+            </value>
+            <value>
+                <fullName>PROMOCASH</fullName>
+                <default>false</default>
+                <label>PROMOCASH</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,22 @@
+<apex:page standardStylesheets="false" showHeader="true" sidebar="false" title="Accounts" >
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+    </head>
+    <apex:includeLightning />
+    <div id="lightning" style="width: 100%"/>
+    <script>
+        $Lightning.use("c:AccountDataViewApp", function() {
+            $Lightning.createComponent(
+                "c:AccountDataView", 
+                { "objectApiName" : 'Account' }, 
+                "lightning", 
+                function(cmp) {
+            });
+        });
+    
+    </script>
+</apex:page>

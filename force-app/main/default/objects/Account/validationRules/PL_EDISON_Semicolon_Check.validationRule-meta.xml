@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_EDISON_Semicolon_Check</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( 
+CONTAINS( ShippingCity, &quot;;&quot; ),
+CONTAINS( ShippingStreet, &quot;;&quot; ),
+CONTAINS( Name, &quot;;&quot;),
+CONTAINS( Account_Name_Long_PL__c, &quot;;&quot; )) &amp;&amp;  (RecordType.Id =&quot;012a0000001NZsU&quot;  ||  RecordType.Id =&quot;012a0000001NZsV&quot; || RecordType.Id =&quot;01213000001NdrN&quot;)</errorConditionFormula>
+    <errorMessage>Zabroniony znak &quot;;&quot;</errorMessage>
+</ValidationRule>

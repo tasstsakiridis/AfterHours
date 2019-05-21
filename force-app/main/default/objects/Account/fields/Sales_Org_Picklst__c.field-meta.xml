@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Org_Picklst__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Org</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>1000 - BF Corporation</fullName>
+                <default>false</default>
+                <label>1000 - BF Corporation</label>
+            </value>
+            <value>
+                <fullName>3500 - BF Mexico</fullName>
+                <default>false</default>
+                <label>3500 - BF Mexico</label>
+            </value>
+            <value>
+                <fullName>3610 - BF BenRiach</fullName>
+                <default>false</default>
+                <label>3610 - BF BenRiach</label>
+            </value>
+            <value>
+                <fullName>4043 - BF Taiwan</fullName>
+                <default>false</default>
+                <label>4043 - BF Taiwan</label>
+            </value>
+            <value>
+                <fullName>4060 - BF Hong Kong</fullName>
+                <default>false</default>
+                <label>4060 - BF Hong Kong</label>
+            </value>
+            <value>
+                <fullName>4140 - BF Shanghai</fullName>
+                <default>false</default>
+                <label>4140 - BF Shanghai</label>
+            </value>
+            <value>
+                <fullName>4145 - BF China</fullName>
+                <default>false</default>
+                <label>4145 - BF China</label>
+            </value>
+            <value>
+                <fullName>4157 - BF Korea</fullName>
+                <default>false</default>
+                <label>4157 - BF Korea</label>
+            </value>
+            <value>
+                <fullName>4170 - BF Thailand</fullName>
+                <default>false</default>
+                <label>4170 - BF Thailand</label>
+            </value>
+            <value>
+                <fullName>4190 - BF Ukraine</fullName>
+                <default>false</default>
+                <label>4190 - BF Ukraine</label>
+            </value>
+            <value>
+                <fullName>4260 - BF Australia</fullName>
+                <default>false</default>
+                <label>4260 - BF Australia</label>
+            </value>
+            <value>
+                <fullName>4645 - BF Brazil</fullName>
+                <default>false</default>
+                <label>4645 - BF Brazil</label>
+            </value>
+            <value>
+                <fullName>4810 - BF Czech</fullName>
+                <default>false</default>
+                <label>4810 - BF Czech</label>
+            </value>
+            <value>
+                <fullName>4830 - BF Netherlands</fullName>
+                <default>false</default>
+                <label>4830 - BF Netherlands</label>
+            </value>
+            <value>
+                <fullName>4840 - BF Russia</fullName>
+                <default>false</default>
+                <label>4840 - BF Russia</label>
+            </value>
+            <value>
+                <fullName>4860 - BF Slane</fullName>
+                <default>false</default>
+                <label>4860 - BF Slane</label>
+            </value>
+            <value>
+                <fullName>4965 - BF Turkey</fullName>
+                <default>false</default>
+                <label>4965 - BF Turkey</label>
+            </value>
+            <value>
+                <fullName>5510 - BF France</fullName>
+                <default>false</default>
+                <label>5510 - BF France</label>
+            </value>
+            <value>
+                <fullName>5540 - BF Beverage Europe</fullName>
+                <default>false</default>
+                <label>5540 - BF Beverage Europe</label>
+            </value>
+            <value>
+                <fullName>5554 - BF Nordic DF</fullName>
+                <default>false</default>
+                <label>5554 - BF Nordic DF</label>
+            </value>
+            <value>
+                <fullName>5560 - BF Germany</fullName>
+                <default>false</default>
+                <label>5560 - BF Germany</label>
+            </value>
+            <value>
+                <fullName>5590 - BF Poland</fullName>
+                <default>false</default>
+                <label>5590 - BF Poland</label>
+            </value>
+            <value>
+                <fullName>5960 - BF FVW. LTD</fullName>
+                <default>false</default>
+                <label>5960 - BF FVW. LTD</label>
+            </value>
+            <value>
+                <fullName>6080 - BF Spain</fullName>
+                <default>false</default>
+                <label>6080 - BF Spain</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

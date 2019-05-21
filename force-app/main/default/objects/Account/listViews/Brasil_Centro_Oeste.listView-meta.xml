@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Brasil_Centro_Oeste</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>Channel__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>BRL - Centro Oeste</value>
+    </filters>
+    <label>Brasil - Centro Oeste</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>BRL_Key_Account_Manager_Admin</role>
+        <role>Brazil_Admin_Mkt_Mgr</role>
+        <role>Brazil_Marketing_Director</role>
+        <role>Brazil_National_Level</role>
+        <role>GlobalAdministrator</role>
+    </sharedTo>
+</ListView>

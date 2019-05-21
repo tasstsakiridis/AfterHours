@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_British_Columbia_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>Channel__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Last_Visit_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>CAD-British Columbia</value>
+    </filters>
+    <label>Canada - British Columbia Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>CADBusDevWestBF</role>
+        <role>CADMarketManagerAdmin</role>
+        <role>CADMarketingDirector</role>
+        <role>CADNationalLevelBF</role>
+        <role>CADNationalLevelHive</role>
+        <role>CADSalesManagerBCHive</role>
+    </sharedTo>
+</ListView>

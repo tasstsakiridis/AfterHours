@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tequila_Tasting__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mexico. Does this store allow tequila testing?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Does this store allow tequila testing?</inlineHelpText>
+    <label>Tequila Tasting</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

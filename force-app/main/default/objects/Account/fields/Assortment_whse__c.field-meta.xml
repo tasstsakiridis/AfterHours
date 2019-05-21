@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assortment_whse__c</fullName>
+    <description>Assortment</description>
+    <externalId>false</externalId>
+    <label>Assortment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>hoch [Vollsortimenter - Breite &amp; Tiefe]</fullName>
+                <default>false</default>
+                <label>hoch [Vollsortimenter - Breite &amp; Tiefe]</label>
+            </value>
+            <value>
+                <fullName>mittel [Breite und/oder Tiefe - ausbaufähig</fullName>
+                <default>false</default>
+                <label>mittel [Breite und/oder Tiefe - ausbaufähig</label>
+            </value>
+            <value>
+                <fullName>gering [Grundsortiment - nicht ausbaufähig]</fullName>
+                <default>false</default>
+                <label>gering [Grundsortiment - nicht ausbaufähig]</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>selling_bf_portfolio__c</fullName>
+    <description>Germany-On-Trade: Is there much sold here?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Is there much sold here?</inlineHelpText>
+    <label>selling BF Portfolio</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1-100 Liter</fullName>
+                <default>false</default>
+                <label>1-100 Liter</label>
+            </value>
+            <value>
+                <fullName>101-500 Liter</fullName>
+                <default>false</default>
+                <label>101-500 Liter</label>
+            </value>
+            <value>
+                <fullName>501-1999 Liter</fullName>
+                <default>false</default>
+                <label>501-1999 Liter</label>
+            </value>
+            <value>
+                <fullName>&gt;2000 Liter</fullName>
+                <default>false</default>
+                <label>&gt;2000 Liter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

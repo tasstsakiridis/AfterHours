@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Categories_Sold__c</fullName>
+    <externalId>false</externalId>
+    <label>Categories Sold</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Malt&amp;Scotch 12YO+</fullName>
+                <default>false</default>
+                <label>Malt&amp;Scotch 12YO+</label>
+            </value>
+            <value>
+                <fullName>Scotch Standard</fullName>
+                <default>false</default>
+                <label>Scotch Standard</label>
+            </value>
+            <value>
+                <fullName>American Whiskey</fullName>
+                <default>false</default>
+                <label>American Whiskey</label>
+            </value>
+            <value>
+                <fullName>Irish Whisky</fullName>
+                <default>false</default>
+                <label>Irish Whisky</label>
+            </value>
+            <value>
+                <fullName>Super Premium Vodka</fullName>
+                <default>false</default>
+                <label>Super Premium Vodka</label>
+            </value>
+            <value>
+                <fullName>Imported Vodka</fullName>
+                <default>false</default>
+                <label>Imported Vodka</label>
+            </value>
+            <value>
+                <fullName>Premium Vodka</fullName>
+                <default>false</default>
+                <label>Premium Vodka</label>
+            </value>
+            <value>
+                <fullName>Mainstream Vodka</fullName>
+                <default>false</default>
+                <label>Mainstream Vodka</label>
+            </value>
+            <value>
+                <fullName>Low-Proof</fullName>
+                <default>false</default>
+                <label>Low-Proof</label>
+            </value>
+            <value>
+                <fullName>RTD</fullName>
+                <default>false</default>
+                <label>RTD</label>
+            </value>
+            <value>
+                <fullName>Cognac</fullName>
+                <default>false</default>
+                <label>Cognac</label>
+            </value>
+            <value>
+                <fullName>Rum</fullName>
+                <default>false</default>
+                <label>Rum</label>
+            </value>
+            <value>
+                <fullName>Tequila</fullName>
+                <default>false</default>
+                <label>Tequila</label>
+            </value>
+            <value>
+                <fullName>Gin</fullName>
+                <default>false</default>
+                <label>Gin</label>
+            </value>
+            <value>
+                <fullName>Imported Liquors</fullName>
+                <default>false</default>
+                <label>Imported Liquors</label>
+            </value>
+            <value>
+                <fullName>Gift Packs</fullName>
+                <default>false</default>
+                <label>Gift Packs</label>
+            </value>
+            <value>
+                <fullName>Whiskey</fullName>
+                <default>false</default>
+                <label>Whiskey</label>
+            </value>
+            <value>
+                <fullName>Liqueurs / Cordials / Brandy</fullName>
+                <default>false</default>
+                <label>Liqueurs / Cordials / Brandy</label>
+            </value>
+            <value>
+                <fullName>Vodka</fullName>
+                <default>false</default>
+                <label>Vodka</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

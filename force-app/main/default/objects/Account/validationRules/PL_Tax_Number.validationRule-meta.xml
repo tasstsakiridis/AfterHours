@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Tax_Number</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR( RecordType.Id =&quot;012a0000001NZsU&quot;, RecordType.Id =&quot;012a0000001NZsV&quot;, RecordType.Id =&quot;01213000001NdrN&quot;),LEN(Tax_Number_PL__c)&gt;0,LEN(Tax_Number_PL__c)&lt;=10,NOT(ISNUMBER( Tax_Number_PL__c )))</errorConditionFormula>
+    <errorMessage>Tax Number is invalid. Must be 10 characters long and only contain numbers</errorMessage>
+</ValidationRule>

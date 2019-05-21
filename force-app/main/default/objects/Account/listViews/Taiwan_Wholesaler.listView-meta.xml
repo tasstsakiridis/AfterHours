@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Taiwan_Wholesaler</fullName>
+    <columns>Channel__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>City__c</columns>
+    <columns>Area__c</columns>
+    <columns>English_Name__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Chain__c</columns>
+    <columns>Status__c</columns>
+    <columns>Capacity__c</columns>
+    <columns>Legacy_ID__c</columns>
+    <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Taiwan</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Wholesalers</value>
+    </filters>
+    <label>Taiwan Wholesaler</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>TWNallusers</group>
+    </sharedTo>
+</ListView>

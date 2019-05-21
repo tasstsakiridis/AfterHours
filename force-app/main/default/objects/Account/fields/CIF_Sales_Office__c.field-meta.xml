@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIF_Sales_Office__c</fullName>
+    <externalId>false</externalId>
+    <label>Sales Office</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BFS1 - Domestic</fullName>
+                <default>false</default>
+                <label>BFS1 - Domestic</label>
+            </value>
+            <value>
+                <fullName>BFS2 - International</fullName>
+                <default>false</default>
+                <label>BFS2 - International</label>
+            </value>
+            <value>
+                <fullName>FVW - BF Finland</fullName>
+                <default>false</default>
+                <label>FVW - BF Finland</label>
+            </value>
+            <value>
+                <fullName>FR01 - BF France</fullName>
+                <default>false</default>
+                <label>FR01 - BF France</label>
+            </value>
+            <value>
+                <fullName>TR01 - BF Turkey</fullName>
+                <default>false</default>
+                <label>TR01 - BF Turkey</label>
+            </value>
+            <value>
+                <fullName>BFS3</fullName>
+                <default>false</default>
+                <label>BFS3</label>
+            </value>
+            <value>
+                <fullName>KOR-Korea Seoul Office</fullName>
+                <default>false</default>
+                <label>KOR-Korea Seoul Office</label>
+            </value>
+            <value>
+                <fullName>ES01 - BF Spain</fullName>
+                <default>false</default>
+                <label>ES01 - BF Spain</label>
+            </value>
+            <value>
+                <fullName>RU01 - BF Russia</fullName>
+                <default>false</default>
+                <label>RU01 - BF Russia</label>
+            </value>
+            <value>
+                <fullName>GB02 - BenRiach</fullName>
+                <default>false</default>
+                <label>GB02 - BenRiach</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

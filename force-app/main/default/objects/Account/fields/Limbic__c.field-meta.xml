@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Limbic__c</fullName>
+    <description>Germany: On-Trade</description>
+    <externalId>false</externalId>
+    <label>Limbic</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>*Geil* sein</fullName>
+                <default>false</default>
+                <label>*Geil* sein</label>
+            </value>
+            <value>
+                <fullName>Was *exklusives*</fullName>
+                <default>false</default>
+                <label>Was *exklusives*</label>
+            </value>
+            <value>
+                <fullName>Das Bekannte</fullName>
+                <default>false</default>
+                <label>Das Bekannte</label>
+            </value>
+            <value>
+                <fullName>Unterhalten werden</fullName>
+                <default>false</default>
+                <label>Unterhalten werden</label>
+            </value>
+            <value>
+                <fullName>Ich will bespasst werden</fullName>
+                <default>false</default>
+                <label>Ich will bespasst werden</label>
+            </value>
+            <value>
+                <fullName>Make Conversation</fullName>
+                <default>false</default>
+                <label>Make Conversation</label>
+            </value>
+            <value>
+                <fullName>ICH will Spaß haben</fullName>
+                <default>false</default>
+                <label>ICH will Spaß haben</label>
+            </value>
+            <value>
+                <fullName>Sehen und gesehen werden</fullName>
+                <default>false</default>
+                <label>Sehen und gesehen werden</label>
+            </value>
+            <value>
+                <fullName>Erleben</fullName>
+                <default>false</default>
+                <label>Erleben</label>
+            </value>
+            <value>
+                <fullName>*Es* muss besonders sein</fullName>
+                <default>false</default>
+                <label>*Es* muss besonders sein</label>
+            </value>
+            <value>
+                <fullName>Relaxen</fullName>
+                <default>false</default>
+                <label>Relaxen</label>
+            </value>
+            <value>
+                <fullName>Wir wollen gemeinsam Spaß haben</fullName>
+                <default>false</default>
+                <label>Wir wollen gemeinsam Spaß haben</label>
+            </value>
+            <value>
+                <fullName>In der Clique feiern</fullName>
+                <default>false</default>
+                <label>In der Clique feiern</label>
+            </value>
+            <value>
+                <fullName>Zusammensein</fullName>
+                <default>false</default>
+                <label>Zusammensein</label>
+            </value>
+            <value>
+                <fullName>Feiern</fullName>
+                <default>false</default>
+                <label>Feiern</label>
+            </value>
+            <value>
+                <fullName>Gemütlichkeit</fullName>
+                <default>false</default>
+                <label>Gemütlichkeit</label>
+            </value>
+            <value>
+                <fullName>Kennenlernen</fullName>
+                <default>false</default>
+                <label>Kennenlernen</label>
+            </value>
+            <value>
+                <fullName>Mich belohnen</fullName>
+                <default>false</default>
+                <label>Mich belohnen</label>
+            </value>
+            <value>
+                <fullName>Mich feiern</fullName>
+                <default>false</default>
+                <label>Mich feiern</label>
+            </value>
+            <value>
+                <fullName>Im Mittelpunkt stehen</fullName>
+                <default>false</default>
+                <label>Im Mittelpunkt stehen</label>
+            </value>
+            <value>
+                <fullName>Tanzen</fullName>
+                <default>false</default>
+                <label>Tanzen</label>
+            </value>
+            <value>
+                <fullName>Inspiriert werden</fullName>
+                <default>false</default>
+                <label>Inspiriert werden</label>
+            </value>
+            <value>
+                <fullName>Kontakte knüpfen</fullName>
+                <default>false</default>
+                <label>Kontakte knüpfen</label>
+            </value>
+            <value>
+                <fullName>Chillen</fullName>
+                <default>false</default>
+                <label>Chillen</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>10</visibleLines>
+</CustomField>

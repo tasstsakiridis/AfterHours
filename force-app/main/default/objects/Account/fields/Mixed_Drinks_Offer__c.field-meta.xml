@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mixed_Drinks_Offer__c</fullName>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Mixed Drinks Offer</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>none/straight</fullName>
+                <default>false</default>
+                <label>none/straight</label>
+            </value>
+            <value>
+                <fullName>FV + energy</fullName>
+                <default>false</default>
+                <label>FV + energy</label>
+            </value>
+            <value>
+                <fullName>mixdrinks</fullName>
+                <default>false</default>
+                <label>mixdrinks</label>
+            </value>
+            <value>
+                <fullName>mojito</fullName>
+                <default>false</default>
+                <label>mojito</label>
+            </value>
+            <value>
+                <fullName>cocktails</fullName>
+                <default>false</default>
+                <label>cocktails</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

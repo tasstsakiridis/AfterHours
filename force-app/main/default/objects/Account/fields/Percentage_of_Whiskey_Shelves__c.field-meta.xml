@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Percentage_of_Whiskey_Shelves__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Total_Nbr_of_Whiskey_Shelves_Eq_1_33m__c &lt;&gt; 0,Total_Nbr_of_Whiskey_Shelves_Eq_1_33m__c / (Total_Nbr_of_Spirit_Shelves_Eq_1_33m__c ),0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>% of Whiskey Shelves</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Has_Purchased_Thru_eCommerce__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Has this account purchase products through our eCommerce channel</description>
+    <externalId>false</externalId>
+    <label>Has Purchased Thru e-Commerce</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

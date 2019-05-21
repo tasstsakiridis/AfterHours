@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Community_Position_Corp_Responsibility__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What does the account focus on within the community?  For On Premise, what is the account position on responsible alcohol service?&quot;</inlineHelpText>
+    <label>Responsibility Platform</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

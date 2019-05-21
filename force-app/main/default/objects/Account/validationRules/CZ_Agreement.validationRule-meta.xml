@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_Agreement</fullName>
+    <active>true</active>
+    <description>Makes Billing Address Mandatory if Agreement is selected</description>
+    <errorConditionFormula>AND(
+ if( RecordTypeId =&quot;012a0000001ZJ8F&quot;, true,false),
+or(
+ISPICKVAL(Cooperation_Category__c, &quot;Written Agreement&quot;),
+ISPICKVAL(Cooperation_Category__c, &quot;Gentlemen Agreement&quot;)
+),
+OR( BillingStreet =NULL, BillingCity= NULL,
+ if(len(BillingPostalCode) &lt;&gt; 5,true,false)
+))</errorConditionFormula>
+    <errorMessage>Billing Address is required, Zip must be 5 digits</errorMessage>
+</ValidationRule>

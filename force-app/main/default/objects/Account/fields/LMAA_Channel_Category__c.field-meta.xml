@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LMAA_Channel_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>LMAA Channel Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCOMMODATION - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>ACCOMMODATION - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>AIRPORTS - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>AIRPORTS - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>BARS - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>BARS - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>BOWLING</fullName>
+                <default>false</default>
+                <label>BOWLING</label>
+            </value>
+            <value>
+                <fullName>CAFE</fullName>
+                <default>false</default>
+                <label>CAFE</label>
+            </value>
+            <value>
+                <fullName>CASINO - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>CASINO - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>CATERING</fullName>
+                <default>false</default>
+                <label>CATERING</label>
+            </value>
+            <value>
+                <fullName>CELLAR DOOR</fullName>
+                <default>false</default>
+                <label>CELLAR DOOR</label>
+            </value>
+            <value>
+                <fullName>CINEMAS</fullName>
+                <default>false</default>
+                <label>CINEMAS</label>
+            </value>
+            <value>
+                <fullName>COMMUNITY</fullName>
+                <default>false</default>
+                <label>COMMUNITY</label>
+            </value>
+            <value>
+                <fullName>CRICKET</fullName>
+                <default>false</default>
+                <label>CRICKET</label>
+            </value>
+            <value>
+                <fullName>DETACHED LIQUOR STORE</fullName>
+                <default>false</default>
+                <label>DETACHED LIQUOR STORE</label>
+            </value>
+            <value>
+                <fullName>DINING - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>DINING - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>DIRECT SALES - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>DIRECT SALES - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>ENTERTAINMENT - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>ENTERTAINMENT - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>FOOTBALL</fullName>
+                <default>false</default>
+                <label>FOOTBALL</label>
+            </value>
+            <value>
+                <fullName>FUNCTION</fullName>
+                <default>false</default>
+                <label>FUNCTION</label>
+            </value>
+            <value>
+                <fullName>GOLF</fullName>
+                <default>false</default>
+                <label>GOLF</label>
+            </value>
+            <value>
+                <fullName>GROCERY</fullName>
+                <default>false</default>
+                <label>GROCERY</label>
+            </value>
+            <value>
+                <fullName>GUEST HOUSES</fullName>
+                <default>false</default>
+                <label>GUEST HOUSES</label>
+            </value>
+            <value>
+                <fullName>HOTELS</fullName>
+                <default>false</default>
+                <label>HOTELS</label>
+            </value>
+            <value>
+                <fullName>LIQUOR STORES - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>LIQUOR STORES - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>MOTELS - ACCOMMODATION</fullName>
+                <default>false</default>
+                <label>MOTELS - ACCOMMODATION</label>
+            </value>
+            <value>
+                <fullName>MOTELS - DINING</fullName>
+                <default>false</default>
+                <label>MOTELS - DINING</label>
+            </value>
+            <value>
+                <fullName>MOTOR INNS - ACCOMMODATION</fullName>
+                <default>false</default>
+                <label>MOTOR INNS - ACCOMMODATION</label>
+            </value>
+            <value>
+                <fullName>MOTOR INNS - DINING</fullName>
+                <default>false</default>
+                <label>MOTOR INNS - DINING</label>
+            </value>
+            <value>
+                <fullName>MOTOR VESSELS - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>MOTOR VESSELS - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>NIGHTCLUBS - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>NIGHTCLUBS - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>PERFORMANCE</fullName>
+                <default>false</default>
+                <label>PERFORMANCE</label>
+            </value>
+            <value>
+                <fullName>PUBS - INTEGRATED - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>PUBS - INTEGRATED - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>PUBS - ON PREMISE - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>PUBS - ON PREMISE - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>RACING</fullName>
+                <default>false</default>
+                <label>RACING</label>
+            </value>
+            <value>
+                <fullName>RESORTS</fullName>
+                <default>false</default>
+                <label>RESORTS</label>
+            </value>
+            <value>
+                <fullName>RESTAURANTS</fullName>
+                <default>false</default>
+                <label>RESTAURANTS</label>
+            </value>
+            <value>
+                <fullName>RSL</fullName>
+                <default>false</default>
+                <label>RSL</label>
+            </value>
+            <value>
+                <fullName>SPORT</fullName>
+                <default>false</default>
+                <label>SPORT</label>
+            </value>
+            <value>
+                <fullName>TOURIST FACILITY</fullName>
+                <default>false</default>
+                <label>TOURIST FACILITY</label>
+            </value>
+            <value>
+                <fullName>UNIVERSITY/COLLEGE - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>UNIVERSITY/COLLEGE - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>VIGNERONS</fullName>
+                <default>false</default>
+                <label>VIGNERONS</label>
+            </value>
+            <value>
+                <fullName>WHOLESALERS - UNCLASSIFIED</fullName>
+                <default>false</default>
+                <label>WHOLESALERS - UNCLASSIFIED</label>
+            </value>
+            <value>
+                <fullName>WINE BARS</fullName>
+                <default>false</default>
+                <label>WINE BARS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

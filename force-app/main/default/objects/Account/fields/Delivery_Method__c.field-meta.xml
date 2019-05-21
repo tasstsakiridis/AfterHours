@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Delivery_Method__c</fullName>
+    <description>Delivery Method - Used by Distributor dB</description>
+    <externalId>false</externalId>
+    <label>Delivery Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Collect</fullName>
+                <default>false</default>
+                <label>Collect</label>
+            </value>
+            <value>
+                <fullName>Ground In-State Shipping</fullName>
+                <default>false</default>
+                <label>Ground In-State Shipping</label>
+            </value>
+            <value>
+                <fullName>In-Store Pickup</fullName>
+                <default>false</default>
+                <label>In-Store Pickup</label>
+            </value>
+            <value>
+                <fullName>Intrastate Shipping</fullName>
+                <default>false</default>
+                <label>Intrastate Shipping</label>
+            </value>
+            <value>
+                <fullName>On Demand</fullName>
+                <default>false</default>
+                <label>On Demand</label>
+            </value>
+            <value>
+                <fullName>Prepaid</fullName>
+                <default>false</default>
+                <label>Prepaid</label>
+            </value>
+            <value>
+                <fullName>Scheduled Delivery</fullName>
+                <default>false</default>
+                <label>Scheduled Delivery</label>
+            </value>
+            <value>
+                <fullName>Shipping Point</fullName>
+                <default>false</default>
+                <label>Shipping Point</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

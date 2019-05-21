@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Nbr_of_NAW_Shelves_Eq_1_33m__c</fullName>
+    <description>Share of Shelf callculatin for North American Whiskey (NAW).</description>
+    <externalId>false</externalId>
+    <label>Total Nbr of NAW Shelves (Eq 1.33m)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

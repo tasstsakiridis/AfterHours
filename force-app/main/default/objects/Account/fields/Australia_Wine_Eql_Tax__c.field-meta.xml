@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Australia_Wine_Eql_Tax__c</fullName>
+    <externalId>false</externalId>
+    <label>Australia Wine Eql Tax</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>0 - Not Relevant</fullName>
+                <default>false</default>
+                <label>0 - Not Relevant</label>
+            </value>
+            <value>
+                <fullName>1 - Taxable</fullName>
+                <default>false</default>
+                <label>1 - Taxable</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

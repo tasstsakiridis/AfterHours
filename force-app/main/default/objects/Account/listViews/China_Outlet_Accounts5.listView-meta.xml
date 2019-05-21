@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>China_Outlet_Accounts5</fullName>
+    <columns>Region__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Channel__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>English_Name__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>Supplier__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Status__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>China</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.Non_Sellable</value>
+    </filters>
+    <label>China Outlet Accounts - Non-Sellable</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>CHNAllUsers</group>
+    </sharedTo>
+</ListView>

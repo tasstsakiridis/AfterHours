@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Outlet_Class__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>For Poland - additional filter for channel</description>
+    <externalId>false</externalId>
+    <label>New Outlet Class</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.Market__c</field>
+            <operation>equals</operation>
+            <valueField>Outlet_Class__c.Market__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.Channel__c</field>
+            <operation>equals</operation>
+            <valueField>Outlet_Class__c.Channel__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Outlet_Class__c</referenceTo>
+    <relationshipLabel>Accounts (New Outlet Class)</relationshipLabel>
+    <relationshipName>New_Outlet_Class</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

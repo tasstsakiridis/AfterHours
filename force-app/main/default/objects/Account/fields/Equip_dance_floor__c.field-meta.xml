@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equip_dance_floor__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Equip - JDTF Freezer</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

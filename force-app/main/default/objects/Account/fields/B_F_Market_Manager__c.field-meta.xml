@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B_F_Market_Manager__c</fullName>
+    <externalId>false</externalId>
+    <label>B-F Market Manager</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>667D</fullName>
+                <default>false</default>
+                <label>667D</label>
+            </value>
+            <value>
+                <fullName>668D</fullName>
+                <default>false</default>
+                <label>668D</label>
+            </value>
+            <value>
+                <fullName>671D US SHIP CHANDLERS</fullName>
+                <default>false</default>
+                <label>671D US SHIP CHANDLERS</label>
+            </value>
+            <value>
+                <fullName>674D DF Shoppes</fullName>
+                <default>false</default>
+                <label>674D DF Shoppes</label>
+            </value>
+            <value>
+                <fullName>675D – No. Border</fullName>
+                <default>false</default>
+                <label>675D – No. Border</label>
+            </value>
+            <value>
+                <fullName>675D – So. Border</fullName>
+                <default>false</default>
+                <label>675D – So. Border</label>
+            </value>
+            <value>
+                <fullName>Aaron Martin</fullName>
+                <default>false</default>
+                <label>Aaron Martin</label>
+            </value>
+            <value>
+                <fullName>Adilson Prado</fullName>
+                <default>false</default>
+                <label>Adilson Prado</label>
+            </value>
+            <value>
+                <fullName>Adilson Prado – Brazil Office</fullName>
+                <default>false</default>
+                <label>Adilson Prado – Brazil Office</label>
+            </value>
+            <value>
+                <fullName>Ales Logar</fullName>
+                <default>false</default>
+                <label>Ales Logar</label>
+            </value>
+            <value>
+                <fullName>Asia/Pacific Territory 23: Taro Sakamoto</fullName>
+                <default>false</default>
+                <label>Asia/Pacific Territory 23: Taro Sakamoto</label>
+            </value>
+            <value>
+                <fullName>Asia/Pacific Territory 27: Taro Sakamoto</fullName>
+                <default>false</default>
+                <label>Asia/Pacific Territory 27: Taro Sakamoto</label>
+            </value>
+            <value>
+                <fullName>Australia Office</fullName>
+                <default>false</default>
+                <label>Australia Office</label>
+            </value>
+            <value>
+                <fullName>Barbara Pinna</fullName>
+                <default>false</default>
+                <label>Barbara Pinna</label>
+            </value>
+            <value>
+                <fullName>Belarus</fullName>
+                <default>false</default>
+                <label>Belarus</label>
+            </value>
+            <value>
+                <fullName>Biba Koniecna</fullName>
+                <default>false</default>
+                <label>Biba Koniecna</label>
+            </value>
+            <value>
+                <fullName>Bruce Losee</fullName>
+                <default>false</default>
+                <label>Bruce Losee</label>
+            </value>
+            <value>
+                <fullName>Budiman – Singapore</fullName>
+                <default>false</default>
+                <label>Budiman – Singapore</label>
+            </value>
+            <value>
+                <fullName>Charlotte Ashburner</fullName>
+                <default>false</default>
+                <label>Charlotte Ashburner</label>
+            </value>
+            <value>
+                <fullName>Chidchanok Samolkiat</fullName>
+                <default>false</default>
+                <label>Chidchanok Samolkiat</label>
+            </value>
+            <value>
+                <fullName>China – Alex Cheung</fullName>
+                <default>false</default>
+                <label>China – Alex Cheung</label>
+            </value>
+            <value>
+                <fullName>Chuck Shive – Australia Office</fullName>
+                <default>false</default>
+                <label>Chuck Shive – Australia Office</label>
+            </value>
+            <value>
+                <fullName>Croatia Slovenia Albania</fullName>
+                <default>false</default>
+                <label>Croatia Slovenia Albania</label>
+            </value>
+            <value>
+                <fullName>Dimitar Georgiev – Country Manager</fullName>
+                <default>false</default>
+                <label>Dimitar Georgiev – Country Manager</label>
+            </value>
+            <value>
+                <fullName>Dirk Sass, Country Manager</fullName>
+                <default>false</default>
+                <label>Dirk Sass, Country Manager</label>
+            </value>
+            <value>
+                <fullName>Dong II Shin – Korea</fullName>
+                <default>false</default>
+                <label>Dong II Shin – Korea</label>
+            </value>
+            <value>
+                <fullName>Dubai – Tony McIver</fullName>
+                <default>false</default>
+                <label>Dubai – Tony McIver</label>
+            </value>
+            <value>
+                <fullName>Duty Free Italy</fullName>
+                <default>false</default>
+                <label>Duty Free Italy</label>
+            </value>
+            <value>
+                <fullName>Estonia</fullName>
+                <default>false</default>
+                <label>Estonia</label>
+            </value>
+            <value>
+                <fullName>European Territory 04: Yiannis Pafilis</fullName>
+                <default>false</default>
+                <label>European Territory 04: Yiannis Pafilis</label>
+            </value>
+            <value>
+                <fullName>Euro Ter 05: Kevin Baker(D. Free/Retail)</fullName>
+                <default>false</default>
+                <label>Euro Ter 05: Kevin Baker(D. Free/Retail)</label>
+            </value>
+            <value>
+                <fullName>European Territory 07: Sophia Angelis</fullName>
+                <default>false</default>
+                <label>European Territory 07: Sophia Angelis</label>
+            </value>
+            <value>
+                <fullName>European Territory 12: Michel Gayraud</fullName>
+                <default>false</default>
+                <label>European Territory 12: Michel Gayraud</label>
+            </value>
+            <value>
+                <fullName>European Territory 14: Fausto Galosi</fullName>
+                <default>false</default>
+                <label>European Territory 14: Fausto Galosi</label>
+            </value>
+            <value>
+                <fullName>European Territory 15: Enrique Garriga</fullName>
+                <default>false</default>
+                <label>European Territory 15: Enrique Garriga</label>
+            </value>
+            <value>
+                <fullName>European Territory 15: Juan Antonio Puig</fullName>
+                <default>false</default>
+                <label>European Territory 15: Juan Antonio Puig</label>
+            </value>
+            <value>
+                <fullName>Fady Zaidan – Country Manager</fullName>
+                <default>false</default>
+                <label>Fady Zaidan – Country Manager</label>
+            </value>
+            <value>
+                <fullName>George Puyana</fullName>
+                <default>false</default>
+                <label>George Puyana</label>
+            </value>
+            <value>
+                <fullName>George Stasinopoulos</fullName>
+                <default>false</default>
+                <label>George Stasinopoulos</label>
+            </value>
+            <value>
+                <fullName>Geroge Puyana</fullName>
+                <default>false</default>
+                <label>Geroge Puyana</label>
+            </value>
+            <value>
+                <fullName>Gunther Froehlich/Caren Ottenstroeer</fullName>
+                <default>false</default>
+                <label>Gunther Froehlich/Caren Ottenstroeer</label>
+            </value>
+            <value>
+                <fullName>Igor Nazarov, Country Manager</fullName>
+                <default>false</default>
+                <label>Igor Nazarov, Country Manager</label>
+            </value>
+            <value>
+                <fullName>Isabell Pagniez</fullName>
+                <default>false</default>
+                <label>Isabell Pagniez</label>
+            </value>
+            <value>
+                <fullName>Jorge Rothery</fullName>
+                <default>false</default>
+                <label>Jorge Rothery</label>
+            </value>
+            <value>
+                <fullName>Juan Antonio Puig – Spain Office</fullName>
+                <default>false</default>
+                <label>Juan Antonio Puig – Spain Office</label>
+            </value>
+            <value>
+                <fullName>Komsan Supatkajon – Thailand</fullName>
+                <default>false</default>
+                <label>Komsan Supatkajon – Thailand</label>
+            </value>
+            <value>
+                <fullName>Lithuania – Rein Veldi</fullName>
+                <default>false</default>
+                <label>Lithuania – Rein Veldi</label>
+            </value>
+            <value>
+                <fullName>Mail Marketing</fullName>
+                <default>false</default>
+                <label>Mail Marketing</label>
+            </value>
+            <value>
+                <fullName>Michael Piplack, Area Dir/Kevin Baker</fullName>
+                <default>false</default>
+                <label>Michael Piplack, Area Dir/Kevin Baker</label>
+            </value>
+            <value>
+                <fullName>Mike Topham</fullName>
+                <default>false</default>
+                <label>Mike Topham</label>
+            </value>
+            <value>
+                <fullName>Nathan Fisher</fullName>
+                <default>false</default>
+                <label>Nathan Fisher</label>
+            </value>
+            <value>
+                <fullName>Oliver Heimburger</fullName>
+                <default>false</default>
+                <label>Oliver Heimburger</label>
+            </value>
+            <value>
+                <fullName>Oliver Heimburger – Area Manager</fullName>
+                <default>false</default>
+                <label>Oliver Heimburger – Area Manager</label>
+            </value>
+            <value>
+                <fullName>Olli-Pekka Lappalainen, Area Manager</fullName>
+                <default>false</default>
+                <label>Olli-Pekka Lappalainen, Area Manager</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Other – Alex Logar</fullName>
+                <default>false</default>
+                <label>Other – Alex Logar</label>
+            </value>
+            <value>
+                <fullName>Philippines – Alan Anastacio</fullName>
+                <default>false</default>
+                <label>Philippines – Alan Anastacio</label>
+            </value>
+            <value>
+                <fullName>Portugal Duty Free</fullName>
+                <default>false</default>
+                <label>Portugal Duty Free</label>
+            </value>
+            <value>
+                <fullName>Rainer Sieling</fullName>
+                <default>false</default>
+                <label>Rainer Sieling</label>
+            </value>
+            <value>
+                <fullName>Rein Veldi</fullName>
+                <default>false</default>
+                <label>Rein Veldi</label>
+            </value>
+            <value>
+                <fullName>Rein Veldi – Duty Free</fullName>
+                <default>false</default>
+                <label>Rein Veldi – Duty Free</label>
+            </value>
+            <value>
+                <fullName>Ricardo Basel</fullName>
+                <default>false</default>
+                <label>Ricardo Basel</label>
+            </value>
+            <value>
+                <fullName>Richard Jillings</fullName>
+                <default>false</default>
+                <label>Richard Jillings</label>
+            </value>
+            <value>
+                <fullName>Rodrigo Bazan</fullName>
+                <default>false</default>
+                <label>Rodrigo Bazan</label>
+            </value>
+            <value>
+                <fullName>Roy Irawan – Indonesia</fullName>
+                <default>false</default>
+                <label>Roy Irawan – Indonesia</label>
+            </value>
+            <value>
+                <fullName>Simon McCaffery – Canada</fullName>
+                <default>false</default>
+                <label>Simon McCaffery – Canada</label>
+            </value>
+            <value>
+                <fullName>Slovakia</fullName>
+                <default>false</default>
+                <label>Slovakia</label>
+            </value>
+            <value>
+                <fullName>South Africa</fullName>
+                <default>false</default>
+                <label>South Africa</label>
+            </value>
+            <value>
+                <fullName>Stefanie Duerr</fullName>
+                <default>false</default>
+                <label>Stefanie Duerr</label>
+            </value>
+            <value>
+                <fullName>Stephane Morizet</fullName>
+                <default>false</default>
+                <label>Stephane Morizet</label>
+            </value>
+            <value>
+                <fullName>Tanny Szeto</fullName>
+                <default>false</default>
+                <label>Tanny Szeto</label>
+            </value>
+            <value>
+                <fullName>Taro Sakamoto</fullName>
+                <default>false</default>
+                <label>Taro Sakamoto</label>
+            </value>
+            <value>
+                <fullName>Tim Young</fullName>
+                <default>false</default>
+                <label>Tim Young</label>
+            </value>
+            <value>
+                <fullName>Tony McIver</fullName>
+                <default>false</default>
+                <label>Tony McIver</label>
+            </value>
+            <value>
+                <fullName>Tony McIver – Area Director</fullName>
+                <default>false</default>
+                <label>Tony McIver – Area Director</label>
+            </value>
+            <value>
+                <fullName>Varpu Makkonen</fullName>
+                <default>false</default>
+                <label>Varpu Makkonen</label>
+            </value>
+            <value>
+                <fullName>Varpu Makkonen – Area Manager Nordic LC</fullName>
+                <default>false</default>
+                <label>Varpu Makkonen – Area Manager Nordic LC</label>
+            </value>
+            <value>
+                <fullName>Vladislav Shaposhnikov, Country Manager</fullName>
+                <default>false</default>
+                <label>Vladislav Shaposhnikov, Country Manager</label>
+            </value>
+            <value>
+                <fullName>Zoran Stojanovic</fullName>
+                <default>false</default>
+                <label>Zoran Stojanovic</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

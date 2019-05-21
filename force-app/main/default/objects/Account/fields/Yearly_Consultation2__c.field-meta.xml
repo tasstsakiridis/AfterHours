@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yearly_Consultation2__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>used in Germany ON Prmise to indicate if there is a signed contract for the Financial Year with an Outlet in place. Used together with Yearly Consultation in a bi yearly rota</description>
+    <externalId>false</externalId>
+    <label>Yearly Consultation2</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

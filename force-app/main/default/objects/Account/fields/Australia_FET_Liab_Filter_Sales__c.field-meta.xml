@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Australia_FET_Liab_Filter_Sales__c</fullName>
+    <externalId>false</externalId>
+    <label>Australia FET Liab Filter Sales</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>N - Not Relevant for FET</fullName>
+                <default>false</default>
+                <label>N - Not Relevant for FET</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

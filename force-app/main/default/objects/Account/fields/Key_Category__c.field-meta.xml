@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Key Category</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bourbon / American Whiskey</fullName>
+                <default>false</default>
+                <label>Bourbon / American Whiskey</label>
+            </value>
+            <value>
+                <fullName>Canadian / Other Whiskey</fullName>
+                <default>false</default>
+                <label>Canadian / Other Whiskey</label>
+            </value>
+            <value>
+                <fullName>Scotch / Irish</fullName>
+                <default>false</default>
+                <label>Scotch / Irish</label>
+            </value>
+            <value>
+                <fullName>Liqueurs / Cordials / Brandy</fullName>
+                <default>false</default>
+                <label>Liqueurs / Cordials / Brandy</label>
+            </value>
+            <value>
+                <fullName>Rum / Gin</fullName>
+                <default>false</default>
+                <label>Rum / Gin</label>
+            </value>
+            <value>
+                <fullName>Tequila</fullName>
+                <default>false</default>
+                <label>Tequila</label>
+            </value>
+            <value>
+                <fullName>Vodka</fullName>
+                <default>false</default>
+                <label>Vodka</label>
+            </value>
+            <value>
+                <fullName>Wine</fullName>
+                <default>false</default>
+                <label>Wine</label>
+            </value>
+            <value>
+                <fullName>RTD</fullName>
+                <default>false</default>
+                <label>RTD</label>
+            </value>
+            <value>
+                <fullName>Beer</fullName>
+                <default>false</default>
+                <label>Beer</label>
+            </value>
+            <value>
+                <fullName>Zero Proof</fullName>
+                <default>false</default>
+                <label>Zero Proof</label>
+            </value>
+            <value>
+                <fullName>Whiskey</fullName>
+                <default>false</default>
+                <label>Whiskey</label>
+            </value>
+            <value>
+                <fullName>Gin</fullName>
+                <default>false</default>
+                <label>Gin</label>
+            </value>
+            <value>
+                <fullName>Rum</fullName>
+                <default>false</default>
+                <label>Rum</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

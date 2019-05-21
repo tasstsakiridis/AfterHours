@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Special_Outlet_key_c__c</fullName>
+    <description>...das Feld enthält das 6 - 10 stellige Betriebskennzeichen für Rewe und EDEKA Outlets
+..this field contains the new 6-10 digit field for special outlet key for Rewe or EDEKA</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Bitte Betriebskennzeichen eingeben!</inlineHelpText>
+    <label>Special Oulet Key</label>
+    <length>10</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DEU_MARKANT_Klaas_Kock</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>Off</value>
+    </filters>
+    <filters>
+        <field>National_Head_Office_Name_TD__c</field>
+        <operation>equals</operation>
+        <value>Markant</value>
+    </filters>
+    <filters>
+        <field>Trading_Company_Name_TD__c</field>
+        <operation>equals</operation>
+        <value>Klaas + Kock</value>
+    </filters>
+    <filters>
+        <field>Select_for_Deletion__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.LAST_NAME</field>
+        <operation>notContain</operation>
+        <value>test-,-test</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>notContain</operation>
+        <value>test-,-test</value>
+    </filters>
+    <label>DEU-MARKANT-Klaas + Kock</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>KoreaAllUsers</group>
+    </sharedTo>
+</ListView>

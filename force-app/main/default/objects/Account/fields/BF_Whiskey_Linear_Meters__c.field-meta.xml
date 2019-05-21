@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BF_Whiskey_Linear_Meters__c</fullName>
+    <description>BF Whiskey Linear Meters - Feild Update from the Account Survey</description>
+    <externalId>false</externalId>
+    <label>BF Whiskey Linear Meters</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

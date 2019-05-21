@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Equip_darts_bowling_billiard__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Equip - 1st JDTF Machine</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

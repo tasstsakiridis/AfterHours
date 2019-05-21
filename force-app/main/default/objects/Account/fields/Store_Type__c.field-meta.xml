@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Store Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Channel__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HYPER &gt; 5000 m²</fullName>
+                <default>false</default>
+                <label>HYPER &gt; 5000 m²</label>
+            </value>
+            <value>
+                <fullName>HYPER From 2500 to 5000 m²</fullName>
+                <default>false</default>
+                <label>HYPER From 2500 to 5000 m²</label>
+            </value>
+            <value>
+                <fullName>SUPERMARCHE &gt; 1200 m²</fullName>
+                <default>false</default>
+                <label>SUPERMARCHE &gt; 1200 m²</label>
+            </value>
+            <value>
+                <fullName>SUPERMARCHE from 800 to 1200 m²</fullName>
+                <default>false</default>
+                <label>SUPERMARCHE from 800 to 1200 m²</label>
+            </value>
+            <value>
+                <fullName>SUPERMARCHE &lt; 800 m²</fullName>
+                <default>false</default>
+                <label>SUPERMARCHE &lt; 800 m²</label>
+            </value>
+            <value>
+                <fullName>LKA</fullName>
+                <default>false</default>
+                <label>LKA</label>
+            </value>
+            <value>
+                <fullName>BARS</fullName>
+                <default>false</default>
+                <label>BARS</label>
+            </value>
+            <value>
+                <fullName>BARS DE NUIT</fullName>
+                <default>false</default>
+                <label>BARS DE NUIT</label>
+            </value>
+            <value>
+                <fullName>CLUBS</fullName>
+                <default>false</default>
+                <label>CLUBS</label>
+            </value>
+            <value>
+                <fullName>PRESTIGE</fullName>
+                <default>false</default>
+                <label>PRESTIGE</label>
+            </value>
+            <value>
+                <fullName>Cavistes</fullName>
+                <default>false</default>
+                <label>Cavistes</label>
+            </value>
+            <value>
+                <fullName>Grossiste</fullName>
+                <default>false</default>
+                <label>Grossiste</label>
+            </value>
+            <value>
+                <fullName>Cash and Carry</fullName>
+                <default>false</default>
+                <label>Cash and Carry</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>BARS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>BARS DE NUIT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>CLUBS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>PRESTIGE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Cavistes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Grossiste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>On</controllingFieldValue>
+            <valueName>Cash and Carry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>HYPER &gt; 5000 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>HYPER From 2500 to 5000 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>SUPERMARCHE &gt; 1200 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>SUPERMARCHE from 800 to 1200 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>SUPERMARCHE &lt; 800 m²</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Off</controllingFieldValue>
+            <valueName>LKA</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_Promotion_Acc_Visit</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>CZ Promotion Acc Visit</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>{!$Site.Prefix}/flow/CZ_Promotion_Activity?recordId={!Account.Id}&amp;retURL={!$Site.Prefix}/apex/account_visit?id={!Account.Id}</url>
+</WebLink>

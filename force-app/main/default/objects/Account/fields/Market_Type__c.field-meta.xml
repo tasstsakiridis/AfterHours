@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Type__c</fullName>
+    <description>FDC-GD</description>
+    <externalId>false</externalId>
+    <label>Market Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Air Duty-Free</fullName>
+                <default>false</default>
+                <label>Air Duty-Free</label>
+            </value>
+            <value>
+                <fullName>Domestic</fullName>
+                <default>false</default>
+                <label>Domestic</label>
+            </value>
+            <value>
+                <fullName>Duty-Free</fullName>
+                <default>false</default>
+                <label>Duty-Free</label>
+            </value>
+            <value>
+                <fullName>Local Economy</fullName>
+                <default>false</default>
+                <label>Local Economy</label>
+            </value>
+            <value>
+                <fullName>Local Economy &amp; Duty Free</fullName>
+                <default>false</default>
+                <label>Local Economy &amp; Duty Free</label>
+            </value>
+            <value>
+                <fullName>Local &amp; Duty-Free &amp; Military</fullName>
+                <default>false</default>
+                <label>Local &amp; Duty-Free &amp; Military</label>
+            </value>
+            <value>
+                <fullName>Travel Retail</fullName>
+                <default>false</default>
+                <label>Travel Retail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_8_digit_ac_number</fullName>
+    <active>true</active>
+    <description>8 digit account number required</description>
+    <errorConditionFormula>AND( OR( if( RecordTypeId = &quot;012a0000001ZJ8E&quot;, true, false), if( RecordTypeId =&quot;012a0000001ZJ8F&quot;, true, false)),if( LEN( AccountNumber )  &lt;&gt; 8,true,false))</errorConditionFormula>
+    <errorDisplayField>AccountNumber</errorDisplayField>
+    <errorMessage>Account Number must be 8 digits.</errorMessage>
+</ValidationRule>

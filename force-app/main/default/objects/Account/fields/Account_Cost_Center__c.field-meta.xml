@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Cost_Center__c</fullName>
+    <description>Mexico. Cost Center the account charges to for invoices</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Cost Center the account charges to for invoices</inlineHelpText>
+    <label>Account Cost Center</label>
+    <precision>7</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

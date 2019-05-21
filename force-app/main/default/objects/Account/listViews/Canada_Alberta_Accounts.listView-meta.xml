@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Alberta_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>Channel__c</columns>
+    <columns>Actionable_Segment__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>CAD-Alberta</value>
+    </filters>
+    <label>Canada - Alberta Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>CADBusDevWestBF</role>
+        <role>CADMarketManagerAdmin</role>
+        <role>CADMarketingDirector</role>
+        <role>CADNationalLevelBF</role>
+        <role>CADNationalLevelHive</role>
+        <role>CADSalesManagerAlbertaHive</role>
+    </sharedTo>
+</ListView>

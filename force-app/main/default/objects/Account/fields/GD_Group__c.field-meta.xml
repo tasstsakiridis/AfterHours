@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GD_Group__c</fullName>
+    <description>FDC-GD</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Select Group</inlineHelpText>
+    <label>Group</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Americas</fullName>
+                <default>false</default>
+                <label>Americas</label>
+            </value>
+            <value>
+                <fullName>Asia Pacific</fullName>
+                <default>false</default>
+                <label>Asia Pacific</label>
+            </value>
+            <value>
+                <fullName>Duty Free Americas</fullName>
+                <default>false</default>
+                <label>Duty Free Americas</label>
+            </value>
+            <value>
+                <fullName>EAE Group</fullName>
+                <default>false</default>
+                <label>EAE Group</label>
+            </value>
+            <value>
+                <fullName>GEA</fullName>
+                <default>false</default>
+                <label>GEA</label>
+            </value>
+            <value>
+                <fullName>GEA - Thomas Hinrichs</fullName>
+                <default>false</default>
+                <label>GEA - Thomas Hinrichs</label>
+            </value>
+            <value>
+                <fullName>Global Marketing</fullName>
+                <default>false</default>
+                <label>Global Marketing</label>
+            </value>
+            <value>
+                <fullName>WEA</fullName>
+                <default>false</default>
+                <label>WEA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

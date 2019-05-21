@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_LoEn_Aktivni</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>Channel__c</columns>
+    <columns>Last_Visit_Date__c</columns>
+    <columns>E_Mail_Address__c</columns>
+    <columns>ACCOUNT.URL</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Czech Republic</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <filters>
+        <field>Energy__c</field>
+        <operation>equals</operation>
+        <value>low energy</value>
+    </filters>
+    <label>Enerie nízká- Aktivní</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>GlobalAdministrator</role>
+        <roleAndSubordinates>CZ_Market_Manager_Admin</roleAndSubordinates>
+    </sharedTo>
+</ListView>

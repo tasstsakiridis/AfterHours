@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SoCo__c</fullName>
+    <description>PARX: yearly agreement on SoCo</description>
+    <externalId>false</externalId>
+    <label>Southern Comfort Focus Outlet</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>mit Personalpromotion N1/N2</fullName>
+                <default>false</default>
+                <label>mit Personalpromotion N1/N2</label>
+            </value>
+            <value>
+                <fullName>ohne Personalpromotion</fullName>
+                <default>false</default>
+                <label>ohne Personalpromotion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

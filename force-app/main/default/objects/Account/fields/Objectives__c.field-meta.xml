@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Objectives__c</fullName>
+    <description>Objectives for Upcoming Outlet Visits</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter objectives for upcoming outlet visits</inlineHelpText>
+    <label>Objectives</label>
+    <length>32000</length>
+    <trackHistory>true</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

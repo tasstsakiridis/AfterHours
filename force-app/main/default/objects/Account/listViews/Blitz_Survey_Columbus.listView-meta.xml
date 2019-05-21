@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Blitz_Survey_Columbus</fullName>
+    <booleanFilter>8 AND (1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 9 OR 10)</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.ADDRESS1_STREET</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TDLinx_ID__c</field>
+        <operation>equals</operation>
+        <value>5588736</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>MAPLEWOOD KITCHEN &amp; BAR</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>BAKERSFIELD CANTINA</value>
+    </filters>
+    <filters>
+        <field>TDLinx_ID__c</field>
+        <operation>equals</operation>
+        <value>1864349</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>MAPLEWOOD KITCHEN &amp; BAR</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>BRU BURGER BAR</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>KRUEGERS TAVERN</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.ADDRESS1_STATE</field>
+        <operation>equals</operation>
+        <value>OHIO</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.NAME</field>
+        <operation>equals</operation>
+        <value>NICHOLSONS TAVERN &amp; PUB</value>
+    </filters>
+    <filters>
+        <field>TDLinx_ID__c</field>
+        <operation>equals</operation>
+        <value>2587347</value>
+    </filters>
+    <label>Blitz Survey - Cincinnati</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>GlobalAdministrator</role>
+    </sharedTo>
+</ListView>

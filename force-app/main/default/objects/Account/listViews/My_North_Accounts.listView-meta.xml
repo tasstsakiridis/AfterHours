@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_North_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>New_Outlet_Class__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>Status__c</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Poland</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>On</value>
+    </filters>
+    <filters>
+        <field>Area_PL__c</field>
+        <operation>equals</operation>
+        <value>North</value>
+    </filters>
+    <label>My North Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>PL_OP_RSM_North</role>
+    </sharedTo>
+</ListView>

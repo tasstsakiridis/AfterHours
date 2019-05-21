@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CIF_Territory__c</fullName>
+    <externalId>false</externalId>
+    <label>Territory</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>138C</fullName>
+                <default>false</default>
+                <label>138C</label>
+            </value>
+            <value>
+                <fullName>138D</fullName>
+                <default>false</default>
+                <label>138D</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi - DF  - 206D</fullName>
+                <default>false</default>
+                <label>Abu Dhabi - DF  - 206D</label>
+            </value>
+            <value>
+                <fullName>Abu Dhabi - LE  - 206C</fullName>
+                <default>false</default>
+                <label>Abu Dhabi - LE  - 206C</label>
+            </value>
+            <value>
+                <fullName>Aeroboutique  - 2657</fullName>
+                <default>false</default>
+                <label>Aeroboutique  - 2657</label>
+            </value>
+            <value>
+                <fullName>Afganistan DF  - 256D</fullName>
+                <default>false</default>
+                <label>Afganistan DF  - 256D</label>
+            </value>
+            <value>
+                <fullName>Africa Misc  - 525G</fullName>
+                <default>false</default>
+                <label>Africa Misc  - 525G</label>
+            </value>
+            <value>
+                <fullName>Air Canada  - 601D</fullName>
+                <default>false</default>
+                <label>Air Canada  - 601D</label>
+            </value>
+            <value>
+                <fullName>Alabama  - 5336</fullName>
+                <default>false</default>
+                <label>Alabama  - 5336</label>
+            </value>
+            <value>
+                <fullName>Alaska  - 5446</fullName>
+                <default>false</default>
+                <label>Alaska  - 5446</label>
+            </value>
+            <value>
+                <fullName>Albania - LE  - 120C</fullName>
+                <default>false</default>
+                <label>Albania - LE  - 120C</label>
+            </value>
+            <value>
+                <fullName>Alberta - LE  - 613C</fullName>
+                <default>false</default>
+                <label>Alberta - LE  - 613C</label>
+            </value>
+            <value>
+                <fullName>Alkometa (statutory)  - 9810</fullName>
+                <default>false</default>
+                <label>Alkometa (statutory)  - 9810</label>
+            </value>
+            <value>
+                <fullName>American Samoa - LE  - 906C</fullName>
+                <default>false</default>
+                <label>American Samoa - LE  - 906C</label>
+            </value>
+            <value>
+                <fullName>Americas Military  - 602M</fullName>
+                <default>false</default>
+                <label>Americas Military  - 602M</label>
+            </value>
+            <value>
+                <fullName>Andorra - LE  - 107C</fullName>
+                <default>false</default>
+                <label>Andorra - LE  - 107C</label>
+            </value>
+            <value>
+                <fullName>Angola - LE  - 504C</fullName>
+                <default>false</default>
+                <label>Angola - LE  - 504C</label>
+            </value>
+            <value>
+                <fullName>Antigua - LE  - 706C</fullName>
+                <default>false</default>
+                <label>Antigua - LE  - 706C</label>
+            </value>
+            <value>
+                <fullName>Argentina - DF  - 806D</fullName>
+                <default>false</default>
+                <label>Argentina - DF  - 806D</label>
+            </value>
+            <value>
+                <fullName>Argentina II - DF  - 807D</fullName>
+                <default>false</default>
+                <label>Argentina II - DF  - 807D</label>
+            </value>
+            <value>
+                <fullName>Argentina - LE  - 806C</fullName>
+                <default>false</default>
+                <label>Argentina - LE  - 806C</label>
+            </value>
+            <value>
+                <fullName>Argentina Misc  - 806G</fullName>
+                <default>false</default>
+                <label>Argentina Misc  - 806G</label>
+            </value>
+            <value>
+                <fullName>Arizona  - 3152</fullName>
+                <default>false</default>
+                <label>Arizona  - 3152</label>
+            </value>
+            <value>
+                <fullName>Arkansas  - 3433</fullName>
+                <default>false</default>
+                <label>Arkansas  - 3433</label>
+            </value>
+            <value>
+                <fullName>Armenia  - 178C</fullName>
+                <default>false</default>
+                <label>Armenia  - 178C</label>
+            </value>
+            <value>
+                <fullName>Aruba - LE  - 707C</fullName>
+                <default>false</default>
+                <label>Aruba - LE  - 707C</label>
+            </value>
+            <value>
+                <fullName>Asia Pac Home Office  - 5250</fullName>
+                <default>false</default>
+                <label>Asia Pac Home Office  - 5250</label>
+            </value>
+            <value>
+                <fullName>Atlantic Home Office  - 9980</fullName>
+                <default>false</default>
+                <label>Atlantic Home Office  - 9980</label>
+            </value>
+            <value>
+                <fullName>Aus/NZ Home Office  - 5300</fullName>
+                <default>false</default>
+                <label>Aus/NZ Home Office  - 5300</label>
+            </value>
+            <value>
+                <fullName>Aus Home Office  - 900C</fullName>
+                <default>false</default>
+                <label>Aus Home Office  - 900C</label>
+            </value>
+            <value>
+                <fullName>Australia - DF  - 907D</fullName>
+                <default>false</default>
+                <label>Australia - DF  - 907D</label>
+            </value>
+            <value>
+                <fullName>Australia Home Offc  - 5800</fullName>
+                <default>false</default>
+                <label>Australia Home Offc  - 5800</label>
+            </value>
+            <value>
+                <fullName>Austria - DF  - 108D</fullName>
+                <default>false</default>
+                <label>Austria - DF  - 108D</label>
+            </value>
+            <value>
+                <fullName>Austria - LE  - 108C</fullName>
+                <default>false</default>
+                <label>Austria - LE  - 108C</label>
+            </value>
+            <value>
+                <fullName>Bahamas - LE  - 711C</fullName>
+                <default>false</default>
+                <label>Bahamas - LE  - 711C</label>
+            </value>
+            <value>
+                <fullName>Bahrain - DF  - 211D</fullName>
+                <default>false</default>
+                <label>Bahrain - DF  - 211D</label>
+            </value>
+            <value>
+                <fullName>Bahrain - LE  - 211C</fullName>
+                <default>false</default>
+                <label>Bahrain - LE  - 211C</label>
+            </value>
+            <value>
+                <fullName>Bajio (Mexico) LE  - 683C</fullName>
+                <default>false</default>
+                <label>Bajio (Mexico) LE  - 683C</label>
+            </value>
+            <value>
+                <fullName>Baltics Home Office  - 3240</fullName>
+                <default>false</default>
+                <label>Baltics Home Office  - 3240</label>
+            </value>
+            <value>
+                <fullName>Bangladesh - DF  - 311D</fullName>
+                <default>false</default>
+                <label>Bangladesh - DF  - 311D</label>
+            </value>
+            <value>
+                <fullName>Bangladesh - LE  - 311C</fullName>
+                <default>false</default>
+                <label>Bangladesh - LE  - 311C</label>
+            </value>
+            <value>
+                <fullName>Barbados - DF  - 712D</fullName>
+                <default>false</default>
+                <label>Barbados - DF  - 712D</label>
+            </value>
+            <value>
+                <fullName>Barbados - LE  - 712C</fullName>
+                <default>false</default>
+                <label>Barbados - LE  - 712C</label>
+            </value>
+            <value>
+                <fullName>Barrel House  -  511</fullName>
+                <default>false</default>
+                <label>Barrel House  -  511</label>
+            </value>
+            <value>
+                <fullName>Beijing  - DF  - 324D</fullName>
+                <default>false</default>
+                <label>Beijing  - DF  - 324D</label>
+            </value>
+            <value>
+                <fullName>Beijing - LE  - 324C</fullName>
+                <default>false</default>
+                <label>Beijing - LE  - 324C</label>
+            </value>
+            <value>
+                <fullName>Belarus - DF  - 171D</fullName>
+                <default>false</default>
+                <label>Belarus - DF  - 171D</label>
+            </value>
+            <value>
+                <fullName>Belarus - LE  - 171C</fullName>
+                <default>false</default>
+                <label>Belarus - LE  - 171C</label>
+            </value>
+            <value>
+                <fullName>Belgium - DF  - 111D</fullName>
+                <default>false</default>
+                <label>Belgium - DF  - 111D</label>
+            </value>
+            <value>
+                <fullName>Belgium - LE  - 111C</fullName>
+                <default>false</default>
+                <label>Belgium - LE  - 111C</label>
+            </value>
+            <value>
+                <fullName>Belize - LE  - 611C</fullName>
+                <default>false</default>
+                <label>Belize - LE  - 611C</label>
+            </value>
+            <value>
+                <fullName>BenRiach Production - 3610</fullName>
+                <default>false</default>
+                <label>BenRiach Production - 3610</label>
+            </value>
+            <value>
+                <fullName>Bermuda - DF  - 612D</fullName>
+                <default>false</default>
+                <label>Bermuda - DF  - 612D</label>
+            </value>
+            <value>
+                <fullName>Bermuda - LE  - 612C</fullName>
+                <default>false</default>
+                <label>Bermuda - LE  - 612C</label>
+            </value>
+            <value>
+                <fullName>Beverage Admin  - 1190</fullName>
+                <default>false</default>
+                <label>Beverage Admin  - 1190</label>
+            </value>
+            <value>
+                <fullName>Beverage Support  - 1100</fullName>
+                <default>false</default>
+                <label>Beverage Support  - 1100</label>
+            </value>
+            <value>
+                <fullName>BFBF (Cash Reval)  - 1400</fullName>
+                <default>false</default>
+                <label>BFBF (Cash Reval)  - 1400</label>
+            </value>
+            <value>
+                <fullName>B-F Distillery  - 4600</fullName>
+                <default>false</default>
+                <label>B-F Distillery  - 4600</label>
+            </value>
+            <value>
+                <fullName>BFNA Miscellaneous  - 2150</fullName>
+                <default>false</default>
+                <label>BFNA Miscellaneous  - 2150</label>
+            </value>
+            <value>
+                <fullName>BFTM Production  - 3500</fullName>
+                <default>false</default>
+                <label>BFTM Production  - 3500</label>
+            </value>
+            <value>
+                <fullName>BGC - Domestic  - 475D</fullName>
+                <default>false</default>
+                <label>BGC - Domestic  - 475D</label>
+            </value>
+            <value>
+                <fullName>BGC - International  - 475I</fullName>
+                <default>false</default>
+                <label>BGC - International  - 475I</label>
+            </value>
+            <value>
+                <fullName>Bobo Hotel  -  512</fullName>
+                <default>false</default>
+                <label>Bobo Hotel  -  512</label>
+            </value>
+            <value>
+                <fullName>Bolivia - DF  - 811D</fullName>
+                <default>false</default>
+                <label>Bolivia - DF  - 811D</label>
+            </value>
+            <value>
+                <fullName>Bolivia - LE  - 811C</fullName>
+                <default>false</default>
+                <label>Bolivia - LE  - 811C</label>
+            </value>
+            <value>
+                <fullName>Bontera Tasting Room  - = 60</fullName>
+                <default>false</default>
+                <label>Bontera Tasting Room  - = 60</label>
+            </value>
+            <value>
+                <fullName>Bosnia-HercegovinaDF  - 113D</fullName>
+                <default>false</default>
+                <label>Bosnia-HercegovinaDF  - 113D</label>
+            </value>
+            <value>
+                <fullName>Bosnia-HercegovinaLE  - 113C</fullName>
+                <default>false</default>
+                <label>Bosnia-HercegovinaLE  - 113C</label>
+            </value>
+            <value>
+                <fullName>Brazil - DF  - 812D</fullName>
+                <default>false</default>
+                <label>Brazil - DF  - 812D</label>
+            </value>
+            <value>
+                <fullName>Brazil Home Office  - 300C</fullName>
+                <default>false</default>
+                <label>Brazil Home Office  - 300C</label>
+            </value>
+            <value>
+                <fullName>Brazil - LE  - 812C</fullName>
+                <default>false</default>
+                <label>Brazil - LE  - 812C</label>
+            </value>
+            <value>
+                <fullName>British Columbia-DF  - 614D</fullName>
+                <default>false</default>
+                <label>British Columbia-DF  - 614D</label>
+            </value>
+            <value>
+                <fullName>British Columbia -LE  - 614C</fullName>
+                <default>false</default>
+                <label>British Columbia -LE  - 614C</label>
+            </value>
+            <value>
+                <fullName>British Virgin Is LE  - 714C</fullName>
+                <default>false</default>
+                <label>British Virgin Is LE  - 714C</label>
+            </value>
+            <value>
+                <fullName>Brooks &amp; Bentley  - 7980</fullName>
+                <default>false</default>
+                <label>Brooks &amp; Bentley  - 7980</label>
+            </value>
+            <value>
+                <fullName>Bulgaria - DF  - 114D</fullName>
+                <default>false</default>
+                <label>Bulgaria - DF  - 114D</label>
+            </value>
+            <value>
+                <fullName>Bulgaria - LE  - 114C</fullName>
+                <default>false</default>
+                <label>Bulgaria - LE  - 114C</label>
+            </value>
+            <value>
+                <fullName>Bulgaria Misc  - 114G</fullName>
+                <default>false</default>
+                <label>Bulgaria Misc  - 114G</label>
+            </value>
+            <value>
+                <fullName>Bulk/Candy Condiment  - 6095</fullName>
+                <default>false</default>
+                <label>Bulk/Candy Condiment  - 6095</label>
+            </value>
+            <value>
+                <fullName>California  - 3140</fullName>
+                <default>false</default>
+                <label>California  - 3140</label>
+            </value>
+            <value>
+                <fullName>Canada Brand Mgmt  -  200</fullName>
+                <default>false</default>
+                <label>Canada Brand Mgmt  -  200</label>
+            </value>
+            <value>
+                <fullName>Canada - DF  - 621D</fullName>
+                <default>false</default>
+                <label>Canada - DF  - 621D</label>
+            </value>
+            <value>
+                <fullName>Canada General  - 621C</fullName>
+                <default>false</default>
+                <label>Canada General  - 621C</label>
+            </value>
+            <value>
+                <fullName>Canada Home Office  - 5260</fullName>
+                <default>false</default>
+                <label>Canada Home Office  - 5260</label>
+            </value>
+            <value>
+                <fullName>Canadian $ CM  - 4410</fullName>
+                <default>false</default>
+                <label>Canadian $ CM  - 4410</label>
+            </value>
+            <value>
+                <fullName>Canadian Mist  - 4420</fullName>
+                <default>false</default>
+                <label>Canadian Mist  - 4420</label>
+            </value>
+            <value>
+                <fullName>Canary Island - LE  - 522C</fullName>
+                <default>false</default>
+                <label>Canary Island - LE  - 522C</label>
+            </value>
+            <value>
+                <fullName>Caribbean  - 702M</fullName>
+                <default>false</default>
+                <label>Caribbean  - 702M</label>
+            </value>
+            <value>
+                <fullName>Caribbean-DF (Wines)  - 702D</fullName>
+                <default>false</default>
+                <label>Caribbean-DF (Wines)  - 702D</label>
+            </value>
+            <value>
+                <fullName>Caribbean HO/Misc  - 9995</fullName>
+                <default>false</default>
+                <label>Caribbean HO/Misc  - 9995</label>
+            </value>
+            <value>
+                <fullName>Cayman Islands - LE  - 731C</fullName>
+                <default>false</default>
+                <label>Cayman Islands - LE  - 731C</label>
+            </value>
+            <value>
+                <fullName>Cen Eur Hamburg Adm  - 3270</fullName>
+                <default>false</default>
+                <label>Cen Eur Hamburg Adm  - 3270</label>
+            </value>
+            <value>
+                <fullName>Central Africa - LE  - 524C</fullName>
+                <default>false</default>
+                <label>Central Africa - LE  - 524C</label>
+            </value>
+            <value>
+                <fullName>Central America HO  - 9990</fullName>
+                <default>false</default>
+                <label>Central America HO  - 9990</label>
+            </value>
+            <value>
+                <fullName>Central Europe - DF  - 181D</fullName>
+                <default>false</default>
+                <label>Central Europe - DF  - 181D</label>
+            </value>
+            <value>
+                <fullName>Central Home Office  - 9981</fullName>
+                <default>false</default>
+                <label>Central Home Office  - 9981</label>
+            </value>
+            <value>
+                <fullName>Centro (Central Mx  - 684C</fullName>
+                <default>false</default>
+                <label>Centro (Central Mx  - 684C</label>
+            </value>
+            <value>
+                <fullName>Chambord Procuction  - 2220</fullName>
+                <default>false</default>
+                <label>Chambord Procuction  - 2220</label>
+            </value>
+            <value>
+                <fullName>Chile - DF  - 821D</fullName>
+                <default>false</default>
+                <label>Chile - DF  - 821D</label>
+            </value>
+            <value>
+                <fullName>Chile -LE  - 821C</fullName>
+                <default>false</default>
+                <label>Chile -LE  - 821C</label>
+            </value>
+            <value>
+                <fullName>China DF  - 321D</fullName>
+                <default>false</default>
+                <label>China DF  - 321D</label>
+            </value>
+            <value>
+                <fullName>China - DF  - 323D</fullName>
+                <default>false</default>
+                <label>China - DF  - 323D</label>
+            </value>
+            <value>
+                <fullName>China LE  - 321C</fullName>
+                <default>false</default>
+                <label>China LE  - 321C</label>
+            </value>
+            <value>
+                <fullName>China - LE  - 323C</fullName>
+                <default>false</default>
+                <label>China - LE  - 323C</label>
+            </value>
+            <value>
+                <fullName>Clintock  - 3890</fullName>
+                <default>false</default>
+                <label>Clintock  - 3890</label>
+            </value>
+            <value>
+                <fullName>Colombia - DF  - 822D</fullName>
+                <default>false</default>
+                <label>Colombia - DF  - 822D</label>
+            </value>
+            <value>
+                <fullName>Colombia - LE  - 822C</fullName>
+                <default>false</default>
+                <label>Colombia - LE  - 822C</label>
+            </value>
+            <value>
+                <fullName>Colorado  - 3251</fullName>
+                <default>false</default>
+                <label>Colorado  - 3251</label>
+            </value>
+            <value>
+                <fullName>Columbia Misc  - 822G</fullName>
+                <default>false</default>
+                <label>Columbia Misc  - 822G</label>
+            </value>
+            <value>
+                <fullName>Connecticut  - 1607</fullName>
+                <default>false</default>
+                <label>Connecticut  - 1607</label>
+            </value>
+            <value>
+                <fullName>Cosesa Production  - 3520</fullName>
+                <default>false</default>
+                <label>Cosesa Production  - 3520</label>
+            </value>
+            <value>
+                <fullName>Costa Rica - LE  - 622C</fullName>
+                <default>false</default>
+                <label>Costa Rica - LE  - 622C</label>
+            </value>
+            <value>
+                <fullName>Croatia - DF  - 115D</fullName>
+                <default>false</default>
+                <label>Croatia - DF  - 115D</label>
+            </value>
+            <value>
+                <fullName>Croatia - LE  - 115C</fullName>
+                <default>false</default>
+                <label>Croatia - LE  - 115C</label>
+            </value>
+            <value>
+                <fullName>Cuba - LE  - 743C</fullName>
+                <default>false</default>
+                <label>Cuba - LE  - 743C</label>
+            </value>
+            <value>
+                <fullName>Curacao - LE  - 722C</fullName>
+                <default>false</default>
+                <label>Curacao - LE  - 722C</label>
+            </value>
+            <value>
+                <fullName>Cyprus - DF  - 221D</fullName>
+                <default>false</default>
+                <label>Cyprus - DF  - 221D</label>
+            </value>
+            <value>
+                <fullName>Cyprus - LE  - 221C</fullName>
+                <default>false</default>
+                <label>Cyprus - LE  - 221C</label>
+            </value>
+            <value>
+                <fullName>Cyprus Misc  - 221G</fullName>
+                <default>false</default>
+                <label>Cyprus Misc  - 221G</label>
+            </value>
+            <value>
+                <fullName>Czech Republic - DF  - 121D</fullName>
+                <default>false</default>
+                <label>Czech Republic - DF  - 121D</label>
+            </value>
+            <value>
+                <fullName>Czech Republic - LE  - 121C</fullName>
+                <default>false</default>
+                <label>Czech Republic - LE  - 121C</label>
+            </value>
+            <value>
+                <fullName>Czech Republic Misc  - 121G</fullName>
+                <default>false</default>
+                <label>Czech Republic Misc  - 121G</label>
+            </value>
+            <value>
+                <fullName>Delaware  - 1213</fullName>
+                <default>false</default>
+                <label>Delaware  - 1213</label>
+            </value>
+            <value>
+                <fullName>Denmark - LE  - 122C</fullName>
+                <default>false</default>
+                <label>Denmark - LE  - 122C</label>
+            </value>
+            <value>
+                <fullName>DFS - US  - 674D</fullName>
+                <default>false</default>
+                <label>DFS - US  - 674D</label>
+            </value>
+            <value>
+                <fullName>District of Columbia  - 1211</fullName>
+                <default>false</default>
+                <label>District of Columbia  - 1211</label>
+            </value>
+            <value>
+                <fullName>Djibouti - LE  - 531C</fullName>
+                <default>false</default>
+                <label>Djibouti - LE  - 531C</label>
+            </value>
+            <value>
+                <fullName>Domestic Military HO  - 517M</fullName>
+                <default>false</default>
+                <label>Domestic Military HO  - 517M</label>
+            </value>
+            <value>
+                <fullName>Dominica - DF  - 723D</fullName>
+                <default>false</default>
+                <label>Dominica - DF  - 723D</label>
+            </value>
+            <value>
+                <fullName>Dominican Rep - DF  - 724D</fullName>
+                <default>false</default>
+                <label>Dominican Rep - DF  - 724D</label>
+            </value>
+            <value>
+                <fullName>Dominican Republic  - 724C</fullName>
+                <default>false</default>
+                <label>Dominican Republic  - 724C</label>
+            </value>
+            <value>
+                <fullName>Dubai - DF  - 222D</fullName>
+                <default>false</default>
+                <label>Dubai - DF  - 222D</label>
+            </value>
+            <value>
+                <fullName>Dubai - LE  - 222C</fullName>
+                <default>false</default>
+                <label>Dubai - LE  - 222C</label>
+            </value>
+            <value>
+                <fullName>Dufry - DF  - 505D</fullName>
+                <default>false</default>
+                <label>Dufry - DF  - 505D</label>
+            </value>
+            <value>
+                <fullName>Duty Free  - 103D</fullName>
+                <default>false</default>
+                <label>Duty Free  - 103D</label>
+            </value>
+            <value>
+                <fullName>Duty Free Shop Aus.  - 907S</fullName>
+                <default>false</default>
+                <label>Duty Free Shop Aus.  - 907S</label>
+            </value>
+            <value>
+                <fullName>Duty Free Shop NZ  - 959S</fullName>
+                <default>false</default>
+                <label>Duty Free Shop NZ  - 959S</label>
+            </value>
+            <value>
+                <fullName>East Home Office  - 9987</fullName>
+                <default>false</default>
+                <label>East Home Office  - 9987</label>
+            </value>
+            <value>
+                <fullName>E-Commerce  -  574</fullName>
+                <default>false</default>
+                <label>E-Commerce  -  574</label>
+            </value>
+            <value>
+                <fullName>Ecuador - DF  - 826D</fullName>
+                <default>false</default>
+                <label>Ecuador - DF  - 826D</label>
+            </value>
+            <value>
+                <fullName>Ecuador - LE  - 826C</fullName>
+                <default>false</default>
+                <label>Ecuador - LE  - 826C</label>
+            </value>
+            <value>
+                <fullName>Egypt - DF  - 527D</fullName>
+                <default>false</default>
+                <label>Egypt - DF  - 527D</label>
+            </value>
+            <value>
+                <fullName>Egypt - LE  - 527C</fullName>
+                <default>false</default>
+                <label>Egypt - LE  - 527C</label>
+            </value>
+            <value>
+                <fullName>El Salvador - DF  - 626D</fullName>
+                <default>false</default>
+                <label>El Salvador - DF  - 626D</label>
+            </value>
+            <value>
+                <fullName>El Salvador - LE  - 626C</fullName>
+                <default>false</default>
+                <label>El Salvador - LE  - 626C</label>
+            </value>
+            <value>
+                <fullName>Emerging Mkts HO  - 5500</fullName>
+                <default>false</default>
+                <label>Emerging Mkts HO  - 5500</label>
+            </value>
+            <value>
+                <fullName>Eritrea - LE  - 528C</fullName>
+                <default>false</default>
+                <label>Eritrea - LE  - 528C</label>
+            </value>
+            <value>
+                <fullName>Estonia - DF  - 194D</fullName>
+                <default>false</default>
+                <label>Estonia - DF  - 194D</label>
+            </value>
+            <value>
+                <fullName>Estonia - LE  - 194C</fullName>
+                <default>false</default>
+                <label>Estonia - LE  - 194C</label>
+            </value>
+            <value>
+                <fullName>Ethiopia - DF  - 535D</fullName>
+                <default>false</default>
+                <label>Ethiopia - DF  - 535D</label>
+            </value>
+            <value>
+                <fullName>Ethiopia - LE  - 535C</fullName>
+                <default>false</default>
+                <label>Ethiopia - LE  - 535C</label>
+            </value>
+            <value>
+                <fullName>Eur HO Reg Mrkt Dir  - 3151</fullName>
+                <default>false</default>
+                <label>Eur HO Reg Mrkt Dir  - 3151</label>
+            </value>
+            <value>
+                <fullName>Europe Airline  - 101C</fullName>
+                <default>false</default>
+                <label>Europe Airline  - 101C</label>
+            </value>
+            <value>
+                <fullName>Europe Airlines  - 101D</fullName>
+                <default>false</default>
+                <label>Europe Airlines  - 101D</label>
+            </value>
+            <value>
+                <fullName>Europe Home Office  - 3150</fullName>
+                <default>false</default>
+                <label>Europe Home Office  - 3150</label>
+            </value>
+            <value>
+                <fullName>Europe Military  - 102M</fullName>
+                <default>false</default>
+                <label>Europe Military  - 102M</label>
+            </value>
+            <value>
+                <fullName>External Maufacturin  - 4110</fullName>
+                <default>false</default>
+                <label>External Maufacturin  - 4110</label>
+            </value>
+            <value>
+                <fullName>Far East Airlines  - 491D</fullName>
+                <default>false</default>
+                <label>Far East Airlines  - 491D</label>
+            </value>
+            <value>
+                <fullName>Far East Military  - 401D</fullName>
+                <default>false</default>
+                <label>Far East Military  - 401D</label>
+            </value>
+            <value>
+                <fullName>Far East Military  - 402M</fullName>
+                <default>false</default>
+                <label>Far East Military  - 402M</label>
+            </value>
+            <value>
+                <fullName>Federal Distrct (Mx)  - 685C</fullName>
+                <default>false</default>
+                <label>Federal Distrct (Mx)  - 685C</label>
+            </value>
+            <value>
+                <fullName>Fetzer Prod Site  - 6000</fullName>
+                <default>false</default>
+                <label>Fetzer Prod Site  - 6000</label>
+            </value>
+            <value>
+                <fullName>Fiji Island - DF  - 926D</fullName>
+                <default>false</default>
+                <label>Fiji Island - DF  - 926D</label>
+            </value>
+            <value>
+                <fullName>Fiji Island - LE  - 926C</fullName>
+                <default>false</default>
+                <label>Fiji Island - LE  - 926C</label>
+            </value>
+            <value>
+                <fullName>Finished Goods Misc  - FGTT</fullName>
+                <default>false</default>
+                <label>Finished Goods Misc  - FGTT</label>
+            </value>
+            <value>
+                <fullName>Finlandia Admin  - 1270</fullName>
+                <default>false</default>
+                <label>Finlandia Admin  - 1270</label>
+            </value>
+            <value>
+                <fullName>Finlandia Global Prd  - 4270</fullName>
+                <default>false</default>
+                <label>Finlandia Global Prd  - 4270</label>
+            </value>
+            <value>
+                <fullName>Finland - LE  - 127C</fullName>
+                <default>false</default>
+                <label>Finland - LE  - 127C</label>
+            </value>
+            <value>
+                <fullName>FI PA Recon  - 1101</fullName>
+                <default>false</default>
+                <label>FI PA Recon  - 1101</label>
+            </value>
+            <value>
+                <fullName>Florida  - 1131</fullName>
+                <default>false</default>
+                <label>Florida  - 1131</label>
+            </value>
+            <value>
+                <fullName>FRABO Prod  Site  - 6360</fullName>
+                <default>false</default>
+                <label>FRABO Prod  Site  - 6360</label>
+            </value>
+            <value>
+                <fullName>FRABO Production  - 6390</fullName>
+                <default>false</default>
+                <label>FRABO Production  - 6390</label>
+            </value>
+            <value>
+                <fullName>France - DF  - 128D</fullName>
+                <default>false</default>
+                <label>France - DF  - 128D</label>
+            </value>
+            <value>
+                <fullName>France -LE  - 128C</fullName>
+                <default>false</default>
+                <label>France -LE  - 128C</label>
+            </value>
+            <value>
+                <fullName>France Misc  - 128G</fullName>
+                <default>false</default>
+                <label>France Misc  - 128G</label>
+            </value>
+            <value>
+                <fullName>French Guinea - LE  - 825C</fullName>
+                <default>false</default>
+                <label>French Guinea - LE  - 825C</label>
+            </value>
+            <value>
+                <fullName>Georgia  - 1130</fullName>
+                <default>false</default>
+                <label>Georgia  - 1130</label>
+            </value>
+            <value>
+                <fullName>Georgia - LE  - 180C</fullName>
+                <default>false</default>
+                <label>Georgia - LE  - 180C</label>
+            </value>
+            <value>
+                <fullName>Germany - DF  - 132D</fullName>
+                <default>false</default>
+                <label>Germany - DF  - 132D</label>
+            </value>
+            <value>
+                <fullName>Germany Hardware Str  - 132H</fullName>
+                <default>false</default>
+                <label>Germany Hardware Str  - 132H</label>
+            </value>
+            <value>
+                <fullName>Germany - LE  - 132C</fullName>
+                <default>false</default>
+                <label>Germany - LE  - 132C</label>
+            </value>
+            <value>
+                <fullName>Germany Misc  - 132G</fullName>
+                <default>false</default>
+                <label>Germany Misc  - 132G</label>
+            </value>
+            <value>
+                <fullName>Ghana - LE  - 533C</fullName>
+                <default>false</default>
+                <label>Ghana - LE  - 533C</label>
+            </value>
+            <value>
+                <fullName>Gibraltar - LE  - 133C</fullName>
+                <default>false</default>
+                <label>Gibraltar - LE  - 133C</label>
+            </value>
+            <value>
+                <fullName>Global Brands Admin  - 1260</fullName>
+                <default>false</default>
+                <label>Global Brands Admin  - 1260</label>
+            </value>
+            <value>
+                <fullName>Global Duty Free  - 1102</fullName>
+                <default>false</default>
+                <label>Global Duty Free  - 1102</label>
+            </value>
+            <value>
+                <fullName>Global Spirits Admin  - 1250</fullName>
+                <default>false</default>
+                <label>Global Spirits Admin  - 1250</label>
+            </value>
+            <value>
+                <fullName>Greater Europe FX  - 20FX</fullName>
+                <default>false</default>
+                <label>Greater Europe FX  - 20FX</label>
+            </value>
+            <value>
+                <fullName>Greater Europe HO  - 3260</fullName>
+                <default>false</default>
+                <label>Greater Europe HO  - 3260</label>
+            </value>
+            <value>
+                <fullName>Greece - DF  - 134D</fullName>
+                <default>false</default>
+                <label>Greece - DF  - 134D</label>
+            </value>
+            <value>
+                <fullName>Greece - LE  - 134C</fullName>
+                <default>false</default>
+                <label>Greece - LE  - 134C</label>
+            </value>
+            <value>
+                <fullName>Greece Misc  - 134G</fullName>
+                <default>false</default>
+                <label>Greece Misc  - 134G</label>
+            </value>
+            <value>
+                <fullName>Grenada - LE  - 732C</fullName>
+                <default>false</default>
+                <label>Grenada - LE  - 732C</label>
+            </value>
+            <value>
+                <fullName>Guadeloupe - LE  - 733C</fullName>
+                <default>false</default>
+                <label>Guadeloupe - LE  - 733C</label>
+            </value>
+            <value>
+                <fullName>Guam - DF  - 431D</fullName>
+                <default>false</default>
+                <label>Guam - DF  - 431D</label>
+            </value>
+            <value>
+                <fullName>Guam - LE  - 431C</fullName>
+                <default>false</default>
+                <label>Guam - LE  - 431C</label>
+            </value>
+            <value>
+                <fullName>Guam Military  - 931M</fullName>
+                <default>false</default>
+                <label>Guam Military  - 931M</label>
+            </value>
+            <value>
+                <fullName>Guatemala - LE  - 632C</fullName>
+                <default>false</default>
+                <label>Guatemala - LE  - 632C</label>
+            </value>
+            <value>
+                <fullName>Guyana - LE  - 824C</fullName>
+                <default>false</default>
+                <label>Guyana - LE  - 824C</label>
+            </value>
+            <value>
+                <fullName>Haiti - LE  - 741C</fullName>
+                <default>false</default>
+                <label>Haiti - LE  - 741C</label>
+            </value>
+            <value>
+                <fullName>Hartmann  - 1300</fullName>
+                <default>false</default>
+                <label>Hartmann  - 1300</label>
+            </value>
+            <value>
+                <fullName>Hawaii  - 3155</fullName>
+                <default>false</default>
+                <label>Hawaii  - 3155</label>
+            </value>
+            <value>
+                <fullName>Heinemann - DF  - 501D</fullName>
+                <default>false</default>
+                <label>Heinemann - DF  - 501D</label>
+            </value>
+            <value>
+                <fullName>Homeplace Hospitalit  -  576</fullName>
+                <default>false</default>
+                <label>Homeplace Hospitalit  -  576</label>
+            </value>
+            <value>
+                <fullName>Homeplace Lodging  -  577</fullName>
+                <default>false</default>
+                <label>Homeplace Lodging  -  577</label>
+            </value>
+            <value>
+                <fullName>Homeplace Visitor Ct  -  575</fullName>
+                <default>false</default>
+                <label>Homeplace Visitor Ct  -  575</label>
+            </value>
+            <value>
+                <fullName>Honduras - DF  - 641D</fullName>
+                <default>false</default>
+                <label>Honduras - DF  - 641D</label>
+            </value>
+            <value>
+                <fullName>Honduras - LE  - 641C</fullName>
+                <default>false</default>
+                <label>Honduras - LE  - 641C</label>
+            </value>
+            <value>
+                <fullName>Hong Kong - DF  - 441D</fullName>
+                <default>false</default>
+                <label>Hong Kong - DF  - 441D</label>
+            </value>
+            <value>
+                <fullName>Hong Kong - LE  - 441C</fullName>
+                <default>false</default>
+                <label>Hong Kong - LE  - 441C</label>
+            </value>
+            <value>
+                <fullName>Hong Kong Misc  - 441G</fullName>
+                <default>false</default>
+                <label>Hong Kong Misc  - 441G</label>
+            </value>
+            <value>
+                <fullName>Hopland Tasting Room  - = 10</fullName>
+                <default>false</default>
+                <label>Hopland Tasting Room  - = 10</label>
+            </value>
+            <value>
+                <fullName>Hungary - DF  - 116D</fullName>
+                <default>false</default>
+                <label>Hungary - DF  - 116D</label>
+            </value>
+            <value>
+                <fullName>Hungary - LE  - 116C</fullName>
+                <default>false</default>
+                <label>Hungary - LE  - 116C</label>
+            </value>
+            <value>
+                <fullName>Hungary Misc  - 116G</fullName>
+                <default>false</default>
+                <label>Hungary Misc  - 116G</label>
+            </value>
+            <value>
+                <fullName>Iceland - DF  - 146D</fullName>
+                <default>false</default>
+                <label>Iceland - DF  - 146D</label>
+            </value>
+            <value>
+                <fullName>Iceland - LE  - 146C</fullName>
+                <default>false</default>
+                <label>Iceland - LE  - 146C</label>
+            </value>
+            <value>
+                <fullName>Iceland - Military  - 146M</fullName>
+                <default>false</default>
+                <label>Iceland - Military  - 146M</label>
+            </value>
+            <value>
+                <fullName>Idaho  - 5447</fullName>
+                <default>false</default>
+                <label>Idaho  - 5447</label>
+            </value>
+            <value>
+                <fullName>Illinois  - 1319</fullName>
+                <default>false</default>
+                <label>Illinois  - 1319</label>
+            </value>
+            <value>
+                <fullName>India - DF  - 346D</fullName>
+                <default>false</default>
+                <label>India - DF  - 346D</label>
+            </value>
+            <value>
+                <fullName>India Embassy  - 347C</fullName>
+                <default>false</default>
+                <label>India Embassy  - 347C</label>
+            </value>
+            <value>
+                <fullName>India - LE  - 346C</fullName>
+                <default>false</default>
+                <label>India - LE  - 346C</label>
+            </value>
+            <value>
+                <fullName>India Misc  - 346G</fullName>
+                <default>false</default>
+                <label>India Misc  - 346G</label>
+            </value>
+            <value>
+                <fullName>Indiana  - 1318</fullName>
+                <default>false</default>
+                <label>Indiana  - 1318</label>
+            </value>
+            <value>
+                <fullName>Indonesia - DF  - 446D</fullName>
+                <default>false</default>
+                <label>Indonesia - DF  - 446D</label>
+            </value>
+            <value>
+                <fullName>Indonesia - LE  - 446C</fullName>
+                <default>false</default>
+                <label>Indonesia - LE  - 446C</label>
+            </value>
+            <value>
+                <fullName>Indonesia Misc  - 446G</fullName>
+                <default>false</default>
+                <label>Indonesia Misc  - 446G</label>
+            </value>
+            <value>
+                <fullName>In-flight DF  - 667D</fullName>
+                <default>false</default>
+                <label>In-flight DF  - 667D</label>
+            </value>
+            <value>
+                <fullName>Int Airlines .050 DF  - 665D</fullName>
+                <default>false</default>
+                <label>Int Airlines .050 DF  - 665D</label>
+            </value>
+            <value>
+                <fullName>Iowa  - 5125</fullName>
+                <default>false</default>
+                <label>Iowa  - 5125</label>
+            </value>
+            <value>
+                <fullName>Iraq - DF  - 255D</fullName>
+                <default>false</default>
+                <label>Iraq - DF  - 255D</label>
+            </value>
+            <value>
+                <fullName>Iraq - LE  - 255C</fullName>
+                <default>false</default>
+                <label>Iraq - LE  - 255C</label>
+            </value>
+            <value>
+                <fullName>Ireland - DF  - 147D</fullName>
+                <default>false</default>
+                <label>Ireland - DF  - 147D</label>
+            </value>
+            <value>
+                <fullName>Ireland - LE  - 147C</fullName>
+                <default>false</default>
+                <label>Ireland - LE  - 147C</label>
+            </value>
+            <value>
+                <fullName>Israel - DF  - 248D</fullName>
+                <default>false</default>
+                <label>Israel - DF  - 248D</label>
+            </value>
+            <value>
+                <fullName>Israel - LE  - 248C</fullName>
+                <default>false</default>
+                <label>Israel - LE  - 248C</label>
+            </value>
+            <value>
+                <fullName>Italy - DF  - 148D</fullName>
+                <default>false</default>
+                <label>Italy - DF  - 148D</label>
+            </value>
+            <value>
+                <fullName>Italy - LE  - 148C</fullName>
+                <default>false</default>
+                <label>Italy - LE  - 148C</label>
+            </value>
+            <value>
+                <fullName>Italy Misc  - 148G</fullName>
+                <default>false</default>
+                <label>Italy Misc  - 148G</label>
+            </value>
+            <value>
+                <fullName>Jamaica - DF  - 746D</fullName>
+                <default>false</default>
+                <label>Jamaica - DF  - 746D</label>
+            </value>
+            <value>
+                <fullName>Jamaica - LE  - 746C</fullName>
+                <default>false</default>
+                <label>Jamaica - LE  - 746C</label>
+            </value>
+            <value>
+                <fullName>Japan - DF  - 447D</fullName>
+                <default>false</default>
+                <label>Japan - DF  - 447D</label>
+            </value>
+            <value>
+                <fullName>Japan - LE  - 447C</fullName>
+                <default>false</default>
+                <label>Japan - LE  - 447C</label>
+            </value>
+            <value>
+                <fullName>Japan - Military  - 447M</fullName>
+                <default>false</default>
+                <label>Japan - Military  - 447M</label>
+            </value>
+            <value>
+                <fullName>Japan Misc  - 447G</fullName>
+                <default>false</default>
+                <label>Japan Misc  - 447G</label>
+            </value>
+            <value>
+                <fullName>JD Bottling  - 4000</fullName>
+                <default>false</default>
+                <label>JD Bottling  - 4000</label>
+            </value>
+            <value>
+                <fullName>J D Catalogue  -  572</fullName>
+                <default>false</default>
+                <label>J D Catalogue  -  572</label>
+            </value>
+            <value>
+                <fullName>JD Distilllery  - 4500</fullName>
+                <default>false</default>
+                <label>JD Distilllery  - 4500</label>
+            </value>
+            <value>
+                <fullName>Jekel Prod Site  - 6500</fullName>
+                <default>false</default>
+                <label>Jekel Prod Site  - 6500</label>
+            </value>
+            <value>
+                <fullName>Jekel Tasting Room  -  = 5</fullName>
+                <default>false</default>
+                <label>Jekel Tasting Room  -  = 5</label>
+            </value>
+            <value>
+                <fullName>Jordan - DF  - 249D</fullName>
+                <default>false</default>
+                <label>Jordan - DF  - 249D</label>
+            </value>
+            <value>
+                <fullName>Jordan - LE  - 249C</fullName>
+                <default>false</default>
+                <label>Jordan - LE  - 249C</label>
+            </value>
+            <value>
+                <fullName>Kaliningrad  - 179C</fullName>
+                <default>false</default>
+                <label>Kaliningrad  - 179C</label>
+            </value>
+            <value>
+                <fullName>Kansas  - 3238</fullName>
+                <default>false</default>
+                <label>Kansas  - 3238</label>
+            </value>
+            <value>
+                <fullName>Kazakhstan - LE  - 124C</fullName>
+                <default>false</default>
+                <label>Kazakhstan - LE  - 124C</label>
+            </value>
+            <value>
+                <fullName>Kentucky  - 3428</fullName>
+                <default>false</default>
+                <label>Kentucky  - 3428</label>
+            </value>
+            <value>
+                <fullName>Kenya - LE  - 551C</fullName>
+                <default>false</default>
+                <label>Kenya - LE  - 551C</label>
+            </value>
+            <value>
+                <fullName>Korea Misc  - 452G</fullName>
+                <default>false</default>
+                <label>Korea Misc  - 452G</label>
+            </value>
+            <value>
+                <fullName>Korean Airlines  - 453D</fullName>
+                <default>false</default>
+                <label>Korean Airlines  - 453D</label>
+            </value>
+            <value>
+                <fullName>Kosovo  LE  - 106C</fullName>
+                <default>false</default>
+                <label>Kosovo  LE  - 106C</label>
+            </value>
+            <value>
+                <fullName>La Reunion - LE  - 526C</fullName>
+                <default>false</default>
+                <label>La Reunion - LE  - 526C</label>
+            </value>
+            <value>
+                <fullName>Lat Amer &amp; Carib HO  - 5160</fullName>
+                <default>false</default>
+                <label>Lat Amer &amp; Carib HO  - 5160</label>
+            </value>
+            <value>
+                <fullName>Latin American HO  - 5200</fullName>
+                <default>false</default>
+                <label>Latin American HO  - 5200</label>
+            </value>
+            <value>
+                <fullName>Latvia - DF  - 196D</fullName>
+                <default>false</default>
+                <label>Latvia - DF  - 196D</label>
+            </value>
+            <value>
+                <fullName>Latvia - LE  - 196C</fullName>
+                <default>false</default>
+                <label>Latvia - LE  - 196C</label>
+            </value>
+            <value>
+                <fullName>Lebanon - DF  - 252D</fullName>
+                <default>false</default>
+                <label>Lebanon - DF  - 252D</label>
+            </value>
+            <value>
+                <fullName>Lebanon - LE  - 252C</fullName>
+                <default>false</default>
+                <label>Lebanon - LE  - 252C</label>
+            </value>
+            <value>
+                <fullName>Lenox  - 1200</fullName>
+                <default>false</default>
+                <label>Lenox  - 1200</label>
+            </value>
+            <value>
+                <fullName>Lithuania - DF  - 197D</fullName>
+                <default>false</default>
+                <label>Lithuania - DF  - 197D</label>
+            </value>
+            <value>
+                <fullName>Lithuania - LE  - 197C</fullName>
+                <default>false</default>
+                <label>Lithuania - LE  - 197C</label>
+            </value>
+            <value>
+                <fullName>Louisiana  - 3332</fullName>
+                <default>false</default>
+                <label>Louisiana  - 3332</label>
+            </value>
+            <value>
+                <fullName>LPO Botttling  - 4120</fullName>
+                <default>false</default>
+                <label>LPO Botttling  - 4120</label>
+            </value>
+            <value>
+                <fullName>Luxembourg - LE  - 110C</fullName>
+                <default>false</default>
+                <label>Luxembourg - LE  - 110C</label>
+            </value>
+            <value>
+                <fullName>Lynchburg Hardware  -  570</fullName>
+                <default>false</default>
+                <label>Lynchburg Hardware  -  570</label>
+            </value>
+            <value>
+                <fullName>Lynchburg Lodging  -  513</fullName>
+                <default>false</default>
+                <label>Lynchburg Lodging  -  513</label>
+            </value>
+            <value>
+                <fullName>Macau - DF  - 322D</fullName>
+                <default>false</default>
+                <label>Macau - DF  - 322D</label>
+            </value>
+            <value>
+                <fullName>Macau - LE  - 322C</fullName>
+                <default>false</default>
+                <label>Macau - LE  - 322C</label>
+            </value>
+            <value>
+                <fullName>Macedonia - DF  - 109D</fullName>
+                <default>false</default>
+                <label>Macedonia - DF  - 109D</label>
+            </value>
+            <value>
+                <fullName>Macedonia - LE  - 109C</fullName>
+                <default>false</default>
+                <label>Macedonia - LE  - 109C</label>
+            </value>
+            <value>
+                <fullName>Maine  - 5201</fullName>
+                <default>false</default>
+                <label>Maine  - 5201</label>
+            </value>
+            <value>
+                <fullName>Malaysia - DF  - 456D</fullName>
+                <default>false</default>
+                <label>Malaysia - DF  - 456D</label>
+            </value>
+            <value>
+                <fullName>Malaysia - LE  - 456C</fullName>
+                <default>false</default>
+                <label>Malaysia - LE  - 456C</label>
+            </value>
+            <value>
+                <fullName>Maldives - DF  - 353D</fullName>
+                <default>false</default>
+                <label>Maldives - DF  - 353D</label>
+            </value>
+            <value>
+                <fullName>Maldives - LE  - 353C</fullName>
+                <default>false</default>
+                <label>Maldives - LE  - 353C</label>
+            </value>
+            <value>
+                <fullName>Malta - DF  - 156D</fullName>
+                <default>false</default>
+                <label>Malta - DF  - 156D</label>
+            </value>
+            <value>
+                <fullName>Malta - LE  - 156C</fullName>
+                <default>false</default>
+                <label>Malta - LE  - 156C</label>
+            </value>
+            <value>
+                <fullName>Manitoba - LE  - 615C</fullName>
+                <default>false</default>
+                <label>Manitoba - LE  - 615C</label>
+            </value>
+            <value>
+                <fullName>Margarita - DF  - 888D</fullName>
+                <default>false</default>
+                <label>Margarita - DF  - 888D</label>
+            </value>
+            <value>
+                <fullName>Martinique - LE  - 756C</fullName>
+                <default>false</default>
+                <label>Martinique - LE  - 756C</label>
+            </value>
+            <value>
+                <fullName>Maryland  - 1212</fullName>
+                <default>false</default>
+                <label>Maryland  - 1212</label>
+            </value>
+            <value>
+                <fullName>Massachusetts  - 1604</fullName>
+                <default>false</default>
+                <label>Massachusetts  - 1604</label>
+            </value>
+            <value>
+                <fullName>Mendocino - Domestic  - 476D</fullName>
+                <default>false</default>
+                <label>Mendocino - Domestic  - 476D</label>
+            </value>
+            <value>
+                <fullName>Mendocino - Int  - 476I</fullName>
+                <default>false</default>
+                <label>Mendocino - Int  - 476I</label>
+            </value>
+            <value>
+                <fullName>Mendocino Tasting Rm  - = 15</fullName>
+                <default>false</default>
+                <label>Mendocino Tasting Rm  - = 15</label>
+            </value>
+            <value>
+                <fullName>Mexico - DF  - 656D</fullName>
+                <default>false</default>
+                <label>Mexico - DF  - 656D</label>
+            </value>
+            <value>
+                <fullName>Mexico EMB  - 656M</fullName>
+                <default>false</default>
+                <label>Mexico EMB  - 656M</label>
+            </value>
+            <value>
+                <fullName>Mexico HO/Misc  - 9994</fullName>
+                <default>false</default>
+                <label>Mexico HO/Misc  - 9994</label>
+            </value>
+            <value>
+                <fullName>Mexico - LE  - 656C</fullName>
+                <default>false</default>
+                <label>Mexico - LE  - 656C</label>
+            </value>
+            <value>
+                <fullName>Michigan  - 5117</fullName>
+                <default>false</default>
+                <label>Michigan  - 5117</label>
+            </value>
+            <value>
+                <fullName>Mideast Airlines  - 201D</fullName>
+                <default>false</default>
+                <label>Mideast Airlines  - 201D</label>
+            </value>
+            <value>
+                <fullName>Mid East - DF  - 185D</fullName>
+                <default>false</default>
+                <label>Mid East - DF  - 185D</label>
+            </value>
+            <value>
+                <fullName>Minnesota  - 1422</fullName>
+                <default>false</default>
+                <label>Minnesota  - 1422</label>
+            </value>
+            <value>
+                <fullName>Mississippi  - 5357</fullName>
+                <default>false</default>
+                <label>Mississippi  - 5357</label>
+            </value>
+            <value>
+                <fullName>Missouri  - 1327</fullName>
+                <default>false</default>
+                <label>Missouri  - 1327</label>
+            </value>
+            <value>
+                <fullName>Moldavia - DF  - 198D</fullName>
+                <default>false</default>
+                <label>Moldavia - DF  - 198D</label>
+            </value>
+            <value>
+                <fullName>Moldavia - LE  - 198C</fullName>
+                <default>false</default>
+                <label>Moldavia - LE  - 198C</label>
+            </value>
+            <value>
+                <fullName>Mongolia LE  - 327C</fullName>
+                <default>false</default>
+                <label>Mongolia LE  - 327C</label>
+            </value>
+            <value>
+                <fullName>Montana  - 5449</fullName>
+                <default>false</default>
+                <label>Montana  - 5449</label>
+            </value>
+            <value>
+                <fullName>Montenegro - DF  - 112D</fullName>
+                <default>false</default>
+                <label>Montenegro - DF  - 112D</label>
+            </value>
+            <value>
+                <fullName>Montenegro - LE  - 112C</fullName>
+                <default>false</default>
+                <label>Montenegro - LE  - 112C</label>
+            </value>
+            <value>
+                <fullName>Montgomery County  - 1258</fullName>
+                <default>false</default>
+                <label>Montgomery County  - 1258</label>
+            </value>
+            <value>
+                <fullName>Montserrat - LE  - 758C</fullName>
+                <default>false</default>
+                <label>Montserrat - LE  - 758C</label>
+            </value>
+            <value>
+                <fullName>Morocco - DF  - 560D</fullName>
+                <default>false</default>
+                <label>Morocco - DF  - 560D</label>
+            </value>
+            <value>
+                <fullName>Morocco - LE  - 560C</fullName>
+                <default>false</default>
+                <label>Morocco - LE  - 560C</label>
+            </value>
+            <value>
+                <fullName>Mt. Eagle  - 4690</fullName>
+                <default>false</default>
+                <label>Mt. Eagle  - 4690</label>
+            </value>
+            <value>
+                <fullName>Nat.Accts Military  -  904</fullName>
+                <default>false</default>
+                <label>Nat.Accts Military  -  904</label>
+            </value>
+            <value>
+                <fullName>Natures Catch  - 4200</fullName>
+                <default>false</default>
+                <label>Natures Catch  - 4200</label>
+            </value>
+            <value>
+                <fullName>Nebraska  - 1426</fullName>
+                <default>false</default>
+                <label>Nebraska  - 1426</label>
+            </value>
+            <value>
+                <fullName>Nepal - DF  - 356D</fullName>
+                <default>false</default>
+                <label>Nepal - DF  - 356D</label>
+            </value>
+            <value>
+                <fullName>Nepal - LE  - 356C</fullName>
+                <default>false</default>
+                <label>Nepal - LE  - 356C</label>
+            </value>
+            <value>
+                <fullName>Netherlands - DF  - 141D</fullName>
+                <default>false</default>
+                <label>Netherlands - DF  - 141D</label>
+            </value>
+            <value>
+                <fullName>Netherlands - LE  - 141C</fullName>
+                <default>false</default>
+                <label>Netherlands - LE  - 141C</label>
+            </value>
+            <value>
+                <fullName>Netherlands Misc  - 141G</fullName>
+                <default>false</default>
+                <label>Netherlands Misc  - 141G</label>
+            </value>
+            <value>
+                <fullName>Nevada  - 3141</fullName>
+                <default>false</default>
+                <label>Nevada  - 3141</label>
+            </value>
+            <value>
+                <fullName>New Brunswick - LE  - 616C</fullName>
+                <default>false</default>
+                <label>New Brunswick - LE  - 616C</label>
+            </value>
+            <value>
+                <fullName>New Caledonia - DF  - 957D</fullName>
+                <default>false</default>
+                <label>New Caledonia - DF  - 957D</label>
+            </value>
+            <value>
+                <fullName>New Caledonia - LE  - 957C</fullName>
+                <default>false</default>
+                <label>New Caledonia - LE  - 957C</label>
+            </value>
+            <value>
+                <fullName>Newfoundland - LE  - 617C</fullName>
+                <default>false</default>
+                <label>Newfoundland - LE  - 617C</label>
+            </value>
+            <value>
+                <fullName>New Hampshire  - 5202</fullName>
+                <default>false</default>
+                <label>New Hampshire  - 5202</label>
+            </value>
+            <value>
+                <fullName>New Jersey  - 1508</fullName>
+                <default>false</default>
+                <label>New Jersey  - 1508</label>
+            </value>
+            <value>
+                <fullName>New Mexico  - 3253</fullName>
+                <default>false</default>
+                <label>New Mexico  - 3253</label>
+            </value>
+            <value>
+                <fullName>New South Wales - LE  - 907C</fullName>
+                <default>false</default>
+                <label>New South Wales - LE  - 907C</label>
+            </value>
+            <value>
+                <fullName>New York  - 1560</fullName>
+                <default>false</default>
+                <label>New York  - 1560</label>
+            </value>
+            <value>
+                <fullName>New Zealand - DF  - 959D</fullName>
+                <default>false</default>
+                <label>New Zealand - DF  - 959D</label>
+            </value>
+            <value>
+                <fullName>New Zealand - LE  - 959C</fullName>
+                <default>false</default>
+                <label>New Zealand - LE  - 959C</label>
+            </value>
+            <value>
+                <fullName>Nicaragua - DF  - 657D</fullName>
+                <default>false</default>
+                <label>Nicaragua - DF  - 657D</label>
+            </value>
+            <value>
+                <fullName>Nicaragua - LE  - 657C</fullName>
+                <default>false</default>
+                <label>Nicaragua - LE  - 657C</label>
+            </value>
+            <value>
+                <fullName>Nigeria - LE  - 563C</fullName>
+                <default>false</default>
+                <label>Nigeria - LE  - 563C</label>
+            </value>
+            <value>
+                <fullName>Nordic DF  - 503D</fullName>
+                <default>false</default>
+                <label>Nordic DF  - 503D</label>
+            </value>
+            <value>
+                <fullName>Nordic DF Misc  - 503G</fullName>
+                <default>false</default>
+                <label>Nordic DF Misc  - 503G</label>
+            </value>
+            <value>
+                <fullName>Nordic HO Misc  - 135G</fullName>
+                <default>false</default>
+                <label>Nordic HO Misc  - 135G</label>
+            </value>
+            <value>
+                <fullName>Norte (North Mexico)  - 681C</fullName>
+                <default>false</default>
+                <label>Norte (North Mexico)  - 681C</label>
+            </value>
+            <value>
+                <fullName>Norte DF(North Mex)  - 681D</fullName>
+                <default>false</default>
+                <label>Norte DF(North Mex)  - 681D</label>
+            </value>
+            <value>
+                <fullName>North Carolina  - 5315</fullName>
+                <default>false</default>
+                <label>North Carolina  - 5315</label>
+            </value>
+            <value>
+                <fullName>North Cyprus  - 283C</fullName>
+                <default>false</default>
+                <label>North Cyprus  - 283C</label>
+            </value>
+            <value>
+                <fullName>North Cyprus - DF  - 283D</fullName>
+                <default>false</default>
+                <label>North Cyprus - DF  - 283D</label>
+            </value>
+            <value>
+                <fullName>North Dakota  - 1423</fullName>
+                <default>false</default>
+                <label>North Dakota  - 1423</label>
+            </value>
+            <value>
+                <fullName>Northern Ireland -LE  - 145C</fullName>
+                <default>false</default>
+                <label>Northern Ireland -LE  - 145C</label>
+            </value>
+            <value>
+                <fullName>Northwest Home Offc  - 9983</fullName>
+                <default>false</default>
+                <label>Northwest Home Offc  - 9983</label>
+            </value>
+            <value>
+                <fullName>Norway - LE  - 157C</fullName>
+                <default>false</default>
+                <label>Norway - LE  - 157C</label>
+            </value>
+            <value>
+                <fullName>Nova Scotia - LE  - 619C</fullName>
+                <default>false</default>
+                <label>Nova Scotia - LE  - 619C</label>
+            </value>
+            <value>
+                <fullName>Nuance  - 509D</fullName>
+                <default>false</default>
+                <label>Nuance  - 509D</label>
+            </value>
+            <value>
+                <fullName>NZ Home Office  - 5850</fullName>
+                <default>false</default>
+                <label>NZ Home Office  - 5850</label>
+            </value>
+            <value>
+                <fullName>Ohio  - 5116</fullName>
+                <default>false</default>
+                <label>Ohio  - 5116</label>
+            </value>
+            <value>
+                <fullName>Oklahoma  - 3234</fullName>
+                <default>false</default>
+                <label>Oklahoma  - 3234</label>
+            </value>
+            <value>
+                <fullName>Oman - DF  - 266D</fullName>
+                <default>false</default>
+                <label>Oman - DF  - 266D</label>
+            </value>
+            <value>
+                <fullName>Oman - LE  - 266C</fullName>
+                <default>false</default>
+                <label>Oman - LE  - 266C</label>
+            </value>
+            <value>
+                <fullName>Ontario - DF  - 620D</fullName>
+                <default>false</default>
+                <label>Ontario - DF  - 620D</label>
+            </value>
+            <value>
+                <fullName>Ontario - LE  - 620C</fullName>
+                <default>false</default>
+                <label>Ontario - LE  - 620C</label>
+            </value>
+            <value>
+                <fullName>Oregon  - 5444</fullName>
+                <default>false</default>
+                <label>Oregon  - 5444</label>
+            </value>
+            <value>
+                <fullName>Other Airport Retail  - 668D</fullName>
+                <default>false</default>
+                <label>Other Airport Retail  - 668D</label>
+            </value>
+            <value>
+                <fullName>Other E. Europe - LE  - 176C</fullName>
+                <default>false</default>
+                <label>Other E. Europe - LE  - 176C</label>
+            </value>
+            <value>
+                <fullName>Other Islands - DF  - 912D</fullName>
+                <default>false</default>
+                <label>Other Islands - DF  - 912D</label>
+            </value>
+            <value>
+                <fullName>Other Islands - LE  - 912C</fullName>
+                <default>false</default>
+                <label>Other Islands - LE  - 912C</label>
+            </value>
+            <value>
+                <fullName>Overseas Militay HO  - 428M</fullName>
+                <default>false</default>
+                <label>Overseas Militay HO  - 428M</label>
+            </value>
+            <value>
+                <fullName>P.E.I.  - 609C</fullName>
+                <default>false</default>
+                <label>P.E.I.  - 609C</label>
+            </value>
+            <value>
+                <fullName>Pacific Home Office  - 9982</fullName>
+                <default>false</default>
+                <label>Pacific Home Office  - 9982</label>
+            </value>
+            <value>
+                <fullName>Pacific Island Other  - 928C</fullName>
+                <default>false</default>
+                <label>Pacific Island Other  - 928C</label>
+            </value>
+            <value>
+                <fullName>Pacifico (Pacifc Mx)  - 682C</fullName>
+                <default>false</default>
+                <label>Pacifico (Pacifc Mx)  - 682C</label>
+            </value>
+            <value>
+                <fullName>Pakistan - DF  - 366D</fullName>
+                <default>false</default>
+                <label>Pakistan - DF  - 366D</label>
+            </value>
+            <value>
+                <fullName>Pakistan - LE  - 366C</fullName>
+                <default>false</default>
+                <label>Pakistan - LE  - 366C</label>
+            </value>
+            <value>
+                <fullName>Panama - DF  - 666D</fullName>
+                <default>false</default>
+                <label>Panama - DF  - 666D</label>
+            </value>
+            <value>
+                <fullName>Panama - LE  - 666C</fullName>
+                <default>false</default>
+                <label>Panama - LE  - 666C</label>
+            </value>
+            <value>
+                <fullName>Panama Military  - 666M</fullName>
+                <default>false</default>
+                <label>Panama Military  - 666M</label>
+            </value>
+            <value>
+                <fullName>Pan-American Key Act  - 1002</fullName>
+                <default>false</default>
+                <label>Pan-American Key Act  - 1002</label>
+            </value>
+            <value>
+                <fullName>Paraguay - LE  - 866C</fullName>
+                <default>false</default>
+                <label>Paraguay - LE  - 866C</label>
+            </value>
+            <value>
+                <fullName>Pennsylvania  - 5209</fullName>
+                <default>false</default>
+                <label>Pennsylvania  - 5209</label>
+            </value>
+            <value>
+                <fullName>Peru - DF  - 867D</fullName>
+                <default>false</default>
+                <label>Peru - DF  - 867D</label>
+            </value>
+            <value>
+                <fullName>Peru - LE  - 867C</fullName>
+                <default>false</default>
+                <label>Peru - LE  - 867C</label>
+            </value>
+            <value>
+                <fullName>Philippines - DF  - 467D</fullName>
+                <default>false</default>
+                <label>Philippines - DF  - 467D</label>
+            </value>
+            <value>
+                <fullName>Philippines - LE  - 467C</fullName>
+                <default>false</default>
+                <label>Philippines - LE  - 467C</label>
+            </value>
+            <value>
+                <fullName>Philippines Misc  - 467G</fullName>
+                <default>false</default>
+                <label>Philippines Misc  - 467G</label>
+            </value>
+            <value>
+                <fullName>Pinnacle  - 4100</fullName>
+                <default>false</default>
+                <label>Pinnacle  - 4100</label>
+            </value>
+            <value>
+                <fullName>Poland - DF  - 117D</fullName>
+                <default>false</default>
+                <label>Poland - DF  - 117D</label>
+            </value>
+            <value>
+                <fullName>Poland - LE  - 117C</fullName>
+                <default>false</default>
+                <label>Poland - LE  - 117C</label>
+            </value>
+            <value>
+                <fullName>Poland Misc  - 117G</fullName>
+                <default>false</default>
+                <label>Poland Misc  - 117G</label>
+            </value>
+            <value>
+                <fullName>Portugal - DF  - 167D</fullName>
+                <default>false</default>
+                <label>Portugal - DF  - 167D</label>
+            </value>
+            <value>
+                <fullName>Portugal - LE  - 167C</fullName>
+                <default>false</default>
+                <label>Portugal - LE  - 167C</label>
+            </value>
+            <value>
+                <fullName>Production Admin  - 4170</fullName>
+                <default>false</default>
+                <label>Production Admin  - 4170</label>
+            </value>
+            <value>
+                <fullName>Puerto Rico - DF  - 767D</fullName>
+                <default>false</default>
+                <label>Puerto Rico - DF  - 767D</label>
+            </value>
+            <value>
+                <fullName>Puerto Rico - LE  - 767C</fullName>
+                <default>false</default>
+                <label>Puerto Rico - LE  - 767C</label>
+            </value>
+            <value>
+                <fullName>Puerto Rico Military  - 767M</fullName>
+                <default>false</default>
+                <label>Puerto Rico Military  - 767M</label>
+            </value>
+            <value>
+                <fullName>Qatar - DF  - 267D</fullName>
+                <default>false</default>
+                <label>Qatar - DF  - 267D</label>
+            </value>
+            <value>
+                <fullName>Qatar - LE  - 267C</fullName>
+                <default>false</default>
+                <label>Qatar - LE  - 267C</label>
+            </value>
+            <value>
+                <fullName>Quebec - DF  - 624D</fullName>
+                <default>false</default>
+                <label>Quebec - DF  - 624D</label>
+            </value>
+            <value>
+                <fullName>Quebec - LE  - 624C</fullName>
+                <default>false</default>
+                <label>Quebec - LE  - 624C</label>
+            </value>
+            <value>
+                <fullName>Queensland - LE  - 909C</fullName>
+                <default>false</default>
+                <label>Queensland - LE  - 909C</label>
+            </value>
+            <value>
+                <fullName>Rest of Africa - DF  - 538D</fullName>
+                <default>false</default>
+                <label>Rest of Africa - DF  - 538D</label>
+            </value>
+            <value>
+                <fullName>Rest of Africa - HO  - 538G</fullName>
+                <default>false</default>
+                <label>Rest of Africa - HO  - 538G</label>
+            </value>
+            <value>
+                <fullName>Rest of Africa - LE  - 538C</fullName>
+                <default>false</default>
+                <label>Rest of Africa - LE  - 538C</label>
+            </value>
+            <value>
+                <fullName>Rest of Opp Mkt Misc  - 3230</fullName>
+                <default>false</default>
+                <label>Rest of Opp Mkt Misc  - 3230</label>
+            </value>
+            <value>
+                <fullName>Rhode Island  - 1605</fullName>
+                <default>false</default>
+                <label>Rhode Island  - 1605</label>
+            </value>
+            <value>
+                <fullName>Romania - DF  - 118D</fullName>
+                <default>false</default>
+                <label>Romania - DF  - 118D</label>
+            </value>
+            <value>
+                <fullName>Romania - LE  - 118C</fullName>
+                <default>false</default>
+                <label>Romania - LE  - 118C</label>
+            </value>
+            <value>
+                <fullName>Romania Misc  - 118G</fullName>
+                <default>false</default>
+                <label>Romania Misc  - 118G</label>
+            </value>
+            <value>
+                <fullName>Russia - DF  - 175D</fullName>
+                <default>false</default>
+                <label>Russia - DF  - 175D</label>
+            </value>
+            <value>
+                <fullName>Russia Mainland - LE  - 175C</fullName>
+                <default>false</default>
+                <label>Russia Mainland - LE  - 175C</label>
+            </value>
+            <value>
+                <fullName>Russia Misc  - 175G</fullName>
+                <default>false</default>
+                <label>Russia Misc  - 175G</label>
+            </value>
+            <value>
+                <fullName>S &amp; M Gain/Loss  - 5330</fullName>
+                <default>false</default>
+                <label>S &amp; M Gain/Loss  - 5330</label>
+            </value>
+            <value>
+                <fullName>Sarvis Military  - = 50</fullName>
+                <default>false</default>
+                <label>Sarvis Military  - = 50</label>
+            </value>
+            <value>
+                <fullName>Saskatchewan - LE  - 623C</fullName>
+                <default>false</default>
+                <label>Saskatchewan - LE  - 623C</label>
+            </value>
+            <value>
+                <fullName>S-Cutrer Prod Site  - 6230</fullName>
+                <default>false</default>
+                <label>S-Cutrer Prod Site  - 6230</label>
+            </value>
+            <value>
+                <fullName>SEA Home Office  - 5600</fullName>
+                <default>false</default>
+                <label>SEA Home Office  - 5600</label>
+            </value>
+            <value>
+                <fullName>SEMEA Home Office  - 2050</fullName>
+                <default>false</default>
+                <label>SEMEA Home Office  - 2050</label>
+            </value>
+            <value>
+                <fullName>Serbia  - 119C</fullName>
+                <default>false</default>
+                <label>Serbia  - 119C</label>
+            </value>
+            <value>
+                <fullName>Serbia DF  - 119D</fullName>
+                <default>false</default>
+                <label>Serbia DF  - 119D</label>
+            </value>
+            <value>
+                <fullName>Shanghai - DF  - 325D</fullName>
+                <default>false</default>
+                <label>Shanghai - DF  - 325D</label>
+            </value>
+            <value>
+                <fullName>Shanghai - LE  - 325C</fullName>
+                <default>false</default>
+                <label>Shanghai - LE  - 325C</label>
+            </value>
+            <value>
+                <fullName>Shenzhen - DF  - 326D</fullName>
+                <default>false</default>
+                <label>Shenzhen - DF  - 326D</label>
+            </value>
+            <value>
+                <fullName>Shenzhen - LE  - 326C</fullName>
+                <default>false</default>
+                <label>Shenzhen - LE  - 326C</label>
+            </value>
+            <value>
+                <fullName>Singapore/other - DF  - 485D</fullName>
+                <default>false</default>
+                <label>Singapore/other - DF  - 485D</label>
+            </value>
+            <value>
+                <fullName>Singapore/other - LE  - 485C</fullName>
+                <default>false</default>
+                <label>Singapore/other - LE  - 485C</label>
+            </value>
+            <value>
+                <fullName>Singapore - DF  - 471D</fullName>
+                <default>false</default>
+                <label>Singapore - DF  - 471D</label>
+            </value>
+            <value>
+                <fullName>Singapore - LE  - 471C</fullName>
+                <default>false</default>
+                <label>Singapore - LE  - 471C</label>
+            </value>
+            <value>
+                <fullName>Singapore Misc  - 471G</fullName>
+                <default>false</default>
+                <label>Singapore Misc  - 471G</label>
+            </value>
+            <value>
+                <fullName>Singapore Re-Export  - 492C</fullName>
+                <default>false</default>
+                <label>Singapore Re-Export  - 492C</label>
+            </value>
+            <value>
+                <fullName>Slovakia - DF  - 123D</fullName>
+                <default>false</default>
+                <label>Slovakia - DF  - 123D</label>
+            </value>
+            <value>
+                <fullName>Slovakia - LE  - 123C</fullName>
+                <default>false</default>
+                <label>Slovakia - LE  - 123C</label>
+            </value>
+            <value>
+                <fullName>Slovenia - DF  - 191D</fullName>
+                <default>false</default>
+                <label>Slovenia - DF  - 191D</label>
+            </value>
+            <value>
+                <fullName>Slovenia - LE  - 191C</fullName>
+                <default>false</default>
+                <label>Slovenia - LE  - 191C</label>
+            </value>
+            <value>
+                <fullName>Slovenia Misc  - 191G</fullName>
+                <default>false</default>
+                <label>Slovenia Misc  - 191G</label>
+            </value>
+            <value>
+                <fullName>Solomon Islands - LE  - 986C</fullName>
+                <default>false</default>
+                <label>Solomon Islands - LE  - 986C</label>
+            </value>
+            <value>
+                <fullName>South Africa - DF  - 525D</fullName>
+                <default>false</default>
+                <label>South Africa - DF  - 525D</label>
+            </value>
+            <value>
+                <fullName>South Africa - LE  - 525C</fullName>
+                <default>false</default>
+                <label>South Africa - LE  - 525C</label>
+            </value>
+            <value>
+                <fullName>South Australia - LE  - 905C</fullName>
+                <default>false</default>
+                <label>South Australia - LE  - 905C</label>
+            </value>
+            <value>
+                <fullName>South Carolina  - 1129</fullName>
+                <default>false</default>
+                <label>South Carolina  - 1129</label>
+            </value>
+            <value>
+                <fullName>South Dakota  - 1424</fullName>
+                <default>false</default>
+                <label>South Dakota  - 1424</label>
+            </value>
+            <value>
+                <fullName>Southern Europe HO  - 3000</fullName>
+                <default>false</default>
+                <label>Southern Europe HO  - 3000</label>
+            </value>
+            <value>
+                <fullName>South Korea - DF  - 452D</fullName>
+                <default>false</default>
+                <label>South Korea - DF  - 452D</label>
+            </value>
+            <value>
+                <fullName>South Korea - LE  - 452C</fullName>
+                <default>false</default>
+                <label>South Korea - LE  - 452C</label>
+            </value>
+            <value>
+                <fullName>South Latin Ameri HO  - 9991</fullName>
+                <default>false</default>
+                <label>South Latin Ameri HO  - 9991</label>
+            </value>
+            <value>
+                <fullName>Southwest Home Offc  - 9984</fullName>
+                <default>false</default>
+                <label>Southwest Home Offc  - 9984</label>
+            </value>
+            <value>
+                <fullName>Spain - DF  - 172D</fullName>
+                <default>false</default>
+                <label>Spain - DF  - 172D</label>
+            </value>
+            <value>
+                <fullName>Spain - LE  - 172C</fullName>
+                <default>false</default>
+                <label>Spain - LE  - 172C</label>
+            </value>
+            <value>
+                <fullName>Spain Misc  - 172G</fullName>
+                <default>false</default>
+                <label>Spain Misc  - 172G</label>
+            </value>
+            <value>
+                <fullName>SRA Off Premise  -  908</fullName>
+                <default>false</default>
+                <label>SRA Off Premise  -  908</label>
+            </value>
+            <value>
+                <fullName>SRA On Premise  -  910</fullName>
+                <default>false</default>
+                <label>SRA On Premise  -  910</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka - DF  - 372D</fullName>
+                <default>false</default>
+                <label>Sri Lanka - DF  - 372D</label>
+            </value>
+            <value>
+                <fullName>Sri Lanka - LE  - 372C</fullName>
+                <default>false</default>
+                <label>Sri Lanka - LE  - 372C</label>
+            </value>
+            <value>
+                <fullName>St. Maarten - DF  - 774D</fullName>
+                <default>false</default>
+                <label>St. Maarten - DF  - 774D</label>
+            </value>
+            <value>
+                <fullName>St. Maarten - LE  - 774C</fullName>
+                <default>false</default>
+                <label>St. Maarten - LE  - 774C</label>
+            </value>
+            <value>
+                <fullName>St Kitts - LE  - 772C</fullName>
+                <default>false</default>
+                <label>St Kitts - LE  - 772C</label>
+            </value>
+            <value>
+                <fullName>St Lucia - LE  - 773C</fullName>
+                <default>false</default>
+                <label>St Lucia - LE  - 773C</label>
+            </value>
+            <value>
+                <fullName>St Vincent - LE  - 776C</fullName>
+                <default>false</default>
+                <label>St Vincent - LE  - 776C</label>
+            </value>
+            <value>
+                <fullName>Supply Chain  - 4190</fullName>
+                <default>false</default>
+                <label>Supply Chain  - 4190</label>
+            </value>
+            <value>
+                <fullName>Sureste (SE Mexico)  - 686C</fullName>
+                <default>false</default>
+                <label>Sureste (SE Mexico)  - 686C</label>
+            </value>
+            <value>
+                <fullName>Suriname - LE  - 871C</fullName>
+                <default>false</default>
+                <label>Suriname - LE  - 871C</label>
+            </value>
+            <value>
+                <fullName>Sweden - LE  - 173C</fullName>
+                <default>false</default>
+                <label>Sweden - LE  - 173C</label>
+            </value>
+            <value>
+                <fullName>Switzerland - DF  - 174D</fullName>
+                <default>false</default>
+                <label>Switzerland - DF  - 174D</label>
+            </value>
+            <value>
+                <fullName>Switzerland  -LE  - 174C</fullName>
+                <default>false</default>
+                <label>Switzerland  -LE  - 174C</label>
+            </value>
+            <value>
+                <fullName>Syria - DF  - 254D</fullName>
+                <default>false</default>
+                <label>Syria - DF  - 254D</label>
+            </value>
+            <value>
+                <fullName>Syria - LE  - 254C</fullName>
+                <default>false</default>
+                <label>Syria - LE  - 254C</label>
+            </value>
+            <value>
+                <fullName>Tahiti - LE  - 981C</fullName>
+                <default>false</default>
+                <label>Tahiti - LE  - 981C</label>
+            </value>
+            <value>
+                <fullName>Taiwan - DF  - 481D</fullName>
+                <default>false</default>
+                <label>Taiwan - DF  - 481D</label>
+            </value>
+            <value>
+                <fullName>Taiwan - LE  - 481C</fullName>
+                <default>false</default>
+                <label>Taiwan - LE  - 481C</label>
+            </value>
+            <value>
+                <fullName>Taiwan Misc  - 481G</fullName>
+                <default>false</default>
+                <label>Taiwan Misc  - 481G</label>
+            </value>
+            <value>
+                <fullName>Tennessee  - 3435</fullName>
+                <default>false</default>
+                <label>Tennessee  - 3435</label>
+            </value>
+            <value>
+                <fullName>Texas  - 3337</fullName>
+                <default>false</default>
+                <label>Texas  - 3337</label>
+            </value>
+            <value>
+                <fullName>Thailand - DF  - 482D</fullName>
+                <default>false</default>
+                <label>Thailand - DF  - 482D</label>
+            </value>
+            <value>
+                <fullName>Thailand - LE  - 482C</fullName>
+                <default>false</default>
+                <label>Thailand - LE  - 482C</label>
+            </value>
+            <value>
+                <fullName>Thailand Misc  - 482G</fullName>
+                <default>false</default>
+                <label>Thailand Misc  - 482G</label>
+            </value>
+            <value>
+                <fullName>TPC  - 4150</fullName>
+                <default>false</default>
+                <label>TPC  - 4150</label>
+            </value>
+            <value>
+                <fullName>Trade marketing  -  912</fullName>
+                <default>false</default>
+                <label>Trade marketing  -  912</label>
+            </value>
+            <value>
+                <fullName>Transportation  - 30</fullName>
+                <default>false</default>
+                <label>Transportation  - 30</label>
+            </value>
+            <value>
+                <fullName>Transportation  - 98</fullName>
+                <default>false</default>
+                <label>Transportation  - 98</label>
+            </value>
+            <value>
+                <fullName>Trinidad - DF  - 782D</fullName>
+                <default>false</default>
+                <label>Trinidad - DF  - 782D</label>
+            </value>
+            <value>
+                <fullName>Trinidad -LE  - 782C</fullName>
+                <default>false</default>
+                <label>Trinidad -LE  - 782C</label>
+            </value>
+            <value>
+                <fullName>Tuini &amp; Canepa  - 3290</fullName>
+                <default>false</default>
+                <label>Tuini &amp; Canepa  - 3290</label>
+            </value>
+            <value>
+                <fullName>Tunisia - DF  - 583D</fullName>
+                <default>false</default>
+                <label>Tunisia - DF  - 583D</label>
+            </value>
+            <value>
+                <fullName>Turkey - DF  - 281D</fullName>
+                <default>false</default>
+                <label>Turkey - DF  - 281D</label>
+            </value>
+            <value>
+                <fullName>Turkey -LE  - 281C</fullName>
+                <default>false</default>
+                <label>Turkey -LE  - 281C</label>
+            </value>
+            <value>
+                <fullName>Turkey Misc  - 281G</fullName>
+                <default>false</default>
+                <label>Turkey Misc  - 281G</label>
+            </value>
+            <value>
+                <fullName>Turks/Caicos - DF  - 781D</fullName>
+                <default>false</default>
+                <label>Turks/Caicos - DF  - 781D</label>
+            </value>
+            <value>
+                <fullName>Turks/Caicos - LE  - 781C</fullName>
+                <default>false</default>
+                <label>Turks/Caicos - LE  - 781C</label>
+            </value>
+            <value>
+                <fullName>U.K.- B (BFWI) - LE  - 125C</fullName>
+                <default>false</default>
+                <label>U.K.- B (BFWI) - LE  - 125C</label>
+            </value>
+            <value>
+                <fullName>U.K. - DF  - 126D</fullName>
+                <default>false</default>
+                <label>U.K. - DF  - 126D</label>
+            </value>
+            <value>
+                <fullName>U.K. - DF - 136D</fullName>
+                <default>false</default>
+                <label>U.K. - DF - 136D</label>
+            </value>
+            <value>
+                <fullName>U.K. - LE  - 126C</fullName>
+                <default>false</default>
+                <label>U.K. - LE  - 126C</label>
+            </value>
+            <value>
+                <fullName>UAE Misc  - 282G</fullName>
+                <default>false</default>
+                <label>UAE Misc  - 282G</label>
+            </value>
+            <value>
+                <fullName>UETA DF  - 675D</fullName>
+                <default>false</default>
+                <label>UETA DF  - 675D</label>
+            </value>
+            <value>
+                <fullName>Ukraine - DF  - 199D</fullName>
+                <default>false</default>
+                <label>Ukraine - DF  - 199D</label>
+            </value>
+            <value>
+                <fullName>Ukraine -LE  - 199C</fullName>
+                <default>false</default>
+                <label>Ukraine -LE  - 199C</label>
+            </value>
+            <value>
+                <fullName>Ukraine Misc  - 199G</fullName>
+                <default>false</default>
+                <label>Ukraine Misc  - 199G</label>
+            </value>
+            <value>
+                <fullName>UK - Scotland (BFWI)  - 105C</fullName>
+                <default>false</default>
+                <label>UK - Scotland (BFWI)  - 105C</label>
+            </value>
+            <value>
+                <fullName>United Arab Emir -DF  - 282D</fullName>
+                <default>false</default>
+                <label>United Arab Emir -DF  - 282D</label>
+            </value>
+            <value>
+                <fullName>United Arab Emir -LE  - 282C</fullName>
+                <default>false</default>
+                <label>United Arab Emir -LE  - 282C</label>
+            </value>
+            <value>
+                <fullName>United Kingdom Misc  - 126G</fullName>
+                <default>false</default>
+                <label>United Kingdom Misc  - 126G</label>
+            </value>
+            <value>
+                <fullName>Uruguay - DF  - 886D</fullName>
+                <default>false</default>
+                <label>Uruguay - DF  - 886D</label>
+            </value>
+            <value>
+                <fullName>Uruguay - LE  - 886C</fullName>
+                <default>false</default>
+                <label>Uruguay - LE  - 886C</label>
+            </value>
+            <value>
+                <fullName>US Brand Management  -  400</fullName>
+                <default>false</default>
+                <label>US Brand Management  -  400</label>
+            </value>
+            <value>
+                <fullName>US Duty Free HO/Misc  - 9996</fullName>
+                <default>false</default>
+                <label>US Duty Free HO/Misc  - 9996</label>
+            </value>
+            <value>
+                <fullName>US Home Offc - Wines  - 6250</fullName>
+                <default>false</default>
+                <label>US Home Offc - Wines  - 6250</label>
+            </value>
+            <value>
+                <fullName>US Home Office  - 5150</fullName>
+                <default>false</default>
+                <label>US Home Office  - 5150</label>
+            </value>
+            <value>
+                <fullName>US Ship Chandlers  - 671D</fullName>
+                <default>false</default>
+                <label>US Ship Chandlers  - 671D</label>
+            </value>
+            <value>
+                <fullName>USVI - LE  - 786C</fullName>
+                <default>false</default>
+                <label>USVI - LE  - 786C</label>
+            </value>
+            <value>
+                <fullName>Utah  - 5448</fullName>
+                <default>false</default>
+                <label>Utah  - 5448</label>
+            </value>
+            <value>
+                <fullName>Uzbekistan - LE  - 208C</fullName>
+                <default>false</default>
+                <label>Uzbekistan - LE  - 208C</label>
+            </value>
+            <value>
+                <fullName>VAMA Production  - 3510</fullName>
+                <default>false</default>
+                <label>VAMA Production  - 3510</label>
+            </value>
+            <value>
+                <fullName>Vanuatu - LE  - 983C</fullName>
+                <default>false</default>
+                <label>Vanuatu - LE  - 983C</label>
+            </value>
+            <value>
+                <fullName>Venezuela - DF  - 887D</fullName>
+                <default>false</default>
+                <label>Venezuela - DF  - 887D</label>
+            </value>
+            <value>
+                <fullName>Venezuela - LE  - 887C</fullName>
+                <default>false</default>
+                <label>Venezuela - LE  - 887C</label>
+            </value>
+            <value>
+                <fullName>Venezuela Misc  - 887G</fullName>
+                <default>false</default>
+                <label>Venezuela Misc  - 887G</label>
+            </value>
+            <value>
+                <fullName>Vermont  - 5203</fullName>
+                <default>false</default>
+                <label>Vermont  - 5203</label>
+            </value>
+            <value>
+                <fullName>Victoria - LE  - 908C</fullName>
+                <default>false</default>
+                <label>Victoria - LE  - 908C</label>
+            </value>
+            <value>
+                <fullName>Virginia  - 5214</fullName>
+                <default>false</default>
+                <label>Virginia  - 5214</label>
+            </value>
+            <value>
+                <fullName>Washington  - 5445</fullName>
+                <default>false</default>
+                <label>Washington  - 5445</label>
+            </value>
+            <value>
+                <fullName>Weitnauer - DF  - 502D</fullName>
+                <default>false</default>
+                <label>Weitnauer - DF  - 502D</label>
+            </value>
+            <value>
+                <fullName>West Balkans Misc  - 3280</fullName>
+                <default>false</default>
+                <label>West Balkans Misc  - 3280</label>
+            </value>
+            <value>
+                <fullName>Western Australia  - 904C</fullName>
+                <default>false</default>
+                <label>Western Australia  - 904C</label>
+            </value>
+            <value>
+                <fullName>Western Europe FX  - 10FX</fullName>
+                <default>false</default>
+                <label>Western Europe FX  - 10FX</label>
+            </value>
+            <value>
+                <fullName>Western Europe HO  - 3250</fullName>
+                <default>false</default>
+                <label>Western Europe HO  - 3250</label>
+            </value>
+            <value>
+                <fullName>Western Samoa - LE  - 985C</fullName>
+                <default>false</default>
+                <label>Western Samoa - LE  - 985C</label>
+            </value>
+            <value>
+                <fullName>West Home Office  - 9985</fullName>
+                <default>false</default>
+                <label>West Home Office  - 9985</label>
+            </value>
+            <value>
+                <fullName>West Virginia  - 5210</fullName>
+                <default>false</default>
+                <label>West Virginia  - 5210</label>
+            </value>
+            <value>
+                <fullName>Wine Club  -  578</fullName>
+                <default>false</default>
+                <label>Wine Club  -  578</label>
+            </value>
+            <value>
+                <fullName>Wine FRABO Eur Bal  - 6370</fullName>
+                <default>false</default>
+                <label>Wine FRABO Eur Bal  - 6370</label>
+            </value>
+            <value>
+                <fullName>Wine FRABO US Bal  - 6380</fullName>
+                <default>false</default>
+                <label>Wine FRABO US Bal  - 6380</label>
+            </value>
+            <value>
+                <fullName>Wine Misc Europe  - 6100</fullName>
+                <default>false</default>
+                <label>Wine Misc Europe  - 6100</label>
+            </value>
+            <value>
+                <fullName>Wine Misc FBIW US  - 6340</fullName>
+                <default>false</default>
+                <label>Wine Misc FBIW US  - 6340</label>
+            </value>
+            <value>
+                <fullName>Wine Misc FBIW US  - 6350</fullName>
+                <default>false</default>
+                <label>Wine Misc FBIW US  - 6350</label>
+            </value>
+            <value>
+                <fullName>Wisconsin  - 1421</fullName>
+                <default>false</default>
+                <label>Wisconsin  - 1421</label>
+            </value>
+            <value>
+                <fullName>Woodford Reserve  - 4400</fullName>
+                <default>false</default>
+                <label>Woodford Reserve  - 4400</label>
+            </value>
+            <value>
+                <fullName>Wyoming  - 5450</fullName>
+                <default>false</default>
+                <label>Wyoming  - 5450</label>
+            </value>
+            <value>
+                <fullName>Zambia - LE  - 592C</fullName>
+                <default>false</default>
+                <label>Zambia - LE  - 592C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

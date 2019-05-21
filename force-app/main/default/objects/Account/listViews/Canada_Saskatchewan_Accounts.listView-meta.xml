@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Saskatchewan_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>Channel__c</columns>
+    <columns>Outlet_Class__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Region__c</field>
+        <operation>equals</operation>
+        <value>CAD-Saskatchewan</value>
+    </filters>
+    <label>Canada - Saskatchewan Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>CADMarketManagerAdmin</role>
+        <role>CADMarketingDirector</role>
+        <role>CADNationalLevelBF</role>
+        <role>CADNationalLevelHive</role>
+    </sharedTo>
+</ListView>

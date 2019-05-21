@@ -1,0 +1,6 @@
+.sfdx/
+.vscode/
+mdapipkg/
+staticresources/
+.DS_Store
+.zip

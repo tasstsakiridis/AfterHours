@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Shipping_Address_Mandatory_Rule</fullName>
+    <active>true</active>
+    <description>Validation rule to make shipping address mandatory when creating a new account in Poland</description>
+    <errorConditionFormula>OR( 
+ISBLANK( ShippingCity ),
+ISBLANK( ShippingStreet ),
+ISBLANK( ShippingState ),
+ISBLANK( ShippingPostalCode)) &amp;&amp;  (RecordType.Id =&quot;012a0000001NZsU&quot;  ||  RecordType.Id =&quot;012a0000001NZsV&quot;)</errorConditionFormula>
+    <errorMessage>Podaj dokładny adres.</errorMessage>
+</ValidationRule>

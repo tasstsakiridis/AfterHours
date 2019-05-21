@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_for_Orders__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Contact for Orders - Used by Distributor dB</description>
+    <externalId>false</externalId>
+    <label>Contact for Orders</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Accounts (Contact for Orders)</relationshipLabel>
+    <relationshipName>Accounts1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

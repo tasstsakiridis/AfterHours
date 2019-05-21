@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PLFC_Accounts2</fullName>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TICKER</columns>
+    <columns>CEO__c</columns>
+    <columns>COB__c</columns>
+    <columns>GC_or_Legal_Officer__c</columns>
+    <columns>CFO__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.ADDRESS1_CITY</columns>
+    <columns>ACCOUNT.ADDRESS1_ZIP</columns>
+    <columns>Market_Capitalization__c</columns>
+    <columns>Shares_Outstanding_f__c</columns>
+    <columns>Status__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.PLFC_Accounts</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>PLFC Accounts2</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>PLFC_Admin</group>
+        <group>PLFC_User</group>
+        <roleAndSubordinates>FDCPLFCManagers</roleAndSubordinates>
+    </sharedTo>
+</ListView>

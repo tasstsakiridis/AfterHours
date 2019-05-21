@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Incoterms_Picklist__c</fullName>
+    <description>For GTR</description>
+    <externalId>false</externalId>
+    <label>Incoterms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Carriage &amp; Insurance Paid To</fullName>
+                <default>false</default>
+                <label>Carriage &amp; Insurance Paid To</label>
+            </value>
+            <value>
+                <fullName>Carriage Paid To Destination</fullName>
+                <default>false</default>
+                <label>Carriage Paid To Destination</label>
+            </value>
+            <value>
+                <fullName>Carriage Paid To Port</fullName>
+                <default>false</default>
+                <label>Carriage Paid To Port</label>
+            </value>
+            <value>
+                <fullName>Carriage Paid To Ramp</fullName>
+                <default>false</default>
+                <label>Carriage Paid To Ramp</label>
+            </value>
+            <value>
+                <fullName>Costs, Insurance &amp; Freight</fullName>
+                <default>false</default>
+                <label>Costs, Insurance &amp; Freight</label>
+            </value>
+            <value>
+                <fullName>Costs &amp; Freight</fullName>
+                <default>false</default>
+                <label>Costs &amp; Freight</label>
+            </value>
+            <value>
+                <fullName>Delivered at Frontier</fullName>
+                <default>false</default>
+                <label>Delivered at Frontier</label>
+            </value>
+            <value>
+                <fullName>Delivered at Place</fullName>
+                <default>false</default>
+                <label>Delivered at Place</label>
+            </value>
+            <value>
+                <fullName>Delivered Duty Paid</fullName>
+                <default>false</default>
+                <label>Delivered Duty Paid</label>
+            </value>
+            <value>
+                <fullName>Delivered Duty Paid Collect</fullName>
+                <default>false</default>
+                <label>Delivered Duty Paid Collect</label>
+            </value>
+            <value>
+                <fullName>Delivered Duty Unpaid</fullName>
+                <default>false</default>
+                <label>Delivered Duty Unpaid</label>
+            </value>
+            <value>
+                <fullName>Delivered Duty Unpaid Collect</fullName>
+                <default>false</default>
+                <label>Delivered Duty Unpaid Collect</label>
+            </value>
+            <value>
+                <fullName>Delivered Ex-Quay (Duty Paid)</fullName>
+                <default>false</default>
+                <label>Delivered Ex-Quay (Duty Paid)</label>
+            </value>
+            <value>
+                <fullName>Delivered Ex-Ship</fullName>
+                <default>false</default>
+                <label>Delivered Ex-Ship</label>
+            </value>
+            <value>
+                <fullName>Ex-Works</fullName>
+                <default>false</default>
+                <label>Ex-Works</label>
+            </value>
+            <value>
+                <fullName>Ex-Works Freight Collect</fullName>
+                <default>false</default>
+                <label>Ex-Works Freight Collect</label>
+            </value>
+            <value>
+                <fullName>Ex-Works - Prepaid</fullName>
+                <default>false</default>
+                <label>Ex-Works - Prepaid</label>
+            </value>
+            <value>
+                <fullName>Free Along Side Ship</fullName>
+                <default>false</default>
+                <label>Free Along Side Ship</label>
+            </value>
+            <value>
+                <fullName>Free Carrier</fullName>
+                <default>false</default>
+                <label>Free Carrier</label>
+            </value>
+            <value>
+                <fullName>Free House</fullName>
+                <default>false</default>
+                <label>Free House</label>
+            </value>
+            <value>
+                <fullName>Free on Board</fullName>
+                <default>false</default>
+                <label>Free on Board</label>
+            </value>
+            <value>
+                <fullName>Not Free</fullName>
+                <default>false</default>
+                <label>Not Free</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

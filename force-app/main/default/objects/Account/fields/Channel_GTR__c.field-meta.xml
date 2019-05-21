@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Channel_GTR__c</fullName>
+    <description>GTR needs Mult-Picklist for Channel</description>
+    <externalId>false</externalId>
+    <label>Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Airport</fullName>
+                <default>false</default>
+                <label>Airport</label>
+            </value>
+            <value>
+                <fullName>Border</fullName>
+                <default>false</default>
+                <label>Border</label>
+            </value>
+            <value>
+                <fullName>In-Flight</fullName>
+                <default>false</default>
+                <label>In-Flight</label>
+            </value>
+            <value>
+                <fullName>Ship Chandler</fullName>
+                <default>false</default>
+                <label>Ship Chandler</label>
+            </value>
+            <value>
+                <fullName>Cruise / Ferry</fullName>
+                <default>false</default>
+                <label>Cruise / Ferry</label>
+            </value>
+            <value>
+                <fullName>Cruise Gift Shop</fullName>
+                <default>false</default>
+                <label>Cruise Gift Shop</label>
+            </value>
+            <value>
+                <fullName>Diplomat</fullName>
+                <default>false</default>
+                <label>Diplomat</label>
+            </value>
+            <value>
+                <fullName>Port Store</fullName>
+                <default>false</default>
+                <label>Port Store</label>
+            </value>
+            <value>
+                <fullName>Military</fullName>
+                <default>false</default>
+                <label>Military</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

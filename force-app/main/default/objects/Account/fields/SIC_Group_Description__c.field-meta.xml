@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SIC_Group_Description__c</fullName>
+    <description>FDC-PLFC Database</description>
+    <externalId>false</externalId>
+    <formula>SIC_Group_Code__r.Industry_Title__c</formula>
+    <inlineHelpText>The first 4 characters of the SIC Code, used to identify the SIC Group</inlineHelpText>
+    <label>SIC Group Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

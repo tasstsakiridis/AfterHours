@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campari__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Is Campari the Distributor?</description>
+    <externalId>false</externalId>
+    <label>Campari</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

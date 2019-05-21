@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DE_for_Billing_Country_Germany</fullName>
+    <active>true</active>
+    <description>DE for Billing Country Germany</description>
+    <errorConditionFormula>AND(Market__r.Name  = &quot;Germany&quot;, BillingCountry  &lt;&gt;  &quot;DE&quot;, $RecordType.DeveloperName =&quot;EUR_Outlets&quot; )</errorConditionFormula>
+    <errorDisplayField>BillingCountry</errorDisplayField>
+    <errorMessage>For this Field the Value &quot;DE&quot; is required!
+Für dieses Feld bitte folgenden Wert pflegen - DE !!!</errorMessage>
+</ValidationRule>

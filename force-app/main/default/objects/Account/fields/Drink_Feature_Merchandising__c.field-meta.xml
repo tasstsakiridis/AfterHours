@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drink_Feature_Merchandising__c</fullName>
+    <externalId>false</externalId>
+    <label>Drink Feature Merchandising</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Branded Table Tent</fullName>
+                <default>false</default>
+                <label>Branded Table Tent</label>
+            </value>
+            <value>
+                <fullName>Menu Insert</fullName>
+                <default>false</default>
+                <label>Menu Insert</label>
+            </value>
+            <value>
+                <fullName>Chalkboard</fullName>
+                <default>false</default>
+                <label>Chalkboard</label>
+            </value>
+            <value>
+                <fullName>Poster</fullName>
+                <default>false</default>
+                <label>Poster</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

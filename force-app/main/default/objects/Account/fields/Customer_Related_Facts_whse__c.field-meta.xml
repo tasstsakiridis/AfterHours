@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Related_Facts_whse__c</fullName>
+    <description>Customer Related Facts
+[Active marketing Strength]</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please type in available informations about Internet presence; online store/shop;  in-house exhibition /in-house trade fair and  flyer!</inlineHelpText>
+    <label>Customer Related Facts</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>e-commerce/distribution via internet</fullName>
+                <default>false</default>
+                <label>e-commerce/distribution via internet</label>
+            </value>
+            <value>
+                <fullName>internet presence</fullName>
+                <default>false</default>
+                <label>internet presence</label>
+            </value>
+            <value>
+                <fullName>online-shop</fullName>
+                <default>false</default>
+                <label>online-shop</label>
+            </value>
+            <value>
+                <fullName>assortment catalogue</fullName>
+                <default>false</default>
+                <label>assortment catalogue</label>
+            </value>
+            <value>
+                <fullName>inhouse trade fair</fullName>
+                <default>false</default>
+                <label>inhouse trade fair</label>
+            </value>
+            <value>
+                <fullName>flyer/handouts</fullName>
+                <default>false</default>
+                <label>flyer/handouts</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Philippines_On_Premise</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.FIRST_NAME</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>City__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Philippines</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>On,ON PREMISE</value>
+    </filters>
+    <label>Philippines On Premise</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinatesInternal>PHL_Market_Manager_Admin</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

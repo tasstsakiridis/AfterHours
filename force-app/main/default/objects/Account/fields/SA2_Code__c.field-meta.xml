@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SA2_Code__c</fullName>
+    <description>Statistic area level 2 - represents area that interacts socially and economically.  AUD</description>
+    <externalId>false</externalId>
+    <label>SA2 Code</label>
+    <length>40</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

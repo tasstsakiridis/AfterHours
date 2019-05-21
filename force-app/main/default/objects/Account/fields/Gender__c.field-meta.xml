@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gender__c</fullName>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <inlineHelpText>predominant gender</inlineHelpText>
+    <label>Gender</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>female</fullName>
+                <default>false</default>
+                <label>female</label>
+            </value>
+            <value>
+                <fullName>male</fullName>
+                <default>false</default>
+                <label>male</label>
+            </value>
+            <value>
+                <fullName>unisex</fullName>
+                <default>false</default>
+                <label>unisex</label>
+            </value>
+            <value>
+                <fullName>eher weiblich</fullName>
+                <default>false</default>
+                <label>eher weiblich</label>
+            </value>
+            <value>
+                <fullName>eher männlich</fullName>
+                <default>false</default>
+                <label>eher männlich</label>
+            </value>
+            <value>
+                <fullName>gleichverteilt</fullName>
+                <default>false</default>
+                <label>gleichverteilt</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

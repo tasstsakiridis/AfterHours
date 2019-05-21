@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thailand_Outlets</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Channel__c</columns>
+    <columns>Status__c</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Approval_Status__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Thailand</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.THI_Outlets</value>
+    </filters>
+    <label>Thailand - Outlets</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinatesInternal>THIMarketManagerAdmin</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PL_Shipping_State</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR( if( RecordTypeId = &quot;012a0000001NZsU&quot;, true, false), if( RecordTypeId =&quot;012a0000001NZsV&quot;, true, false),if( RecordTypeId = &quot;01213000001NdrN&quot;, true, false)),NOT(OR(ShippingState = &quot;dolnośląskie&quot;,ShippingState = &quot;kujawsko-pomorskie&quot;,ShippingState = &quot;lubelskie&quot;,ShippingState = &quot;lubuskie&quot;,ShippingState = &quot;łódzkie&quot;,ShippingState = &quot;małopolskie&quot;,ShippingState = &quot;mazowieckie&quot;,ShippingState = &quot;opolskie&quot;,ShippingState = &quot;podkarpackie&quot;,ShippingState = &quot;podlaskie&quot;,ShippingState = &quot;pomorskie&quot;,ShippingState = &quot;śląskie&quot;,ShippingState = &quot;świętokrzyskie&quot;,ShippingState = &quot;warmińsko-mazurskie&quot;,ShippingState = &quot;wielkopolskie&quot;,ShippingState = &quot;zachodniopomorskie&quot;)))</errorConditionFormula>
+    <errorDisplayField>ShippingState</errorDisplayField>
+    <errorMessage>Wpisz poprawnie województwo:
+
+dolnośląskie, kujawsko-pomorskie, lubelskie, lubuskie, łódzkie, małopolskie, mazowieckie, opolskie, podkarpackie, podlaskie, pomorskie, śląskie, świętokrzyskie, warmińsko-mazurskie, wielkopolskie, zachodniopomorskie</errorMessage>
+</ValidationRule>

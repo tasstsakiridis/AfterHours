@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Metropolitan_Area__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mexico. Check if the outlet is in a metropolitan area</description>
+    <externalId>false</externalId>
+    <label>Metropolitan Area</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

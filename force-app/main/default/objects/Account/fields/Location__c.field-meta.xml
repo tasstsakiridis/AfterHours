@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Location__c</fullName>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Location</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Village</fullName>
+                <default>false</default>
+                <label>Village</label>
+            </value>
+            <value>
+                <fullName>Town</fullName>
+                <default>false</default>
+                <label>Town</label>
+            </value>
+            <value>
+                <fullName>City-Periphery</fullName>
+                <default>false</default>
+                <label>City-Periphery</label>
+            </value>
+            <value>
+                <fullName>City-Center</fullName>
+                <default>false</default>
+                <label>City-Center</label>
+            </value>
+            <value>
+                <fullName>Summer Relaxation</fullName>
+                <default>false</default>
+                <label>Summer Relaxation</label>
+            </value>
+            <value>
+                <fullName>Winter Relaxation</fullName>
+                <default>false</default>
+                <label>Winter Relaxation</label>
+            </value>
+            <value>
+                <fullName>Suburb</fullName>
+                <default>false</default>
+                <label>Suburb</label>
+            </value>
+            <value>
+                <fullName>Downtown</fullName>
+                <default>false</default>
+                <label>Downtown</label>
+            </value>
+            <value>
+                <fullName>H</fullName>
+                <default>false</default>
+                <label>H</label>
+            </value>
+            <value>
+                <fullName>L</fullName>
+                <default>false</default>
+                <label>L</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

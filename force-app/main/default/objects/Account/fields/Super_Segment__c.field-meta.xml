@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Super_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Super Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>+150 Cajas 4,2 L de Whisky (Oro)</fullName>
+                <default>false</default>
+                <label>+150 Cajas 4,2 L de Whisky (Oro)</label>
+            </value>
+            <value>
+                <fullName>AB-A</fullName>
+                <default>false</default>
+                <label>AB-A</label>
+            </value>
+            <value>
+                <fullName>AB-B</fullName>
+                <default>false</default>
+                <label>AB-B</label>
+            </value>
+            <value>
+                <fullName>AB-C</fullName>
+                <default>false</default>
+                <label>AB-C</label>
+            </value>
+            <value>
+                <fullName>AB-D</fullName>
+                <default>false</default>
+                <label>AB-D</label>
+            </value>
+            <value>
+                <fullName>AB-E</fullName>
+                <default>false</default>
+                <label>AB-E</label>
+            </value>
+            <value>
+                <fullName>Bar/Nightclub</fullName>
+                <default>false</default>
+                <label>Bar/Nightclub</label>
+            </value>
+            <value>
+                <fullName>BC-A</fullName>
+                <default>false</default>
+                <label>BC-A</label>
+            </value>
+            <value>
+                <fullName>BC-B</fullName>
+                <default>false</default>
+                <label>BC-B</label>
+            </value>
+            <value>
+                <fullName>BC-C</fullName>
+                <default>false</default>
+                <label>BC-C</label>
+            </value>
+            <value>
+                <fullName>BC-D</fullName>
+                <default>false</default>
+                <label>BC-D</label>
+            </value>
+            <value>
+                <fullName>BC-E</fullName>
+                <default>false</default>
+                <label>BC-E</label>
+            </value>
+            <value>
+                <fullName>BODEGA</fullName>
+                <default>false</default>
+                <label>BODEGA</label>
+            </value>
+            <value>
+                <fullName>CLASICA PREMIUM</fullName>
+                <default>false</default>
+                <label>Clasica Premium</label>
+            </value>
+            <value>
+                <fullName>ENREJADO</fullName>
+                <default>false</default>
+                <label>ENREJADO</label>
+            </value>
+            <value>
+                <fullName>Entre 15 y 49 Cajas 4,2 L de Whisky (Bronce)</fullName>
+                <default>false</default>
+                <label>Entre 15 y 49 Cajas 4,2 L de Whisky (Bronce)</label>
+            </value>
+            <value>
+                <fullName>Entre 50 y 149 Cajas 4,2 L de Whisky (Plata)</fullName>
+                <default>false</default>
+                <label>Entre 50 y 149 Cajas 4,2 L de Whisky (Plata)</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR ALTA</fullName>
+                <default>false</default>
+                <label>ESTANDAR ALTA</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR BAJA</fullName>
+                <default>false</default>
+                <label>ESTANDAR BAJA</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR CHICO MEDIANO</fullName>
+                <default>false</default>
+                <label>ESTANDAR CHICO MEDIANO</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR CLUB</fullName>
+                <default>false</default>
+                <label>ESTANDAR CLUB</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR GRANDE</fullName>
+                <default>false</default>
+                <label>ESTANDAR GRANDE</label>
+            </value>
+            <value>
+                <fullName>ESTANDAR MEDIA</fullName>
+                <default>false</default>
+                <label>ESTANDAR MEDIA</label>
+            </value>
+            <value>
+                <fullName>Gabriels</fullName>
+                <default>false</default>
+                <label>Gabriels</label>
+            </value>
+            <value>
+                <fullName>Goody-Goody</fullName>
+                <default>false</default>
+                <label>Goody-Goody</label>
+            </value>
+            <value>
+                <fullName>H&amp;H</fullName>
+                <default>false</default>
+                <label>H&amp;H</label>
+            </value>
+            <value>
+                <fullName>HOT &amp; TRENDY</fullName>
+                <default>false</default>
+                <label>HOT &amp; TRENDY</label>
+            </value>
+            <value>
+                <fullName>Hotel</fullName>
+                <default>false</default>
+                <label>Hotel</label>
+            </value>
+            <value>
+                <fullName>INSTITUCIONALES</fullName>
+                <default>false</default>
+                <label>INSTITUCIONALES</label>
+            </value>
+            <value>
+                <fullName>Large Liquor Store</fullName>
+                <default>false</default>
+                <label>Large Liquor Store</label>
+            </value>
+            <value>
+                <fullName>LUXURY</fullName>
+                <default>false</default>
+                <label>LUXURY</label>
+            </value>
+            <value>
+                <fullName>MASIVOS</fullName>
+                <default>false</default>
+                <label>MASIVOS</label>
+            </value>
+            <value>
+                <fullName>ON-A</fullName>
+                <default>false</default>
+                <label>ON-A</label>
+            </value>
+            <value>
+                <fullName>ON-B</fullName>
+                <default>false</default>
+                <label>ON-B</label>
+            </value>
+            <value>
+                <fullName>ON-C</fullName>
+                <default>false</default>
+                <label>ON-C</label>
+            </value>
+            <value>
+                <fullName>ON-D</fullName>
+                <default>false</default>
+                <label>ON-D</label>
+            </value>
+            <value>
+                <fullName>ON-E</fullName>
+                <default>false</default>
+                <label>ON-E</label>
+            </value>
+            <value>
+                <fullName>PLUS CHICO</fullName>
+                <default>false</default>
+                <label>PLUS CHICO</label>
+            </value>
+            <value>
+                <fullName>PLUS CLUB</fullName>
+                <default>false</default>
+                <label>PLUS CLUB</label>
+            </value>
+            <value>
+                <fullName>PLUS GRANDE</fullName>
+                <default>false</default>
+                <label>PLUS GRANDE</label>
+            </value>
+            <value>
+                <fullName>PLUS MEDIANO</fullName>
+                <default>false</default>
+                <label>PLUS MEDIANO</label>
+            </value>
+            <value>
+                <fullName>PREMIUM</fullName>
+                <default>false</default>
+                <label>PREMIUM</label>
+            </value>
+            <value>
+                <fullName>PREMIUM ALTA</fullName>
+                <default>false</default>
+                <label>PREMIUM ALTA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM BAJA</fullName>
+                <default>false</default>
+                <label>PREMIUM BAJA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM CLUB</fullName>
+                <default>false</default>
+                <label>PREMIUM CLUB</label>
+            </value>
+            <value>
+                <fullName>PREMIUM LICORERO BAJA</fullName>
+                <default>false</default>
+                <label>PREMIUM LICORERO BAJA</label>
+            </value>
+            <value>
+                <fullName>PREMIUM LIMITED</fullName>
+                <default>false</default>
+                <label>PREMIUM LIMITED</label>
+            </value>
+            <value>
+                <fullName>PREMIUM MEDIA</fullName>
+                <default>false</default>
+                <label>PREMIUM MEDIA</label>
+            </value>
+            <value>
+                <fullName>Pub/Tavern</fullName>
+                <default>false</default>
+                <label>Pub/Tavern</label>
+            </value>
+            <value>
+                <fullName>QC-A</fullName>
+                <default>false</default>
+                <label>QC-A</label>
+            </value>
+            <value>
+                <fullName>QC-B</fullName>
+                <default>false</default>
+                <label>QC-B</label>
+            </value>
+            <value>
+                <fullName>QC-C</fullName>
+                <default>false</default>
+                <label>QC-C</label>
+            </value>
+            <value>
+                <fullName>QC-D</fullName>
+                <default>false</default>
+                <label>QC-D</label>
+            </value>
+            <value>
+                <fullName>QC-E</fullName>
+                <default>false</default>
+                <label>QC-E</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>Sigels</fullName>
+                <default>false</default>
+                <label>Sigels</label>
+            </value>
+            <value>
+                <fullName>Small Premium Liquor Store</fullName>
+                <default>false</default>
+                <label>Small Premium Liquor Store</label>
+            </value>
+            <value>
+                <fullName>Small Value Liquor Store</fullName>
+                <default>false</default>
+                <label>Small Value Liquor Store</label>
+            </value>
+            <value>
+                <fullName>SPECS</fullName>
+                <default>false</default>
+                <label>SPECS</label>
+            </value>
+            <value>
+                <fullName>Tex-Mex</fullName>
+                <default>false</default>
+                <label>Tex-Mex</label>
+            </value>
+            <value>
+                <fullName>Total Wines &amp; More</fullName>
+                <default>false</default>
+                <label>Total Wines &amp; More</label>
+            </value>
+            <value>
+                <fullName>TWINS</fullName>
+                <default>false</default>
+                <label>TWINS</label>
+            </value>
+            <value>
+                <fullName>VOLUME/CASUAL DINNING</fullName>
+                <default>false</default>
+                <label>VOLUME/CASUAL DINNING</label>
+            </value>
+            <value>
+                <fullName>Western Beverage</fullName>
+                <default>false</default>
+                <label>Western Beverage</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

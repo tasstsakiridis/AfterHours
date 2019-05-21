@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Promo_Present_in_Account__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mexico Promo/Demo present in current account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do we have Promos/Demos in the account?</inlineHelpText>
+    <label>Promo Present in Account</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

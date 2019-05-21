@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Characteristics__c</fullName>
+    <externalId>false</externalId>
+    <label>Account Characteristics</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Carta</fullName>
+                <default>false</default>
+                <label>Carta</label>
+            </value>
+            <value>
+                <fullName>Comida</fullName>
+                <default>false</default>
+                <label>Comida</label>
+            </value>
+            <value>
+                <fullName>KAM-JGV 18</fullName>
+                <default>false</default>
+                <label>KAM-JGV 18</label>
+            </value>
+            <value>
+                <fullName>Música en directo y/o DJ</fullName>
+                <default>false</default>
+                <label>Música en directo y/o DJ</label>
+            </value>
+            <value>
+                <fullName>OFF-AW Outlet</fullName>
+                <default>false</default>
+                <label>OFF-AW Outlet</label>
+            </value>
+            <value>
+                <fullName>OFF-Ben&amp;Glen</fullName>
+                <default>false</default>
+                <label>OFF-Ben&amp;Glen</label>
+            </value>
+            <value>
+                <fullName>OFF-Dauerdisplay</fullName>
+                <default>false</default>
+                <label>OFF-Dauerdisplay</label>
+            </value>
+            <value>
+                <fullName>OFF-Flaschen-Display</fullName>
+                <default>false</default>
+                <label>OFF-Flaschen-Display</label>
+            </value>
+            <value>
+                <fullName>OFF-GK gekauft</fullName>
+                <default>false</default>
+                <label>OFF-GK gekauft</label>
+            </value>
+            <value>
+                <fullName>OFF-JDTH Sampling</fullName>
+                <default>false</default>
+                <label>OFF-JDTH Sampling</label>
+            </value>
+            <value>
+                <fullName>OFF-Kühlschrank</fullName>
+                <default>false</default>
+                <label>OFF-Kühlschrank</label>
+            </value>
+            <value>
+                <fullName>OFF-Mini-Cooler</fullName>
+                <default>false</default>
+                <label>OFF-Mini-Cooler</label>
+            </value>
+            <value>
+                <fullName>OFF-PicOS</fullName>
+                <default>false</default>
+                <label>OFF-PicOS</label>
+            </value>
+            <value>
+                <fullName>OFF-PMLD-HotSpot</fullName>
+                <default>false</default>
+                <label>OFF-PMLD-HotSpot</label>
+            </value>
+            <value>
+                <fullName>OFF-Premium Dauermodul</fullName>
+                <default>false</default>
+                <label>OFF-Premium Dauermodul</label>
+            </value>
+            <value>
+                <fullName>OFF-Price Index Outlet</fullName>
+                <default>false</default>
+                <label>OFF-Price Index Outlet</label>
+            </value>
+            <value>
+                <fullName>OFF-Tannnenbaum</fullName>
+                <default>false</default>
+                <label>OFF-Tannnenbaum</label>
+            </value>
+            <value>
+                <fullName>ON-AW BFD Getränkekarten-Vereinbarung FY 19</fullName>
+                <default>false</default>
+                <label>ON-AW BFD Getränkekarten-Vereinbarung FY 19</label>
+            </value>
+            <value>
+                <fullName>ON-AW Custom Barrel</fullName>
+                <default>false</default>
+                <label>ON-AW Custom Barrel</label>
+            </value>
+            <value>
+                <fullName>ON-BCB 2018</fullName>
+                <default>false</default>
+                <label>ON-BCB 2018</label>
+            </value>
+            <value>
+                <fullName>ON-EJ Pouringoutlet FY19</fullName>
+                <default>false</default>
+                <label>ON-EJ Pouringoutlet FY19</label>
+            </value>
+            <value>
+                <fullName>ON-FGH-PLV</fullName>
+                <default>false</default>
+                <label>ON-FGH-PLV</label>
+            </value>
+            <value>
+                <fullName>ON-FV Pouringoutlet FY19</fullName>
+                <default>false</default>
+                <label>ON-FV Pouringoutlet FY19</label>
+            </value>
+            <value>
+                <fullName>ON-GEDAT</fullName>
+                <default>false</default>
+                <label>ON-GEDAT</label>
+            </value>
+            <value>
+                <fullName>ON-GEDAT-Extranet</fullName>
+                <default>false</default>
+                <label>ON-GEDAT-Extranet</label>
+            </value>
+            <value>
+                <fullName>ON-Getränkekartenvereinbarungen FY19</fullName>
+                <default>false</default>
+                <label>ON-Getränkekartenvereinbarungen FY19</label>
+            </value>
+            <value>
+                <fullName>ON-GJ Pouringoutlet FY19</fullName>
+                <default>false</default>
+                <label>ON-GJ Pouringoutlet FY19</label>
+            </value>
+            <value>
+                <fullName>ON-GJ Tailormade FY 19</fullName>
+                <default>false</default>
+                <label>ON-GJ Tailormade FY 19</label>
+            </value>
+            <value>
+                <fullName>ON-Jahresabsprache FY19 GRD</fullName>
+                <default>false</default>
+                <label>ON-Jahresabsprache FY19 GRD</label>
+            </value>
+            <value>
+                <fullName>ON-Jahresabsprache FY19 K/P</fullName>
+                <default>false</default>
+                <label>ON-Jahresabsprache FY19 K/P</label>
+            </value>
+            <value>
+                <fullName>ON-JDTR Pouringoutlet FY19</fullName>
+                <default>false</default>
+                <label>ON-JDTR Pouringoutlet FY19</label>
+            </value>
+            <value>
+                <fullName>ON-JDTW Festival FY9</fullName>
+                <default>false</default>
+                <label>ON-JDTW Festival FY9</label>
+            </value>
+            <value>
+                <fullName>ON-JDTW FOB Brand Education FY19</fullName>
+                <default>false</default>
+                <label>ON-JDTW FOB Brand Education FY19</label>
+            </value>
+            <value>
+                <fullName>ON-JDTW Tailormade FY19</fullName>
+                <default>false</default>
+                <label>ON-JDTW Tailormade FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Liquor Store FY19</fullName>
+                <default>false</default>
+                <label>ON-Liquor Store FY19</label>
+            </value>
+            <value>
+                <fullName>ON-MOAW FY19</fullName>
+                <default>false</default>
+                <label>ON-MOAW FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Pilgerstätte 2.0 Club FY 19</fullName>
+                <default>false</default>
+                <label>ON-Pilgerstätte 2.0 Club FY 19</label>
+            </value>
+            <value>
+                <fullName>ON-Pilgerstätte 2.0 Food FY19</fullName>
+                <default>false</default>
+                <label>ON-Pilgerstätte 2.0 Food FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Pilgerstätte 2.0 K/P FY19</fullName>
+                <default>false</default>
+                <label>ON-Pilgerstätte 2.0 K/P FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Premium AW FY19</fullName>
+                <default>false</default>
+                <label>ON-Premium AW FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Premium AW Influencer FY19</fullName>
+                <default>false</default>
+                <label>ON-Premium AW Influencer FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Seasonal North FY19</fullName>
+                <default>false</default>
+                <label>ON-Seasonal North FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Seasonal South FY19</fullName>
+                <default>false</default>
+                <label>ON-Seasonal South FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Specialness Activation FY19</fullName>
+                <default>false</default>
+                <label>ON-Specialness Activation FY19</label>
+            </value>
+            <value>
+                <fullName>ON-Trend Driver</fullName>
+                <default>false</default>
+                <label>ON-Trend Driver</label>
+            </value>
+            <value>
+                <fullName>ON-Trend Follower</fullName>
+                <default>false</default>
+                <label>ON-Trend Follower</label>
+            </value>
+            <value>
+                <fullName>ON-Trend Setter</fullName>
+                <default>false</default>
+                <label>ON-Trend Setter</label>
+            </value>
+            <value>
+                <fullName>ON-Web2Print FY19</fullName>
+                <default>false</default>
+                <label>ON-Web2Print FY19</label>
+            </value>
+            <value>
+                <fullName>ON-WR FoB Masterclass FY 19</fullName>
+                <default>false</default>
+                <label>ON-WR FoB Masterclass FY 19</label>
+            </value>
+            <value>
+                <fullName>ON-WRMC Brandy</fullName>
+                <default>false</default>
+                <label>ON-WRMC Brandy</label>
+            </value>
+            <value>
+                <fullName>ON-WRMC Cherry</fullName>
+                <default>false</default>
+                <label>ON-WRMC Cherry</label>
+            </value>
+            <value>
+                <fullName>ON-WR Pouringoutlet FY19</fullName>
+                <default>false</default>
+                <label>ON-WR Pouringoutlet FY19</label>
+            </value>
+            <value>
+                <fullName>ON-WR Tailormade FY 19</fullName>
+                <default>false</default>
+                <label>ON-WR Tailormade FY 19</label>
+            </value>
+            <value>
+                <fullName>Terraza</fullName>
+                <default>false</default>
+                <label>Terraza</label>
+            </value>
+            <value>
+                <fullName>VIP</fullName>
+                <default>false</default>
+                <label>VIP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

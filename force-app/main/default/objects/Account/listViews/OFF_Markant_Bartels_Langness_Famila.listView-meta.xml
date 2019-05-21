@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OFF_Markant_Bartels_Langness_Famila</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>National_Head_Office_Name_TD__c</columns>
+    <columns>Trading_Company_Name_TD__c</columns>
+    <columns>Moderate_Trader_Name_TD__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Germany</value>
+    </filters>
+    <filters>
+        <field>National_Head_Office_Name_TD__c</field>
+        <operation>equals</operation>
+        <value>Markant</value>
+    </filters>
+    <filters>
+        <field>Trading_Company_Name_TD__c</field>
+        <operation>equals</operation>
+        <value>Bartels-Langness</value>
+    </filters>
+    <filters>
+        <field>Moderate_Trader_Name_TD__c</field>
+        <operation>equals</operation>
+        <value>Famila</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.EUR_Outlets</value>
+    </filters>
+    <filters>
+        <field>Select_for_Deletion__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>OFF-Markant-Bartels-Langness-Famila</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>DEUOffTradeDir</role>
+    </sharedTo>
+</ListView>

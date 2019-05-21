@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drink_Menu_Agreement__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>To indicate if a Drink Menu Agreement for the current FY exists with the Outlet</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please indicate if a Drink Menu Agreement has been accomplished</inlineHelpText>
+    <label>Drink Menu Agreement</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Spirit_Relevance__c</fullName>
+    <description>Germany-On-Trade: Used to determine how relevant spirits are at this outlet.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How relevant are Sprits?</inlineHelpText>
+    <label>Spirit Relevance</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>High</fullName>
+                <default>false</default>
+                <label>High</label>
+            </value>
+            <value>
+                <fullName>Medium</fullName>
+                <default>false</default>
+                <label>Medium</label>
+            </value>
+            <value>
+                <fullName>Low</fullName>
+                <default>false</default>
+                <label>Low</label>
+            </value>
+            <value>
+                <fullName>niedrig</fullName>
+                <default>false</default>
+                <label>niedrig</label>
+            </value>
+            <value>
+                <fullName>mittel</fullName>
+                <default>false</default>
+                <label>mittel</label>
+            </value>
+            <value>
+                <fullName>hoch</fullName>
+                <default>false</default>
+                <label>hoch</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

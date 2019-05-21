@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Whisky_Class__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Whisky_Total_Facing__c &lt;=10,&quot;0&quot;,IF(Whisky_Total_Facing__c &lt;=20,&quot;D&quot;,IF(Whisky_Total_Facing__c &lt;=30,&quot;C&quot;,IF(Whisky_Total_Facing__c &lt;=40,&quot;B&quot;,IF(Whisky_Total_Facing__c &lt;=70,&quot;A&quot;,&quot;Premium&quot;)))))</formula>
+    <label>Whisky Class</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

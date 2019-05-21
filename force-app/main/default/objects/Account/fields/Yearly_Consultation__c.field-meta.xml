@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yearly_Consultation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>PARX: used for German Market to track the yearly consultation and agreements with the outlets</description>
+    <externalId>false</externalId>
+    <label>Yearly Consultation</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

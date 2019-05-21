@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Master_data_verification__c</fullName>
+    <defaultValue>&quot;Please maintain master date and check the checkbox &#39;Master data verified&#39;&quot;</defaultValue>
+    <description>PARX- Jochen Schrader - P00004</description>
+    <externalId>false</externalId>
+    <label>Master data verification</label>
+    <length>255</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

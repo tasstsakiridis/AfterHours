@@ -1,0 +1,34 @@
+<template>
+    <lightning-card icon-name="standard:account">
+        <h1 slot="title">{listViewName}</h1>
+        <div slot="actions">
+            <lightning-button-icon icon-name="utility:refresh"></lightning-button-icon>
+        </div>
+        <div class="slds-padding-around_medium">
+            <p>Latitude: {latitude}</p>
+            <p>Longitude: {longitude}</p>
+        </div>
+        <div>
+            <lightning-combobox name="listviews"
+                                label=""
+                                placeholder="Select a list view"
+                                value={listViewApiName}
+                                onchange={handleListViewChange}
+                                options={listViews}
+                                class="slds-padding-around_small">
+            </lightning-combobox>
+        </div>
+        
+        <template if:true={listUI}>
+            <lightning-datatable 
+                    data={data}
+                    columns={displayColumns}
+                    key-field="Id">
+            </lightning-datatable>
+        </template>
+        <template if:true={error}>
+            <div>{error}</div>
+        </template>
+    
+    </lightning-card>
+</template>

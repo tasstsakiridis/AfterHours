@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Invoice_Delivery_Method__c</fullName>
+    <description>Invoice Delivery Method - Used by Distributor dB</description>
+    <externalId>false</externalId>
+    <label>Invoice Delivery Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Auto Fax</fullName>
+                <default>false</default>
+                <label>Auto Fax</label>
+            </value>
+            <value>
+                <fullName>Auto E-mail</fullName>
+                <default>false</default>
+                <label>Auto E-mail</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

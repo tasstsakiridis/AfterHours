@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CEO_family_member__c</fullName>
+    <description>FDC-PLFC</description>
+    <externalId>false</externalId>
+    <formula>IF( CEO__r.Is_Family__c , &quot;Yes&quot;, &quot;No&quot;)</formula>
+    <inlineHelpText>If the CEO is a member of the controlling family, this will display &quot;Yes&quot;</inlineHelpText>
+    <label>CEO family member?</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

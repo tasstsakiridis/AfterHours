@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_Dates_Reset_Season__c</fullName>
+    <description>Key Dates (Reset Season)</description>
+    <externalId>false</externalId>
+    <inlineHelpText>When are planning meetings, annual conventions or conferences, fiscal calendar?  For OffP, when is the reset period?</inlineHelpText>
+    <label>Key Dates</label>
+    <length>32768</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

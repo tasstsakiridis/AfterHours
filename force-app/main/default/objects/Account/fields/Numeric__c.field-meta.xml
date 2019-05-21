@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Numeric__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Service__c, &quot;L&quot;, 1, &quot;M&quot;, 2, &quot;H&quot;, 3 , 0)*3 +  CASE(Price__c, &quot;L&quot;, 1, &quot;M&quot;, 2, &quot;H&quot;, 3 , 0)*2.5 + CASE(Entrance__c, &quot;Fully accessible&quot;, 1, &quot;Limited accessibility&quot;, 2, 0) + CASE(Alco_cocktails__c, &quot;L&quot;, 1, &quot;M&quot;, 2, &quot;H&quot;, 3 , 0)* 3 + CASE(Location__c, &quot;L&quot;, 1, &quot;H&quot;, 2 , 0)*0.5</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Numeric</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>1</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

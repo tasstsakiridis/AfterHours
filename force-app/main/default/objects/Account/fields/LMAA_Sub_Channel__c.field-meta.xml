@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LMAA_Sub_Channel__c</fullName>
+    <externalId>false</externalId>
+    <label>LMAA Sub Channel</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ACCOMMODATION</fullName>
+                <default>false</default>
+                <label>ACCOMMODATION</label>
+            </value>
+            <value>
+                <fullName>AIRPORTS</fullName>
+                <default>false</default>
+                <label>AIRPORTS</label>
+            </value>
+            <value>
+                <fullName>BARS</fullName>
+                <default>false</default>
+                <label>BARS</label>
+            </value>
+            <value>
+                <fullName>CASINO</fullName>
+                <default>false</default>
+                <label>CASINO</label>
+            </value>
+            <value>
+                <fullName>CLUBS</fullName>
+                <default>false</default>
+                <label>CLUBS</label>
+            </value>
+            <value>
+                <fullName>DINING</fullName>
+                <default>false</default>
+                <label>DINING</label>
+            </value>
+            <value>
+                <fullName>DIRECT SALES</fullName>
+                <default>false</default>
+                <label>DIRECT SALES</label>
+            </value>
+            <value>
+                <fullName>ENTERTAINMENT</fullName>
+                <default>false</default>
+                <label>ENTERTAINMENT</label>
+            </value>
+            <value>
+                <fullName>LIQUOR STORES</fullName>
+                <default>false</default>
+                <label>LIQUOR STORES</label>
+            </value>
+            <value>
+                <fullName>MOTOR VESSELS</fullName>
+                <default>false</default>
+                <label>MOTOR VESSELS</label>
+            </value>
+            <value>
+                <fullName>NIGHTCLUBS</fullName>
+                <default>false</default>
+                <label>NIGHTCLUBS</label>
+            </value>
+            <value>
+                <fullName>PRODUCERS</fullName>
+                <default>false</default>
+                <label>PRODUCERS</label>
+            </value>
+            <value>
+                <fullName>PUBS - INTEGRATED</fullName>
+                <default>false</default>
+                <label>PUBS - INTEGRATED</label>
+            </value>
+            <value>
+                <fullName>PUBS - ON PREMISE</fullName>
+                <default>false</default>
+                <label>PUBS - ON PREMISE</label>
+            </value>
+            <value>
+                <fullName>THEATRES</fullName>
+                <default>false</default>
+                <label>THEATRES</label>
+            </value>
+            <value>
+                <fullName>UNIVERSITY/COLLEGE</fullName>
+                <default>false</default>
+                <label>UNIVERSITY/COLLEGE</label>
+            </value>
+            <value>
+                <fullName>WHOLESALERS</fullName>
+                <default>false</default>
+                <label>WHOLESALERS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

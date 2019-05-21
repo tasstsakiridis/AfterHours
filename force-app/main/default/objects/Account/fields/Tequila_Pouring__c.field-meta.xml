@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tequila_Pouring__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Czech Segmentation - Tequila pouring</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do they use our Tequila as primary pouring brand from tequilas?</inlineHelpText>
+    <label>Tequila Pouring</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

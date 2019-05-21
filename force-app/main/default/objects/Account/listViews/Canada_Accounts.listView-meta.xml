@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Canada_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
+    <columns>Primary_Contact__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>Channel__c</columns>
+    <columns>Group__c</columns>
+    <columns>FN__Mapping_Status__c</columns>
+    <columns>CORE.USERS.LAST_NAME</columns>
+    <columns>GD_Group__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>contains</operation>
+        <value>Canada</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Inactive</value>
+    </filters>
+    <label>Canada - All Active Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>CADBusDevEastBF</roleAndSubordinates>
+        <roleAndSubordinates>CADBusDevWestBF</roleAndSubordinates>
+        <roleAndSubordinates>CADMarketManagerAdmin</roleAndSubordinates>
+        <roleAndSubordinates>CADMarketingDirector</roleAndSubordinates>
+        <roleAndSubordinates>CADNationalLevelBF</roleAndSubordinates>
+        <roleAndSubordinates>CADNationalLevelHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesManagerAlbertaHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesManagerBCHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesManagerOntarioHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesManagerQuebecHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepAlbertaHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepBCHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepManitobaHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepOntarioHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepQuebecHive</roleAndSubordinates>
+        <roleAndSubordinates>CADSalesRepSaskatchewanHive</roleAndSubordinates>
+    </sharedTo>
+</ListView>

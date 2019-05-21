@@ -1,0 +1,1834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Moderate_Trader_Name_TD__c</fullName>
+    <description>Moderate Trader Name</description>
+    <externalId>false</externalId>
+    <label>Moderate Trader Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Trading_Company_Name_TD__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Aktiv &amp; Irma</fullName>
+                <default>false</default>
+                <label>Aktiv &amp; Irma</label>
+            </value>
+            <value>
+                <fullName>Auperle</fullName>
+                <default>false</default>
+                <label>Auperle</label>
+            </value>
+            <value>
+                <fullName>Bächner</fullName>
+                <default>false</default>
+                <label>Bächner</label>
+            </value>
+            <value>
+                <fullName>Barwig</fullName>
+                <default>false</default>
+                <label>Barwig</label>
+            </value>
+            <value>
+                <fullName>Baur</fullName>
+                <default>false</default>
+                <label>Baur</label>
+            </value>
+            <value>
+                <fullName>Bela C+C</fullName>
+                <default>false</default>
+                <label>Bela C+C</label>
+            </value>
+            <value>
+                <fullName>Berlin</fullName>
+                <default>false</default>
+                <label>Berlin</label>
+            </value>
+            <value>
+                <fullName>Big Durst</fullName>
+                <default>false</default>
+                <label>Big Durst</label>
+            </value>
+            <value>
+                <fullName>Bilgro</fullName>
+                <default>false</default>
+                <label>Bilgro</label>
+            </value>
+            <value>
+                <fullName>Boekhoff</fullName>
+                <default>false</default>
+                <label>Boekhoff</label>
+            </value>
+            <value>
+                <fullName>Bonus</fullName>
+                <default>false</default>
+                <label>Bonus</label>
+            </value>
+            <value>
+                <fullName>Borgmann</fullName>
+                <default>false</default>
+                <label>Borgmann</label>
+            </value>
+            <value>
+                <fullName>Breidohr</fullName>
+                <default>false</default>
+                <label>Breidohr</label>
+            </value>
+            <value>
+                <fullName>Brüggemeier</fullName>
+                <default>false</default>
+                <label>Brüggemeier</label>
+            </value>
+            <value>
+                <fullName>Buchbauer</fullName>
+                <default>false</default>
+                <label>Buchbauer</label>
+            </value>
+            <value>
+                <fullName>Bungert</fullName>
+                <default>false</default>
+                <label>Bungert</label>
+            </value>
+            <value>
+                <fullName>Burkowski</fullName>
+                <default>false</default>
+                <label>Burkowski</label>
+            </value>
+            <value>
+                <fullName>Buschkühle</fullName>
+                <default>false</default>
+                <label>Buschkühle</label>
+            </value>
+            <value>
+                <fullName>Buschmeyer &amp; Bremke</fullName>
+                <default>false</default>
+                <label>Buschmeyer &amp; Bremke</label>
+            </value>
+            <value>
+                <fullName>C+C Mayen</fullName>
+                <default>false</default>
+                <label>C+C Mayen</label>
+            </value>
+            <value>
+                <fullName>Cash</fullName>
+                <default>false</default>
+                <label>Cash</label>
+            </value>
+            <value>
+                <fullName>Cash Partner</fullName>
+                <default>false</default>
+                <label>Cash Partner</label>
+            </value>
+            <value>
+                <fullName>Citti</fullName>
+                <default>false</default>
+                <label>Citti</label>
+            </value>
+            <value>
+                <fullName>Coma</fullName>
+                <default>false</default>
+                <label>Coma</label>
+            </value>
+            <value>
+                <fullName>Convenda</fullName>
+                <default>false</default>
+                <label>Convenda</label>
+            </value>
+            <value>
+                <fullName>Cramer</fullName>
+                <default>false</default>
+                <label>Cramer</label>
+            </value>
+            <value>
+                <fullName>Czaikowski</fullName>
+                <default>false</default>
+                <label>Czaikowski</label>
+            </value>
+            <value>
+                <fullName>Dalinger</fullName>
+                <default>false</default>
+                <label>Dalinger</label>
+            </value>
+            <value>
+                <fullName>DGS - Der Getränke Spezialist Nordhausen</fullName>
+                <default>false</default>
+                <label>DGS - Der Getränke Spezialist Nordhausen</label>
+            </value>
+            <value>
+                <fullName>DGS getraenke-roessler</fullName>
+                <default>false</default>
+                <label>DGS getraenke-roessler</label>
+            </value>
+            <value>
+                <fullName>Dilinger</fullName>
+                <default>false</default>
+                <label>Dilinger</label>
+            </value>
+            <value>
+                <fullName>Dornseifer</fullName>
+                <default>false</default>
+                <label>Dornseifer</label>
+            </value>
+            <value>
+                <fullName>Dütmann-Gartmann</fullName>
+                <default>false</default>
+                <label>Dütmann-Gartmann</label>
+            </value>
+            <value>
+                <fullName>Edeka EHG Neumünster</fullName>
+                <default>false</default>
+                <label>Edeka EHG Neumünster</label>
+            </value>
+            <value>
+                <fullName>Egert</fullName>
+                <default>false</default>
+                <label>Egert</label>
+            </value>
+            <value>
+                <fullName>Ehlers</fullName>
+                <default>false</default>
+                <label>Ehlers</label>
+            </value>
+            <value>
+                <fullName>Eins-A</fullName>
+                <default>false</default>
+                <label>Eins-A</label>
+            </value>
+            <value>
+                <fullName>Endt &amp; Lojewski</fullName>
+                <default>false</default>
+                <label>Endt &amp; Lojewski</label>
+            </value>
+            <value>
+                <fullName>Famila</fullName>
+                <default>false</default>
+                <label>Famila</label>
+            </value>
+            <value>
+                <fullName>Feneberg</fullName>
+                <default>false</default>
+                <label>Feneberg</label>
+            </value>
+            <value>
+                <fullName>Fitterer</fullName>
+                <default>false</default>
+                <label>Fitterer</label>
+            </value>
+            <value>
+                <fullName>Fleggaard</fullName>
+                <default>false</default>
+                <label>Fleggaard</label>
+            </value>
+            <value>
+                <fullName>Frauen</fullName>
+                <default>false</default>
+                <label>Frauen</label>
+            </value>
+            <value>
+                <fullName>Freidank</fullName>
+                <default>false</default>
+                <label>Freidank</label>
+            </value>
+            <value>
+                <fullName>Frey &amp; Kissel</fullName>
+                <default>false</default>
+                <label>Frey &amp; Kissel</label>
+            </value>
+            <value>
+                <fullName>Fuchs OHG</fullName>
+                <default>false</default>
+                <label>Fuchs OHG</label>
+            </value>
+            <value>
+                <fullName>Füllhorn</fullName>
+                <default>false</default>
+                <label>Füllhorn</label>
+            </value>
+            <value>
+                <fullName>FVS</fullName>
+                <default>false</default>
+                <label>FVS</label>
+            </value>
+            <value>
+                <fullName>Gebauer</fullName>
+                <default>false</default>
+                <label>Gebauer</label>
+            </value>
+            <value>
+                <fullName>GET Kooperation</fullName>
+                <default>false</default>
+                <label>GET Kooperation</label>
+            </value>
+            <value>
+                <fullName>Gieseke</fullName>
+                <default>false</default>
+                <label>Gieseke</label>
+            </value>
+            <value>
+                <fullName>Glahn</fullName>
+                <default>false</default>
+                <label>Glahn</label>
+            </value>
+            <value>
+                <fullName>Glani</fullName>
+                <default>false</default>
+                <label>Glani</label>
+            </value>
+            <value>
+                <fullName>Glück</fullName>
+                <default>false</default>
+                <label>Glück</label>
+            </value>
+            <value>
+                <fullName>Görge</fullName>
+                <default>false</default>
+                <label>Görge</label>
+            </value>
+            <value>
+                <fullName>Grümmer</fullName>
+                <default>false</default>
+                <label>Grümmer</label>
+            </value>
+            <value>
+                <fullName>GWG</fullName>
+                <default>false</default>
+                <label>GWG</label>
+            </value>
+            <value>
+                <fullName>Hayunga</fullName>
+                <default>false</default>
+                <label>Hayunga</label>
+            </value>
+            <value>
+                <fullName>Heidebrecht</fullName>
+                <default>false</default>
+                <label>Heidebrecht</label>
+            </value>
+            <value>
+                <fullName>Hellwig</fullName>
+                <default>false</default>
+                <label>Hellwig</label>
+            </value>
+            <value>
+                <fullName>Heros</fullName>
+                <default>false</default>
+                <label>Heros</label>
+            </value>
+            <value>
+                <fullName>Heyer</fullName>
+                <default>false</default>
+                <label>Heyer</label>
+            </value>
+            <value>
+                <fullName>Hieber</fullName>
+                <default>false</default>
+                <label>Hieber</label>
+            </value>
+            <value>
+                <fullName>Hit</fullName>
+                <default>false</default>
+                <label>Hit</label>
+            </value>
+            <value>
+                <fullName>Hit AEZ</fullName>
+                <default>false</default>
+                <label>Hit AEZ</label>
+            </value>
+            <value>
+                <fullName>Hit Groß</fullName>
+                <default>false</default>
+                <label>Hit Groß</label>
+            </value>
+            <value>
+                <fullName>Hit Herburger</fullName>
+                <default>false</default>
+                <label>Hit Herburger</label>
+            </value>
+            <value>
+                <fullName>Hit Jaeger</fullName>
+                <default>false</default>
+                <label>Hit Jaeger</label>
+            </value>
+            <value>
+                <fullName>Hit Krings</fullName>
+                <default>false</default>
+                <label>Hit Krings</label>
+            </value>
+            <value>
+                <fullName>Hit Mosen &amp; Löhndorf</fullName>
+                <default>false</default>
+                <label>Hit Mosen &amp; Löhndorf</label>
+            </value>
+            <value>
+                <fullName>Hit Pütz &amp; Kloss</fullName>
+                <default>false</default>
+                <label>Hit Pütz &amp; Kloss</label>
+            </value>
+            <value>
+                <fullName>Hit Schrammel</fullName>
+                <default>false</default>
+                <label>Hit Schrammel</label>
+            </value>
+            <value>
+                <fullName>Hit Ullrich</fullName>
+                <default>false</default>
+                <label>Hit Ullrich</label>
+            </value>
+            <value>
+                <fullName>Hit Widdel</fullName>
+                <default>false</default>
+                <label>Hit Widdel</label>
+            </value>
+            <value>
+                <fullName>HolAb</fullName>
+                <default>false</default>
+                <label>HolAb</label>
+            </value>
+            <value>
+                <fullName>Holling</fullName>
+                <default>false</default>
+                <label>Holling</label>
+            </value>
+            <value>
+                <fullName>Hundertmark</fullName>
+                <default>false</default>
+                <label>Hundertmark</label>
+            </value>
+            <value>
+                <fullName>Hundrieser</fullName>
+                <default>false</default>
+                <label>Hundrieser</label>
+            </value>
+            <value>
+                <fullName>Hüter</fullName>
+                <default>false</default>
+                <label>Hüter</label>
+            </value>
+            <value>
+                <fullName>Inkoop</fullName>
+                <default>false</default>
+                <label>Inkoop</label>
+            </value>
+            <value>
+                <fullName>Jens</fullName>
+                <default>false</default>
+                <label>Jens</label>
+            </value>
+            <value>
+                <fullName>Jibi</fullName>
+                <default>false</default>
+                <label>Jibi</label>
+            </value>
+            <value>
+                <fullName>Kaltschmid</fullName>
+                <default>false</default>
+                <label>Kaltschmid</label>
+            </value>
+            <value>
+                <fullName>Kaufland</fullName>
+                <default>false</default>
+                <label>Kaufland</label>
+            </value>
+            <value>
+                <fullName>Kaufpark</fullName>
+                <default>false</default>
+                <label>Kaufpark</label>
+            </value>
+            <value>
+                <fullName>Kelkel</fullName>
+                <default>false</default>
+                <label>Kelkel</label>
+            </value>
+            <value>
+                <fullName>Kiwall &amp; Schürmann</fullName>
+                <default>false</default>
+                <label>Kiwall &amp; Schürmann</label>
+            </value>
+            <value>
+                <fullName>KL Handelshof</fullName>
+                <default>false</default>
+                <label>KL Handelshof</label>
+            </value>
+            <value>
+                <fullName>Koehne</fullName>
+                <default>false</default>
+                <label>Koehne</label>
+            </value>
+            <value>
+                <fullName>Kohler</fullName>
+                <default>false</default>
+                <label>Kohler</label>
+            </value>
+            <value>
+                <fullName>Konsum Dresden</fullName>
+                <default>false</default>
+                <label>Konsum Dresden</label>
+            </value>
+            <value>
+                <fullName>Konsum Göppingen</fullName>
+                <default>false</default>
+                <label>Konsum Göppingen</label>
+            </value>
+            <value>
+                <fullName>Konsum Hagenow</fullName>
+                <default>false</default>
+                <label>Konsum Hagenow</label>
+            </value>
+            <value>
+                <fullName>Konsum Königs Wusterhausen</fullName>
+                <default>false</default>
+                <label>Konsum Königs Wusterhausen</label>
+            </value>
+            <value>
+                <fullName>Konsum Leipzig</fullName>
+                <default>false</default>
+                <label>Konsum Leipzig</label>
+            </value>
+            <value>
+                <fullName>Konsum Magdeburg</fullName>
+                <default>false</default>
+                <label>Konsum Magdeburg</label>
+            </value>
+            <value>
+                <fullName>Konsum Sachsen Nord</fullName>
+                <default>false</default>
+                <label>Konsum Sachsen Nord</label>
+            </value>
+            <value>
+                <fullName>KTAG</fullName>
+                <default>false</default>
+                <label>KTAG</label>
+            </value>
+            <value>
+                <fullName>Kuhlmann</fullName>
+                <default>false</default>
+                <label>Kuhlmann</label>
+            </value>
+            <value>
+                <fullName>Lechertshuber &amp; Wimmer</fullName>
+                <default>false</default>
+                <label>Lechertshuber &amp; Wimmer</label>
+            </value>
+            <value>
+                <fullName>Lehmann</fullName>
+                <default>false</default>
+                <label>Lehmann</label>
+            </value>
+            <value>
+                <fullName>Lehne</fullName>
+                <default>false</default>
+                <label>Lehne</label>
+            </value>
+            <value>
+                <fullName>Leischner</fullName>
+                <default>false</default>
+                <label>Leischner</label>
+            </value>
+            <value>
+                <fullName>Lenk</fullName>
+                <default>false</default>
+                <label>Lenk</label>
+            </value>
+            <value>
+                <fullName>Lichtenberg</fullName>
+                <default>false</default>
+                <label>Lichtenberg</label>
+            </value>
+            <value>
+                <fullName>Löschdepot Bielefeld</fullName>
+                <default>false</default>
+                <label>Löschdepot Bielefeld</label>
+            </value>
+            <value>
+                <fullName>Löschdepot Leipzig</fullName>
+                <default>false</default>
+                <label>Löschdepot Leipzig</label>
+            </value>
+            <value>
+                <fullName>Lüning</fullName>
+                <default>false</default>
+                <label>Lüning</label>
+            </value>
+            <value>
+                <fullName>Markant</fullName>
+                <default>false</default>
+                <label>Markant</label>
+            </value>
+            <value>
+                <fullName>Märkisch</fullName>
+                <default>false</default>
+                <label>Märkisch</label>
+            </value>
+            <value>
+                <fullName>Melic</fullName>
+                <default>false</default>
+                <label>Melic</label>
+            </value>
+            <value>
+                <fullName>Menke /Stein</fullName>
+                <default>false</default>
+                <label>Menke /Stein</label>
+            </value>
+            <value>
+                <fullName>Menzel</fullName>
+                <default>false</default>
+                <label>Menzel</label>
+            </value>
+            <value>
+                <fullName>Meyer</fullName>
+                <default>false</default>
+                <label>Meyer</label>
+            </value>
+            <value>
+                <fullName>Minipreis</fullName>
+                <default>false</default>
+                <label>Minipreis</label>
+            </value>
+            <value>
+                <fullName>MÖG</fullName>
+                <default>false</default>
+                <label>MÖG</label>
+            </value>
+            <value>
+                <fullName>Mokanski</fullName>
+                <default>false</default>
+                <label>Mokanski</label>
+            </value>
+            <value>
+                <fullName>Mr. Drink Shop / Burmeister Koop.</fullName>
+                <default>false</default>
+                <label>Mr. Drink Shop / Burmeister Koop.</label>
+            </value>
+            <value>
+                <fullName>Mülln</fullName>
+                <default>false</default>
+                <label>Mülln</label>
+            </value>
+            <value>
+                <fullName>Multi Markt</fullName>
+                <default>false</default>
+                <label>Multi Markt</label>
+            </value>
+            <value>
+                <fullName>München</fullName>
+                <default>false</default>
+                <label>München</label>
+            </value>
+            <value>
+                <fullName>Neu</fullName>
+                <default>false</default>
+                <label>Neu</label>
+            </value>
+            <value>
+                <fullName>Nieß</fullName>
+                <default>false</default>
+                <label>Nieß</label>
+            </value>
+            <value>
+                <fullName>Nolte</fullName>
+                <default>false</default>
+                <label>Nolte</label>
+            </value>
+            <value>
+                <fullName>Nord-2</fullName>
+                <default>false</default>
+                <label>Nord-2</label>
+            </value>
+            <value>
+                <fullName>Nord-3</fullName>
+                <default>false</default>
+                <label>Nord-3</label>
+            </value>
+            <value>
+                <fullName>Nord-4</fullName>
+                <default>false</default>
+                <label>Nord-4</label>
+            </value>
+            <value>
+                <fullName>Nord-5</fullName>
+                <default>false</default>
+                <label>Nord-5</label>
+            </value>
+            <value>
+                <fullName>Nord-6</fullName>
+                <default>false</default>
+                <label>Nord-6</label>
+            </value>
+            <value>
+                <fullName>Nüsken</fullName>
+                <default>false</default>
+                <label>Nüsken</label>
+            </value>
+            <value>
+                <fullName>OST</fullName>
+                <default>false</default>
+                <label>OST</label>
+            </value>
+            <value>
+                <fullName>Ost-1</fullName>
+                <default>false</default>
+                <label>Ost-1</label>
+            </value>
+            <value>
+                <fullName>Ost-2</fullName>
+                <default>false</default>
+                <label>Ost-2</label>
+            </value>
+            <value>
+                <fullName>Ost-3</fullName>
+                <default>false</default>
+                <label>Ost-3</label>
+            </value>
+            <value>
+                <fullName>Ost-4</fullName>
+                <default>false</default>
+                <label>Ost-4</label>
+            </value>
+            <value>
+                <fullName>Ost-5</fullName>
+                <default>false</default>
+                <label>Ost-5</label>
+            </value>
+            <value>
+                <fullName>Ost-6</fullName>
+                <default>false</default>
+                <label>Ost-6</label>
+            </value>
+            <value>
+                <fullName>Paschmann</fullName>
+                <default>false</default>
+                <label>Paschmann</label>
+            </value>
+            <value>
+                <fullName>Petz</fullName>
+                <default>false</default>
+                <label>Petz</label>
+            </value>
+            <value>
+                <fullName>Pfeilstetter</fullName>
+                <default>false</default>
+                <label>Pfeilstetter</label>
+            </value>
+            <value>
+                <fullName>Piston</fullName>
+                <default>false</default>
+                <label>Piston</label>
+            </value>
+            <value>
+                <fullName>Plaza</fullName>
+                <default>false</default>
+                <label>Plaza</label>
+            </value>
+            <value>
+                <fullName>Preuß</fullName>
+                <default>false</default>
+                <label>Preuß</label>
+            </value>
+            <value>
+                <fullName>Rentschler</fullName>
+                <default>false</default>
+                <label>Rentschler</label>
+            </value>
+            <value>
+                <fullName>Richrath</fullName>
+                <default>false</default>
+                <label>Richrath</label>
+            </value>
+            <value>
+                <fullName>Richter</fullName>
+                <default>false</default>
+                <label>Richter</label>
+            </value>
+            <value>
+                <fullName>Röthemeier</fullName>
+                <default>false</default>
+                <label>Röthemeier</label>
+            </value>
+            <value>
+                <fullName>Runnebom</fullName>
+                <default>false</default>
+                <label>Runnebom</label>
+            </value>
+            <value>
+                <fullName>Sachsenland</fullName>
+                <default>false</default>
+                <label>Sachsenland</label>
+            </value>
+            <value>
+                <fullName>SB Preiswert</fullName>
+                <default>false</default>
+                <label>SB Preiswert</label>
+            </value>
+            <value>
+                <fullName>Scheck</fullName>
+                <default>false</default>
+                <label>Scheck</label>
+            </value>
+            <value>
+                <fullName>Schenke</fullName>
+                <default>false</default>
+                <label>Schenke</label>
+            </value>
+            <value>
+                <fullName>Scherer</fullName>
+                <default>false</default>
+                <label>Scherer</label>
+            </value>
+            <value>
+                <fullName>Schmidt</fullName>
+                <default>false</default>
+                <label>Schmidt</label>
+            </value>
+            <value>
+                <fullName>Schneider</fullName>
+                <default>false</default>
+                <label>Schneider</label>
+            </value>
+            <value>
+                <fullName>Schulenburg</fullName>
+                <default>false</default>
+                <label>Schulenburg</label>
+            </value>
+            <value>
+                <fullName>Schwarz</fullName>
+                <default>false</default>
+                <label>Schwarz</label>
+            </value>
+            <value>
+                <fullName>Sczygiel &amp; Pfister</fullName>
+                <default>false</default>
+                <label>Sczygiel &amp; Pfister</label>
+            </value>
+            <value>
+                <fullName>SEH</fullName>
+                <default>false</default>
+                <label>SEH</label>
+            </value>
+            <value>
+                <fullName>Simmel</fullName>
+                <default>false</default>
+                <label>Simmel</label>
+            </value>
+            <value>
+                <fullName>Sky</fullName>
+                <default>false</default>
+                <label>Sky</label>
+            </value>
+            <value>
+                <fullName>Stadler &amp; Honner</fullName>
+                <default>false</default>
+                <label>Stadler &amp; Honner</label>
+            </value>
+            <value>
+                <fullName>Stenger</fullName>
+                <default>false</default>
+                <label>Stenger</label>
+            </value>
+            <value>
+                <fullName>Stroetmann</fullName>
+                <default>false</default>
+                <label>Stroetmann</label>
+            </value>
+            <value>
+                <fullName>Struve</fullName>
+                <default>false</default>
+                <label>Struve</label>
+            </value>
+            <value>
+                <fullName>T&amp;S-Partner</fullName>
+                <default>false</default>
+                <label>T&amp;S-Partner</label>
+            </value>
+            <value>
+                <fullName>TooM-GTM</fullName>
+                <default>false</default>
+                <label>TooM-GTM</label>
+            </value>
+            <value>
+                <fullName>TooM-VM</fullName>
+                <default>false</default>
+                <label>TooM-VM</label>
+            </value>
+            <value>
+                <fullName>Trabold</fullName>
+                <default>false</default>
+                <label>Trabold</label>
+            </value>
+            <value>
+                <fullName>Triebe</fullName>
+                <default>false</default>
+                <label>Triebe</label>
+            </value>
+            <value>
+                <fullName>Trink&amp;Spare</fullName>
+                <default>false</default>
+                <label>Trink&amp;Spare</label>
+            </value>
+            <value>
+                <fullName>Trink &amp; Spare GAM</fullName>
+                <default>false</default>
+                <label>Trink &amp; Spare GAM</label>
+            </value>
+            <value>
+                <fullName>Trinkgut</fullName>
+                <default>false</default>
+                <label>Trinkgut</label>
+            </value>
+            <value>
+                <fullName>TrinkWas</fullName>
+                <default>false</default>
+                <label>TrinkWas</label>
+            </value>
+            <value>
+                <fullName>VG Calw</fullName>
+                <default>false</default>
+                <label>VG Calw</label>
+            </value>
+            <value>
+                <fullName>Viersen</fullName>
+                <default>false</default>
+                <label>Viersen</label>
+            </value>
+            <value>
+                <fullName>VL1 Hr. Rexilius</fullName>
+                <default>false</default>
+                <label>VL1 Hr. Rexilius</label>
+            </value>
+            <value>
+                <fullName>VL2 Hr. Neerschulte</fullName>
+                <default>false</default>
+                <label>VL2 Hr. Neerschulte</label>
+            </value>
+            <value>
+                <fullName>VL3 Hr. Pudzich</fullName>
+                <default>false</default>
+                <label>VL3 Hr. Pudzich</label>
+            </value>
+            <value>
+                <fullName>VL4 Hr. Mittag</fullName>
+                <default>false</default>
+                <label>VL4 Hr. Mittag</label>
+            </value>
+            <value>
+                <fullName>VL5 Hr. Laue</fullName>
+                <default>false</default>
+                <label>VL5 Hr. Laue</label>
+            </value>
+            <value>
+                <fullName>VL6 Hr. Neutgens</fullName>
+                <default>false</default>
+                <label>VL6 Hr. Neutgens</label>
+            </value>
+            <value>
+                <fullName>VL7 Hr. Arndt</fullName>
+                <default>false</default>
+                <label>VL7 Hr. Arndt</label>
+            </value>
+            <value>
+                <fullName>Vogl</fullName>
+                <default>false</default>
+                <label>Vogl</label>
+            </value>
+            <value>
+                <fullName>Vollgut Ost</fullName>
+                <default>false</default>
+                <label>Vollgut Ost</label>
+            </value>
+            <value>
+                <fullName>Vollgut West</fullName>
+                <default>false</default>
+                <label>Vollgut West</label>
+            </value>
+            <value>
+                <fullName>Wächtler</fullName>
+                <default>false</default>
+                <label>Wächtler</label>
+            </value>
+            <value>
+                <fullName>Wehrmann</fullName>
+                <default>false</default>
+                <label>Wehrmann</label>
+            </value>
+            <value>
+                <fullName>Werner</fullName>
+                <default>false</default>
+                <label>Werner</label>
+            </value>
+            <value>
+                <fullName>West-1</fullName>
+                <default>false</default>
+                <label>West-1</label>
+            </value>
+            <value>
+                <fullName>West-2</fullName>
+                <default>false</default>
+                <label>West-2</label>
+            </value>
+            <value>
+                <fullName>West-3</fullName>
+                <default>false</default>
+                <label>West-3</label>
+            </value>
+            <value>
+                <fullName>West-4</fullName>
+                <default>false</default>
+                <label>West-4</label>
+            </value>
+            <value>
+                <fullName>West-5</fullName>
+                <default>false</default>
+                <label>West-5</label>
+            </value>
+            <value>
+                <fullName>West-6</fullName>
+                <default>false</default>
+                <label>West-6</label>
+            </value>
+            <value>
+                <fullName>Wiewel</fullName>
+                <default>false</default>
+                <label>Wiewel</label>
+            </value>
+            <value>
+                <fullName>Willeke</fullName>
+                <default>false</default>
+                <label>Willeke</label>
+            </value>
+            <value>
+                <fullName>Wippert. Kooperation</fullName>
+                <default>false</default>
+                <label>Wippert. Kooperation</label>
+            </value>
+            <value>
+                <fullName>Wolf</fullName>
+                <default>false</default>
+                <label>Wolf</label>
+            </value>
+            <value>
+                <fullName>Wucherpfenning</fullName>
+                <default>false</default>
+                <label>Wucherpfenning</label>
+            </value>
+            <value>
+                <fullName>Zurheide</fullName>
+                <default>false</default>
+                <label>Zurheide</label>
+            </value>
+            <value>
+                <fullName>Zwingel</fullName>
+                <default>false</default>
+                <label>Zwingel</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Rewe Süd</controllingFieldValue>
+            <valueName>Auperle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Süd</controllingFieldValue>
+            <valueName>Bonus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Süd</controllingFieldValue>
+            <valueName>Nieß</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Bungert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Dornseifer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Glück</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Hundertmark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Hüter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <controllingFieldValue>Rewe Ost</controllingFieldValue>
+            <valueName>Petz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Richrath</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe West</controllingFieldValue>
+            <valueName>Triebe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schwarz-Gruppe</controllingFieldValue>
+            <valueName>Kaufland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schwarz-Gruppe</controllingFieldValue>
+            <valueName>KL Handelshof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bünting</controllingFieldValue>
+            <valueName>Coma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bünting</controllingFieldValue>
+            <valueName>Jibi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bünting</controllingFieldValue>
+            <valueName>KTAG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coop</controllingFieldValue>
+            <valueName>Plaza</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Coop</controllingFieldValue>
+            <valueName>Sky</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dennree</controllingFieldValue>
+            <valueName>Füllhorn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dennree</controllingFieldValue>
+            <valueName>FVS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Heros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit AEZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Groß</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Herburger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Jaeger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Krings</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Mosen &amp; Löhndorf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Pütz &amp; Kloss</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Schrammel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Ullrich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Hit Widdel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Dohle-Gruppe</controllingFieldValue>
+            <valueName>Wächtler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ahlers</controllingFieldValue>
+            <valueName>Big Durst</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ahlers</controllingFieldValue>
+            <valueName>DGS getraenke-roessler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ahlers</controllingFieldValue>
+            <valueName>HolAb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ahlers</controllingFieldValue>
+            <valueName>Mr. Drink Shop / Burmeister Koop.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Geins</controllingFieldValue>
+            <valueName>Bilgro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Geins</controllingFieldValue>
+            <valueName>GET Kooperation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Geins</controllingFieldValue>
+            <valueName>Sachsenland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Bela C+C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Citti</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Famila</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Konsum Dresden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Markant</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>Märkisch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bartels-Langness</controllingFieldValue>
+            <valueName>SEH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>Cash</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>Cash Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>Menke /Stein</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>T&amp;S-Partner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>Trink&amp;Spare</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Mellis</controllingFieldValue>
+            <valueName>TrinkWas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>DGS - Der Getränke Spezialist Nordhausen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>Löschdepot Bielefeld</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>Löschdepot Leipzig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>Vollgut Ost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>Vollgut West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Waldhoff</controllingFieldValue>
+            <valueName>Wippert. Kooperation</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Hessenring</controllingFieldValue>
+            <valueName>Glahn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Hessenring</controllingFieldValue>
+            <valueName>Hellwig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Hessenring</controllingFieldValue>
+            <valueName>Lehmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Hessenring</controllingFieldValue>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <controllingFieldValue>Lekkerland</controllingFieldValue>
+            <valueName>MÖG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Aktiv &amp; Irma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Boekhoff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Buschmeyer &amp; Bremke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Cramer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Dütmann-Gartmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Ehlers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Gieseke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Görge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Holling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Inkoop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Konsum Königs Wusterhausen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Konsum Leipzig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Konsum Magdeburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Kuhlmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Lehne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Lüning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Multi Markt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Preuß</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Röthemeier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Runnebom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Stroetmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Wehrmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Minden-Hannover</controllingFieldValue>
+            <valueName>Wucherpfenning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Dalinger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Edeka EHG Neumünster</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Frauen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Glani</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Grümmer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Hayunga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Jens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Konsum Hagenow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Meyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Struve</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nord</controllingFieldValue>
+            <valueName>Werner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Bächner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Egert</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Konsum Sachsen Nord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Richter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Schneider</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Sczygiel &amp; Pfister</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Simmel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Nordbayern</controllingFieldValue>
+            <valueName>Trabold</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Borgmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Breidohr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Brüggemeier</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Burkowski</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Buschkühle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Czaikowski</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Endt &amp; Lojewski</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Hundrieser</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Kiwall &amp; Schürmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Koehne</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Mülln</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Paschmann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Schenke</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Trinkgut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Vogl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Wiewel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Wolf</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Rhein-Ruhr</controllingFieldValue>
+            <valueName>Zurheide</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Buchbauer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Dilinger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Feneberg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Kaltschmid</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Lechertshuber &amp; Wimmer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Melic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Pfeilstetter</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Scherer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südbayern</controllingFieldValue>
+            <valueName>Stadler &amp; Honner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Barwig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Baur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>C+C Mayen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Convenda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Fitterer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Frey &amp; Kissel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Gebauer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Hieber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Kelkel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Kohler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Konsum Göppingen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Neu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Nolte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Piston</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Rentschler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Scheck</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Schmidt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>Stenger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Edeka Südwest</controllingFieldValue>
+            <valueName>VG Calw</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Getränkeland Heidebrecht GmbH &amp; Co.KG</controllingFieldValue>
+            <valueName>Heidebrecht</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Globus</controllingFieldValue>
+            <valueName>Fleggaard</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Globus</controllingFieldValue>
+            <valueName>GWG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Nord-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Nord-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Nord-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Nord-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Nord-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>OST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>Ost-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-5</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kaufland</controllingFieldValue>
+            <valueName>West-6</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tengelmann-Gruppe</controllingFieldValue>
+            <valueName>Berlin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tengelmann-Gruppe</controllingFieldValue>
+            <valueName>München</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Tengelmann-Gruppe</controllingFieldValue>
+            <valueName>Viersen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toom</controllingFieldValue>
+            <valueName>TooM-GTM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Toom</controllingFieldValue>
+            <valueName>TooM-VM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL1 Hr. Rexilius</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL2 Hr. Neerschulte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL3 Hr. Pudzich</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL4 Hr. Mittag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL5 Hr. Laue</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL6 Hr. Neutgens</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Real</controllingFieldValue>
+            <valueName>VL7 Hr. Arndt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Freidank</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Kaufpark</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Lenk</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Mokanski</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Nüsken</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Schulenburg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Dortmund</controllingFieldValue>
+            <valueName>Trink &amp; Spare GAM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Mitte</controllingFieldValue>
+            <valueName>Eins-A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Mitte</controllingFieldValue>
+            <valueName>Fuchs OHG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Mitte</controllingFieldValue>
+            <valueName>Leischner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Mitte</controllingFieldValue>
+            <valueName>Zwingel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Ost</controllingFieldValue>
+            <valueName>Heyer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Ost</controllingFieldValue>
+            <valueName>Lichtenberg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Ost</controllingFieldValue>
+            <valueName>Menzel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe Ost</controllingFieldValue>
+            <valueName>SB Preiswert</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

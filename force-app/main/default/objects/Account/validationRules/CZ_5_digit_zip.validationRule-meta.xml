@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CZ_5_digit_zip</fullName>
+    <active>true</active>
+    <description>5 digit zip required</description>
+    <errorConditionFormula>AND( OR( if( RecordTypeId = &quot;012a0000001ZJ8E&quot;, true, false), if( RecordTypeId =&quot;012a0000001ZJ8F&quot;, true, false)),if( LEN(  ShippingPostalCode  )  &lt;&gt; 5,true,false))</errorConditionFormula>
+    <errorDisplayField>ShippingPostalCode</errorDisplayField>
+    <errorMessage>Shipping zip must be 5 digits.</errorMessage>
+</ValidationRule>

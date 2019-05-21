@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Store_Type_TD__c</fullName>
+    <description>Store Type</description>
+    <externalId>false</externalId>
+    <label>Store Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cash &amp; Carry</fullName>
+                <default>false</default>
+                <label>Cash &amp; Carry</label>
+            </value>
+            <value>
+                <fullName>Hypermarket</fullName>
+                <default>false</default>
+                <label>Hypermarket</label>
+            </value>
+            <value>
+                <fullName>Supermarket - large</fullName>
+                <default>false</default>
+                <label>Supermarket - large</label>
+            </value>
+            <value>
+                <fullName>Supermarket - middle</fullName>
+                <default>false</default>
+                <label>Supermarket - middle</label>
+            </value>
+            <value>
+                <fullName>Supermarket - small</fullName>
+                <default>false</default>
+                <label>Supermarket - small</label>
+            </value>
+            <value>
+                <fullName>GAM</fullName>
+                <default>false</default>
+                <label>GAM</label>
+            </value>
+            <value>
+                <fullName>GAM [assigned]</fullName>
+                <default>false</default>
+                <label>GAM [assigned]</label>
+            </value>
+            <value>
+                <fullName>DIY Market</fullName>
+                <default>false</default>
+                <label>DIY Market</label>
+            </value>
+            <value>
+                <fullName>Petrol-Station</fullName>
+                <default>false</default>
+                <label>Petrol-Station</label>
+            </value>
+            <value>
+                <fullName>Kiosk</fullName>
+                <default>false</default>
+                <label>Kiosk</label>
+            </value>
+            <value>
+                <fullName>HQ-Central Warehouse</fullName>
+                <default>false</default>
+                <label>HQ-Central Warehouse</label>
+            </value>
+            <value>
+                <fullName>Department Store</fullName>
+                <default>false</default>
+                <label>Department Store</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

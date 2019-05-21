@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cuentas_creadas_por_Look_of_Success</fullName>
+    <booleanFilter>1 or 2</booleanFilter>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Market__c</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>mjimenez</value>
+    </filters>
+    <filters>
+        <field>CREATEDBY_USER.ALIAS</field>
+        <operation>equals</operation>
+        <value>jmartine</value>
+    </filters>
+    <label>Cuentas creadas por Look of Success</label>
+    <language>en_US</language>
+    <sharedTo>
+        <role>Mexico_Market_Manager_Admin</role>
+        <role>Mexico_National_Level</role>
+        <role>Mexico_Off_Mod_KAM_Manager</role>
+        <role>Mexico_Off_Mod_Manager</role>
+    </sharedTo>
+</ListView>

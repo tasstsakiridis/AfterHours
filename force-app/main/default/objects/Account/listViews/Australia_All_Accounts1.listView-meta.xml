@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Australia_All_Accounts1</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Legal_Entity__c</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>Channel__c</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Account_Licence_Number__c</columns>
+    <columns>Banner_Group__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>Australia</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.ALIAS</field>
+        <operation>equals</operation>
+        <value>erobinso</value>
+    </filters>
+    <label>Australia - All Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>AUDMarketManagerAdmin</roleAndSubordinates>
+    </sharedTo>
+</ListView>

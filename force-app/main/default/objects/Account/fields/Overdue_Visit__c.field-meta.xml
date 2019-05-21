@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overdue_Visit__c</fullName>
+    <externalId>false</externalId>
+    <formula>if( Number_of_visits_per_year__c  &lt;&gt; 0,if((TODAY() - Last_Visit_Date__c) &gt; (if (Number_of_visits_per_year__c  &gt; 0 ,365 / Number_of_visits_per_year__c,0)), True, False),false)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Overdue Visit</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

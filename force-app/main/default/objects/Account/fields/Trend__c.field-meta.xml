@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trend__c</fullName>
+    <description>Czech segmentation</description>
+    <externalId>false</externalId>
+    <label>Trend</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>sets</fullName>
+                <default>false</default>
+                <label>sets</label>
+            </value>
+            <value>
+                <fullName>follows</fullName>
+                <default>false</default>
+                <label>follows</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

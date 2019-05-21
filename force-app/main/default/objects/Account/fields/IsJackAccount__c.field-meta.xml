@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsJackAccount__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Mexico. Want to know if the store at outlet level is a Jack Daniel&#39;s account</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Want to know if the store at outlet level is a Jack Daniel&#39;s account</inlineHelpText>
+    <label>IsJackAccount</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

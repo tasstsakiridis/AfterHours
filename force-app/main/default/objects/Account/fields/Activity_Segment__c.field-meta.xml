@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Activity_Segment__c</fullName>
+    <externalId>false</externalId>
+    <label>Activity Segment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>11-ELEVEN LIQUOR</fullName>
+                <default>false</default>
+                <label>11-ELEVEN LIQUOR</label>
+            </value>
+            <value>
+                <fullName>AB-Costco</fullName>
+                <default>false</default>
+                <label>AB-Costco</label>
+            </value>
+            <value>
+                <fullName>AB-RCLS</fullName>
+                <default>false</default>
+                <label>AB-RCLS</label>
+            </value>
+            <value>
+                <fullName>ACE LIQUOR</fullName>
+                <default>false</default>
+                <label>ACE LIQUOR</label>
+            </value>
+            <value>
+                <fullName>AFAM</fullName>
+                <default>false</default>
+                <label>AFAM</label>
+            </value>
+            <value>
+                <fullName>ALL_HQ CALL_CAM</fullName>
+                <default>false</default>
+                <label>ALL_HQ CALL_CAM</label>
+            </value>
+            <value>
+                <fullName>ALTA</fullName>
+                <default>false</default>
+                <label>ALTA</label>
+            </value>
+            <value>
+                <fullName>ANDERSON&#39;S LIQUOR</fullName>
+                <default>false</default>
+                <label>ANDERSON&#39;S LIQUOR</label>
+            </value>
+            <value>
+                <fullName>BAJA</fullName>
+                <default>false</default>
+                <label>BAJA</label>
+            </value>
+            <value>
+                <fullName>BCLDB</fullName>
+                <default>false</default>
+                <label>BCLDB</label>
+            </value>
+            <value>
+                <fullName>B K LIQUOR STORE</fullName>
+                <default>false</default>
+                <label>B K LIQUOR STORE</label>
+            </value>
+            <value>
+                <fullName>BOSS LIQUOR</fullName>
+                <default>false</default>
+                <label>BOSS LIQUOR</label>
+            </value>
+            <value>
+                <fullName>CALGARY COOP</fullName>
+                <default>false</default>
+                <label>CALGARY COOP</label>
+            </value>
+            <value>
+                <fullName>CLASICA - PREMIUM</fullName>
+                <default>false</default>
+                <label>CLASICA - PREMIUM</label>
+            </value>
+            <value>
+                <fullName>COOP</fullName>
+                <default>false</default>
+                <label>COOP</label>
+            </value>
+            <value>
+                <fullName>COSTCO</fullName>
+                <default>false</default>
+                <label>COSTCO</label>
+            </value>
+            <value>
+                <fullName>CROWFOOT</fullName>
+                <default>false</default>
+                <label>CROWFOOT</label>
+            </value>
+            <value>
+                <fullName>CROWN LIQUOR</fullName>
+                <default>false</default>
+                <label>CROWN LIQUOR</label>
+            </value>
+            <value>
+                <fullName>ECONO LIQUOR</fullName>
+                <default>false</default>
+                <label>ECONO LIQUOR</label>
+            </value>
+            <value>
+                <fullName>General Market</fullName>
+                <default>false</default>
+                <label>General Market</label>
+            </value>
+            <value>
+                <fullName>GLOBAL LIQUOR</fullName>
+                <default>false</default>
+                <label>GLOBAL LIQUOR</label>
+            </value>
+            <value>
+                <fullName>High Energy Bar</fullName>
+                <default>false</default>
+                <label>High Energy Bar</label>
+            </value>
+            <value>
+                <fullName>HOT &amp; TRENDY</fullName>
+                <default>false</default>
+                <label>HOT &amp; TRENDY</label>
+            </value>
+            <value>
+                <fullName>INDEPENDENT</fullName>
+                <default>false</default>
+                <label>INDEPENDENT</label>
+            </value>
+            <value>
+                <fullName>Large_3</fullName>
+                <default>false</default>
+                <label>Large_3</label>
+            </value>
+            <value>
+                <fullName>Large_A&amp;B</fullName>
+                <default>false</default>
+                <label>Large_A&amp;B</label>
+            </value>
+            <value>
+                <fullName>Large_Diamond</fullName>
+                <default>false</default>
+                <label>Large_Diamond</label>
+            </value>
+            <value>
+                <fullName>Large_Format</fullName>
+                <default>false</default>
+                <label>Large_Format</label>
+            </value>
+            <value>
+                <fullName>Large_Platinum</fullName>
+                <default>false</default>
+                <label>Large_Platinum</label>
+            </value>
+            <value>
+                <fullName>LIQUOR BANK</fullName>
+                <default>false</default>
+                <label>LIQUOR BANK</label>
+            </value>
+            <value>
+                <fullName>LIQUOR DEPOT</fullName>
+                <default>false</default>
+                <label>LIQUOR DEPOT</label>
+            </value>
+            <value>
+                <fullName>Low Energy Bar</fullName>
+                <default>false</default>
+                <label>Low Energy Bar</label>
+            </value>
+            <value>
+                <fullName>Mainstream</fullName>
+                <default>false</default>
+                <label>Mainstream</label>
+            </value>
+            <value>
+                <fullName>MEDIA</fullName>
+                <default>false</default>
+                <label>MEDIA</label>
+            </value>
+            <value>
+                <fullName>Medium_2</fullName>
+                <default>false</default>
+                <label>Medium_2</label>
+            </value>
+            <value>
+                <fullName>Medium_Gold</fullName>
+                <default>false</default>
+                <label>Medium_Gold</label>
+            </value>
+            <value>
+                <fullName>Medium_Silver</fullName>
+                <default>false</default>
+                <label>Medium_Silver</label>
+            </value>
+            <value>
+                <fullName>Multi-Cultural</fullName>
+                <default>false</default>
+                <label>Multi-Cultural</label>
+            </value>
+            <value>
+                <fullName>MultiCultural_AFAM</fullName>
+                <default>false</default>
+                <label>MultiCultural_AFAM</label>
+            </value>
+            <value>
+                <fullName>MultiCultural_Hispanic</fullName>
+                <default>false</default>
+                <label>MultiCultural_Hispanic</label>
+            </value>
+            <value>
+                <fullName>NCO</fullName>
+                <default>false</default>
+                <label>NCO</label>
+            </value>
+            <value>
+                <fullName>Nightclub</fullName>
+                <default>false</default>
+                <label>Nightclub</label>
+            </value>
+            <value>
+                <fullName>OLYMPIA</fullName>
+                <default>false</default>
+                <label>OLYMPIA</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>PAYLESS LIQUOR</fullName>
+                <default>false</default>
+                <label>PAYLESS LIQUOR</label>
+            </value>
+            <value>
+                <fullName>PREMIER WINE &amp; SPIRIT</fullName>
+                <default>false</default>
+                <label>PREMIER WINE &amp; SPIRIT</label>
+            </value>
+            <value>
+                <fullName>Premium</fullName>
+                <default>false</default>
+                <label>Premium</label>
+            </value>
+            <value>
+                <fullName>RB LIQUOR</fullName>
+                <default>false</default>
+                <label>RB LIQUOR</label>
+            </value>
+            <value>
+                <fullName>RCLS</fullName>
+                <default>false</default>
+                <label>RCLS</label>
+            </value>
+            <value>
+                <fullName>Restaurant</fullName>
+                <default>false</default>
+                <label>Restaurant</label>
+            </value>
+            <value>
+                <fullName>ROYAL LIQUOR MERCHANTS</fullName>
+                <default>false</default>
+                <label>ROYAL LIQUOR MERCHANTS</label>
+            </value>
+            <value>
+                <fullName>SAFEWAY</fullName>
+                <default>false</default>
+                <label>SAFEWAY</label>
+            </value>
+            <value>
+                <fullName>Small_1</fullName>
+                <default>false</default>
+                <label>Small_1</label>
+            </value>
+            <value>
+                <fullName>Small_A&amp;B</fullName>
+                <default>false</default>
+                <label>Small_A&amp;B</label>
+            </value>
+            <value>
+                <fullName>Small_C&amp;D</fullName>
+                <default>false</default>
+                <label>Small_C&amp;D</label>
+            </value>
+            <value>
+                <fullName>Small_Format</fullName>
+                <default>false</default>
+                <label>Small_Format</label>
+            </value>
+            <value>
+                <fullName>Small_Non-Actionable</fullName>
+                <default>false</default>
+                <label>Small_Non-Actionable</label>
+            </value>
+            <value>
+                <fullName>Small_Non-Actionable_AS</fullName>
+                <default>false</default>
+                <label>Small_Non-Actionable_AS</label>
+            </value>
+            <value>
+                <fullName>SOBEYS</fullName>
+                <default>false</default>
+                <label>SOBEYS</label>
+            </value>
+            <value>
+                <fullName>SOLO</fullName>
+                <default>false</default>
+                <label>SOLO</label>
+            </value>
+            <value>
+                <fullName>Standard</fullName>
+                <default>false</default>
+                <label>Standard</label>
+            </value>
+            <value>
+                <fullName>STAR LIQUOR</fullName>
+                <default>false</default>
+                <label>STAR LIQUOR</label>
+            </value>
+            <value>
+                <fullName>Super Premium</fullName>
+                <default>false</default>
+                <label>Super Premium</label>
+            </value>
+            <value>
+                <fullName>SUPER VALUE LIQUOR</fullName>
+                <default>false</default>
+                <label>SUPER VALUE LIQUOR</label>
+            </value>
+            <value>
+                <fullName>TOPS LIQUOR STORE</fullName>
+                <default>false</default>
+                <label>TOPS LIQUOR STORE</label>
+            </value>
+            <value>
+                <fullName>TREND SETTER</fullName>
+                <default>false</default>
+                <label>TREND SETTER</label>
+            </value>
+            <value>
+                <fullName>Value</fullName>
+                <default>false</default>
+                <label>Value</label>
+            </value>
+            <value>
+                <fullName>VOLUME DRIVER</fullName>
+                <default>false</default>
+                <label>VOLUME DRIVER</label>
+            </value>
+            <value>
+                <fullName>Warehouse_Club_Store</fullName>
+                <default>false</default>
+                <label>Warehouse_Club_Store</label>
+            </value>
+            <value>
+                <fullName>WILLOW PARK</fullName>
+                <default>false</default>
+                <label>WILLOW PARK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

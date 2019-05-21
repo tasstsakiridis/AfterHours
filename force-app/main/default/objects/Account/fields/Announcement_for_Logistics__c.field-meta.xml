@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Announcement_for_Logistics__c</fullName>
+    <description>Infowelders</description>
+    <externalId>false</externalId>
+    <label>Announcement for Logistics</label>
+    <length>3000</length>
+    <trackHistory>false</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,2305 @@
+<apex:page standardController="Account" extensions="AccountsNearby" title="Accounts Nearby" sidebar="false" showHeader="false" cache="false" expires="600" standardStylesheets="false" docType="html-5.0" action="{!forwardToCustomAuthPage}">
+  
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
+    
+    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/fontawesome-5.5.0-web/css/all.min.css" />
+    
+    <script src="https://maps.googleapis.com/maps/api/js?client=gme-brownformancorporation&sensor=true&libraries=places"></script>
+    <script src="https://www.b-fonline.com/salesforceresources/oms.min.js"></script>
+    <script src="https://www.b-fonline.com/salesforceresources/SFA/js/fastclick/lib/fastclick.js"></script>
+    <script src="https://www.b-fonline.com/salesforceresources/Mobile-Design-Templates/common/js/jquery.touchwipe.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-popup-overlay/1.7.13/jquery.popupoverlay.min.js"></script>
+    <script src="https://www.b-fonline.com/salesforceresources/SFA/js/js.cookie.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script src="https://www.b-fonline.com/salesforceresources/tablesorter/js/tablesorter.js" />
+    
+    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/SF1/oneIcon/style.css" />
+    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/SFA/css/accountSurvey.css" />
+    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/Mobile-Design-Templates/common/css/app.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/tablesorter/css/tablesorter.css" />
+        
+    <!-- Setup the map to take up the entire screen -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+    <title>Accounts Nearby</title>
+    
+    <style>
+        html, body { 
+            height:      100%; 
+            margin:      0px !important; 
+            font-family: Proxima Nova Soft, arial,sans-serif !important;
+        }
+        .page-map, .ui-content, #map-canvas { 
+            width:       100%; 
+            height:      100%; 
+            padding:     0; 
+        }
+        #map-canvas { 
+            height: min-height: 100%; 
+            position: absolute;
+            top: 0;
+        }
+        #leftSidebar {
+            overflow:    hidden;
+            width:       305px;
+            margin:      auto 0px;
+            position:    absolute;
+            height:      100vh;
+            top: 0;
+        }
+        #filters, #calendar, #search, #accountListDisplay, #accountTableDisplay, #cityListFilter, #productRangingFilter {
+            width:                      250px;
+            height:                     100vh;
+            z-index:                    13082;
+            background-color:           rgba(255,255,255,0.95);
+            position:                   absolute;
+            left:                       -250px;
+            border-bottom-right-radius: 15px 20px;
+            border-top-right-radius:    15px 20px;
+            overflow-x:                 hidden;
+            -webkit-transition:         all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:            all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:              all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:                 all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        .leftSideBarTable {
+            overflow: scroll;
+            width: 1200px;
+        }
+        #accountTableDisplay {
+            width:                      300px;
+            left:                       -500px;
+            border-bottom-right-radius: 15px 20px;
+            border-top-right-radius:    15px 20px;
+            overflow:                   scroll;
+            -webkit-transition:         all 500ms cubic-bezier(0.1200, 0.100, 0.1200, 1.000);
+            -moz-transition:            all 500ms cubic-bezier(0.1200, 0.100, 0.1200, 1.000);
+            -o-transition:              all 500ms cubic-bezier(0.1200, 0.100, 0.1200, 1.000);
+            transition:                 all 500ms cubic-bezier(0.1200, 0.100, 0.1200, 1.000); /* ease (default) */
+        }
+
+        #accountTableDisplayContent {
+            overflow:                   scroll;
+            width:                      300px;
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* For tablets */
+            #accountTableDisplay {
+                width:                  900px;
+                left:                   -900px;
+            }
+            #accountTableDisplayContent {
+                width:                  900px;
+            }
+        }
+        @media only screen and (min-width: 1200px) {
+            /* For desktops */
+            #accountTableDisplay {
+                width:                  1200px;
+                left:                   -1200px;
+            }
+            #accountTableDisplayContent {
+                width:                  1200px;
+            }
+        }
+        /*
+        #accountTableDisplay th {
+            background-color: #a6a7a8;
+            height:             24px;
+            text-transform:     uppercase;
+            font-size:          0.85em;
+            text-align:         center;
+            word-wrap:          normal;
+            overflow-wrap:      normal;
+        }
+        #accountTableDisplay tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #accountListTable {
+            width:              100%;
+            border:             none;
+            border-right:       solid 1px #DDEFEF;
+            border-collapse:    separate;
+            border-spacing:     0;            
+        }
+        */
+        .accountListTable {
+            border:             none;
+            border-right:       solid 1px #DDEFEF;
+            border-collapse:    separate;
+            border-spacing:     0;            
+        }
+        .accountListTable thead th {
+            background-color:   #DDEFEF;
+            border:             none;
+            color:              #336B6B;
+            padding:            10px;
+            text-align:         left;
+            text-shadow:        1px 1px 1px #fff;
+            white-space:        nowrap;
+        }
+        .accountListTable tbody td {
+            border-bottom:      solid 1px #DDEFEF;
+            color:              #333;
+            padding:            10px;
+            text-shadow:        1px 1px 1px #fff;
+            white-space:        nowrap;
+        }
+        .accountListTable .af-sticky-col {
+            border-left:        solid 1px #DDEFEF;
+            border-right:       solid 1px #DDEFEF;
+            left:               0;
+            position:           absolute;
+            top:                auto;
+            width:              350px;
+        }
+        .accountListTable tr:nth-child(even), .accountListTable tr:nth-child(even) .af-sticky-col {
+            background-color:  #f2f2f2;
+        }
+
+        .pac-container {
+            z-index:            150000;
+        }
+        #fingerBtn {
+            z-index:            5;
+            position:           absolute;
+            left:               5px;
+            width:              50px;
+            font-size:          40px;
+            -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:    all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:      all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:         all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        #finger {
+            left:   5px;
+        }
+        .icon-utility-reply {
+            font-size:              40pt !important;
+            color:                  #fff;
+            -webkit-text-stroke:    3px #344A5F;
+        }
+        .icon-utility-event {
+                font-size:          40pt !important;
+                position:           absolute !important;
+                left:               5px;
+                top:                70px !important;
+                z-index:            5;
+                color:              #fff;
+                background-color:   #344A5F;
+                border:             1px solid #344A5F;
+                border-radius:      5px;
+                -webkit-transition: all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+                -moz-transition:    all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+                -o-transition:      all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+                transition:         all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        #accountListBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   5px;
+            top:                    140px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        #cityListBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   5px;
+            top:                    210px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+
+        #refreshAccountsBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   10px;
+            top:                    270px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        #searchBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   10px;
+            top:                    255px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+            display:                none;
+        }
+        .filterAccountsBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   10px;
+            top:                    10px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        .calendarBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   7px;
+            top:                    75px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        .productRangingBtn {
+            font-size:              40pt !important;
+            position:               absolute !important;
+            left:                   5px;
+            top:                    75px !important;
+            z-index:                5;
+            color:                  #344A5F;
+            -webkit-transition:     all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -moz-transition:        all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            -o-transition:          all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000);
+            transition:             all 500ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+        }
+        ul {
+            list-style-type:    none;
+            padding:            0px;
+        }
+        .myAccountsDiv {
+            display: none;
+        }
+        .flipRight {
+            -webkit-transform: rotateY(180deg);
+        }
+        .filterOption {
+            width:  90% !important;
+            margin: 5px;
+            height: 40px;
+        }
+        .toggle {
+            float: right;
+        }
+        .BFFriendlyText, .myAccountsFilter {
+            margin:         5px;
+            float:          left;
+            font-weight:    bold;
+        }
+        .label {
+            font-weight:    bold;
+        }
+        .filterBtn {
+            background-color:   #2A94D6;
+            color:              #fff;
+            padding:            10px;
+            width:              50%;
+            margin:             10px auto 10px auto;
+            border:             1px outset #344A5F;
+            border-radius:      5px;
+            text-decoration:    none;
+            font-weight:        bold;
+            font-family:        Proxima Nova Soft, arial,sans-serif;
+            display:            block;
+            text-align:         center;
+            opacity:            1;
+            visibility:         hidden;
+        }
+        .messages {
+            text-align:         center;
+            background-color:   #D96383;
+            font-weight:        bold;
+            font-family:        Proxima Nova Soft, arial,sans-serif;
+            color:              #fff;
+        }
+        .event {
+            font-family:    Proxima Nova Soft, arial,sans-serif;
+            font-size:      .9em;
+            padding:        5px;
+            border-bottom:  1px solid #D3D3D3;
+        }
+        .eventAccountSelection {
+            font-family:        Proxima Nova Soft, arial,sans-serif;
+            font-size:          .9em;
+            background-color:   #F0F1F2;
+            color:              #344A5F;
+            display:            block;
+            border-bottom:      1px solid #344A5F;
+            padding-bottom:     5px;
+        }
+        .eventAccountSelection label {
+            font-family:    Proxima Nova Soft, arial,sans-serif;
+            font-weight:    bold;
+            padding-left:   0;
+        }
+        .eventAccountSelection input {
+            margin: 5px 0 0 5px;
+        }
+        .customIcon {
+            font-size:  30px !important;
+            float:      left;
+            width:      25%;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .eventListEmpty {
+            padding: 5px 0 5px 5px;
+        }
+        .accountListHeader {
+            font-size:      20px;
+            color:          #000;
+            padding:        15px 15px 15px 15px;
+            box-shadow:     0px 2px 3px #e6e6e6;
+            font-family:    Roboto, Arial, sans-serif;
+        }
+        .accountUL {
+            padding-top: 5px;
+        }
+        .accountLI {
+            padding:        10px 10px 10px 15px;
+            border-bottom:  1px #E6E6E6 solid;
+        }
+        #cityListUL li {
+            cursor: hand;
+            height: 30px;
+            width:  95%;
+            margin: 5px;
+        }
+        .kprLI {
+            padding:        10px 10px 10px 15px;
+            border-bottom:  1px #E6E6E6 solid;
+        }
+        .accountName {
+            color:          #000;
+            font-size:      15px;
+            font-family:    Roboto, Arial, sans-serif;
+        }
+        .accountStreet {
+            padding: 3px;
+        }
+        div.tabbed-list-view-nav {
+            margin-bottom: 0px !important;
+        }
+        .swatch {
+            height: 25px;
+            width:  25px;
+            float:  right;
+        }
+        .legendList {
+            border:         2px outset lightgray;
+            width:          95%;
+            margin:         auto;
+            border-radius:  5px;
+        }
+        .legendList li {
+            height: 30px;
+            width:  95%;
+            margin: 5px;
+        }
+
+        h2 {
+            text-align:     center;
+            margin-top:     15px;
+            font-family:    Proxima Nova Soft, arial,sans-serif;
+        }
+        #visitDateLegend, #outletClassLegend {
+            display: none;
+        }
+        .black {
+            background-color: #000;
+        }
+        #loadingDiv {
+            z-index:    13083;
+            position:   relative;
+            text-align: center;
+            top:        50%;
+            margin-top: -100px;
+        }
+        #feedback {
+            bottom:     5px;
+            left:       5px;
+            position:   absolute;
+            z-index:    10;
+            font-size:  40pt;
+        }
+        .scrollFix {
+            line-height:    1.35;
+            overflow:       hidden;
+            white-space:    nowrap;
+            min-width:      150px;
+        }
+        .slideButton {
+            left: 250px !important;
+        }
+        .slide {
+            left: 0px !important;
+        }
+        .slide_table {
+            left: 910px !important;
+        }
+        .center {
+            margin-right: 10px;
+        }
+        #locationErrorDiv {
+            position:   absolute;
+            top:        10px;
+            left:       75px;
+            font-size:  20px;
+            visibility: hidden;
+        }
+        .locationErrorInstructions {
+            font-size:  18px;
+            left:       10px;
+            position:   relative;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+        ol.locationErrorInstructions {
+            position:   absolute;
+            left:       40px;
+        }
+        ol.locationErrorInstructions li {
+            padding: 5px;
+        }
+        #pac-input {
+            background-color: #fff;
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            text-overflow: ellipsis;
+            display:none;
+            margin-top:50px;
+            width: 50%;
+            left: 25% !important;
+            box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.2);
+            text-algin: center;
+        }
+        
+        #pac-input:focus {
+            border-color: #4d90fe;
+        }
+        .popupOptions {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            min-height: 200px;
+        }
+        .menu-button {
+          background: #D3D3D3;
+          background-image: -webkit-linear-gradient(top, #D3D3D3, #C0C0C0);
+          background-image: -moz-linear-gradient(top, #D3D3D3, #C0C0C0);
+          background-image: -ms-linear-gradient(top, #D3D3D3, #C0C0C0);
+          background-image: -o-linear-gradient(top, #D3D3D3, #C0C0C0);
+          background-image: linear-gradient(to bottom, #D3D3D3, #C0C0C0);
+          -webkit-border-radius: 3;
+          -moz-border-radius: 3;
+          border-radius: 3px;
+          text-shadow: 1px 1px 30px #ffffff;
+          -webkit-box-shadow: 0px 1px 3px #666666;
+          -moz-box-shadow: 0px 1px 3px #666666;
+          box-shadow: 0px 1px 3px #666666;
+          color: #000;
+          font-size: 15px;
+          padding: 10px 20px 10px 20px;
+          border: solid #C0C0C0 1px;
+          text-decoration: none;
+          text-align: center;
+          min-width: 250px;
+        }
+        
+        .menu-button:hover {
+          background: #C3C3C3;
+          background-image: -webkit-linear-gradient(top, #C3C3C3, #B0B0B0);
+          background-image: -moz-linear-gradient(top, #C3C3C3, #B0B0B0);
+          background-image: -ms-linear-gradient(top, #C3C3C3, #B0B0B0);
+          background-image: -o-linear-gradient(top, #C3C3C3, #B0B0B0);
+          background-image: linear-gradient(to bottom, #C3C3C3, #B0B0B0);
+          text-decoration: none;
+        }
+                                                    
+        .line-through {
+            text-decoration: line-through;
+        }
+        #snackbar {
+            visibility: hidden; /* Hidden by default. Visible on click */
+            min-width: 250px; /* Set a default minimum width */
+            margin-left: -125px; /* Divide value of min-width by 2 */
+            background-color: #333; /* Black background color */
+            color: #fff; /* White text color */
+            text-align: center; /* Centered text */
+            border-radius: 2px; /* Rounded borders */
+            padding: 16px; /* Padding */
+            position: fixed; /* Sit on top of the screen */
+            z-index: 1; /* Add a z-index if needed */
+            left: 50%; /* Center the snackbar */
+            bottom: 30px; /* 30px from the bottom */
+        }
+        
+        /* Show the snackbar when clicking on a button (class added with JavaScript) */
+        #snackbar.show {
+            visibility: visible; /* Show the snackbar */
+        
+        /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+        However, delay the fade out process for 2.5 seconds 
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;*/
+        }
+        
+        /* Animations to fade the snackbar in and out */
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;} 
+            to {bottom: 30px; opacity: 1;}
+        }
+        
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+        
+        @-webkit-keyframes fadeout {
+            from {bottom: 30px; opacity: 1;} 
+            to {bottom: 0; opacity: 0;}
+        }
+        
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }       
+        
+        .afterHours_title-bold {
+        	font-weight: bold;
+        }
+
+        .af-arrow {
+            border:                 solid #4c4d4d;
+            border-width:           0 3px 3px 0;
+            display:                inline-block;
+            padding:                3px;
+            margin-left:            5px;
+            vertical-align:         text-top;
+        }
+        .af-arrow-down {
+            -webkit-transform:      rotate(45deg);            
+            -moz-transform:         rotate(45deg);
+            -o-transform:           rotate(45deg);
+            transform:              rotate(45deg);
+        }
+        .af-arrow-up {
+            -webkit-transform:      rotate(-135deg);
+            -moz-transform:         rotate(-135deg);
+            -o-transform:           rotate(-135deg);
+            transform:              rotate(-135deg);
+        }
+        .af-btn {
+            border:                 none;
+            background:             none;
+            color:                  black;
+            padding:                14px 28px;
+            font-size:              16px;
+            cursor:                 pointer;
+            display:                inline-block;
+        }
+        .hidden {
+            display:                none;
+        }
+
+        .af-table-wrapper {
+            position: relative;
+        }
+        .af-table-scroller {
+            margin-left: 350px;
+            overflow-x: scroll;
+            overflow-y: visible;
+            padding-bottom: 5px;
+            width: 910px;
+        }
+
+    </style>
+    
+    <body style="border: 0 none;">
+        <script>
+            var map;
+            var oms;
+            var lat, lon;
+            var myLat, myLon;
+            var mapCenter;
+            var outletClasses = new Array();
+            var geocoder;
+            var latlng;
+            var currentMarket, marketLevel;
+            var urlPrefix = '{!urlPrefix}';
+            console.log('urlprefix', urlPrefix);
+            var markers = {};
+            var curPosMarker;
+            var colors = {
+                'Green'     : '#4AB471',
+                'Blue'      : '#2A94D6',
+                'Red'       : '#CF5C60',
+                'Purple'    : '#717ECD',
+                'Gold'      : '#F3AE4E',
+                'Teal'      : '#34B59D',
+                'Pink'      : '#D96383',
+                'Yellow'    : '#F2CF5B',
+                'LightBlue' : '#4EB1CB',
+                'Orange'    : '#F49756',
+                'SageGreen' : '#AEC770',
+                'RichPink'  : '#E25C80',
+                'Brown'     : '#BAAC93',
+                'Navy'      : '#344A5F',
+                'Tan'       : '#BAAC93',
+                'Black'     : '#000000'
+            };
+            var hasAccessToVisit  = {!$Permission.AccountsNearby_Visit};
+        	var isAfterHoursApp = {!isAfterHoursApp};
+            if (isAfterHoursApp == '1') { 
+                console.log('is after hours app');
+                //hasAccessToVisit = false; 
+                document.title = 'After Hours';
+            }
+            var marketList = [{!serializedMarketList}][0];
+            var cityList = [{!serializedCityList}][0];
+            console.log('citilist', cityList);
+            var myLocationMarker;
+            var showOnlyTheseAccounts = {!showOnlyTheseAccounts};
+            var enableGoogleSearch = {!enableGoogleSearch};
+        	var isTableauReady = {!isTableauReady};
+        	var marketConfigured = {!marketConfigured};
+            var noAccountsFoundMessage = '{!$Label.NoAccountsFoundNearYourLocation}';
+            var accountTableOpen = false;
+        </script>       
+        <apex:messages id="messages" styleClass="messages"/>
+        <apex:Form id="filterForm">
+            <apex:actionFunction action="{!filter}" name="filterCon" rerender="myAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+                <apex:param name="lat" assignTo="{!lat}" value=""/>
+                <apex:param name="lon" assignTo="{!lon}" value=""/>
+                <apex:param name="currentMarket" assignTo="{!currentMarket}" value=""/>
+                <apex:param name="marketLevel" assignTo="{!marketLevel}" value=""/>
+            </apex:actionFunction>
+            
+            <apex:actionFunction action="{!eventFilter}" name="eventFilter" rerender="myAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+                <apex:param name="lat" assignTo="{!lat}" value=""/>
+                <apex:param name="lon" assignTo="{!lon}" value=""/>
+            </apex:actionFunction>
+            
+            <apex:actionFunction action="{!newAccountSurvey}" name="newSurvey" rerender="myAccountsDiv">
+                <apex:param name="accountId" assignTo="{!selectedAccount}" value=""/>
+                <apex:param name="accountName" assignTo="{!selectedAccountName}" value=""/>
+            </apex:actionFunction>
+            
+            <apex:actionFunction action="{!changeDay}" name="changeDay" rerender="calPanel" onComplete="bindCalendarEvents()">
+                <apex:param name="calc" assignTo="{!dateCalc}" value=""/>
+            </apex:actionFunction>
+            
+            <apex:inputField styleClass="channelHiddenInput" value="{!Account.Channel__c}" required="false" style="display:none;"/>            
+
+            <div id="leftSidebar">
+                <div id="fingerBtn">
+                    <div class="filterAccountsBtn fas fa-filter" id="finger"></div>
+                </div>
+                <div id="filters">
+                    <apex:outputPanel styleClass="myAccountsDiv" id="myAccountsDiv">{!myAccounts}</apex:outputPanel>
+                    <ul>
+                        <li>
+                            <apex:selectList value="{!channel}" size="1" styleClass="selectList filterOption channelSelectList">
+                                <apex:selectOptions value="{!channelOptions}"></apex:selectOptions>
+                            </apex:selectList>
+                        </li>
+                        <li>
+                            <apex:selectList value="{!radius}" size="1" styleClass="selectList filterOption">
+                                <apex:selectOptions value="{!radiusOptions}"></apex:selectOptions>
+                            </apex:selectList>
+                        </li>
+                        <li>
+                            <apex:selectList value="{!results}" size="1" styleClass="selectList filterOption">
+                                <apex:selectOptions value="{!resultsOptions}"></apex:selectOptions>
+                            </apex:selectList>
+                        </li>
+                        <li>
+                            <div class="filterOption accountsNearbyOption">
+                                <div class="BFFriendlyText">{!$Label.B_F_Friendly}</div>
+                                <apex:inputCheckbox id="BFFriendly" styleClass="cmn-toggle cmn-toggle-round-flat" value="{!BFFriendly}"/>
+                                <apex:outputLabel styleclass="toggle" for="BFFriendly"/>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="filterOption accountsNearbyOption">
+                                <div class="myAccountsFilter">{!$Label.My_Accounts}</div>
+                                <apex:inputCheckbox id="myAccountsFilter" styleClass="cmn-toggle cmn-toggle-round-flat" value="{!myAccountsFilter}"/>
+                                <apex:outputLabel styleclass="toggle" for="myAccountsFilter"/>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <apex:commandLink action="{!filter}" value="{!$Label.Filter}" styleClass="filterBtn"/>
+                    <hr class="selectList"/>
+                    <div id="colorHighlighting" class="colorHighlighting">
+                        <apex:selectList value="{!highlight}" size="1" styleClass="selectList filterOption" id="highlightList">
+                            <apex:selectOptions value="{!highlightOptions}"></apex:selectOptions>
+                        </apex:selectList>
+                        <div id="colorLegend">
+                            <h2>{!$Label.Legend}</h2>
+                            <div id="channelLegend">
+                                <ul class="legendList">
+                                    <li>{!$Label.On}: <span class="swatch" id="onLegend"></span></li>
+                                    <li>{!$Label.Off}: <span class="swatch" id="offLegend"></span></li>
+                                    <li>{!$Label.Other}: <span class="swatch" id="otherLegend"></span></li>
+                                </ul>
+                            </div>
+                            <div id="visitDateLegend">
+                                <ul class="legendList">
+                                    <li> {!$Label.Less_Than_30_Days}: <span class="swatch good"></span></li>
+                                    <li> {!$Label.Less_Than_60_Days}: <span class="swatch caution"></span></li>
+                                    <li> {!$Label.Greater_Than_60_Days}: <span class="swatch bad"></span></li>
+                                    <li> {!$Label.Never_Visited}: <span class="swatch black"></span></li>
+                                </ul>
+                            </div>
+                            <div id="outletClassLegend">
+                                <ul class="legendList"></ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="productRangingBtn" class="productRangingBtn fas fa-wine-bottle"></div>
+                <div id="productRangingFilter">
+                    <div class="accountListHeader">Product Ranging</div>
+                    <ul class="accountUL" id="productRangingUL"></ul>
+                </div>
+                <div id="calendarBtn" class="calendarBtn fas fa-calendar"></div>
+                <div id="calendar">
+                    <apex:outputPanel id="calPanel">
+                        <div id="tabbed-list-view-nav" class="tabbed-list-view-nav">
+                            <a href="#" id="prevDay" class="span-33">{!$Label.PREV}</a>
+                            <a href="#" class="span-33 on">{!displayDate}</a>
+                            <a href="#" id="nextDay" class="span-33">{!$Label.NEXT_CAPS}</a>
+                        </div>
+                        <apex:outputPanel id="eventAccountSelection" styleClass="eventAccountSelection" rendered="{!eventList.size>0}">
+                            <input type="checkbox" id="eventAcctCheckbox"/> <label for="eventAcctCheckbox">{!$Label.Show_only_these_accounts}</label>
+                        </apex:outputPanel>
+                        <apex:outputPanel id="eventListEmpty" styleClass="eventAccountSelection eventListEmpty" rendered="{!eventList.size<1}">
+                            <label>{!$Label.No_events_for_this_day}</label>
+                        </apex:outputPanel>
+                        <ul class="eventList">
+                            <apex:repeat value="{!eventList}" var="e">
+                                <li class="event {!IF(e.Closed__c == true, 'line-through', '')}">
+                                    <a href="javascript:void(0);" id="event_{!e.Id}" data-event="{!e.Id}" data-account="{!e.Account.Id}" data-latitude="{!e.Account.Geolocation__Latitude__s}" data-longitude="{!e.Account.Geolocation__Longitude__s}" class="content">
+                                        <span class="accountName">{!e.Account.Name}</span> - {!e.Subject}
+                                        <br />
+                                        <apex:outputField value="{!e.StartDateTime}"/>
+                                        <br />
+                                        {!e.Objectives__c}
+                                        <div class="popupOptions" id="event_{!e.Id}_menu" style="display:none">
+                                            <h2>{!e.Account.Name}</h2>
+                                            <br />
+                                            <a href="#" onClick="openPopupItem('{!e.Account.Id}', 'account')">
+                                                <span style="display:block" class="menu-button">
+                                                    <i class="fas fa-info fa-lg">&nbsp;</i>
+                                                    {!$Label.Account_Details}
+                                                </span>
+                                            </a>
+                                            <br />
+                                            <a href="#" onClick="openPopupItem('{!e.Id}', 'event')">
+                                                <span style="display:block" class="menu-button">
+                                                    <i class="fas fa-calendar fa-lg">&nbsp;</i>
+                                                    {!$Label.Event_Details}
+                                                </span>
+                                            </a>
+                                            <br />
+                                            <a href="#" onClick="openPopupItem('{!e.Account.Id}', 'nearby')">
+                                                <span style="display:block" class="menu-button">
+                                                    <i class="fas fa-map-marker fa-lg">&nbsp;</i>
+                                                    {!$Label.Accounts_Nearby}
+                                                </span>
+                                            </a>
+                                            <br />
+                                            <a href="#" onClick="openPopupItem('{!e.Account.Id}', 'visit')">
+                                                <span style="display:block" class="menu-button">
+                                                    <i class="fas fa-pencil fa-lg">&nbsp;</i>
+                                                    {!$Label.Account_Visit}
+                                                </span>
+                                            </a>
+                                            <br />
+                                            <a href="#" onClick="openPopupItem('{!e.Account.Id}', 'directions')">
+                                                <span style="display:block" class="menu-button">
+                                                    <i class="fas fa-globe fa-lg">&nbsp;</i>
+                                                    {!$Label.Directions}
+                                                </span>
+                                            </a>
+                                            <br />
+                                            <a href="#" id="event_{!e.Id}_close">
+                                                <span style="display:block" class="menu-button" href="#">
+                                                    <i class="fas fa-close fa-lg">&nbsp;</i>
+                                                    {!$Label.Cancel}
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </a>
+                                </li>
+                            </apex:repeat>
+                        </ul>
+                    </apex:outputPanel>
+                </div>
+                <div id="accountListBtn"><i class="fas fa-align-justify"></i></div>
+                <div id="accountListDisplay">
+                    <div class="accountListHeader" >{!$ObjectType.Account.LabelPlural}<i class="fas fa-table accountListTableBtn" style="float: right;"/></div>
+                    <ul class="accountUL" id="accountListUL"></ul>
+                </div>
+                <div id="cityListBtn"><i class="fas fa-map-signs"></i></div>
+                <div id="cityListFilter">
+                    <div class="accountListHeader" >{!$Label.Select_a_Country}</div>
+                    <select id="countrySelect"></select>
+                    <div class="accountListHeader" >{!$Label.Cities}</div>
+                    <ul class="accountUL" id="cityListUL"></ul>
+                </div>
+
+                <div id="refreshAccountsBtn" class="fa-spin"><i class="fas fa-sync-alt"></i></div>
+                <div id="searchBtn" class="searchBtn fas fa-search"></div>
+                <input id="pac-input" class="controls" type="text" placeholder="Google"/>
+            </div>
+            <div id="accountTableDisplay">
+                <div class="accountListHeader" >
+                    {!$ObjectType.Account.LabelPlural}
+                    <div style="float: right;">
+                        <i class="fas fa-align-justify accountListTableBtn"/>
+                        <i class="fas fa-times accountTableBtn" style="margin-left: 10px;"/>
+                    </div>
+                </div>
+                <div class="">
+                    <div id="accountTableDisplayContent" class="accountTableDisplayContent">
+                        <table class="accountListTable ts" id="accountListTable" cellpadding="5">
+                            <thead>
+                                <tr>
+                                    <th>{!$ObjectType.Account.Label}</th>
+                                    <th>{!$Label.Street_Address}</th>
+                                    <th>{!$Label.Suburb}</th>
+                                    <th>{!$ObjectType.Account.fields.Expense__c.Label}</th>
+                                    <th>{!$ObjectType.Account.fields.Key_Product_Ranging__c.Label}</th>
+                                    <th>{!$ObjectType.Account.fields.Description.Label}</th>
+                                    <th>{!$ObjectType.Account.fields.Recommended_Food__c.Label}</th>
+                                    <th>{!$ObjectType.Account.fields.Suggested_Serves__c.Label}</th>
+                                </tr>
+                            </thead>
+                            <tbody class="tsGroup"></tbody>
+                        </table>    
+                    </div>
+                </div>
+            </div>
+        </apex:Form>
+        
+        <div class="loading" id="loadingDiv">
+            <img class="globe" src="https://www.b-fonline.com/salesforceresources/Google_Gadgets/spinning-globe.gif" />
+        </div>
+        
+        <div id="feedback">
+            <a href="https://docs.google.com/a/b-f.com/forms/d/1ho9dwu9s24vCOWBfOD73JyyXxSRxKK_8bquk59W1r8E/viewform" target="_blank" class="icon-utility-help"></a>
+        </div>
+        <div id="snackbar"><span id="snackbarmsg"></span></div>        
+        <apex:outputPanel id="map-canvas">
+            <div id="map-canvas"></div>
+        </apex:outputPanel>
+        
+        <div id="locationErrorDiv" class="locationError">
+            <div id="locationErrorHeader">
+                Please enable location services to use Accounts Nearby              
+            </div>
+            <ol class="locationErrorInstructions" type="1">
+                <li>Go to the Settings app</li>
+                <li>Select Privacy</li>
+                <li>Location Services</li>
+                <li>Make sure the toggle is turned on</li>
+                <li>Find the Safari or Salesforce1 app and turn location on there as well</li>
+                <li>Reload the page</li>
+            </ol>
+        </div>
+
+        <script>
+        var termsMsg = '{!$Label.GDPR_Additional_Terms_Notice}';
+        termsMsg = termsMsg.replace("{0}", "<a href='https://www.google.com/intl/ALL/help/terms_maps.html' style='text-decoration: underline;' target='_blank'>Google Maps / Google Earth Additional Terms of Service</a>");
+        termsMsg = termsMsg.replace("{1}", "<a href='https://policies.google.com/privacy' style='text-decoration: underline;' target='_blank'>Google Privacy Policy</a>");
+        console.log('termsMsg', termsMsg);
+        var thisDomain = '{!LEFT($CurrentPage.URL,FIND('/',$CurrentPage.URL,9))}';
+        thisDomain = thisDomain.replace('https://', '');
+        thisDomain = thisDomain.replace('/', '');
+        console.log('thisDomain', thisDomain);
+        var cki = document.cookie;
+        console.log('cookie', document.cookie);
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              "palette": {
+                "popup": {
+                  "background": "#eaf7f7",
+                  "text": "#333"
+                },
+                "button": {
+                  "background": "#4b81e8"
+                }
+              },
+              "showLink": false,
+              "theme": "edgeless",
+              "content": {
+                "message": termsMsg
+              },
+              "cookie": {
+                  "domain":thisDomain
+              }
+            })
+        });
+
+        var colorArray = new Array();
+            for (var i in colors){
+                colorArray.push([i, colors[i]]);
+            }
+        
+            function getQueryVariable(variable){
+                var query = window.location.search.substring(1);
+                var vars = query.split("&");
+                for (var i=0;i<vars.length;i++) {
+                    var pair = vars[i].split("=");
+                    if (pair[0] == variable) { return pair[1]; }
+                }
+                return(false);
+            }
+                
+            function showLocationError(error) {
+                switch(error.code) {
+                    case error.PERMISSION_DENIED:
+                        j$('#locationErrorHeader').html('{!$Label.Location_Services_Error}');
+                        break;
+                    case error.POSITION_UNAVAILABLE:
+                        j$('#locationErrorHeader').html("Location information is unavailable.");
+                        break;
+                    case error.TIMEOUT:
+                        j$('#locationErrorHeader').html("The request to get user location timed out.");
+                        break;
+                    case error.UNKNOWN_ERROR:
+                        j$('#locationErrorHeader').html("An unknown error occurred.");
+                        break;
+                }
+                
+                j$('#loadingDiv').hide();
+                j$('#locationErrorDiv').css('visibility','visible');
+            }
+
+            // Drives clicking on Calendar list items
+            // Initilize popup menus. On click of item, if account not on map, shows
+            // popup, otherwise goes to account and shows item bubble
+            function initPopups() {
+                j$(".popupOptions").each(function(key, value) {
+                    // Hold menu item 
+                    var menuItem = j$(j$(value).parent()[0]);
+                    // Listen for click to decide if show menu, or go to pin
+                    menuItem.on("click", function() {
+                        var item = j$(this).children()[0];
+                        if(markers[item.dataset.account]) {
+                            // Set viewport center to account
+                            map.setCenter(markers[item.dataset.account].getPosition());
+                            map.setZoom(16);
+                            
+                            //double click to spider and then open info window
+                            google.maps.event.trigger(markers[item.dataset.account], 'click');
+                            google.maps.event.trigger(markers[item.dataset.account], 'click');
+                            
+                            // Close menu
+                            j$('#calendarBtn').trigger('click');
+                        } else {
+                            // Show popup menu for account (since marker isn't loaded"
+                            j$('#event_' + item.dataset.event + '_menu').popup('show');
+                        }
+                    });
+                    // Init popup (hides div, ties everything together)
+                    j$(value).popup({
+                        //openelement: '#a' + value.id.substring(0, value.id.length-5),
+                        openelement: '#void',
+                        closeelement: '#' + value.id.substring(0, value.id.length-5) + "_close",
+                        autozindex: true
+                    });
+                });
+            }
+
+            // Handler for acting upon popup menu items
+            function openPopupItem(id, option) {
+                console.log('[openPopupItem] option', option);
+                // If option == "account" or "event", just open account/event in native SF
+                if(option == "account" || option == "event") {
+                    try{
+                        if(sforce.one){
+                            sforce.one.navigateToSObject(id);
+                        }
+                    } catch(err) {
+                        window.location = urlPrefix + '/' + id;
+                    }
+                }
+                // If option == "nearby", center map on coords and refresh
+                else if(option == "nearby") {
+                    // Get event data (lat, lon of account)
+                    var eventDetails = j$('.event a[data-account="' + id + '"]')[0].dataset;
+                    // Set map center to account lat/lon
+                    map.setCenter(new google.maps.LatLng(eventDetails.latitude, eventDetails.longitude)); 
+                    // Place star on acct
+                    new google.maps.Marker({
+                        map: map,
+                        position: new google.maps.LatLng(eventDetails.latitude, eventDetails.longitude),
+                        icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_s_to_u/star.png"
+                    });
+                    // refresh accounts
+                    refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                    // Hide menu
+                    j$(j$('a[data-account="' + id +'"]')[1]).parent().popup('hide')
+                    //collapse calendar panel
+                    j$('#calendarBtn').trigger('click');
+                }
+                // If option == "visit", open account visit
+                else if(option == "visit") {
+                    try{
+                        if(sforce.one){
+                            sforce.one.navigateToURL(urlPrefix + "/apex/Account_Visit?id=" + id);
+                        }
+                    } catch(err) {
+                        window.location = urlPrefix + "/apex/Account_Visit?id=" + id;
+                    }
+                }
+                // If option == "directions", open Google Maps with directions
+                else if(option == "directions") {
+                    console.log('[openPopupItem] directions. navigator.platform', navigator.platform);
+                    
+                    /*
+                    var eventDetails = j$('.event a[data-account="' + id + '"]')[0].dataset;
+                    if (navigator.platform == 'iPhone' || navigator.platform == 'iPad' || navigator.platform == 'iPod Touch'){
+                        try{
+                            if(sforce.one){
+                                sforce.one.navigateToURL("comgooglemaps://?saddr="+myLat+","+myLon+"&daddr="+eventDetails.latitude+","+eventDetails.longitude);
+                            }
+                        } catch(err) {
+                            window.location = "comgooglemaps://?saddr="+myLat+","+myLon+"&daddr="+eventDetails.latitude+","+eventDetails.longitude;
+                        }
+                        
+                    } else {
+                        var confirmMessage = '{!$Label.Moving_Away_From_Site_Message}';
+                        var confirmed = confirm(confirmMessage);
+                        if (confirmed == true) {
+                            try{
+                                if(sforce.one){
+                                    sforce.one.navigateToURL("https://maps.google.com/?saddr="+myLat+","+myLon+"&daddr="+eventDetails.latitude+","+eventDetails.longitude);
+                                }
+                            } catch(err) {
+                                window.location = "https://maps.google.com/?saddr="+myLat+","+myLon+"&daddr="+eventDetails.latitude+","+eventDetails.longitude;
+                            }
+                        }
+                    }
+                    */
+               }
+            }
+        
+            function promptToMoveAway(moveToUrl) {
+                var confirmMessage = '{!$Label.Moving_Away_From_Site_Message}';
+                var confirmed = confirm(confirmMessage);
+                if (confirmed == true) {
+                    try{
+                        if(sforce.one){
+                            sforce.one.navigateToURL(moveToUrl);
+                        }
+                    } catch(err) {
+                        window.open(moveToUrl, "_blank");
+                    }
+                }
+            }
+            function createMap(lat, lng, clearPreviousMarkers) {
+                if(clearPreviousMarkers) {
+                    // Clear out the old markers.
+                    for(var item in markers) {
+                        markers[item].setMap(null);
+                    }
+                    markers = {};
+                }
+                
+                var accounts = eval(document.getElementsByClassName('myAccountsDiv')[0].innerHTML);
+                console.log('[createMap] accounts', accounts);
+                console.log('[createMap] lat: ', lat);
+                console.log('[createMap] lng: ', lng);
+                
+                console.log('[createMap] istableauready: ', isTableauReady);
+                console.log('[createMap] marketConfigured', marketConfigured);
+                if (accounts == undefined || accounts.length == 0) {
+                    j$('#loadingDiv').hide();
+                    showToast(noAccountsFoundMessage);
+                    
+                } else if (!marketConfigured) {
+                    console.log('currentMarket: ', currentMarket);
+                    console.log('marketList', marketList);
+                    
+                    currentMarket = accounts[0].Market__r.Name;
+                    console.log('currentMarket: ', currentMarket);
+                    for(var i = 0; i < marketList.length; i++) {
+                   		if (marketList[i].Name == currentMarket) {
+                            console.log('the market', marketList[i]);
+                            isTableauReady = marketList[i].Is_Tableau_Ready__c;
+                            showOnlyTheseAccounts = marketList[i].AccountsNearby_Calendar_Check_Default__c;
+                            enableGoogleSearch = marketList[i].AccountsNearby_Enable_Google_Search__c;
+				            marketConfigured = true;
+                            break;
+                        }
+                    }
+                    console.log('isTableauReady', isTableauReady);
+				}                    
+                
+                var currentPosition = new google.maps.LatLng(lat,lng);
+                console.log('[createMap] currentPosition', currentPosition);
+                
+                //Grab the map div and center the map at
+                //the proper latitude/longitude
+                var mapDiv = document.getElementById('map-canvas');
+                
+                if(!map) {
+                    map = new google.maps.Map(mapDiv, {
+                        center: new google.maps.LatLng(lat, lng),
+                        zoom: 12,
+                        panControl: false,
+                        streetViewControlOptions:{
+                            position: google.maps.ControlPosition.TOP_RIGHT
+                        },
+                        zoomControlOptions:{
+                            position: google.maps.ControlPosition.TOP_RIGHT
+                        },
+                        mapTypeControlOptions:{
+                            position: google.maps.ControlPosition.TOP_RIGHT
+                        },
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    });
+                }
+                console.log('[createMap] map', map);
+                
+                //For SpiderMarkers
+                oms = new OverlappingMarkerSpiderfier(map, {keepSpiderfied: true});
+                console.log('[createMap] oms', oms);
+                
+                // Add home Control Button to map
+                if(!document.getElementById("homeControlIcon")) {
+                    try {
+                        var homeControlDiv = document.createElement('div');
+                        homeControlDiv.setAttribute("id", "homeControlIcon")
+                        var homeControl = new HomeControl(homeControlDiv, map);
+                        
+                        homeControlDiv.index = 1;
+                        map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(homeControlDiv);
+                    } catch(err) {
+                        console.log('[createMap] exception getting homecontroldiv', err);
+                    }
+                }
+                console.log('[createMap] mapCenter: ', mapCenter);
+                if (mapCenter == "account"){
+                    // Set a marker for the current location
+                    
+                    var positionMarker = new google.maps.Marker({
+                        map: map,
+                        position: currentPosition,
+                        icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_s_to_u/star.png"
+                    });
+                    
+                    
+                    if(!myLocationMarker) {
+                        //Set a marker for device location if map centered on account
+                        var myCurrentPosition = new google.maps.LatLng(myLat,myLon);
+                        myLocationMarker = new google.maps.Marker({
+                            map: map,
+                            position: myCurrentPosition,
+                            icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_m_to_r/myCurrentLocation.png"
+                        });
+                    }
+                } else if(mapCenter == "device") {
+                    // Clear location marker if present
+                    if(curPosMarker)
+                        curPosMarker.setMap(null);
+                    // Add new location marker
+                    //console.log("inside else for mapCenter = device");
+                    curPosMarker = new google.maps.Marker({
+                        map: map,
+                        position: currentPosition,
+                        icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_m_to_r/myCurrentLocation.png"
+                    });
+                }
+                
+                // Keep track of the map boundary that holds all markers
+                var mapBoundary = new google.maps.LatLngBounds();
+                mapBoundary.extend(currentPosition);
+                
+                outletClasses = [];
+                for (var j=0; j<accounts.length;j++) {
+                    if (accounts[j].hasOwnProperty('Outlet_Class__r')) {
+                        if (j$.inArray(accounts[j].Outlet_Class__r.Name, outletClasses) === -1) {
+                            outletClasses.push(accounts[j].Outlet_Class__r.Name);
+                        }
+                    }
+                }
+                
+                j$('#outletClassLegend .legendList').html('');
+                outletClasses.sort();
+                j$.each(outletClasses,function(index,value) {
+                    j$('#outletClassLegend .legendList').append('<li>'+value+': <span class="swatch" style="background-color:'+colorArray[index][1]+'"></span></li>');
+                });
+                j$('#outletClassLegend .legendList').append('<li>Other: <span class="swatch" style="background-color:'+colors.Black+'"></span></li>');
+                
+                //Set up the markers for the map using the
+                //variable we queried for in our controller
+                var account;
+                for (var i=0; i<accounts.length;i++){
+                    account = accounts[i];
+                    setupMarker();
+                }
+                
+                var iw = new google.maps.InfoWindow();
+                oms.addListener('click', function(myMarker, event) {
+                    iw.setContent(myMarker.description.content);
+                    iw.open(map, myMarker);
+                });
+                
+                // Resize map to neatly fit all of the markers
+                map.fitBounds(mapBoundary);
+                
+                function setupMarker(){
+                    // Determine if we are in Salesforce1 and set navigation link appropriately
+                    try{
+                        if(sforce.one){
+                            accountNavUrl = 'javascript:sforce.one.navigateToSObject(\'' + account.Id + '\')';
+                        }
+                    } catch(err) {
+                        //console.log(err);
+                        accountNavUrl = urlPrefix + '/' + account.Id;
+                    }
+                    
+                    //Logic for directions URL
+                    var directionsURL = "https://maps.google.com/?saddr="+myLat+","+myLon+"&daddr="+account.Geolocation__Latitude__s+","+account.Geolocation__Longitude__s;
+                    directionsURL = "javascript:promptToMoveAway('"+directionsURL+"');";
+
+                    if (navigator.platform == 'iPhone' || navigator.platform == 'iPad' || navigator.platform == 'iPod Touch'){
+                        directionsURL = "comgooglemaps://?saddr="+myLat+","+myLon+"&daddr="+account.Geolocation__Latitude__s+","+account.Geolocation__Longitude__s;
+                        //var directionsURL = "https://tsq.b-f.com/#/views/AccountProfile-VIPSAMBBG/LastObservations?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Ftsq.b-f.com%2F&:embed_code_version=2&:tabs=yes&:toolbar=no&:showAppBanner=false&:showShareOptions=false&:display_spinner=no";
+                        //console.log("Apple Device");
+                    } else {
+                        //var directionsURL = "https://tsq.b-f.com/#/views/AccountProfile-VIPSAMBBG/LastObservations?:embed=y&:showVizHome=no&:host_url=https%3A%2F%2Ftsq.b-f.com%2F&:embed_code_version=2&:tabs=yes&:toolbar=no&:showAppBanner=false&:showShareOptions=false&:display_spinner=no";
+                    }
+                    
+                    //console.log(directionsURL);
+                    var content = '<a href="' + accountNavUrl + '">' + account.Name + '</a><br/>';
+                    content += account.ShippingStreet + '<br/>';
+                    if (account.VIP_Account__c) {
+                        content = '<a href="' + accountNavUrl + '" class="afterHours_title-bold" style="font-size: 1.5em; text-shadow: 1px 1px #999;white-space: normal; word-break: keep-all; overflow-wrap: normal;">' + account.Name.replace(/_/g,' ') + '</a><br />';
+                        content += '<div class="vipInfoContainer" style="max-width: 98%; white-space: normal; word-break: keep-all; overflow-wrap: normal; z-index: 99;">';
+                        content += '<div>';
+                        if (account.Key_Product_Ranging__c != undefined) {
+                            content += '<div><i class="fas fa-wine-bottle" style="margin-right: 5px;"></i>'+account.Key_Product_Ranging__c.replace(/;/g,',&nbsp;&nbsp;')+'</div>';
+                        }
+                        if (account.Suggested_Serves__c != undefined) {                            
+                            content += '<div><i class="fas fa-glass-martini" style="margin-right: 5px;"></i>'+account.Suggested_Serves__c+'</div>';
+                        }
+                        if (account.Recommended_Food__c != undefined) {
+                            content += '<span style="margin-right: 10px;"><i class="fas fa-utensils" style="margin-right: 5px;"></i>'+account.Recommended_Food__c+'</span>';
+                        }
+                        if (account.Expense__c != null) {
+                            content += '<span style="font-weight: bold; margin-left: 10px;">'+account.Expense__c+'</span>';
+                        }
+                        content += '</div>';
+                        if (account.Description != undefined) {
+                            content += '<div>'+account.Description+'</div>';
+                        }                        
+                        content += '</div>';
+                        content += '<div style="margin-top: 5px;white-space: normal; word-break: keep-all; overflow-wrap: normal;"><i class="fas fa-map-marked" style="margin-right: 5px;"></i>' + account.ShippingStreet +', ' + account.ShippingCity + '</div><br/>';
+                        
+                    }
+                    
+                    content += '<div class="iconContainer">';
+                    
+                    if (account.Phone != undefined) {
+                        var tel = account.Phone;
+                        tel = tel.replace(/ /g,"").replace(/\(/g,"").replace(/\)/g,"").replace(/-/g,"");
+                        //console.log(tel);
+                        content += '<a class="iconLink" href="tel:' + tel+'"><i class="fas fa-2x fa-phone tc customIcon" title="Call"></i></a>';
+                    }
+                    
+                    content += '<a class="iconLink" href="'+directionsURL+'" target="_blank"><i class="fas fa-2x fa-globe tc customIcon" title="Directions"></i></a>';
+                    
+                    surveyUrl = urlPrefix + "/apex/AdHocSurvey?id=" + account.Id + "&skip=true";
+                    visitUrl = urlPrefix + "/apex/Account_Visit?id=" + account.Id;
+                    tableau = urlPrefix + "/apex/TableauAccountChart?id=" + account.Id;
+                    console.log('hasAccessToVisit', hasAccessToVisit);
+                    console.log('isTableauReady', isTableauReady);
+                    if(hasAccessToVisit) {
+                        try {
+                            if (sforce.one) {
+                                content += '<a class="iconLink" href="javascript:sforce.one.navigateToURL(\''+visitUrl+'\');"><i class="fas fa-2x fa-pencil-alt tc customIcon" title="Visit"></i></a>';
+			                    if (isTableauReady) {
+	                                content += '<a class="iconLink" href="javascript:sforce.one.navigateToURL(\''+tableau+'\');"><i class="fas fa-2x fa-chart-line tc customIcon" title="Depletion"></i></a>';
+                                }
+                            }
+                        } catch(err) {
+                            content += '<a class="iconLink" href="'+visitUrl+'"><i class="fas fa-2x fa-pencil-alt  tc customIcon" title="Visit"></i></a>';
+                            if (isTableauReady) {                            
+                            	content += '<a class="iconLink" href="'+tableau+'"><i class="fas fa-2x fa-chart-line  tc customIcon" title="Depletion"></i></a>';
+                            }
+                        }
+                    }
+                    content += '</div>';
+                    
+                    //Create the callout that will pop up
+                    //on the marker
+                    var infowindow = new google.maps.InfoWindow({
+                        content: '<div class="scrollFix">'+content+'</div>'
+                    });
+                    
+                    //Place the marker
+                    //If the color highlight option is selected:
+                    //Draw the map markers based off channel
+                    //If (channel == "OFF") {marker color = #0266C8 } else {marker color =  #00933B}
+                    var markerColor;
+                    if (j$("[id*='highlightList']").val() == 'Channel') {
+                        //console.log('channel: '+account.Channel__c.toUpperCase());
+                        if (account.hasOwnProperty('Channel__c')) {
+                            if (account.Channel__c.toUpperCase() == 'OFF' || account.Channel__c.toUpperCase() == 'OFF PREMISE') {
+                                markerColor = colors.Blue; //blue
+                            } else if (account.Channel__c.toUpperCase() == 'ON' || account.Channel__c.toUpperCase() == 'ON PREMISE') {
+                                markerColor = colors.Green; //green
+                            } else {
+                                markerColor = colors.Red; //red
+                            }
+                        }
+                        j$('#visitDateLegend').hide();
+                        j$('#channelLegend').fadeIn();
+                    } else if (j$("[id*='highlightList']").val() == 'Last Visit Date') {
+                        if (account.hasOwnProperty('Last_Visit_Date__c')) {
+                            var today = new Date();
+                            today.setHours(0);
+                            today.setMinutes(0);
+                            today.setSeconds(0);
+                            today.setMilliseconds(0);
+                            
+                            var lastVisit = new Date(account.Last_Visit_Date__c);
+                            var offSet = lastVisit.getTimezoneOffset() * 60000;
+                            var lastVisit = new Date(lastVisit.getTime() + offSet);
+                            lastVisit.setHours(0);
+                            lastVisit.setMinutes(0);
+                            lastVisit.setSeconds(0);
+                            lastVisit.setMilliseconds(0);
+                            
+                            var dif = today - lastVisit;
+                            dif = Math.round(dif / 1000 / 60 / 60 / 24);
+                            if (dif <= 30) {
+                                markerColor = colors.Green;
+                            } else if(dif <= 60) {
+                                markerColor = colors.Gold;
+                            } else {
+                                markerColor = colors.Red;
+                            }
+                        }
+                        
+                        j$('#channelLegend').hide();
+                        j$('#visitDateLegend').fadeIn();
+                    } else if (j$("[id*='highlightList']").val() == 'Outlet Class') {
+                        if (account.hasOwnProperty('Outlet_Class__r')) {
+                            //grab # of outletClasses
+                            //grab # of colors to match
+                            //iterate over classes and assign color on account match
+                            //console.log(account.Outlet_Class__r.Name +''+account.Outlet_Class__c);
+                            for (var i=0; i < outletClasses.length;i++) {
+                                if (outletClasses[i] == account.Outlet_Class__r.Name) {
+                                    markerColor = colorArray[i][1];
+                                }
+                            }
+                            //console.log(colorArray);
+                        } else {
+                            markerColor = colors.Black;
+                        }
+                    }
+                    
+                    console.log('afterhours app', isAfterHoursApp);
+                    if (isAfterHoursApp == '1') {
+                        markerColor = '#c65353';
+                    }
+                    // If marker already exists on map, remove before adding it again
+                    if(markers[account.Id]) {
+                        markers[account.Id].setMap(null);
+                    }
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        icon:pinSymbol(markerColor, '#E6E6E6', .5),
+                        position: new google.maps.LatLng(
+                            account.Geolocation__Latitude__s,
+                            account.Geolocation__Longitude__s),
+                        animation: google.maps.Animation.DROP,
+                        description: infowindow
+                    });
+                    
+                    markers[account.Id] = marker;
+                    console.log('markers', markers);
+                    mapBoundary.extend(marker.getPosition());
+                    
+                    //Let the Spider Marker know about this Marker
+                    oms.addMarker(marker);
+                    
+                    initLocationSearch()
+                }
+                
+                var mapHasIdled = false;
+                google.maps.event.addListener(map, 'idle', function() { 
+                    mapHasIdled = true; 
+                    j$.each(oms.markersNearAnyOtherMarker(), function() {
+                        var currentColor = j$(this)[0].icon.fillColor;
+                        j$(this)[0].setIcon(pinSymbol(currentColor, '#FBFF00',1.5));
+                    });
+                });
+                
+                //on zoom change, highlight any markers that will overlap with others
+                google.maps.event.addListener(map, 'zoom_changed', function() {
+                    if (mapHasIdled) {
+                        j$.each(oms.markersNearAnyOtherMarker(), function() {
+                            var currentColor = j$(this)[0].icon.fillColor;
+                            j$(this)[0].setIcon(pinSymbol(currentColor, '#FBFF00',1.5));
+                        });
+                        j$.each(j$(oms.getMarkers()).not(oms.markersNearAnyOtherMarker()).get(), function() {
+                            var currentColor = j$(this)[0].icon.fillColor;
+                            j$(this)[0].setIcon(pinSymbol(currentColor, '#E6E6E6',.5));
+                        });
+                    }
+                });
+                
+                j$('#loadingDiv').hide();
+                j$('.filterBtn').css('visibility','visible');
+                var accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                var accountDisplayHTML = '';
+                var accountTableHTML = '';
+                var keyProductRanging = [];
+                var kpr = '';
+                if(clearPreviousMarkers) {
+                    j$('#accountListUL').html(accountDisplayHTML);
+                    if (isAfterHoursApp == '1') {
+                        j$('#accountListTable tbody').html(accountDisplayHTML);
+                    }
+                }
+
+                j$.each(accountJSON, function() {
+                    // Add account to accountDisplayHTML if not already on page
+ 
+                    if(j$('#accountListUL li[data-accountid="' + this.Id + '"]').length == 0) {
+                        accountDisplayHTML += '<li class="accountLI" data-accountId="'+this.Id+'">';
+                        accountDisplayHTML += '<div class="accountName" >'+this.Name+'</div>';
+                        accountDisplayHTML += '<div class="accountStreet" >'+this.ShippingStreet+'</div>';
+                        accountDisplayHTML += '</li>';
+
+                        if (isAfterHoursApp == '1') {
+                            accountTableHTML += '<tr class="accountLI" data-accountId="'+this.Id+'">';
+                            accountTableHTML += '<td class="accountName" data-accountId="'+this.Id+'" ><div>'+this.Name+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 400px;"><div>'+this.ShippingStreet+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 300px;"><div>'+this.ShippingCity+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 300px;"><div>'+this.Expense__c+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 400px;"><div>'+this.Key_Product_Ranging__c+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Description+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Recommended_Food__c+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Suggested_Serves__c+'</div></td>';
+                        }
+                        
+                    }
+                    if (this.Key_Product_Ranging__c && this.Key_Product_Ranging__c.length > 0) {
+                        kpr = this.Key_Product_Ranging__c.split(';');
+                        //console.log('kpr', kpr);
+                        
+                        kpr.forEach(function(item) {
+                            if (keyProductRanging.indexOf(item) < 0) {
+                                keyProductRanging.push(item);
+                            }
+                        });
+                        
+                     }
+                });
+                console.log('key product ranging', keyProductRanging);
+
+                if (keyProductRanging.length > 0) {
+                    var keyProductRangingHTML = '<li class="kprLI"><input type="checkbox" class="accountName" name="kprall" value="all" onchange="showAllProductRangings()" />All</li>';
+                    keyProductRanging.sort(function(a, b) {
+                        var x = a.toLowerCase();
+                        var y = b.toLowerCase();
+                        if (x < y) { return -1; }
+                        if (x > y) { return 1; }
+                    });
+                    for(var i = 0; i < keyProductRanging.length; i++) {
+                        //console.log('kpr', keyProductRanging[i]);
+                        keyProductRangingHTML += '<li class="kprLI"><input type="checkbox" class="accountName" name="kpr_'+keyProductRanging[i]+'" value="'+keyProductRanging[i]+'" onchange="filterProductRanging()" />'+keyProductRanging[i]+'</li>';
+                    }
+                    console.log('keyProductRangingHTML', keyProductRangingHTML);
+                    j$('#productRangingUL').append(keyProductRangingHTML);
+                }
+                
+                var infoWindow = null;
+
+                /*
+                j$('.accountLI').each(function() {
+                    j$(this).unbind('click');
+                    j$(this).click(function() {
+                        console.log('account name clicked');
+                        if (infoWindow) {
+                            infoWindow.close();
+                        };
+                        var marker = markers[j$(this).attr('data-accountid')];
+                        //double click to spider and then open info window
+                        google.maps.event.trigger(marker, 'click');
+                        google.maps.event.trigger(marker, 'click');
+                        // center map around marker and zoom in
+                        map.setCenter(marker.getPosition());
+                        map.setZoom(16);
+                        //collapse account panel
+                        if (accountTableOpen) {
+                            //j$('#accountListBtn').toggleClass('slide_table');
+                            j$('#accountTableDisplay').toggleClass('slide');
+                        } else {
+                            j$('#accountListBtn').trigger('click');
+                        }
+                    });
+                });
+                */
+                if(accountDisplayHTML.length > 0) {
+                    j$('#accountListUL').append(accountDisplayHTML);
+                    if (isAfterHoursApp == '1') {
+                        j$('#accountListTable tbody').append(accountTableHTML);
+                    }
+                    console.log('bind click event on account list items');
+                    j$('.accountLI').off('click')
+                                .on('click', function() {
+                                    console.log('account name clicked');
+                                    if (infoWindow) {
+                                        infoWindow.close();
+                                    };
+                                    var marker = markers[j$(this).attr('data-accountid')];
+                                    //double click to spider and then open info window
+                                    google.maps.event.trigger(marker, 'click');
+                                    google.maps.event.trigger(marker, 'click');
+                                    // center map around marker and zoom in
+                                    map.setCenter(marker.getPosition());
+                                    map.setZoom(16);
+                                    //collapse account panel
+                                    if (accountTableOpen) {
+                                        //j$('#accountListBtn').toggleClass('slide_table');
+                                        j$('#accountTableDisplay').toggleClass('slide');
+                                    } else {
+                                        j$('#accountListBtn').trigger('click');
+                                    }
+
+                                });
+
+                    j$('table.accountListTable').tablesorter({
+                        tablesorterColumns: [
+                            { col: 0, order: 'desc' },
+                            { col: 1, order: 'desc' },
+                            { col: 2, order: 'desc' },
+                            { col: 3, order: 'desc' },
+                            { col: 4, order: 'desc' },
+                            { col: 5, order: 'desc' },
+                            { col: 6, order: 'desc' },
+                            { col: 7, order: 'desc' },
+                        ]
+                    });
+
+
+                }
+                
+                j$('#refreshAccountsBtn').removeClass('fa-spin');
+            }
+            
+            function HomeControl(controlDiv, map) {
+                controlDiv.style.padding = '5px';
+                
+                // Set CSS for the control border
+                var controlUI = document.createElement('div');
+                controlUI.style.cursor = 'pointer';
+                controlUI.title = 'Click to set the map to Home';
+                controlDiv.appendChild(controlUI);
+                
+                // Set CSS for the control interior
+                var controlText = document.createElement('div');
+                
+                controlText.innerHTML = '<img src="https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_m_to_r/myLocation.png"/>';
+                controlUI.appendChild(controlText);
+                
+                // Setup the click event listeners: simply set the map to first position
+                google.maps.event.addDomListener(controlUI, 'click', function() {
+                    // Make refresh btn spin
+                    j$('#refreshAccountsBtn').addClass('fa-spin');
+                    // Create a timer to stop spinning eventually in the event that 
+                    // there are no accounts in area to load.
+                    setTimeout(function() {
+                        j$('#refreshAccountsBtn').removeClass('fa-spin');
+                    }, 5000);
+                    // Get new location from device
+                    storeLocation(
+                        function(position) {
+                            console.log("storeLocation Success Callback", position);
+                            
+                            // Convert Position object into JSON (or at least what we need of it)
+                            var positionJSON = {coords: {latitude: position.coords.latitude, longitude: position.coords.longitude}}
+                            // Save position in global vars (for display of current location on map)
+                            myLat = position.coords.latitude;
+                            myLon = position.coords.longitude;
+                            // set mapCenter to device to add icon
+                            mapCenter = "device"
+                            // Move map to current location
+                            var home = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+                            map.panTo(home);
+                            // Refresh accounts in area
+                            refreshAccounts(position.coords.latitude, position.coords.longitude, "device");
+                        },
+                        function(error) {
+                            console.log("storeLocation Error Callback", error);
+                            showLocationError(error);
+                            j$('#refreshAccountsBtn').hide();
+                        }
+                    );
+                });
+                
+            }
+            
+            //Run the initialize function when the window loads
+            //google.maps.event.addDomListener(window, 'load', initialize);
+            
+            function pinSymbol(fillColor, strokeColor, strokeWeight) {
+                return {
+                    path: 'M 0,0 C -2,-20 -10,-22 -10,-30 A 10,10 0 1,1 10,-30 C 10,-22 2,-20 0,0 z M -2,-30 a 2,2 0 1,1 4,0 2,2 0 1,1 -4,0',
+                    fillColor: fillColor,
+                    fillOpacity: .9,
+                    strokeColor: strokeColor,//'#E6E6E6',
+                    strokeWeight: strokeWeight,//.5,
+                    scale: 1,
+                };
+            }
+            
+            // Get user lat/long and time of location grab, store in cookie client side
+            // For accessing when saving a Call Card
+            // Success callback returns raw browser geolocation position
+            // Fail callback returns raw browser geolocation error
+            function storeLocation(successCallback, failCallback) {
+                // JSON to store location data
+                var locationData = {
+                    timestamp: 0,
+                    latitude: 37.77493,
+                    longitude: -122.419416
+                };
+                
+                //Try to get location and store locationData
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(function(position) {
+                        console.log("Found location");
+                        locationData.timestamp = position.timestamp;
+                        locationData.latitude = position.coords.latitude;
+                        locationData.longitude = position.coords.longitude;
+                        Cookies.set('locationData', JSON.stringify(locationData));
+                        if(successCallback)
+                            successCallback(position);
+                    }, function(error) {
+                        console.log("Geolocation request failed: " + error.code);
+                        Cookies.set('locationData', JSON.stringify(locationData));
+                        if(failCallback)
+                            failCallback(error);
+                    });
+                } else {
+                    console.log("Geolocation is not supported by this browser.");
+                    Cookies.set('locationData', JSON.stringify(locationData));
+                    if(failCallback)
+                        failCallback({message: 'Geolocation is not supported by this browser'});
+                }
+            }
+            
+            // Geocodes a raw browser geolocation position with Google
+            function geocodePosition(position, successCallback, failCallback) {
+                var gCoder = new google.maps.Geocoder();
+                var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+                gCoder.geocode({'latLng': latLng}, function(results, status) {
+                    if (status == google.maps.GeocoderStatus.OK) {
+                        successCallback(results, status);
+                    } else {
+                        failCallback(results, status);
+                    }
+                });
+            }
+            
+            // Turns Google geocode results into current market and market level
+            function geocodeToMarketInfo(geocode, callback) {
+                var market, marketLevel;
+                
+                // Geocode must have some data
+                if(geocode[1]) {
+                    
+                    // Iterate through Geocode data
+                    for (var i = 0; i < geocode[1].address_components.length; i++){
+                        // Find the state of the geocode
+                        var state;
+                        if(geocode[1].address_components[i].types[0] == 'administrative_area_level_1'){
+                            state = geocode[1].address_components[i].long_name;
+                        }
+                        
+                        // If the geocode item is in the US, set market to State and level to State
+                        // Otherwise, market is the Country and the level is Country
+                        if  (geocode[1].address_components[i].types[0] == 'country'){
+                            if(geocode[1].address_components[i].short_name == 'US'){
+                                market = state;
+                                marketLevel = 'State';
+                            } else {
+                                market = geocode[1].address_components[i].short_name;
+                                marketLevel = 'Country';
+                            }
+                        }
+                    }
+                }
+                
+                // Return data
+                callback(market, marketLevel);
+            }
+            
+            function showToast(msg) {
+                j$('#snackbarmsg').text(msg);
+                j$('#snackbar').addClass('show')
+                               .fadeOut(5000, function() { j$(this).removeClass('show'); });
+                
+            }
+
+            function showAllProductRangings() {
+                j$("#productRangingUL input[name*='kpr_']").prop('checked', false);
+                filterAccountsByProductRanging(true, []);
+            }
+        	function filterProductRanging() {
+                var selectedRangingCheckboxes = j$('#productRangingUL input:checked');
+                console.log('selectedRangings', selectedRangingCheckboxes);
+                var selectedRangings = [];
+                j$.each(selectedRangingCheckboxes, function() {
+                    console.log('selected', this.value);
+                    selectedRangings.push(this.value);
+                });
+                j$("#productRangingUL input[name*='kprall']").prop('checked', false);
+                console.log('markers', markers);
+                // Clear out the old markers.
+                /*
+                for(var item in markers) {
+                    markers[item].setMap(null);
+                }
+                markers = {};
+                */
+                    
+                filterAccountsByProductRanging(false, selectedRangings);
+                
+            }
+            function filterAccountsByProductRanging(showAll, selectedRangings) {
+                var found = false;
+                var accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                console.log('accountJSON', accountJSON);
+				j$.each(accountJSON, function() {
+                    if (showAll) {
+                        markers[this.Id].setVisible(true);
+                    } else {
+                        if (this.Key_Product_Ranging__c && this.Key_Product_Ranging__c.length > 0) {
+                            kpr = this.Key_Product_Ranging__c.split(';');
+                            //console.log('kpr', kpr);
+                            
+                            found = false;
+                            kpr.forEach(function(item) {                            
+                                if (selectedRangings.indexOf(item) > -1) {
+                                    found = true;
+                                    return true;
+                                }
+                            });
+                            console.log('account ' + this.Name + ' has selected rangings', found);
+                            if (found) {
+                                markers[this.Id].setVisible(true);
+                            } else {
+                                markers[this.Id].setVisible(false);
+                            }
+                        }
+                    }
+                });
+
+            }
+        
+            function showCitiesForCountry(country) {                
+                j$('#cityListUL li').off('click');
+                j$('#cityListUL').empty();
+                if (country != undefined && country != '') {
+                    var citiesStr = '';
+                    for(var i = 0; i < cityList.length; i++) {
+                        if (country == cityList[i].Country__c) {
+                            citiesStr += '<li data-city="'+cityList[i].City__c + '" data-country="' + cityList[i].Country__c+'" data-latitude="'+(cityList[i].Location__Latitude__s || '')+'" data-longitude="'+(cityList[i].Location__Longitude__s || '')+'">' + cityList[i].City__c + '</li>';
+                        }
+                    }
+                    j$('#cityListUL').append(citiesStr);
+                    j$('#cityListUL li').on('click', function() {
+                        let city = j$(this).attr('data-city');
+                        let country = j$(this).attr('data-country');
+                        var lat = j$(this).attr('data-latitude');
+                        var lon = j$(this).attr('data-longitude');
+                        console.log('selected city', j$(this).attr('data-city'));
+                        console.log('selected country', j$(this).attr('data-country'));
+                        console.log('selected lat', lat);
+                        console.log('selected lon', lon);
+
+                        if (lat == undefined || lat == '' || lon == undefined || lon == '') {
+                            var geocoder = new google.maps.Geocoder();
+                            console.log('using geocoder to find geolocation');
+                            geocoder.geocode({'address': city + ',' + country}, function(results, status) {
+                                if (status == google.maps.GeocoderStatus.OK && results.length > 0) {
+                                    var location = results[0].geometry.location;
+                                    lat = location.lat();
+                                    lon = location.lng();
+
+                                    map.setCenter(new google.maps.LatLng(lat, lon)); 
+                                    // Place star on acct
+                                    new google.maps.Marker({
+                                        map: map,
+                                        position: new google.maps.LatLng(lat, lon),
+                                        icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_s_to_u/star.png"
+                                    });
+                                    // refresh accounts
+                                    refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                                    // Hide menu
+                                    //collapse calendar panel
+                                    j$('#cityListBtn').trigger('click');
+                                }
+                            });
+                        } else {
+                            console.log('using lat and lon to center map');
+                            map.setCenter(new google.maps.LatLng(lat, lon));
+                            new google.maps.Marker({
+                                map: map,
+                                position: new google.maps.LatLng(lat, lon),
+                                icon: "https://www.b-fonline.com/salesforceresources/Google_Gadgets/images_s_to_u/star.png"
+                            });
+                            // refresh accounts
+                            refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                            // Hide menu
+                            //collapse calendar panel
+                            j$('#cityListBtn').trigger('click');
+                        }
+                    });
+
+                }
+                
+            }
+
+            // our jQuery starts here
+            var j$ = jQuery.noConflict();
+            j$(document).ready(function() {
+                //console.log("jQuery");
+                //console.log('{!urlPrefix}');
+                
+                // Stop everything if loading specific account and no coords returned
+                if( getQueryVariable("id") && (isNaN(parseFloat('{!lat}')) || isNaN(parseFloat('{!lon}'))) ) {
+                    j$('#refreshAccountsBtn').removeClass('fa-spin');
+                    j$('#loadingDiv').hide();
+                    throw new FatalError("Cannot load account!");
+                }
+                
+                // Attach FastClick to remove click delays on browsers with Touch UIs
+                j$(function() {
+                    FastClick.attach(document.body);
+                });
+                
+                if (isAfterHoursApp == '1') {
+                    j$('#calendarBtn').hide();
+					j$('#colorHighlighting').hide();
+                    j$('.accountsNearbyOption').hide();   
+                    j$('#cityListBtn').show();
+
+                    console.log('citylist', cityList);
+                    var countries = [];
+                    var countriesStr = '<option value=""></option>';
+                    if (cityList == undefined) { cityList = []; }
+                    for(var i = 0; i < cityList.length; i++) {
+                        if (countries.indexOf(cityList[i].Country__c) < 0) {
+                            countriesStr += '<option value="' + cityList[i].Country__c + '">' + cityList[i].Country__c + '</option>';
+                            countries.push(cityList[i].Country__c);
+                        }
+                    }
+                    j$('#countrySelect').append(countriesStr);
+                } else {
+                    j$('#productRangingBtn').hide();
+                    j$('#cityListBtn').hide();
+                }
+                /*
+                // Set Channel Options in Filter menu
+                var channelOptionsStr = '<option value="ALL" selected="true">{!$Label.CHANNEL}</option><option value="ALL">{!$Label.All}</option>';
+                var ourChannelOptions = j$(".channelHiddenInput option");
+                if (ourChannelOptions.length == 0) {
+                    var singleChannelOption = j$(".channelHiddenInput").text();
+                    if (singleChannelOption && singleChannelOption != '' && singleChannelOption.toLowerCase() != 'all') {
+                        channelOptionsStr += '<option value="' + singleChannelOption + '">' + singleChannelOption + '</option>';
+                    }
+                } else {
+                    ourChannelOptions.each(function() {
+                        if (j$(this).val().length > 0) {
+                            channelOptionsStr += '<option value="' + j$(this).val() + '">' + j$(this).text() + '</option>';
+                        }
+                    });
+                }
+                j$('.channelSelectList').find('option')
+                                        .remove()
+                                        .end()
+                                        .append(channelOptionsStr);
+                */
+                
+                // Set state of Calendar "Show only these Accounts" checkmark
+                if(j$('#eventAcctCheckbox').length > 0) {
+                    if(showOnlyTheseAccounts)
+                        j$('#eventAcctCheckbox').prop('checked', true)
+                }
+                
+                // Show search panel if market enabled
+                if(enableGoogleSearch)
+                    j$('#searchBtn').show();
+                
+
+                // Start app
+                // Get user location (or show error)
+                storeLocation(
+                    function(position) {
+                        console.log("storeLocation Success Callback", position);
+                        
+                        // Convert Position object into JSON (or at least what we need of it)
+                        var positionJSON = {coords: {latitude: position.coords.latitude, longitude: position.coords.longitude}}
+                        // Save position in global vars (for display of current location on map)
+                        myLat = position.coords.latitude;
+                        myLon = position.coords.longitude;
+                        
+                        // If an account was provided to page GET params, change coordinates to be account center
+                        if(getQueryVariable("id")) {
+                            mapCenter = "account"
+                            // Absurd hack -- Save number as string back to number to avoid issues if account not provided (therefore no coords);
+                            positionJSON.coords.latitude = parseFloat('{!lat}'); 
+                            positionJSON.coords.longitude = parseFloat('{!lon}');
+                        } else {
+                            mapCenter = "device"
+                        }
+                        
+                        // Geocode location -- Get metadata around location
+                        geocodePosition(positionJSON,
+                                        function(results, status) {
+                                            console.log("geocodePosition Callback", results, status);
+                                            
+                                            // Turn geocoded data into market information
+                                            //   Use this to help fitler results and speed up remote call to get accts
+                                            geocodeToMarketInfo(results,
+                                                                function(mkt, mktLevel) {
+                                                                    console.log("geocodeToMarketInfo Callback. Market: " + mkt + ", Level: " + mktLevel);
+                                                                    
+                                                                    // Call VFP aliased APEX filter()/eventfilter function to get data and populate
+                                                                    if(!j$('#eventAcctCheckbox').prop('checked'))
+                                                                        filterCon(positionJSON.coords.latitude, positionJSON.coords.longitude, mkt, mktLevel); 
+                                                                    else
+                                                                        eventFilter(positionJSON.coords.latitude, positionJSON.coords.longitude, mkt, mktLevel); 
+                                                                    
+                                                                    // Set spinner to stop spinning if it doesn't on it's own (no accounts)
+                                                                    setTimeout(function() {
+                                                                        j$('#refreshAccountsBtn').removeClass('fa-spin');
+                                                                    }, 5000);
+                                                                    
+                                                                    // Make page usable by binding things to different page elements
+                                                                    bindEvents();
+                                                                    bindCalendarEvents();
+                                                                });
+                                        }, function(results, status) {
+                                            console.log("geocodePosition Fail Callback", results, status);
+                                            // Just load at location -- no accounts
+                                            filterCon(positionJSON.coords.latitude, positionJSON.coords.longitude, '', '');
+                                            setTimeout(function() {
+                                                j$('#refreshAccountsBtn').removeClass('fa-spin');
+                                            }, 5000);
+                                        }
+                                       );
+                    },
+                    function(error) {
+                        console.log("storeLocation Error Callback", error);
+                        showLocationError(error);
+                        j$('#refreshAccountsBtn').hide();
+                    }
+                );
+                
+            });
+            
+            // Bind events to elements on page
+            function bindEvents() {
+                // Filter Panel toggler function
+                j$('#fingerBtn').click(function(){
+                    j$("#finger").toggleClass("flipRight");
+                    j$('#fingerBtn').toggleClass('slideButton');
+                    j$('#filters').toggleClass('slide');
+                });
+                
+                // Calendar panel toggler function
+                j$('#calendarBtn').click(function() {
+                    j$(this).toggleClass('slideButton');
+                    j$('#calendar').toggleClass('slide');
+                });
+                j$('#productRangingBtn').click(function() {
+                    j$(this).toggleClass('slideButton');
+                    j$('#productRangingFilter').toggleClass('slide');
+                });
+                // Search panel toggler function
+                j$('#searchBtn').click(function() {
+                    j$("#pac-input").toggle();
+                    j$("#pac-input").focus();
+                });
+                
+                // Listen for checking "Show only these accounts" on Calendar
+                j$('#eventAcctCheckbox').change(function() {
+                    if (j$(this).is(':checked')){
+                        eventFilter(myLat,myLon);
+                    } else {
+                        refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                    }
+                });
+                
+                // Account list toggler function
+                j$('#accountListBtn').click(function() {
+                    j$(this).toggleClass('slideButton');
+                    if (accountTableOpen) {
+                        j$('#accountTableDisplay').toggleClass('slide');                        
+                    } else {
+                        j$('#accountListDisplay').toggleClass('slide');
+                    }
+                });
+
+                if (isAfterHoursApp == '1') {
+                    j$('#cityListBtn').show()
+                                      .click(function() {
+                                          console.log('citylistbtn click');
+                        j$(this).toggleClass('slideButton');                        
+                        j$('#cityListFilter').toggleClass('slide');
+                    });
+                    j$('#countrySelect').change(function() {
+                        let selectedCountry = j$(this).val();
+                        console.log('selectedCountry', selectedCountry);
+                        showCitiesForCountry(selectedCountry);
+                    });
+                    j$('.accountTableBtn').click(function() {
+                        j$('#accountTableDisplay').toggleClass('slide');
+                        j$('#accountListBtn').toggleClass('slideButton');
+                    });
+                    j$('.accountListTableBtn').show()
+                                              .click(function() {
+                        j$('#accountListDisplay').toggleClass('slide');
+                        j$('#accountTableDisplay').toggleClass('slide');
+                        accountTableOpen = !accountTableOpen;
+                    });
+
+                    /*
+                    j$(".af-btn").click(function(ev) {
+                        ev.preventDefault();
+
+                        let direction = j$(this).attrib('data-direction');
+                        if (direction == 'down') { direction = 'up'; } else { direction = 'down'; }
+                        
+                        let fieldName = j$(this).attrib('data-field');
+                        j$('.af-arrow').removeClass('af-arrow-down')
+                                       .removeClass('af-arrow-up')
+                                       .addClass('hidden');
+
+                        j$('.af-arrow-'+fieldName).addClass('af-arrow-'+direction);
+                        
+                    });
+                    */
+                } else {
+                    j$('.accountListTableBtn').hide();
+                }
+
+                
+                // Refresh accounts button
+                j$('#refreshAccountsBtn').click(function() {
+                    // Make btn spin
+                    j$('#refreshAccountsBtn').addClass('fa-spin');
+                    // Create a timer to stop spinning eventually in the event that 
+                    // there are no accounts in area to load.
+                    setTimeout(function() {
+                        j$('#refreshAccountsBtn').removeClass('fa-spin');
+                    }, 5000);
+                    // Refresh map on viewport center
+                    refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                });
+                
+                // Set some colors
+                j$('#onLegend').css("background-color", colors.Green);
+                j$('#offLegend').css("background-color", colors.Blue);
+                j$('#otherLegend').css("background-color", colors.Red);
+                j$('.good').css("background-color", colors.Green);
+                j$('.caution').css("background-color", colors.Gold);
+                j$('.bad').css("background-color", colors.Red);
+                
+                // Listener on view filter option changes
+                j$("[id*='highlightList']").change(function() {
+                    //createMap(lat,lon);
+                    refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                    if (j$(this).val() == 'Channel') {
+                        j$('#visitDateLegend').hide();
+                        j$('#outletClassLegend').hide();
+                        j$('#channelLegend').fadeIn();
+                    } else if (j$(this).val() == 'Last Visit Date') {
+                        j$('#channelLegend').hide();
+                        j$('#outletClassLegend').hide();
+                        j$('#visitDateLegend').fadeIn();
+                    } else if (j$(this).val() == 'Outlet Class') {
+                        j$('#channelLegend').hide();
+                        j$('#visitDateLegend').hide();
+                        j$('#outletClassLegend').fadeIn();
+                    }
+                });
+                
+                // Show/hide messages
+                if(j$('.messages:visible').length > 0) {
+                    j$('#loadingDiv').hide();
+                    j$('.filterBtn').css('visibility','visible');
+                }                
+            }
+            
+            // Bind calendar day change events
+            function bindCalendarEvents() {
+                // Init popup
+                initPopups();
+                
+                // Previous day button press
+                j$('#prevDay').click(function() {
+                    event.preventDefault();
+                    changeDay(-1);
+                });
+                
+                // Next day button press
+                j$('#nextDay').click(function() {
+                    console.log('nextDay clicked');
+                    event.preventDefault();
+                    changeDay(1);
+                });
+            }
+        
+            // Reload accounts/view at new map center
+            function refreshAccounts(latitude, longitude, centerIcon) {
+                // Create positionJSON object (for sending into geocoder)
+                var positionJSON = {coords: {latitude: latitude, longitude: longitude}};
+                if(centerIcon)
+                    mapCenter = centerIcon;
+                else
+                    mapCenter = "none";
+                        
+                // Geocode location -- Get metadata around location
+                geocodePosition(positionJSON,
+                                function(results, status) {
+                                    console.log("geocodePosition Callback", results, status);
+                                    
+                                    // Turn geocoded data into market information
+                                    geocodeToMarketInfo(results,
+                                                        function(mkt, mktLevel) {
+                                                            console.log("geocodeToMarketInfo Callback. Market: " + mkt + ", Level: " + mktLevel);
+                                                            
+                                                            // Call VFP aliased APEX filter() function to get data and populate
+                                                            filterCon(positionJSON.coords.latitude, positionJSON.coords.longitude, mkt, mktLevel); 
+                                                        });
+                                }, function(results, status) {
+                                    console.log("geocodePosition Fail Callback", results, status);
+                                    // Stop processing, show an error
+                                }
+                               );
+            }
+        
+            // Function to setup search box for searching for location
+            function initLocationSearch() {
+                // Create the search box and link it to the UI element.
+                var input = document.getElementById('pac-input');
+                var searchBox = new google.maps.places.SearchBox(input);
+                map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+                j$("#pac-input").hide();
+                
+                // Bias the SearchBox results towards current map's viewport.
+                map.addListener('bounds_changed', function() {
+                    searchBox.setBounds(map.getBounds());
+                });
+                
+                var markers = [];
+                // Listen for the event fired when the user selects a prediction and retrieve
+                // more details for that place.
+                searchBox.addListener('places_changed', function() {
+                    var places = searchBox.getPlaces();
+                    
+                    if (places.length == 0) {
+                        return;
+                    }
+                    
+                    // Clear out the old markers.
+                    markers.forEach(function(marker) {
+                        marker.setMap(null);
+                    });
+                    markers = [];
+                    
+                    // For each place, get the icon, name and location.
+                    var bounds = new google.maps.LatLngBounds();
+                    places.forEach(function(place) {
+                        if (!place.geometry) {
+                            console.log("Returned place contains no geometry");
+                            return;
+                        }
+                        var icon = {
+                            url: place.icon,
+                            size: new google.maps.Size(71, 71),
+                            origin: new google.maps.Point(0, 0),
+                            anchor: new google.maps.Point(17, 34),
+                            scaledSize: new google.maps.Size(25, 25)
+                        };
+                        
+                        // Create a marker for each place.
+                        markers.push(new google.maps.Marker({
+                            map: map,
+                            icon: icon,
+                            title: place.name,
+                            position: place.geometry.location
+                        }));
+                        
+                        if (place.geometry.viewport) {
+                            // Only geocodes have viewport.
+                            bounds.union(place.geometry.viewport);
+                        } else {
+                            bounds.extend(place.geometry.location);
+                        }
+                    });
+                    map.fitBounds(bounds);
+                    
+                    refreshAccounts(map.getCenter().lat(), map.getCenter().lng());
+                    j$('#refreshAccountsBtn').addClass('fa-spin');
+                    // Create a timer to stop spinning eventually in the event that 
+                    // there are no accounts in area to load.
+                    setTimeout(function() {
+                        j$('#refreshAccountsBtn').removeClass('fa-spin');
+                    }, 5000);
+                });
+            }
+        </script>
+        <script src="https://www.b-fonline.com/salesforceresources/Mobile-Design-Templates/common/js/main.min.js"></script>
+        
+        <script>
+            //Google analytics
+            (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-48188229-1', 'force.com');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</apex:page>

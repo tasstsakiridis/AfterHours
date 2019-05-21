@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Profile_CMG</fullName>
+    <availability>online</availability>
+    <description>Account Profile for CCD Accounts</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Account Profile - CCD</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://bipbw.b-f.com/irj/servlet/prt/portal/prtroot/pcd!3aportal_content!2fcom.sap.pct!2fplatform_add_ons!2fcom.sap.ip.bi!2fiViews!2fcom.sap.ip.bi.bex?BOOKMARK=4YVGZO2JFD4PGC2YF7RB4XRH5&amp;BI_COMMAND_1-BI_COMMAND_TYPE=SET_SELECTION_STATE&amp;BI_COMMAND_1-TARGET_DATA_PROVIDER_REF_LIST-TARGET_DATA_PROVIDER_REF_1=*&amp;BI_COMMAND_1-CHARACTERISTICS_SELECTIONS-CHARACTERISTIC_SELECTIONS_1-SELECTIONS-SELECTION_1-SELECTION_INPUT_STRING={!Account.CMG_Account_Code__c}&amp;BI_COMMAND_1-CHARACTERISTICS_SELECTIONS-CHARACTERISTIC_SELECTIONS_1-CHARACTERISTIC=CGACCTTO__CGSRAP</url>
+</WebLink>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Minhas_Contas_Eventos</fullName>
+    <columns>English_Name__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ILN_Code__c</columns>
+    <columns>Channel__c</columns>
+    <columns>ACCOUNT.SITE</columns>
+    <columns>ACCOUNT.PHONE1</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.ADDRESS2_STREET</columns>
+    <columns>ACCOUNT.ADDRESS2_CITY</columns>
+    <columns>ACCOUNT.ADDRESS2_STATE</columns>
+    <columns>ACCOUNT.ADDRESS2_ZIP</columns>
+    <columns>ACCOUNT.ADDRESS2_COUNTRY</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,Prospect</value>
+    </filters>
+    <filters>
+        <field>Channel__c</field>
+        <operation>equals</operation>
+        <value>On</value>
+    </filters>
+    <filters>
+        <field>Group__c</field>
+        <operation>notEqual</operation>
+        <value>Event</value>
+    </filters>
+    <label>Minhas Contas - On Trade</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinatesInternal>Brazil_Admin_Mkt_Mgr</roleAndSubordinatesInternal>
+    </sharedTo>
+</ListView>

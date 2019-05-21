@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>National_Banner_Group__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>National Banner Group</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Banner Group selected is not for this market or is not a National Banner</errorMessage>
+        <filterItems>
+            <field>$Source.Market__c</field>
+            <operation>equals</operation>
+            <valueField>Banner_Groups__c.Market__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Banner_Groups__c.Management_Group_State_Level__c</field>
+            <operation>equals</operation>
+            <value>BAN_NAT</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Banner_Groups__c</referenceTo>
+    <relationshipLabel>Accounts (National Banner Group)</relationshipLabel>
+    <relationshipName>Accounts2</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Lookup</type>
+</CustomField>

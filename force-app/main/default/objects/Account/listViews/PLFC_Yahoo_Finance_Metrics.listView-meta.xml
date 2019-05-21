@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PLFC_Yahoo_Finance_Metrics</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ACCOUNT.TICKER</columns>
+    <columns>Earnings_Per_Share__c</columns>
+    <columns>Last_Trade_Price__c</columns>
+    <columns>Market_Cap_m__c</columns>
+    <columns>PE_Ratio__c</columns>
+    <columns>EBITDA__c</columns>
+    <columns>Volume__c</columns>
+    <columns>Shares_Outstanding_f__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.PLFC_Accounts</value>
+    </filters>
+    <label>PLFC - Yahoo! Finance Metrics</label>
+    <language>en_US</language>
+    <sharedTo>
+        <roleAndSubordinates>FDCPLFCManagers</roleAndSubordinates>
+    </sharedTo>
+</ListView>

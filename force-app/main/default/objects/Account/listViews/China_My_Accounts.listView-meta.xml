@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>China_My_Accounts</fullName>
+    <columns>Outlet_Class__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Area__c</columns>
+    <columns>Channel__c</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>English_Name__c</columns>
+    <columns>Supplier__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>Status__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>Average_Spending__c</columns>
+    <columns>Data_Quality_Score__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Market__c</field>
+        <operation>equals</operation>
+        <value>China</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active</value>
+    </filters>
+    <label>China MY Accounts</label>
+    <language>en_US</language>
+    <sharedTo>
+        <group>CHNAllUsers</group>
+        <role>GlobalAdministrator</role>
+    </sharedTo>
+</ListView>

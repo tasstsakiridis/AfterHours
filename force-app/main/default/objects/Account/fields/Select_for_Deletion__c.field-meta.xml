@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Select_for_Deletion__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Selection for delete!</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Please use/select this field if the account is no longer active or existing and hence could/should be deleted!</inlineHelpText>
+    <label>Select for Deletion</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

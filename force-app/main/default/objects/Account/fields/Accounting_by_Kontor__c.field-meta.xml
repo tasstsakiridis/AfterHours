@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accounting_by_Kontor__c</fullName>
+    <externalId>false</externalId>
+    <label>Accounting by Kontor</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GES</fullName>
+                <default>false</default>
+                <label>GES</label>
+            </value>
+            <value>
+                <fullName>GEV</fullName>
+                <default>false</default>
+                <label>GEV</label>
+            </value>
+            <value>
+                <fullName>GR</fullName>
+                <default>false</default>
+                <label>GR</label>
+            </value>
+            <value>
+                <fullName>DBZ</fullName>
+                <default>false</default>
+                <label>DBZ</label>
+            </value>
+            <value>
+                <fullName>direct</fullName>
+                <default>false</default>
+                <label>direct</label>
+            </value>
+            <value>
+                <fullName>G5</fullName>
+                <default>false</default>
+                <label>G5</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Trading_Company_Name_TD__c</fullName>
+    <description>Trading Company Name</description>
+    <externalId>false</externalId>
+    <label>Trading Company Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>National_Head_Office_Name_TD__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>3C Cash &amp; Carry</fullName>
+                <default>false</default>
+                <label>3C Cash &amp; Carry</label>
+            </value>
+            <value>
+                <fullName>Ahlers</fullName>
+                <default>false</default>
+                <label>Ahlers</label>
+            </value>
+            <value>
+                <fullName>Ahlers GTM „Hol AB“</fullName>
+                <default>false</default>
+                <label>Ahlers GTM „Hol AB“</label>
+            </value>
+            <value>
+                <fullName>ALDI Süd</fullName>
+                <default>false</default>
+                <label>ALDI Süd</label>
+            </value>
+            <value>
+                <fullName>Alnatura</fullName>
+                <default>false</default>
+                <label>Alnatura</label>
+            </value>
+            <value>
+                <fullName>Aral Rewe to Go</fullName>
+                <default>false</default>
+                <label>Aral Rewe to Go</label>
+            </value>
+            <value>
+                <fullName>Arco Iris</fullName>
+                <default>false</default>
+                <label>Arco Iris</label>
+            </value>
+            <value>
+                <fullName>Bartels-Langness</fullName>
+                <default>false</default>
+                <label>Bartels-Langness</label>
+            </value>
+            <value>
+                <fullName>Bartsch</fullName>
+                <default>false</default>
+                <label>Bartsch</label>
+            </value>
+            <value>
+                <fullName>Basic</fullName>
+                <default>false</default>
+                <label>Basic</label>
+            </value>
+            <value>
+                <fullName>Battermann</fullName>
+                <default>false</default>
+                <label>Battermann</label>
+            </value>
+            <value>
+                <fullName>Brülle &amp; Schmeltzer</fullName>
+                <default>false</default>
+                <label>Brülle &amp; Schmeltzer</label>
+            </value>
+            <value>
+                <fullName>Bünting</fullName>
+                <default>false</default>
+                <label>Bünting</label>
+            </value>
+            <value>
+                <fullName>Cames</fullName>
+                <default>false</default>
+                <label>Cames</label>
+            </value>
+            <value>
+                <fullName>Coma</fullName>
+                <default>false</default>
+                <label>Coma</label>
+            </value>
+            <value>
+                <fullName>Coop</fullName>
+                <default>false</default>
+                <label>Coop</label>
+            </value>
+            <value>
+                <fullName>Dennree</fullName>
+                <default>false</default>
+                <label>Dennree</label>
+            </value>
+            <value>
+                <fullName>Discher</fullName>
+                <default>false</default>
+                <label>Discher</label>
+            </value>
+            <value>
+                <fullName>Dodenhof</fullName>
+                <default>false</default>
+                <label>Dodenhof</label>
+            </value>
+            <value>
+                <fullName>Dohle-Gruppe</fullName>
+                <default>false</default>
+                <label>Dohle-Gruppe</label>
+            </value>
+            <value>
+                <fullName>Eberl</fullName>
+                <default>false</default>
+                <label>Eberl</label>
+            </value>
+            <value>
+                <fullName>EBL</fullName>
+                <default>false</default>
+                <label>EBL</label>
+            </value>
+            <value>
+                <fullName>Edeka Hessenring</fullName>
+                <default>false</default>
+                <label>Edeka Hessenring</label>
+            </value>
+            <value>
+                <fullName>Edeka Minden-Hannover</fullName>
+                <default>false</default>
+                <label>Edeka Minden-Hannover</label>
+            </value>
+            <value>
+                <fullName>Edeka Nord</fullName>
+                <default>false</default>
+                <label>Edeka Nord</label>
+            </value>
+            <value>
+                <fullName>Edeka Nordbayern</fullName>
+                <default>false</default>
+                <label>Edeka Nordbayern</label>
+            </value>
+            <value>
+                <fullName>Edeka Rhein-Ruhr</fullName>
+                <default>false</default>
+                <label>Edeka Rhein-Ruhr</label>
+            </value>
+            <value>
+                <fullName>Edeka Südbayern</fullName>
+                <default>false</default>
+                <label>Edeka Südbayern</label>
+            </value>
+            <value>
+                <fullName>Edeka Südwest</fullName>
+                <default>false</default>
+                <label>Edeka Südwest</label>
+            </value>
+            <value>
+                <fullName>Enders</fullName>
+                <default>false</default>
+                <label>Enders</label>
+            </value>
+            <value>
+                <fullName>Erdkorn</fullName>
+                <default>false</default>
+                <label>Erdkorn</label>
+            </value>
+            <value>
+                <fullName>EWS</fullName>
+                <default>false</default>
+                <label>EWS</label>
+            </value>
+            <value>
+                <fullName>Fegro/Selgros</fullName>
+                <default>false</default>
+                <label>Fegro/Selgros</label>
+            </value>
+            <value>
+                <fullName>FEH</fullName>
+                <default>false</default>
+                <label>FEH</label>
+            </value>
+            <value>
+                <fullName>Feneberg</fullName>
+                <default>false</default>
+                <label>Feneberg</label>
+            </value>
+            <value>
+                <fullName>FGH</fullName>
+                <default>false</default>
+                <label>FGH</label>
+            </value>
+            <value>
+                <fullName>Frey &amp; Kissel</fullName>
+                <default>false</default>
+                <label>Frey &amp; Kissel</label>
+            </value>
+            <value>
+                <fullName>Frische Paradies</fullName>
+                <default>false</default>
+                <label>Frische Paradies</label>
+            </value>
+            <value>
+                <fullName>Geins</fullName>
+                <default>false</default>
+                <label>Geins</label>
+            </value>
+            <value>
+                <fullName>Getränkefachmarkt</fullName>
+                <default>false</default>
+                <label>Getränkefachmarkt</label>
+            </value>
+            <value>
+                <fullName>Getränkeland Heidebrecht GmbH &amp; Co.KG</fullName>
+                <default>false</default>
+                <label>Getränkeland Heidebrecht GmbH &amp; Co.KG</label>
+            </value>
+            <value>
+                <fullName>Globus</fullName>
+                <default>false</default>
+                <label>Globus</label>
+            </value>
+            <value>
+                <fullName>Grenzmärkte</fullName>
+                <default>false</default>
+                <label>Grenzmärkte</label>
+            </value>
+            <value>
+                <fullName>Groma</fullName>
+                <default>false</default>
+                <label>Groma</label>
+            </value>
+            <value>
+                <fullName>GVS</fullName>
+                <default>false</default>
+                <label>GVS</label>
+            </value>
+            <value>
+                <fullName>GZ Wurzen</fullName>
+                <default>false</default>
+                <label>GZ Wurzen</label>
+            </value>
+            <value>
+                <fullName>Haas &amp; Birtel</fullName>
+                <default>false</default>
+                <label>Haas &amp; Birtel</label>
+            </value>
+            <value>
+                <fullName>Hamberger</fullName>
+                <default>false</default>
+                <label>Hamberger</label>
+            </value>
+            <value>
+                <fullName>Handelshof</fullName>
+                <default>false</default>
+                <label>Handelshof</label>
+            </value>
+            <value>
+                <fullName>Hanse SB</fullName>
+                <default>false</default>
+                <label>Hanse SB</label>
+            </value>
+            <value>
+                <fullName>Herschler</fullName>
+                <default>false</default>
+                <label>Herschler</label>
+            </value>
+            <value>
+                <fullName>Igro</fullName>
+                <default>false</default>
+                <label>Igro</label>
+            </value>
+            <value>
+                <fullName>Kaes</fullName>
+                <default>false</default>
+                <label>Kaes</label>
+            </value>
+            <value>
+                <fullName>Karstadt Feinkost</fullName>
+                <default>false</default>
+                <label>Karstadt Feinkost</label>
+            </value>
+            <value>
+                <fullName>Kaufhof</fullName>
+                <default>false</default>
+                <label>Kaufhof</label>
+            </value>
+            <value>
+                <fullName>Kaufland</fullName>
+                <default>false</default>
+                <label>Kaufland</label>
+            </value>
+            <value>
+                <fullName>Kelter &amp; Kirch</fullName>
+                <default>false</default>
+                <label>Kelter &amp; Kirch</label>
+            </value>
+            <value>
+                <fullName>Klaas + Kock</fullName>
+                <default>false</default>
+                <label>Klaas + Kock</label>
+            </value>
+            <value>
+                <fullName>Konsum Dresden</fullName>
+                <default>false</default>
+                <label>Konsum Dresden</label>
+            </value>
+            <value>
+                <fullName>Koppenhöfer</fullName>
+                <default>false</default>
+                <label>Koppenhöfer</label>
+            </value>
+            <value>
+                <fullName>Lang-Steudler</fullName>
+                <default>false</default>
+                <label>Lang-Steudler</label>
+            </value>
+            <value>
+                <fullName>Lekkerland</fullName>
+                <default>false</default>
+                <label>Lekkerland</label>
+            </value>
+            <value>
+                <fullName>LHG Eibelstadt</fullName>
+                <default>false</default>
+                <label>LHG Eibelstadt</label>
+            </value>
+            <value>
+                <fullName>Limbach</fullName>
+                <default>false</default>
+                <label>Limbach</label>
+            </value>
+            <value>
+                <fullName>List</fullName>
+                <default>false</default>
+                <label>List</label>
+            </value>
+            <value>
+                <fullName>LPG Biomarkt</fullName>
+                <default>false</default>
+                <label>LPG Biomarkt</label>
+            </value>
+            <value>
+                <fullName>Mattfeld</fullName>
+                <default>false</default>
+                <label>Mattfeld</label>
+            </value>
+            <value>
+                <fullName>Mega</fullName>
+                <default>false</default>
+                <label>Mega</label>
+            </value>
+            <value>
+                <fullName>Meistermann</fullName>
+                <default>false</default>
+                <label>Meistermann</label>
+            </value>
+            <value>
+                <fullName>Mellis</fullName>
+                <default>false</default>
+                <label>Mellis</label>
+            </value>
+            <value>
+                <fullName>Metro C&amp;C</fullName>
+                <default>false</default>
+                <label>Metro C&amp;C</label>
+            </value>
+            <value>
+                <fullName>Migroma</fullName>
+                <default>false</default>
+                <label>Migroma</label>
+            </value>
+            <value>
+                <fullName>Migros (D)</fullName>
+                <default>false</default>
+                <label>Migros (D)</label>
+            </value>
+            <value>
+                <fullName>Minipreis</fullName>
+                <default>false</default>
+                <label>Minipreis</label>
+            </value>
+            <value>
+                <fullName>Mix Markt</fullName>
+                <default>false</default>
+                <label>Mix Markt</label>
+            </value>
+            <value>
+                <fullName>Möllers</fullName>
+                <default>false</default>
+                <label>Möllers</label>
+            </value>
+            <value>
+                <fullName>Morgenbrodt</fullName>
+                <default>false</default>
+                <label>Morgenbrodt</label>
+            </value>
+            <value>
+                <fullName>Netzhammer</fullName>
+                <default>false</default>
+                <label>Netzhammer</label>
+            </value>
+            <value>
+                <fullName>Niggemann</fullName>
+                <default>false</default>
+                <label>Niggemann</label>
+            </value>
+            <value>
+                <fullName>Okle</fullName>
+                <default>false</default>
+                <label>Okle</label>
+            </value>
+            <value>
+                <fullName>Pfennigwerth</fullName>
+                <default>false</default>
+                <label>Pfennigwerth</label>
+            </value>
+            <value>
+                <fullName>Pleiss</fullName>
+                <default>false</default>
+                <label>Pleiss</label>
+            </value>
+            <value>
+                <fullName>Prohoga</fullName>
+                <default>false</default>
+                <label>Prohoga</label>
+            </value>
+            <value>
+                <fullName>Ratio</fullName>
+                <default>false</default>
+                <label>Ratio</label>
+            </value>
+            <value>
+                <fullName>Rau</fullName>
+                <default>false</default>
+                <label>Rau</label>
+            </value>
+            <value>
+                <fullName>Real</fullName>
+                <default>false</default>
+                <label>Real</label>
+            </value>
+            <value>
+                <fullName>Rewe Dortmund</fullName>
+                <default>false</default>
+                <label>Rewe Dortmund</label>
+            </value>
+            <value>
+                <fullName>Rewe Foodservice</fullName>
+                <default>false</default>
+                <label>Rewe Foodservice</label>
+            </value>
+            <value>
+                <fullName>Rewe Mitte</fullName>
+                <default>false</default>
+                <label>Rewe Mitte</label>
+            </value>
+            <value>
+                <fullName>Rewe Nord</fullName>
+                <default>false</default>
+                <label>Rewe Nord</label>
+            </value>
+            <value>
+                <fullName>Rewe Ost</fullName>
+                <default>false</default>
+                <label>Rewe Ost</label>
+            </value>
+            <value>
+                <fullName>Rewe Süd</fullName>
+                <default>false</default>
+                <label>Rewe Süd</label>
+            </value>
+            <value>
+                <fullName>Rewe Südwest</fullName>
+                <default>false</default>
+                <label>Rewe Südwest</label>
+            </value>
+            <value>
+                <fullName>Rewe West</fullName>
+                <default>false</default>
+                <label>Rewe West</label>
+            </value>
+            <value>
+                <fullName>Rügen C + C</fullName>
+                <default>false</default>
+                <label>Rügen C + C</label>
+            </value>
+            <value>
+                <fullName>Rullko</fullName>
+                <default>false</default>
+                <label>Rullko</label>
+            </value>
+            <value>
+                <fullName>Sagasser Getränkefachmärkte</fullName>
+                <default>false</default>
+                <label>Sagasser Getränkefachmärkte</label>
+            </value>
+            <value>
+                <fullName>SB Frischmarkt</fullName>
+                <default>false</default>
+                <label>SB Frischmarkt</label>
+            </value>
+            <value>
+                <fullName>Schaper C&amp;C</fullName>
+                <default>false</default>
+                <label>Schaper C&amp;C</label>
+            </value>
+            <value>
+                <fullName>Schwalenstöcker &amp; Gantz</fullName>
+                <default>false</default>
+                <label>Schwalenstöcker &amp; Gantz</label>
+            </value>
+            <value>
+                <fullName>Schwarz-Gruppe</fullName>
+                <default>false</default>
+                <label>Schwarz-Gruppe</label>
+            </value>
+            <value>
+                <fullName>Sorg</fullName>
+                <default>false</default>
+                <label>Sorg</label>
+            </value>
+            <value>
+                <fullName>SuperBioMarkt</fullName>
+                <default>false</default>
+                <label>SuperBioMarkt</label>
+            </value>
+            <value>
+                <fullName>Täuber</fullName>
+                <default>false</default>
+                <label>Täuber</label>
+            </value>
+            <value>
+                <fullName>Tegut</fullName>
+                <default>false</default>
+                <label>Tegut</label>
+            </value>
+            <value>
+                <fullName>Tengelmann-Gruppe</fullName>
+                <default>false</default>
+                <label>Tengelmann-Gruppe</label>
+            </value>
+            <value>
+                <fullName>Toom</fullName>
+                <default>false</default>
+                <label>Toom</label>
+            </value>
+            <value>
+                <fullName>Troiber</fullName>
+                <default>false</default>
+                <label>Troiber</label>
+            </value>
+            <value>
+                <fullName>Utz</fullName>
+                <default>false</default>
+                <label>Utz</label>
+            </value>
+            <value>
+                <fullName>VLG Südwest</fullName>
+                <default>false</default>
+                <label>VLG Südwest</label>
+            </value>
+            <value>
+                <fullName>Waldhoff</fullName>
+                <default>false</default>
+                <label>Waldhoff</label>
+            </value>
+            <value>
+                <fullName>Wasgau AG</fullName>
+                <default>false</default>
+                <label>Wasgau AG</label>
+            </value>
+            <value>
+                <fullName>Wasgau VM</fullName>
+                <default>false</default>
+                <label>Wasgau VM</label>
+            </value>
+            <value>
+                <fullName>Wedl (D)</fullName>
+                <default>false</default>
+                <label>Wedl (D)</label>
+            </value>
+            <value>
+                <fullName>Wehner</fullName>
+                <default>false</default>
+                <label>Wehner</label>
+            </value>
+            <value>
+                <fullName>Weiling</fullName>
+                <default>false</default>
+                <label>Weiling</label>
+            </value>
+            <value>
+                <fullName>Woolworth</fullName>
+                <default>false</default>
+                <label>Woolworth</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Hessenring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Minden-Hannover</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Nord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Nordbayern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Rhein-Ruhr</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Südbayern</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <valueName>Edeka Südwest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Feneberg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Handelshof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>EDEKA-Gruppe</controllingFieldValue>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Minipreis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ALDI</controllingFieldValue>
+            <valueName>ALDI Süd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Ahlers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Ahlers GTM „Hol AB“</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Alnatura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Arco Iris</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Basic</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Dennree</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>EBL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Erdkorn</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>FGH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Frische Paradies</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Geins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Getränkefachmarkt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Getränkeland Heidebrecht GmbH &amp; Co.KG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Grenzmärkte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Herschler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Kelter &amp; Kirch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>LPG Biomarkt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Mellis</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Mix Markt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Sagasser Getränkefachmärkte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>SuperBioMarkt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Waldhoff</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Weiling</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FEH</controllingFieldValue>
+            <valueName>Woolworth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>3C Cash &amp; Carry</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Bartels-Langness</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Bartsch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Battermann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Brülle &amp; Schmeltzer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Bünting</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Cames</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Coma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Discher</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Eberl</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Enders</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>EWS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>FEH</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Frey &amp; Kissel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Globus</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Groma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>GVS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>GZ Wurzen</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Haas &amp; Birtel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Hamberger</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Hanse SB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Igro</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Kaes</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Klaas + Kock</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Konsum Dresden</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Koppenhöfer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Lekkerland</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>LHG Eibelstadt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Limbach</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>List</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Mega</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Meistermann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Migroma</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Migros (D)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Möllers</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Morgenbrodt</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Netzhammer</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Niggemann</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Okle</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Pfennigwerth</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Pleiss</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Prohoga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Ratio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Rau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Rügen C + C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Rullko</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Sorg</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Täuber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Tegut</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Tengelmann-Gruppe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Troiber</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Utz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>VLG Südwest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Wasgau AG</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Wedl (D)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Markant</controllingFieldValue>
+            <valueName>Wehner</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metro-Gruppe</controllingFieldValue>
+            <valueName>Kaufhof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metro-Gruppe</controllingFieldValue>
+            <valueName>Metro C&amp;C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metro-Gruppe</controllingFieldValue>
+            <valueName>Real</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Metro-Gruppe</controllingFieldValue>
+            <valueName>Schaper C&amp;C</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Aral Rewe to Go</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Coop</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Dodenhof</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Dohle-Gruppe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Fegro/Selgros</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Karstadt Feinkost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Lang-Steudler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Mattfeld</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Dortmund</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Foodservice</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Mitte</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Nord</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Ost</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Süd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe Südwest</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Rewe West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Toom</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Rewe-Gruppe</controllingFieldValue>
+            <valueName>Wasgau VM</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Schwarz-Gruppe</controllingFieldValue>
+            <valueName>Kaufland</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

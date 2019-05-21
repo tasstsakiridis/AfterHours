@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Market_Validation</fullName>
+    <active>true</active>
+    <description>Market Validation</description>
+    <errorConditionFormula>AND(ISBLANK(  Market__c  ), $RecordType.DeveloperName= &#39;EUR_Outlets&#39;, $RecordType.DeveloperName= &#39;CHN_Outlets&#39;, $RecordType.DeveloperName= &#39;INR_Outlets&#39;, $RecordType.DeveloperName= &#39;KOR_Outlets&#39;, $RecordType.DeveloperName= &#39;Non_Sellable&#39;, $RecordType.DeveloperName= &#39;Outlets&#39;, $RecordType.DeveloperName= &#39;Partners&#39;, $RecordType.DeveloperName= &#39;THI_Outlets&#39;, $RecordType.DeveloperName= &#39;TWN_Outlets&#39;, $RecordType.DeveloperName= &#39;Venues&#39;,$RecordType.DeveloperName= &#39;Wholesalers&#39;)</errorConditionFormula>
+    <errorDisplayField>Market__c</errorDisplayField>
+    <errorMessage>Please enter a Market</errorMessage>
+</ValidationRule>

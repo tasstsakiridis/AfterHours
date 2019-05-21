@@ -1,0 +1,1411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Group_Region__c</fullName>
+    <externalId>false</externalId>
+    <label>Customer Group Region</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Customer_Group_Division__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>All</fullName>
+                <default>false</default>
+                <label>All</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 1 NORD</fullName>
+                <default>false</default>
+                <label>AUCHAN 1 NORD</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 2 NORD</fullName>
+                <default>false</default>
+                <label>AUCHAN 2 NORD</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 3 IDF</fullName>
+                <default>false</default>
+                <label>AUCHAN 3 IDF</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 4 OUEST</fullName>
+                <default>false</default>
+                <label>AUCHAN 4 OUEST</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 5 SUD</fullName>
+                <default>false</default>
+                <label>AUCHAN 5 SUD</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 6 EST</fullName>
+                <default>false</default>
+                <label>AUCHAN 6 EST</label>
+            </value>
+            <value>
+                <fullName>AUCHAN  7 ILE DE France</fullName>
+                <default>false</default>
+                <label>AUCHAN  7 ILE DE France</label>
+            </value>
+            <value>
+                <fullName>AUCHAN  8</fullName>
+                <default>false</default>
+                <label>AUCHAN  8</label>
+            </value>
+            <value>
+                <fullName>AUCHAN 9 OUEST</fullName>
+                <default>false</default>
+                <label>AUCHAN 9 OUEST</label>
+            </value>
+            <value>
+                <fullName>AUCHAN DRIVE</fullName>
+                <default>false</default>
+                <label>AUCHAN DRIVE</label>
+            </value>
+            <value>
+                <fullName>AUDEBERT</fullName>
+                <default>false</default>
+                <label>AUDEBERT</label>
+            </value>
+            <value>
+                <fullName>BRETAGNE-NORMANDIE</fullName>
+                <default>false</default>
+                <label>BRETAGNE-NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR ALPES</fullName>
+                <default>false</default>
+                <label>CARREFOUR ALPES</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR AQUITAINE MIDI PYRÉNÉES</fullName>
+                <default>false</default>
+                <label>CARREFOUR AQUITAINE MIDI PYRÉNÉES</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR ATLANTIQUE</fullName>
+                <default>false</default>
+                <label>CARREFOUR ATLANTIQUE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR BOURGOGNE</fullName>
+                <default>false</default>
+                <label>CARREFOUR BOURGOGNE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR BRETAGNE</fullName>
+                <default>false</default>
+                <label>CARREFOUR BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR CENTRE</fullName>
+                <default>false</default>
+                <label>CARREFOUR CENTRE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR CHAMPAGNE</fullName>
+                <default>false</default>
+                <label>CARREFOUR CHAMPAGNE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR COTE D&#39;AZUR</fullName>
+                <default>false</default>
+                <label>CARREFOUR COTE D&#39;AZUR</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR LANGUEDOC ROUSSILLON</fullName>
+                <default>false</default>
+                <label>CARREFOUR LANGUEDOC ROUSSILLON</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR NORD</fullName>
+                <default>false</default>
+                <label>CARREFOUR NORD</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR NORMANDIE</fullName>
+                <default>false</default>
+                <label>CARREFOUR NORMANDIE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PARIS EST</fullName>
+                <default>false</default>
+                <label>CARREFOUR PARIS EST</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PARIS NORD</fullName>
+                <default>false</default>
+                <label>CARREFOUR PARIS NORD</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PARIS OUEST</fullName>
+                <default>false</default>
+                <label>CARREFOUR PARIS OUEST</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PARIS SUD</fullName>
+                <default>false</default>
+                <label>CARREFOUR PARIS SUD</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PAS DE CALAIS</fullName>
+                <default>false</default>
+                <label>CARREFOUR PAS DE CALAIS</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PAYS DE LOIRE</fullName>
+                <default>false</default>
+                <label>CARREFOUR PAYS DE LOIRE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PROVENCE</fullName>
+                <default>false</default>
+                <label>CARREFOUR PROVENCE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR PROXIMITE</fullName>
+                <default>false</default>
+                <label>CARREFOUR PROXIMITE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR RHONE</fullName>
+                <default>false</default>
+                <label>CARREFOUR RHONE</label>
+            </value>
+            <value>
+                <fullName>CARREFOUR VAL DE LOIRE</fullName>
+                <default>false</default>
+                <label>CARREFOUR VAL DE LOIRE</label>
+            </value>
+            <value>
+                <fullName>CASINO AIX EN PROVENCE</fullName>
+                <default>false</default>
+                <label>CASINO AIX EN PROVENCE</label>
+            </value>
+            <value>
+                <fullName>CASINO ALPES NORD</fullName>
+                <default>false</default>
+                <label>CASINO ALPES NORD</label>
+            </value>
+            <value>
+                <fullName>CASINO ALPES SUD</fullName>
+                <default>false</default>
+                <label>CASINO ALPES SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO AQUITAINE</fullName>
+                <default>false</default>
+                <label>CASINO AQUITAINE</label>
+            </value>
+            <value>
+                <fullName>CASINO BOURGOGNE</fullName>
+                <default>false</default>
+                <label>CASINO BOURGOGNE</label>
+            </value>
+            <value>
+                <fullName>CASINO BRETAGNE NORD</fullName>
+                <default>false</default>
+                <label>CASINO BRETAGNE NORD</label>
+            </value>
+            <value>
+                <fullName>CASINO BRETAGNE SUD</fullName>
+                <default>false</default>
+                <label>CASINO BRETAGNE SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO CANNES</fullName>
+                <default>false</default>
+                <label>CASINO CANNES</label>
+            </value>
+            <value>
+                <fullName>CASINO EST</fullName>
+                <default>false</default>
+                <label>CASINO EST</label>
+            </value>
+            <value>
+                <fullName>CASINO FRANCHISES EST</fullName>
+                <default>false</default>
+                <label>CASINO FRANCHISES EST</label>
+            </value>
+            <value>
+                <fullName>CASINO FRANCHISES OUEST</fullName>
+                <default>false</default>
+                <label>CASINO FRANCHISES OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO FRANCHISES SUD</fullName>
+                <default>false</default>
+                <label>CASINO FRANCHISES SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO LANGUEDOC ROUSSILLON</fullName>
+                <default>false</default>
+                <label>CASINO LANGUEDOC ROUSSILLON</label>
+            </value>
+            <value>
+                <fullName>CASINO LIMOGES</fullName>
+                <default>false</default>
+                <label>CASINO LIMOGES</label>
+            </value>
+            <value>
+                <fullName>CASINO LYON NORD</fullName>
+                <default>false</default>
+                <label>CASINO LYON NORD</label>
+            </value>
+            <value>
+                <fullName>CASINO LYON SUD</fullName>
+                <default>false</default>
+                <label>CASINO LYON SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO MARSEILLE EST</fullName>
+                <default>false</default>
+                <label>CASINO MARSEILLE EST</label>
+            </value>
+            <value>
+                <fullName>CASINO MARSEILLE OUEST</fullName>
+                <default>false</default>
+                <label>CASINO MARSEILLE OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO MASSIF CENTRAL</fullName>
+                <default>false</default>
+                <label>CASINO MASSIF CENTRAL</label>
+            </value>
+            <value>
+                <fullName>CASINO NICE</fullName>
+                <default>false</default>
+                <label>CASINO NICE</label>
+            </value>
+            <value>
+                <fullName>CASINO PARIS EST</fullName>
+                <default>false</default>
+                <label>CASINO PARIS EST</label>
+            </value>
+            <value>
+                <fullName>CASINO PARIS NORD</fullName>
+                <default>false</default>
+                <label>CASINO PARIS NORD</label>
+            </value>
+            <value>
+                <fullName>CASINO PARIS OUEST</fullName>
+                <default>false</default>
+                <label>CASINO PARIS OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO PARIS SUD</fullName>
+                <default>false</default>
+                <label>CASINO PARIS SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO PROVENCE</fullName>
+                <default>false</default>
+                <label>CASINO PROVENCE</label>
+            </value>
+            <value>
+                <fullName>CASINO SAINT ETIENNE</fullName>
+                <default>false</default>
+                <label>CASINO SAINT ETIENNE</label>
+            </value>
+            <value>
+                <fullName>CASINO SUD OUEST</fullName>
+                <default>false</default>
+                <label>CASINO SUD OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO SUPER LIMOGES</fullName>
+                <default>false</default>
+                <label>CASINO SUPER LIMOGES</label>
+            </value>
+            <value>
+                <fullName>CASINO SUPER NORD</fullName>
+                <default>false</default>
+                <label>CASINO SUPER NORD</label>
+            </value>
+            <value>
+                <fullName>CASINO SUPER SUD</fullName>
+                <default>false</default>
+                <label>CASINO SUPER SUD</label>
+            </value>
+            <value>
+                <fullName>CASINO SUPER SUD OUEST</fullName>
+                <default>false</default>
+                <label>CASINO SUPER SUD OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO TOULON EST</fullName>
+                <default>false</default>
+                <label>CASINO TOULON EST</label>
+            </value>
+            <value>
+                <fullName>CASINO TOULON OUEST</fullName>
+                <default>false</default>
+                <label>CASINO TOULON OUEST</label>
+            </value>
+            <value>
+                <fullName>CASINO TOULOUSE</fullName>
+                <default>false</default>
+                <label>CASINO TOULOUSE</label>
+            </value>
+            <value>
+                <fullName>CASINO VALLÉE DU RHONE</fullName>
+                <default>false</default>
+                <label>CASINO VALLÉE DU RHONE</label>
+            </value>
+            <value>
+                <fullName>CAVES DU CENTRE</fullName>
+                <default>false</default>
+                <label>CAVES DU CENTRE</label>
+            </value>
+            <value>
+                <fullName>CENTRE - RHONE ALPES</fullName>
+                <default>false</default>
+                <label>CENTRE - RHONE ALPES</label>
+            </value>
+            <value>
+                <fullName>CHRONODRIVE</fullName>
+                <default>false</default>
+                <label>CHRONODRIVE</label>
+            </value>
+            <value>
+                <fullName>CODIFRANCE</fullName>
+                <default>false</default>
+                <label>CODIFRANCE</label>
+            </value>
+            <value>
+                <fullName>COOP ALSACE</fullName>
+                <default>false</default>
+                <label>COOP ALSACE</label>
+            </value>
+            <value>
+                <fullName>COOP ATLANTIQUE</fullName>
+                <default>false</default>
+                <label>COOP ATLANTIQUE</label>
+            </value>
+            <value>
+                <fullName>COOP D&#39;ALSACE</fullName>
+                <default>false</default>
+                <label>COOP D&#39;ALSACE</label>
+            </value>
+            <value>
+                <fullName>CORA MOSELLE</fullName>
+                <default>false</default>
+                <label>CORA MOSELLE</label>
+            </value>
+            <value>
+                <fullName>CORA ROYE</fullName>
+                <default>false</default>
+                <label>CORA ROYE</label>
+            </value>
+            <value>
+                <fullName>COZIGOU</fullName>
+                <default>false</default>
+                <label>COZIGOU</label>
+            </value>
+            <value>
+                <fullName>CSF AIRE SUR LA LYS</fullName>
+                <default>false</default>
+                <label>CSF AIRE SUR LA LYS</label>
+            </value>
+            <value>
+                <fullName>CSF BOURGES</fullName>
+                <default>false</default>
+                <label>CSF BOURGES</label>
+            </value>
+            <value>
+                <fullName>CSF CARPIQUET</fullName>
+                <default>false</default>
+                <label>CSF CARPIQUET</label>
+            </value>
+            <value>
+                <fullName>CSF COLOMIERS</fullName>
+                <default>false</default>
+                <label>CSF COLOMIERS</label>
+            </value>
+            <value>
+                <fullName>CSF LAGNIEU</fullName>
+                <default>false</default>
+                <label>CSF LAGNIEU</label>
+            </value>
+            <value>
+                <fullName>CSF LE MANS</fullName>
+                <default>false</default>
+                <label>CSF LE MANS</label>
+            </value>
+            <value>
+                <fullName>CSF LIEUSAINT</fullName>
+                <default>false</default>
+                <label>CSF LIEUSAINT</label>
+            </value>
+            <value>
+                <fullName>CSF LUNÉVILLE</fullName>
+                <default>false</default>
+                <label>CSF LUNÉVILLE</label>
+            </value>
+            <value>
+                <fullName>CSF RENNES</fullName>
+                <default>false</default>
+                <label>CSF RENNES</label>
+            </value>
+            <value>
+                <fullName>CSF SALON</fullName>
+                <default>false</default>
+                <label>CSF SALON</label>
+            </value>
+            <value>
+                <fullName>DEGRENNE</fullName>
+                <default>false</default>
+                <label>DEGRENNE</label>
+            </value>
+            <value>
+                <fullName>DIAPAR</fullName>
+                <default>false</default>
+                <label>DIAPAR</label>
+            </value>
+            <value>
+                <fullName>FRANPRIX</fullName>
+                <default>false</default>
+                <label>FRANPRIX</label>
+            </value>
+            <value>
+                <fullName>GALERIES LAFAYETTE</fullName>
+                <default>false</default>
+                <label>GALERIES LAFAYETTE</label>
+            </value>
+            <value>
+                <fullName>GEANT ALPES</fullName>
+                <default>false</default>
+                <label>GEANT ALPES</label>
+            </value>
+            <value>
+                <fullName>GEANT AQUITAINE</fullName>
+                <default>false</default>
+                <label>GEANT AQUITAINE</label>
+            </value>
+            <value>
+                <fullName>GEANT BRETAGNE</fullName>
+                <default>false</default>
+                <label>GEANT BRETAGNE</label>
+            </value>
+            <value>
+                <fullName>GEANT CENTRE</fullName>
+                <default>false</default>
+                <label>GEANT CENTRE</label>
+            </value>
+            <value>
+                <fullName>GEANT EST</fullName>
+                <default>false</default>
+                <label>GEANT EST</label>
+            </value>
+            <value>
+                <fullName>GEANT LANGUEDOC</fullName>
+                <default>false</default>
+                <label>GEANT LANGUEDOC</label>
+            </value>
+            <value>
+                <fullName>GEANT PARIS NORD</fullName>
+                <default>false</default>
+                <label>GEANT PARIS NORD</label>
+            </value>
+            <value>
+                <fullName>GEANT SUD EST</fullName>
+                <default>false</default>
+                <label>GEANT SUD EST</label>
+            </value>
+            <value>
+                <fullName>GUYENNE &amp; GASCOGNE</fullName>
+                <default>false</default>
+                <label>GUYENNE &amp; GASCOGNE</label>
+            </value>
+            <value>
+                <fullName>ITM ARGENTRE</fullName>
+                <default>false</default>
+                <label>ITM ARGENTRE</label>
+            </value>
+            <value>
+                <fullName>ITM BRESSOLS</fullName>
+                <default>false</default>
+                <label>ITM BRESSOLS</label>
+            </value>
+            <value>
+                <fullName>ITM CASTETS</fullName>
+                <default>false</default>
+                <label>ITM CASTETS</label>
+            </value>
+            <value>
+                <fullName>ITM CHAULNES</fullName>
+                <default>false</default>
+                <label>ITM CHAULNES</label>
+            </value>
+            <value>
+                <fullName>ITM EVRY</fullName>
+                <default>false</default>
+                <label>ITM EVRY</label>
+            </value>
+            <value>
+                <fullName>ITM GAILLON</fullName>
+                <default>false</default>
+                <label>ITM GAILLON</label>
+            </value>
+            <value>
+                <fullName>ITM GOURNAY</fullName>
+                <default>false</default>
+                <label>ITM GOURNAY</label>
+            </value>
+            <value>
+                <fullName>ITM LEVET</fullName>
+                <default>false</default>
+                <label>ITM LEVET</label>
+            </value>
+            <value>
+                <fullName>ITM LORIOL</fullName>
+                <default>false</default>
+                <label>ITM LORIOL</label>
+            </value>
+            <value>
+                <fullName>ITM MIRAMAS</fullName>
+                <default>false</default>
+                <label>ITM MIRAMAS</label>
+            </value>
+            <value>
+                <fullName>ITM PAGNY</fullName>
+                <default>false</default>
+                <label>ITM PAGNY</label>
+            </value>
+            <value>
+                <fullName>ITM PEZENAS</fullName>
+                <default>false</default>
+                <label>ITM PEZENAS</label>
+            </value>
+            <value>
+                <fullName>ITM REYRIEUX</fullName>
+                <default>false</default>
+                <label>ITM REYRIEUX</label>
+            </value>
+            <value>
+                <fullName>ITM ROCHEFORT</fullName>
+                <default>false</default>
+                <label>ITM ROCHEFORT</label>
+            </value>
+            <value>
+                <fullName>ITM ROSTRENEN</fullName>
+                <default>false</default>
+                <label>ITM ROSTRENEN</label>
+            </value>
+            <value>
+                <fullName>ITM ROULLET</fullName>
+                <default>false</default>
+                <label>ITM ROULLET</label>
+            </value>
+            <value>
+                <fullName>ITM SAINT HILAIRE</fullName>
+                <default>false</default>
+                <label>ITM SAINT HILAIRE</label>
+            </value>
+            <value>
+                <fullName>ITM VIMY</fullName>
+                <default>false</default>
+                <label>ITM VIMY</label>
+            </value>
+            <value>
+                <fullName>JURA BOISSONS</fullName>
+                <default>false</default>
+                <label>JURA BOISSONS</label>
+            </value>
+            <value>
+                <fullName>LE BIHAN</fullName>
+                <default>false</default>
+                <label>LE BIHAN</label>
+            </value>
+            <value>
+                <fullName>LECASUD</fullName>
+                <default>false</default>
+                <label>LECASUD</label>
+            </value>
+            <value>
+                <fullName>LE MISTRAL</fullName>
+                <default>false</default>
+                <label>LE MISTRAL</label>
+            </value>
+            <value>
+                <fullName>MATCH ALSACE</fullName>
+                <default>false</default>
+                <label>MATCH ALSACE</label>
+            </value>
+            <value>
+                <fullName>MATCH CHAMPAGNE</fullName>
+                <default>false</default>
+                <label>MATCH CHAMPAGNE</label>
+            </value>
+            <value>
+                <fullName>MATCH HAGUENAU</fullName>
+                <default>false</default>
+                <label>MATCH HAGUENAU</label>
+            </value>
+            <value>
+                <fullName>MATCH LOMME</fullName>
+                <default>false</default>
+                <label>MATCH LOMME</label>
+            </value>
+            <value>
+                <fullName>MATCH LORRAINE</fullName>
+                <default>false</default>
+                <label>MATCH LORRAINE</label>
+            </value>
+            <value>
+                <fullName>MATCH NORD</fullName>
+                <default>false</default>
+                <label>MATCH NORD</label>
+            </value>
+            <value>
+                <fullName>MESPOULET</fullName>
+                <default>false</default>
+                <label>MESPOULET</label>
+            </value>
+            <value>
+                <fullName>MISTRAL</fullName>
+                <default>false</default>
+                <label>MISTRAL</label>
+            </value>
+            <value>
+                <fullName>MONOPRIX</fullName>
+                <default>false</default>
+                <label>MONOPRIX</label>
+            </value>
+            <value>
+                <fullName>NORD EST</fullName>
+                <default>false</default>
+                <label>NORD EST</label>
+            </value>
+            <value>
+                <fullName>NORD EST DISTRIBUTION</fullName>
+                <default>false</default>
+                <label>NORD EST DISTRIBUTION</label>
+            </value>
+            <value>
+                <fullName>OBD O. Bertand Distribution</fullName>
+                <default>false</default>
+                <label>OBD O. Bertand Distribution</label>
+            </value>
+            <value>
+                <fullName>OBR - O Bertrand Restauration</fullName>
+                <default>false</default>
+                <label>OBR - O Bertrand Restauration</label>
+            </value>
+            <value>
+                <fullName>OFFINCO</fullName>
+                <default>false</default>
+                <label>OFFINCO</label>
+            </value>
+            <value>
+                <fullName>PARIS IDF</fullName>
+                <default>false</default>
+                <label>PARIS IDF</label>
+            </value>
+            <value>
+                <fullName>PROVENCIA</fullName>
+                <default>false</default>
+                <label>PROVENCIA</label>
+            </value>
+            <value>
+                <fullName>PROXI BOISSONS</fullName>
+                <default>false</default>
+                <label>PROXI BOISSONS</label>
+            </value>
+            <value>
+                <fullName>RAD Rhone Alpes Distribution</fullName>
+                <default>false</default>
+                <label>RAD Rhone Alpes Distribution</label>
+            </value>
+            <value>
+                <fullName>REGA</fullName>
+                <default>false</default>
+                <label>REGA</label>
+            </value>
+            <value>
+                <fullName>SCACENTRE</fullName>
+                <default>false</default>
+                <label>SCACENTRE</label>
+            </value>
+            <value>
+                <fullName>SCACHAP</fullName>
+                <default>false</default>
+                <label>SCACHAP</label>
+            </value>
+            <value>
+                <fullName>SCADIF</fullName>
+                <default>false</default>
+                <label>SCADIF</label>
+            </value>
+            <value>
+                <fullName>SCALANDES</fullName>
+                <default>false</default>
+                <label>SCALANDES</label>
+            </value>
+            <value>
+                <fullName>SCANORMANDE</fullName>
+                <default>false</default>
+                <label>SCANORMANDE</label>
+            </value>
+            <value>
+                <fullName>SCAOUEST</fullName>
+                <default>false</default>
+                <label>SCAOUEST</label>
+            </value>
+            <value>
+                <fullName>SCAPALSACE</fullName>
+                <default>false</default>
+                <label>SCAPALSACE</label>
+            </value>
+            <value>
+                <fullName>SCAPARTOIS</fullName>
+                <default>false</default>
+                <label>SCAPARTOIS</label>
+            </value>
+            <value>
+                <fullName>SCAPEST</fullName>
+                <default>false</default>
+                <label>SCAPEST</label>
+            </value>
+            <value>
+                <fullName>SCAPNOR</fullName>
+                <default>false</default>
+                <label>SCAPNOR</label>
+            </value>
+            <value>
+                <fullName>SCARMOR</fullName>
+                <default>false</default>
+                <label>SCARMOR</label>
+            </value>
+            <value>
+                <fullName>SCASO</fullName>
+                <default>false</default>
+                <label>SCASO</label>
+            </value>
+            <value>
+                <fullName>SCHIEVER</fullName>
+                <default>false</default>
+                <label>SCHIEVER</label>
+            </value>
+            <value>
+                <fullName>SCHOEN</fullName>
+                <default>false</default>
+                <label>SCHOEN</label>
+            </value>
+            <value>
+                <fullName>SEGUREL</fullName>
+                <default>false</default>
+                <label>SEGUREL</label>
+            </value>
+            <value>
+                <fullName>SIMPLY MARKET EST</fullName>
+                <default>false</default>
+                <label>SIMPLY MARKET EST</label>
+            </value>
+            <value>
+                <fullName>SIMPLY MARKET FRANCHISES</fullName>
+                <default>false</default>
+                <label>SIMPLY MARKET FRANCHISES</label>
+            </value>
+            <value>
+                <fullName>SIMPLY MARKET NORD</fullName>
+                <default>false</default>
+                <label>SIMPLY MARKET NORD</label>
+            </value>
+            <value>
+                <fullName>SIMPLY MARKET OUEST</fullName>
+                <default>false</default>
+                <label>SIMPLY MARKET OUEST</label>
+            </value>
+            <value>
+                <fullName>SIMPLY MARKET SUD</fullName>
+                <default>false</default>
+                <label>SIMPLY MARKET SUD</label>
+            </value>
+            <value>
+                <fullName>SOCAMAINE</fullName>
+                <default>false</default>
+                <label>SOCAMAINE</label>
+            </value>
+            <value>
+                <fullName>SOCAMIL</fullName>
+                <default>false</default>
+                <label>SOCAMIL</label>
+            </value>
+            <value>
+                <fullName>SOCARA</fullName>
+                <default>false</default>
+                <label>SOCARA</label>
+            </value>
+            <value>
+                <fullName>SODIBOISSONS</fullName>
+                <default>false</default>
+                <label>SODIBOISSONS</label>
+            </value>
+            <value>
+                <fullName>SOFABO</fullName>
+                <default>false</default>
+                <label>SOFABO</label>
+            </value>
+            <value>
+                <fullName>SOREDIS</fullName>
+                <default>false</default>
+                <label>SOREDIS</label>
+            </value>
+            <value>
+                <fullName>SUD-EST</fullName>
+                <default>false</default>
+                <label>SUD-EST</label>
+            </value>
+            <value>
+                <fullName>SUD-OUEST / LOIRE</fullName>
+                <default>false</default>
+                <label>SUD-OUEST / LOIRE</label>
+            </value>
+            <value>
+                <fullName>SYSTEME U EST</fullName>
+                <default>false</default>
+                <label>SYSTEME U EST</label>
+            </value>
+            <value>
+                <fullName>SYSTEME U NORD OUEST</fullName>
+                <default>false</default>
+                <label>SYSTEME U NORD OUEST</label>
+            </value>
+            <value>
+                <fullName>SYSTEME U OUEST</fullName>
+                <default>false</default>
+                <label>SYSTEME U OUEST</label>
+            </value>
+            <value>
+                <fullName>SYSTEME U SUD</fullName>
+                <default>false</default>
+                <label>SYSTEME U SUD</label>
+            </value>
+            <value>
+                <fullName>TRIBOUILLET</fullName>
+                <default>false</default>
+                <label>TRIBOUILLET</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>SCAPALSACE</controllingFieldValue>
+            <valueName>SCAPALSACE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROXI BOISSONS</controllingFieldValue>
+            <valueName>PROXI BOISSONS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCAPARTOIS</controllingFieldValue>
+            <valueName>SCAPARTOIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JURA BOISSONS</controllingFieldValue>
+            <valueName>JURA BOISSONS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCAPEST</controllingFieldValue>
+            <valueName>SCAPEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCASO</controllingFieldValue>
+            <valueName>SCASO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOCAMAINE</controllingFieldValue>
+            <valueName>SOCAMAINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>NORD EST DISTRIBUTION</controllingFieldValue>
+            <valueName>NORD EST DISTRIBUTION</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OBD O. Bertand Distribution</controllingFieldValue>
+            <valueName>OBD O. Bertand Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>REGA</controllingFieldValue>
+            <valueName>REGA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SODIBOISSONS</controllingFieldValue>
+            <valueName>SODIBOISSONS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOCAMIL</controllingFieldValue>
+            <valueName>SOCAMIL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MESPOULET</controllingFieldValue>
+            <valueName>MESPOULET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOCARA</controllingFieldValue>
+            <valueName>SOCARA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCHOEN</controllingFieldValue>
+            <valueName>SCHOEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COZIGOU</controllingFieldValue>
+            <valueName>COZIGOU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U EST</controllingFieldValue>
+            <valueName>SYSTEME U EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LE BIHAN</controllingFieldValue>
+            <valueName>LE BIHAN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U NORD OUEST</controllingFieldValue>
+            <valueName>SYSTEME U NORD OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUDEBERT</controllingFieldValue>
+            <valueName>AUDEBERT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U OUEST</controllingFieldValue>
+            <valueName>COOP ATLANTIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U OUEST</controllingFieldValue>
+            <valueName>SYSTEME U OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SOFABO</controllingFieldValue>
+            <valueName>SOFABO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U SUD</controllingFieldValue>
+            <valueName>MISTRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SYSTEME U SUD</controllingFieldValue>
+            <valueName>SYSTEME U SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>CORA MOSELLE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CORA</controllingFieldValue>
+            <valueName>CORA ROYE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCARMOR</controllingFieldValue>
+            <valueName>SCARMOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANCAP</controllingFieldValue>
+            <valueName>CODIFRANCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANCAP</controllingFieldValue>
+            <valueName>DEGRENNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANCAP</controllingFieldValue>
+            <valueName>DIAPAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANCAP</controllingFieldValue>
+            <valueName>SEGUREL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN AFFILIES</controllingFieldValue>
+            <valueName>SCHIEVER</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 1 NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 2 NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 3 IDF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 4 OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 5 SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 6 EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN  7 ILE DE France</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN  8</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>AUCHAN HYPERMARCHES</controllingFieldValue>
+            <valueName>AUCHAN 9 OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FRANPRIX</controllingFieldValue>
+            <valueName>FRANPRIX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>CARREFOUR AQUITAINE MIDI PYRÉNÉES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR ATLANTIQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR BOURGOGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR BRETAGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>CARREFOUR CENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR CHAMPAGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>CARREFOUR COTE D&#39;AZUR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR LANGUEDOC ROUSSILLON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR NORMANDIE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR PARIS EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR PARIS NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR PARIS OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR PARIS SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR PAS DE CALAIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>CARREFOUR PROVENCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR RHONE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR HYPERMARCHES</controllingFieldValue>
+            <valueName>CARREFOUR VAL DE LOIRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>CARREFOUR ALPES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>GUYENNE &amp; GASCOGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR PARTENAIRES</controllingFieldValue>
+            <valueName>PROVENCIA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CARREFOUR PROXIMITE</controllingFieldValue>
+            <valueName>CARREFOUR PROXIMITE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCAPNOR</controllingFieldValue>
+            <valueName>SCAPNOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM ARGENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM BRESSOLS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM CASTETS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM CHAULNES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM EVRY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM GAILLON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM GOURNAY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM LEVET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM LORIOL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM MIRAMAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM PAGNY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM PEZENAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM REYRIEUX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM ROCHEFORT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM ROSTRENEN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM ROULLET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM SAINT HILAIRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>INTERMARCHE</controllingFieldValue>
+            <valueName>ITM VIMY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO AIX EN PROVENCE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO ALPES NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO ALPES SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO AQUITAINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO BOURGOGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO BRETAGNE NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO BRETAGNE SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO CANNES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO LANGUEDOC ROUSSILLON</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO LIMOGES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO LYON NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO LYON SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO MARSEILLE EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO MARSEILLE OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CASINO SUPERMARCHES</controllingFieldValue>
+            <valueName>CASINO MASSIF CENTRAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT ALPES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT AQUITAINE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT BRETAGNE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT CENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT LANGUEDOC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT PARIS NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>GEANT HYPERMARCHES</controllingFieldValue>
+            <valueName>GEANT SUD EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SIMPLY MARKET</controllingFieldValue>
+            <valueName>SIMPLY MARKET EST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SIMPLY MARKET</controllingFieldValue>
+            <valueName>SIMPLY MARKET FRANCHISES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SIMPLY MARKET</controllingFieldValue>
+            <valueName>SIMPLY MARKET NORD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SIMPLY MARKET</controllingFieldValue>
+            <valueName>SIMPLY MARKET OUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SIMPLY MARKET</controllingFieldValue>
+            <valueName>SIMPLY MARKET SUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>LECASUD</controllingFieldValue>
+            <valueName>LECASUD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>MATCH HAGUENAU</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MATCH</controllingFieldValue>
+            <valueName>MATCH LOMME</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>MONOPRIX</controllingFieldValue>
+            <valueName>MONOPRIX</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCACENTRE</controllingFieldValue>
+            <valueName>SCACENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCACHAP</controllingFieldValue>
+            <valueName>SCACHAP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CAVES DU CENTRE</controllingFieldValue>
+            <valueName>CAVES DU CENTRE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OFFINCO</controllingFieldValue>
+            <valueName>OFFINCO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCADIF</controllingFieldValue>
+            <valueName>SCADIF</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCALANDES</controllingFieldValue>
+            <valueName>SCALANDES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>OBR - O Bertrand Restauration</controllingFieldValue>
+            <valueName>OBR - O Bertrand Restauration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCANORMANDE</controllingFieldValue>
+            <valueName>SCANORMANDE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe HADES</controllingFieldValue>
+            <valueName>RAD Rhone Alpes Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Groupe HADES</controllingFieldValue>
+            <valueName>SOREDIS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SCAOUEST</controllingFieldValue>
+            <valueName>SCAOUEST</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRIBOUILLET</controllingFieldValue>
+            <valueName>TRIBOUILLET</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

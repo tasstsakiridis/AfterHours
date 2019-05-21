@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Sales_Route__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL( Sales_Force__c , &quot;BF&quot;) , Sales_Area_BF__c , Sales_Route_EXT__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Primary Sales Route</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

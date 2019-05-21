@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cocktail_competence__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Germany:On-Trade: Do they make Cocktails?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Do they make Cocktails?</inlineHelpText>
+    <label>Cocktail Competence</label>
+    <trackHistory>true</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

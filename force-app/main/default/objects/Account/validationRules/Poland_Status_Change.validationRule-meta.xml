@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Poland_Status_Change</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( OR(RecordTypeId = &quot;012a0000001NZsU&quot;, RecordTypeId =&quot;012a0000001NZsV&quot; , RecordTypeId =&quot;01213000001NdrN&quot;), $User.ProfileId  != &quot;00e300000019nDA&quot;,$User.ProfileId  != &quot;00e130000024PsX&quot;, $User.ProfileId  != &quot;00e30000001lhnq&quot;, NOT(CONTAINS( $UserRole.Name , &quot;PL RSM&quot;)),  if(ISCHANGED(Status__c),true,false))</errorConditionFormula>
+    <errorDisplayField>Status__c</errorDisplayField>
+    <errorMessage>Nie masz uprawnień do zmiany statusu</errorMessage>
+</ValidationRule>

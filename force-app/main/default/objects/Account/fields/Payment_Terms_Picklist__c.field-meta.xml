@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Terms_Picklist__c</fullName>
+    <description>For GTR</description>
+    <externalId>false</externalId>
+    <label>Payment Terms</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>.5 .5% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>.5 .5% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>07NM Paid 7th of the next month 0% cash discount</fullName>
+                <default>false</default>
+                <label>07NM Paid 7th of the next month 0% cash discount</label>
+            </value>
+            <value>
+                <fullName>1.5 1.5% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>1.5 1.5% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>10NM Before 10 of the next month 0.5 % cash discount</fullName>
+                <default>false</default>
+                <label>10NM Before 10 of the next month 0.5 % cash discount</label>
+            </value>
+            <value>
+                <fullName>10P 10 days Net - Thursday Pay</fullName>
+                <default>false</default>
+                <label>10P 10 days Net - Thursday Pay</label>
+            </value>
+            <value>
+                <fullName>10TH 1-6th pay 10th of month</fullName>
+                <default>false</default>
+                <label>10TH 1-6th pay 10th of month</label>
+            </value>
+            <value>
+                <fullName>110 1% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>110 1% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>112 1% 10 days Net 20</fullName>
+                <default>false</default>
+                <label>112 1% 10 days Net 20</label>
+            </value>
+            <value>
+                <fullName>115 1% 15 days Net 30</fullName>
+                <default>false</default>
+                <label>115 1% 15 days Net 30</label>
+            </value>
+            <value>
+                <fullName>130 1% 30 days Net 31</fullName>
+                <default>false</default>
+                <label>130 1% 30 days Net 31</label>
+            </value>
+            <value>
+                <fullName>14-31 pay 15th of the next month</fullName>
+                <default>false</default>
+                <label>14-31 pay 15th of the next month</label>
+            </value>
+            <value>
+                <fullName>15-22 pay the 23rd of the month</fullName>
+                <default>false</default>
+                <label>15-22 pay the 23rd of the month</label>
+            </value>
+            <value>
+                <fullName>15P 12 days net - Thursday Pay</fullName>
+                <default>false</default>
+                <label>15P 12 days net - Thursday Pay</label>
+            </value>
+            <value>
+                <fullName>15TH 1-13 pay the 15th of the month</fullName>
+                <default>false</default>
+                <label>15TH 1-13 pay the 15th of the month</label>
+            </value>
+            <value>
+                <fullName>16-31 7th next month</fullName>
+                <default>false</default>
+                <label>16-31 7th next month</label>
+            </value>
+            <value>
+                <fullName>2.5 2.5% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>2.5 2.5% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>208 2% 8 days Net 30</fullName>
+                <default>false</default>
+                <label>208 2% 8 days Net 30</label>
+            </value>
+            <value>
+                <fullName>210 2% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>210 2% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>210A 2% 10 days Net 25</fullName>
+                <default>false</default>
+                <label>210A 2% 10 days Net 25</label>
+            </value>
+            <value>
+                <fullName>214 2% 14 days Net 30</fullName>
+                <default>false</default>
+                <label>214 2% 14 days Net 30</label>
+            </value>
+            <value>
+                <fullName>214A 2% 14 days Net 20</fullName>
+                <default>false</default>
+                <label>214A 2% 14 days Net 20</label>
+            </value>
+            <value>
+                <fullName>215 2% 15 days Net 30</fullName>
+                <default>false</default>
+                <label>215 2% 15 days Net 30</label>
+            </value>
+            <value>
+                <fullName>220 2% 20 days Net 30</fullName>
+                <default>false</default>
+                <label>220 2% 20 days Net 30</label>
+            </value>
+            <value>
+                <fullName>23-31 pay the 1st of the next month</fullName>
+                <default>false</default>
+                <label>23-31 pay the 1st of the next month</label>
+            </value>
+            <value>
+                <fullName>23rd - 31st pay 11 of the next month</fullName>
+                <default>false</default>
+                <label>23rd - 31st pay 11 of the next month</label>
+            </value>
+            <value>
+                <fullName>25 2% 5 days Net 30</fullName>
+                <default>false</default>
+                <label>25 2% 5 days Net 30</label>
+            </value>
+            <value>
+                <fullName>25CM Pay 25th of the month</fullName>
+                <default>false</default>
+                <label>25CM Pay 25th of the month</label>
+            </value>
+            <value>
+                <fullName>25NM Before 25 of the next month 1 % cash discount</fullName>
+                <default>false</default>
+                <label>25NM Before 25 of the next month 1 % cash discount</label>
+            </value>
+            <value>
+                <fullName>25 to 31 Pay 25th of next month</fullName>
+                <default>false</default>
+                <label>25 to 31 Pay 25th of next month</label>
+            </value>
+            <value>
+                <fullName>260 2% 30 days Net 60</fullName>
+                <default>false</default>
+                <label>260 2% 30 days Net 60</label>
+            </value>
+            <value>
+                <fullName>30P Net 27 - Thursday Pay</fullName>
+                <default>false</default>
+                <label>30P Net 27 - Thursday Pay</label>
+            </value>
+            <value>
+                <fullName>310 3% 10 days 30 Net</fullName>
+                <default>false</default>
+                <label>310 3% 10 days 30 Net</label>
+            </value>
+            <value>
+                <fullName>314 3% 14 days Net 30</fullName>
+                <default>false</default>
+                <label>314 3% 14 days Net 30</label>
+            </value>
+            <value>
+                <fullName>430 4% 30 days 2% 60 days net 90</fullName>
+                <default>false</default>
+                <label>430 4% 30 days 2% 60 days net 90</label>
+            </value>
+            <value>
+                <fullName>510 5% 10 days Net 30</fullName>
+                <default>false</default>
+                <label>510 5% 10 days Net 30</label>
+            </value>
+            <value>
+                <fullName>7&amp;22 1-15th pay 22nd of month</fullName>
+                <default>false</default>
+                <label>7&amp;22 1-15th pay 22nd of month</label>
+            </value>
+            <value>
+                <fullName>7-14 pay the 15th of the month</fullName>
+                <default>false</default>
+                <label>7-14 pay the 15th of the month</label>
+            </value>
+            <value>
+                <fullName>7-31 10th next month</fullName>
+                <default>false</default>
+                <label>7-31 10th next month</label>
+            </value>
+            <value>
+                <fullName>7OM1 1% Paid 7th of Next Month</fullName>
+                <default>false</default>
+                <label>7OM1 1% Paid 7th of Next Month</label>
+            </value>
+            <value>
+                <fullName>7OM2 Before 15th of the month 2% paid 22nd</fullName>
+                <default>false</default>
+                <label>7OM2 Before 15th of the month 2% paid 22nd</label>
+            </value>
+            <value>
+                <fullName>7OM3 Before 15th of the month 1% paid on 22nd</fullName>
+                <default>false</default>
+                <label>7OM3 Before 15th of the month 1% paid on 22nd</label>
+            </value>
+            <value>
+                <fullName>8th - 22nd pay 26th of the month</fullName>
+                <default>false</default>
+                <label>8th - 22nd pay 26th of the month</label>
+            </value>
+            <value>
+                <fullName>After 15 of the month 1 % Pd 7th Next Month</fullName>
+                <default>false</default>
+                <label>After 15 of the month 1 % Pd 7th Next Month</label>
+            </value>
+            <value>
+                <fullName>After 15th 2 % Pd 7th Next Month</fullName>
+                <default>false</default>
+                <label>After 15th 2 % Pd 7th Next Month</label>
+            </value>
+            <value>
+                <fullName>Cash-In-Advance</fullName>
+                <default>false</default>
+                <label>Cash-In-Advance</label>
+            </value>
+            <value>
+                <fullName>D030 30 DAY DATE DRAFT/BILL OF LADING</fullName>
+                <default>false</default>
+                <label>D030 30 DAY DATE DRAFT/BILL OF LADING</label>
+            </value>
+            <value>
+                <fullName>EOFM End of Following Month</fullName>
+                <default>false</default>
+                <label>EOFM End of Following Month</label>
+            </value>
+            <value>
+                <fullName>FOM (21st-31st) 1st of month + 2</fullName>
+                <default>false</default>
+                <label>FOM (21st-31st) 1st of month + 2</label>
+            </value>
+            <value>
+                <fullName>FOM FOM (1st-20th) 1st of next month</fullName>
+                <default>false</default>
+                <label>FOM FOM (1st-20th) 1st of next month</label>
+            </value>
+            <value>
+                <fullName>N023 Net 23 Days</fullName>
+                <default>false</default>
+                <label>N023 Net 23 Days</label>
+            </value>
+            <value>
+                <fullName>N030 Net 30 Days</fullName>
+                <default>false</default>
+                <label>N030 Net 30 Days</label>
+            </value>
+            <value>
+                <fullName>N057 Net 57 Days</fullName>
+                <default>false</default>
+                <label>N057 Net 57 Days</label>
+            </value>
+            <value>
+                <fullName>N059 Net 59 Days</fullName>
+                <default>false</default>
+                <label>N059 Net 59 Days</label>
+            </value>
+            <value>
+                <fullName>N060 Net 60 Days</fullName>
+                <default>false</default>
+                <label>N060 Net 60 Days</label>
+            </value>
+            <value>
+                <fullName>N062 Net 62 Days</fullName>
+                <default>false</default>
+                <label>N062 Net 62 Days</label>
+            </value>
+            <value>
+                <fullName>N065 Net 65 Days</fullName>
+                <default>false</default>
+                <label>N065 Net 65 Days</label>
+            </value>
+            <value>
+                <fullName>N067 Net 67 Days</fullName>
+                <default>false</default>
+                <label>N067 Net 67 Days</label>
+            </value>
+            <value>
+                <fullName>N075 Net 75 Days</fullName>
+                <default>false</default>
+                <label>N075 Net 75 Days</label>
+            </value>
+            <value>
+                <fullName>N090 Net 90 Days</fullName>
+                <default>false</default>
+                <label>N090 Net 90 Days</label>
+            </value>
+            <value>
+                <fullName>N100 Net 100 Days</fullName>
+                <default>false</default>
+                <label>N100 Net 100 Days</label>
+            </value>
+            <value>
+                <fullName>N10 Net 10 days</fullName>
+                <default>false</default>
+                <label>N10 Net 10 days</label>
+            </value>
+            <value>
+                <fullName>N120 Net 120 Days</fullName>
+                <default>false</default>
+                <label>N120 Net 120 Days</label>
+            </value>
+            <value>
+                <fullName>N12 Net 12 days</fullName>
+                <default>false</default>
+                <label>N12 Net 12 days</label>
+            </value>
+            <value>
+                <fullName>N135 Net 135 Days</fullName>
+                <default>false</default>
+                <label>N135 Net 135 Days</label>
+            </value>
+            <value>
+                <fullName>N14 Net 14 days</fullName>
+                <default>false</default>
+                <label>N14 Net 14 days</label>
+            </value>
+            <value>
+                <fullName>N15 Net 15 days</fullName>
+                <default>false</default>
+                <label>N15 Net 15 days</label>
+            </value>
+            <value>
+                <fullName>N1 Net 1 Day</fullName>
+                <default>false</default>
+                <label>N1 Net 1 Day</label>
+            </value>
+            <value>
+                <fullName>N20 Net 20 days</fullName>
+                <default>false</default>
+                <label>N20 Net 20 days</label>
+            </value>
+            <value>
+                <fullName>N21 Net 21 days</fullName>
+                <default>false</default>
+                <label>N21 Net 21 days</label>
+            </value>
+            <value>
+                <fullName>N25 Net 25 days</fullName>
+                <default>false</default>
+                <label>N25 Net 25 days</label>
+            </value>
+            <value>
+                <fullName>N30 Net 30 days</fullName>
+                <default>false</default>
+                <label>N30 Net 30 days</label>
+            </value>
+            <value>
+                <fullName>N35 Net 35 days</fullName>
+                <default>false</default>
+                <label>N35 Net 35 days</label>
+            </value>
+            <value>
+                <fullName>N45 Net 45 days</fullName>
+                <default>false</default>
+                <label>N45 Net 45 days</label>
+            </value>
+            <value>
+                <fullName>N55 Net 55 days</fullName>
+                <default>false</default>
+                <label>N55 Net 55 days</label>
+            </value>
+            <value>
+                <fullName>N5 Net 5 days</fullName>
+                <default>false</default>
+                <label>N5 Net 5 days</label>
+            </value>
+            <value>
+                <fullName>N60 Net 60 days</fullName>
+                <default>false</default>
+                <label>N60 Net 60 days</label>
+            </value>
+            <value>
+                <fullName>N70 Net 70 days</fullName>
+                <default>false</default>
+                <label>N70 Net 70 days</label>
+            </value>
+            <value>
+                <fullName>N73 Net 73 days</fullName>
+                <default>false</default>
+                <label>N73 Net 73 days</label>
+            </value>
+            <value>
+                <fullName>N75 Net 75 days</fullName>
+                <default>false</default>
+                <label>N75 Net 75 days</label>
+            </value>
+            <value>
+                <fullName>N7 Net 7 days</fullName>
+                <default>false</default>
+                <label>N7 Net 7 days</label>
+            </value>
+            <value>
+                <fullName>N85 Net 85 days</fullName>
+                <default>false</default>
+                <label>N85 Net 85 days</label>
+            </value>
+            <value>
+                <fullName>N8 Net 8 days</fullName>
+                <default>false</default>
+                <label>N8 Net 8 days</label>
+            </value>
+            <value>
+                <fullName>N90 Net 90 days</fullName>
+                <default>false</default>
+                <label>N90 Net 90 days</label>
+            </value>
+            <value>
+                <fullName>NET Due immediately</fullName>
+                <default>false</default>
+                <label>NET Due immediately</label>
+            </value>
+            <value>
+                <fullName>V30 As agreed</fullName>
+                <default>false</default>
+                <label>V30 As agreed</label>
+            </value>
+            <value>
+                <fullName>WHS 1st - 7th pay on the 11 of the month</fullName>
+                <default>false</default>
+                <label>WHS 1st - 7th pay on the 11 of the month</label>
+            </value>
+            <value>
+                <fullName>WKLY 1-6 pay 7th of the month</fullName>
+                <default>false</default>
+                <label>WKLY 1-6 pay 7th of the month</label>
+            </value>
+            <value>
+                <fullName>Z45M Net 45 EOM from Invoice</fullName>
+                <default>false</default>
+                <label>Z45M Net 45 EOM from Invoice</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

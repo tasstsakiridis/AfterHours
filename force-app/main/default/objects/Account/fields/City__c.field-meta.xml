@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>City__c</fullName>
+    <description>INFOWELDERS</description>
+    <externalId>false</externalId>
+    <label>City</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Region__c</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Americana</fullName>
+                <default>false</default>
+                <label>Americana</label>
+            </value>
+            <value>
+                <fullName>Anhui</fullName>
+                <default>false</default>
+                <label>Anhui</label>
+            </value>
+            <value>
+                <fullName>Bali</fullName>
+                <default>false</default>
+                <label>Bali</label>
+            </value>
+            <value>
+                <fullName>Beijing</fullName>
+                <default>false</default>
+                <label>Beijing</label>
+            </value>
+            <value>
+                <fullName>Bela Vista de Minas</fullName>
+                <default>false</default>
+                <label>Bela Vista de Minas</label>
+            </value>
+            <value>
+                <fullName>Belmiro Braga</fullName>
+                <default>false</default>
+                <label>Belmiro Braga</label>
+            </value>
+            <value>
+                <fullName>Belo Horizonte</fullName>
+                <default>false</default>
+                <label>Belo Horizonte</label>
+            </value>
+            <value>
+                <fullName>Belo Oriente</fullName>
+                <default>false</default>
+                <label>Belo Oriente</label>
+            </value>
+            <value>
+                <fullName>Belo Vale</fullName>
+                <default>false</default>
+                <label>Belo Vale</label>
+            </value>
+            <value>
+                <fullName>Berilo</fullName>
+                <default>false</default>
+                <label>Berilo</label>
+            </value>
+            <value>
+                <fullName>Berizal</fullName>
+                <default>false</default>
+                <label>Berizal</label>
+            </value>
+            <value>
+                <fullName>Bertopolis</fullName>
+                <default>false</default>
+                <label>Bertopolis</label>
+            </value>
+            <value>
+                <fullName>Betim</fullName>
+                <default>false</default>
+                <label>Betim</label>
+            </value>
+            <value>
+                <fullName>Bias Fortes</fullName>
+                <default>false</default>
+                <label>Bias Fortes</label>
+            </value>
+            <value>
+                <fullName>Bicas</fullName>
+                <default>false</default>
+                <label>Bicas</label>
+            </value>
+            <value>
+                <fullName>Biquinhas</fullName>
+                <default>false</default>
+                <label>Biquinhas</label>
+            </value>
+            <value>
+                <fullName>BKK</fullName>
+                <default>false</default>
+                <label>BKK</label>
+            </value>
+            <value>
+                <fullName>Boituva</fullName>
+                <default>false</default>
+                <label>Boituva</label>
+            </value>
+            <value>
+                <fullName>Busan-si</fullName>
+                <default>false</default>
+                <label>Busan-si</label>
+            </value>
+            <value>
+                <fullName>Campinas</fullName>
+                <default>false</default>
+                <label>Campinas</label>
+            </value>
+            <value>
+                <fullName>Central Java</fullName>
+                <default>false</default>
+                <label>Central Java</label>
+            </value>
+            <value>
+                <fullName>Chiba</fullName>
+                <default>false</default>
+                <label>Chiba</label>
+            </value>
+            <value>
+                <fullName>Chongqing</fullName>
+                <default>false</default>
+                <label>Chongqing</label>
+            </value>
+            <value>
+                <fullName>Choongcheongdo</fullName>
+                <default>false</default>
+                <label>Choongcheongdo</label>
+            </value>
+            <value>
+                <fullName>Chungcheongbuk-do</fullName>
+                <default>false</default>
+                <label>Chungcheongbuk-do</label>
+            </value>
+            <value>
+                <fullName>Chungcheongnam-do</fullName>
+                <default>false</default>
+                <label>Chungcheongnam-do</label>
+            </value>
+            <value>
+                <fullName>Curitiba</fullName>
+                <default>false</default>
+                <label>Curitiba</label>
+            </value>
+            <value>
+                <fullName>Daegu-si</fullName>
+                <default>false</default>
+                <label>Daegu-si</label>
+            </value>
+            <value>
+                <fullName>Daejon-si</fullName>
+                <default>false</default>
+                <label>Daejon-si</label>
+            </value>
+            <value>
+                <fullName>Delhi Central</fullName>
+                <default>false</default>
+                <label>Delhi Central</label>
+            </value>
+            <value>
+                <fullName>Delhi North</fullName>
+                <default>false</default>
+                <label>Delhi North</label>
+            </value>
+            <value>
+                <fullName>Delhi south</fullName>
+                <default>false</default>
+                <label>Delhi south</label>
+            </value>
+            <value>
+                <fullName>Delhi Trans</fullName>
+                <default>false</default>
+                <label>Delhi Trans</label>
+            </value>
+            <value>
+                <fullName>Delhi West</fullName>
+                <default>false</default>
+                <label>Delhi West</label>
+            </value>
+            <value>
+                <fullName>East Java</fullName>
+                <default>false</default>
+                <label>East Java</label>
+            </value>
+            <value>
+                <fullName>Elan</fullName>
+                <default>false</default>
+                <label>Elan</label>
+            </value>
+            <value>
+                <fullName>Fujian</fullName>
+                <default>false</default>
+                <label>Fujian</label>
+            </value>
+            <value>
+                <fullName>Fukuoka</fullName>
+                <default>false</default>
+                <label>Fukuoka</label>
+            </value>
+            <value>
+                <fullName>Gangwon-do</fullName>
+                <default>false</default>
+                <label>Gangwon-do</label>
+            </value>
+            <value>
+                <fullName>Gansu</fullName>
+                <default>false</default>
+                <label>Gansu</label>
+            </value>
+            <value>
+                <fullName>Greater Jakarta</fullName>
+                <default>false</default>
+                <label>Greater Jakarta</label>
+            </value>
+            <value>
+                <fullName>Guangdong</fullName>
+                <default>false</default>
+                <label>Guangdong</label>
+            </value>
+            <value>
+                <fullName>Guangxi</fullName>
+                <default>false</default>
+                <label>Guangxi</label>
+            </value>
+            <value>
+                <fullName>Guizhou</fullName>
+                <default>false</default>
+                <label>Guizhou</label>
+            </value>
+            <value>
+                <fullName>Gwangju-si</fullName>
+                <default>false</default>
+                <label>Gwangju-si</label>
+            </value>
+            <value>
+                <fullName>Gyeonggi-do</fullName>
+                <default>false</default>
+                <label>Gyeonggi-do</label>
+            </value>
+            <value>
+                <fullName>Gyeongsangbuk-do</fullName>
+                <default>false</default>
+                <label>Gyeongsangbuk-do</label>
+            </value>
+            <value>
+                <fullName>Gyeongsangnam-do</fullName>
+                <default>false</default>
+                <label>Gyeongsangnam-do</label>
+            </value>
+            <value>
+                <fullName>Gyunggido</fullName>
+                <default>false</default>
+                <label>Gyunggido</label>
+            </value>
+            <value>
+                <fullName>Hainan</fullName>
+                <default>false</default>
+                <label>Hainan</label>
+            </value>
+            <value>
+                <fullName>Hebei</fullName>
+                <default>false</default>
+                <label>Hebei</label>
+            </value>
+            <value>
+                <fullName>Heilongjiang</fullName>
+                <default>false</default>
+                <label>Heilongjiang</label>
+            </value>
+            <value>
+                <fullName>Henan</fullName>
+                <default>false</default>
+                <label>Henan</label>
+            </value>
+            <value>
+                <fullName>Hokkaido</fullName>
+                <default>false</default>
+                <label>Hokkaido</label>
+            </value>
+            <value>
+                <fullName>Holambra</fullName>
+                <default>false</default>
+                <label>Holambra</label>
+            </value>
+            <value>
+                <fullName>Hubei</fullName>
+                <default>false</default>
+                <label>Hubei</label>
+            </value>
+            <value>
+                <fullName>Hunan</fullName>
+                <default>false</default>
+                <label>Hunan</label>
+            </value>
+            <value>
+                <fullName>Hyogo</fullName>
+                <default>false</default>
+                <label>Hyogo</label>
+            </value>
+            <value>
+                <fullName>Incheon-si</fullName>
+                <default>false</default>
+                <label>Incheon-si</label>
+            </value>
+            <value>
+                <fullName>Indaiatuba</fullName>
+                <default>false</default>
+                <label>Indaiatuba</label>
+            </value>
+            <value>
+                <fullName>Itu</fullName>
+                <default>false</default>
+                <label>Itu</label>
+            </value>
+            <value>
+                <fullName>Itupeva</fullName>
+                <default>false</default>
+                <label>Itupeva</label>
+            </value>
+            <value>
+                <fullName>Jau</fullName>
+                <default>false</default>
+                <label>Jau</label>
+            </value>
+            <value>
+                <fullName>Jeju-do</fullName>
+                <default>false</default>
+                <label>Jeju-do</label>
+            </value>
+            <value>
+                <fullName>Jeollabuk-do</fullName>
+                <default>false</default>
+                <label>Jeollabuk-do</label>
+            </value>
+            <value>
+                <fullName>Jeollado</fullName>
+                <default>false</default>
+                <label>Jeollado</label>
+            </value>
+            <value>
+                <fullName>Jeollanam-do</fullName>
+                <default>false</default>
+                <label>Jeollanam-do</label>
+            </value>
+            <value>
+                <fullName>Jiangsu</fullName>
+                <default>false</default>
+                <label>Jiangsu</label>
+            </value>
+            <value>
+                <fullName>Jiangxi</fullName>
+                <default>false</default>
+                <label>Jiangxi</label>
+            </value>
+            <value>
+                <fullName>Jilin</fullName>
+                <default>false</default>
+                <label>Jilin</label>
+            </value>
+            <value>
+                <fullName>Kalimantan</fullName>
+                <default>false</default>
+                <label>Kalimantan</label>
+            </value>
+            <value>
+                <fullName>Kanagawa</fullName>
+                <default>false</default>
+                <label>Kanagawa</label>
+            </value>
+            <value>
+                <fullName>Kaohsiung</fullName>
+                <default>false</default>
+                <label>Kaohsiung</label>
+            </value>
+            <value>
+                <fullName>Kepulauan Riau</fullName>
+                <default>false</default>
+                <label>Kepulauan Riau</label>
+            </value>
+            <value>
+                <fullName>KRC</fullName>
+                <default>false</default>
+                <label>KRC</label>
+            </value>
+            <value>
+                <fullName>KRE</fullName>
+                <default>false</default>
+                <label>KRE</label>
+            </value>
+            <value>
+                <fullName>KRN</fullName>
+                <default>false</default>
+                <label>KRN</label>
+            </value>
+            <value>
+                <fullName>KRS</fullName>
+                <default>false</default>
+                <label>KRS</label>
+            </value>
+            <value>
+                <fullName>Kyoto</fullName>
+                <default>false</default>
+                <label>Kyoto</label>
+            </value>
+            <value>
+                <fullName>Liaoning</fullName>
+                <default>false</default>
+                <label>Liaoning</label>
+            </value>
+            <value>
+                <fullName>Macae</fullName>
+                <default>false</default>
+                <label>Macae</label>
+            </value>
+            <value>
+                <fullName>Mie</fullName>
+                <default>false</default>
+                <label>Mie</label>
+            </value>
+            <value>
+                <fullName>Mogi Mirim</fullName>
+                <default>false</default>
+                <label>Mogi Mirim</label>
+            </value>
+            <value>
+                <fullName>Nagoya</fullName>
+                <default>false</default>
+                <label>Nagoya</label>
+            </value>
+            <value>
+                <fullName>Nara</fullName>
+                <default>false</default>
+                <label>Nara</label>
+            </value>
+            <value>
+                <fullName>Neimenggu</fullName>
+                <default>false</default>
+                <label>Neimenggu</label>
+            </value>
+            <value>
+                <fullName>Ningxia</fullName>
+                <default>false</default>
+                <label>Ningxia</label>
+            </value>
+            <value>
+                <fullName>North Sumatera</fullName>
+                <default>false</default>
+                <label>North Sumatera</label>
+            </value>
+            <value>
+                <fullName>NTB</fullName>
+                <default>false</default>
+                <label>NTB</label>
+            </value>
+            <value>
+                <fullName>NTT</fullName>
+                <default>false</default>
+                <label>NTT</label>
+            </value>
+            <value>
+                <fullName>Oita</fullName>
+                <default>false</default>
+                <label>Oita</label>
+            </value>
+            <value>
+                <fullName>Okayama</fullName>
+                <default>false</default>
+                <label>Okayama</label>
+            </value>
+            <value>
+                <fullName>Osaka</fullName>
+                <default>false</default>
+                <label>Osaka</label>
+            </value>
+            <value>
+                <fullName>Papua</fullName>
+                <default>false</default>
+                <label>Papua</label>
+            </value>
+            <value>
+                <fullName>Porto Alegre</fullName>
+                <default>false</default>
+                <label>Porto Alegre</label>
+            </value>
+            <value>
+                <fullName>Porto Feliz</fullName>
+                <default>false</default>
+                <label>Porto Feliz</label>
+            </value>
+            <value>
+                <fullName>Qinghai</fullName>
+                <default>false</default>
+                <label>Qinghai</label>
+            </value>
+            <value>
+                <fullName>Ribeirão Preto</fullName>
+                <default>false</default>
+                <label>Ribeirão Preto</label>
+            </value>
+            <value>
+                <fullName>Rio de Janeiro</fullName>
+                <default>false</default>
+                <label>Rio de Janeiro</label>
+            </value>
+            <value>
+                <fullName>Saitama</fullName>
+                <default>false</default>
+                <label>Saitama</label>
+            </value>
+            <value>
+                <fullName>Salto</fullName>
+                <default>false</default>
+                <label>Salto</label>
+            </value>
+            <value>
+                <fullName>Santos</fullName>
+                <default>false</default>
+                <label>Santos</label>
+            </value>
+            <value>
+                <fullName>São Carlos</fullName>
+                <default>false</default>
+                <label>São Carlos</label>
+            </value>
+            <value>
+                <fullName>São Paulo</fullName>
+                <default>false</default>
+                <label>São Paulo</label>
+            </value>
+            <value>
+                <fullName>Sejong-si</fullName>
+                <default>false</default>
+                <label>Sejong-si</label>
+            </value>
+            <value>
+                <fullName>Seoul</fullName>
+                <default>false</default>
+                <label>Seoul</label>
+            </value>
+            <value>
+                <fullName>Seoul-si</fullName>
+                <default>false</default>
+                <label>Seoul-si</label>
+            </value>
+            <value>
+                <fullName>Shandong</fullName>
+                <default>false</default>
+                <label>Shandong</label>
+            </value>
+            <value>
+                <fullName>ShanghaiCity</fullName>
+                <default>false</default>
+                <label>Shanghai</label>
+            </value>
+            <value>
+                <fullName>Shannxi</fullName>
+                <default>false</default>
+                <label>Shannxi</label>
+            </value>
+            <value>
+                <fullName>Shanxi</fullName>
+                <default>false</default>
+                <label>Shanxi</label>
+            </value>
+            <value>
+                <fullName>Shiga</fullName>
+                <default>false</default>
+                <label>Shiga</label>
+            </value>
+            <value>
+                <fullName>Sichuan</fullName>
+                <default>false</default>
+                <label>Sichuan</label>
+            </value>
+            <value>
+                <fullName>South Sumatera</fullName>
+                <default>false</default>
+                <label>South Sumatera</label>
+            </value>
+            <value>
+                <fullName>Sulawesi</fullName>
+                <default>false</default>
+                <label>Sulawesi</label>
+            </value>
+            <value>
+                <fullName>Taichung</fullName>
+                <default>false</default>
+                <label>Taichung</label>
+            </value>
+            <value>
+                <fullName>Taipei</fullName>
+                <default>false</default>
+                <label>Taipei</label>
+            </value>
+            <value>
+                <fullName>Taipei County</fullName>
+                <default>false</default>
+                <label>Taipei County</label>
+            </value>
+            <value>
+                <fullName>Tianjin</fullName>
+                <default>false</default>
+                <label>Tianjin</label>
+            </value>
+            <value>
+                <fullName>Tokyo</fullName>
+                <default>false</default>
+                <label>Tokyo</label>
+            </value>
+            <value>
+                <fullName>Ulsan-si</fullName>
+                <default>false</default>
+                <label>Ulsan-si</label>
+            </value>
+            <value>
+                <fullName>UPC East</fullName>
+                <default>false</default>
+                <label>UPC East</label>
+            </value>
+            <value>
+                <fullName>UPC North</fullName>
+                <default>false</default>
+                <label>UPC North</label>
+            </value>
+            <value>
+                <fullName>UPC North East</fullName>
+                <default>false</default>
+                <label>UPC North East</label>
+            </value>
+            <value>
+                <fullName>UPC South</fullName>
+                <default>false</default>
+                <label>UPC South</label>
+            </value>
+            <value>
+                <fullName>Wakayama</fullName>
+                <default>false</default>
+                <label>Wakayama</label>
+            </value>
+            <value>
+                <fullName>West Java</fullName>
+                <default>false</default>
+                <label>West Java</label>
+            </value>
+            <value>
+                <fullName>Xinjiang</fullName>
+                <default>false</default>
+                <label>Xinjiang</label>
+            </value>
+            <value>
+                <fullName>Yunnan</fullName>
+                <default>false</default>
+                <label>Yunnan</label>
+            </value>
+            <value>
+                <fullName>Zhejiang</fullName>
+                <default>false</default>
+                <label>Zhejiang</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <valueName>Anhui</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <controllingFieldValue>CHN_South</controllingFieldValue>
+            <valueName>Fujian</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <controllingFieldValue>West</controllingFieldValue>
+            <valueName>Hubei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <valueName>Jiangsu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <valueName>Jiangxi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <valueName>ShanghaiCity</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_East</controllingFieldValue>
+            <valueName>Zhejiang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Beijing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Hebei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Heilongjiang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Henan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Jilin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Liaoning</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Neimenggu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Shandong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Shanxi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_North</controllingFieldValue>
+            <valueName>Tianjin</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>THA</controllingFieldValue>
+            <valueName>BKK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>THA</controllingFieldValue>
+            <valueName>UPC East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>THA</controllingFieldValue>
+            <valueName>UPC North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>THA</controllingFieldValue>
+            <valueName>UPC North East</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>THA</controllingFieldValue>
+            <valueName>UPC South</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seoul Capital Area</controllingFieldValue>
+            <valueName>Gyeonggi-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seoul Capital Area</controllingFieldValue>
+            <valueName>Incheon-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Seoul Capital Area</controllingFieldValue>
+            <valueName>Seoul-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Busan-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Chungcheongbuk-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Chungcheongnam-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Daegu-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Daejon-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Gangwon-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Gwangju-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Gyeongsangbuk-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Gyeongsangnam-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Jeju-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Jeollabuk-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Jeollanam-do</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Regions - Korea</controllingFieldValue>
+            <valueName>Ulsan-si</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Chongqing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Gansu</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Guizhou</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Ningxia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Qinghai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Shannxi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Sichuan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Xinjiang</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_West</controllingFieldValue>
+            <valueName>Yunnan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TWN</controllingFieldValue>
+            <valueName>Elan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TWN</controllingFieldValue>
+            <valueName>Kaohsiung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TWN</controllingFieldValue>
+            <valueName>Taichung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TWN</controllingFieldValue>
+            <valueName>Taipei</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TWN</controllingFieldValue>
+            <valueName>Taipei County</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_South</controllingFieldValue>
+            <valueName>Guangdong</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_South</controllingFieldValue>
+            <valueName>Guangxi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_South</controllingFieldValue>
+            <valueName>Hainan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CHN_South</controllingFieldValue>
+            <valueName>Hunan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West</controllingFieldValue>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Delhi West</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>Bali</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>East Java</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>Kalimantan</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>NTB</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>NTT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CDMX</controllingFieldValue>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>Sulawesi</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>Central Java</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>Greater Jakarta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>Kepulauan Riau</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>North Sumatera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>South Sumatera</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>West Indonesia</controllingFieldValue>
+            <valueName>West Java</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>East Indonesia</controllingFieldValue>
+            <valueName>Papua</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Delhi Central</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Delhi North</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Delhi south</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>India</controllingFieldValue>
+            <valueName>Delhi Trans</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Tokyo</controllingFieldValue>
+            <valueName>Chiba</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Tokyo</controllingFieldValue>
+            <valueName>Kanagawa</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Tokyo</controllingFieldValue>
+            <valueName>Saitama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Tokyo</controllingFieldValue>
+            <valueName>Tokyo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Fukuoka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Hyogo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Kyoto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Mie</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Nagoya</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Nara</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Oita</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Okayama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Osaka</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Shiga</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Osaka</controllingFieldValue>
+            <valueName>Wakayama</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>JPN-Sapporo</controllingFieldValue>
+            <valueName>Hokkaido</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

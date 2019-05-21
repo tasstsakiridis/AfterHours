@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Key_States__c</fullName>
+    <externalId>false</externalId>
+    <label>Key States</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>USA_States_Abbrev</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>
