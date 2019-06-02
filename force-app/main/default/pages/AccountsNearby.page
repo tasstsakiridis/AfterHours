@@ -1324,6 +1324,9 @@
                             content += '<div>'+account.Description+'</div>';
                         }                        
                         content += '</div>';
+                        if (account.Website != undefined) {
+                            content += '<div><i class="fas fa-link" style="margin-right: 5px; margin-top: 5px;"></i><a href="http://'+account.Website+'">'+account.Website+'</a></div>';
+                        }
                         content += '<div style="margin-top: 5px;white-space: normal; word-break: keep-all; overflow-wrap: normal;"><i class="fas fa-map-marked" style="margin-right: 5px;"></i>' + account.ShippingStreet +', ' + account.ShippingCity + '</div><br/>';
                         
                     }

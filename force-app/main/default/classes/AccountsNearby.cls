@@ -308,12 +308,12 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
         accountList.clear();
         String queryString =
             'SELECT Id, Channel__c, Name, Geolocation__Latitude__s, Geolocation__Longitude__s, Last_Visit_Date__c, Market__c, Market__r.Name, Outlet_Class__r.Name, ' +
-                'ShippingStreet, ShippingCity, ShippingState, Phone, VIP_Account__c, Expense__c, Key_Product_Ranging__c, Description, Recommended_Food__c, Suggested_Serves__c ' +
+                'ShippingStreet, ShippingCity, ShippingState, Phone, Website, VIP_Account__c, Expense__c, Key_Product_Ranging__c, Description, Recommended_Food__c, Suggested_Serves__c ' +
             'FROM Account WHERE';
         String whereClause = '';
         if (isAfterHoursApp == '1') {
             queryString = 'SELECT Account__c, Account__r.Channel__c, Account__r.Name, Account__r.Geolocation__Latitude__s, Account__r.Geolocation__Longitude__s, Account__r.Last_Visit_Date__c, Account__r.Market__c, Account__r.Market__r.Name, Account__r.Outlet_Class__r.Name, ' +
-                'Account__r.ShippingStreet, Account__r.ShippingCity, Account__r.ShippingState, Account__r.Phone, Account__r.VIP_Account__c, Account__r.Expense__c, Account__r.Key_Product_Ranging__c, Account__r.Description, Account__r.Recommended_Food__c, Account__r.Suggested_Serves__c ' +
+                'Account__r.ShippingStreet, Account__r.ShippingCity, Account__r.ShippingState, Account__r.Phone, Account__r.Website, Account__r.VIP_Account__c, Account__r.Expense__c, Account__r.Key_Product_Ranging__c, Account__r.Description, Account__r.Recommended_Food__c, Account__r.Suggested_Serves__c ' +
             'FROM Accounts_VIP__c WHERE ';
         } else {
             if(BFFriendly){
