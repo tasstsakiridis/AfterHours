@@ -22,6 +22,7 @@ global with sharing class AccountsNearby {
     public String distanceIdentifier            { get; set; }
     public String marketLevel                   { get; set; }
     public transient String myAccounts          { get; set; }
+    public transient String myVIPAccounts       { get; set; }
     public String serializedMarketList          { get; set; }
     public String serializedCityList            { get; set; }
     public Date eventDate                       { get; set; }
@@ -44,6 +45,7 @@ global with sharing class AccountsNearby {
     public List<string> highlightOptions        { set; }
 
     public List<Account> accountList = new List<Account>();
+    public List<Accounts_VIP__c> vipAccountsList = new List<Accounts_VIP__c>();
     public List<Event> eventList = new list<Event>();
     public List<Id> eventAccounts = new list<Id>();
 
@@ -153,10 +155,15 @@ System.debug('[after user] currentMarket: ' + currentMarket);
         }
 
         getAccountList();
+        getVIPAccountList();
         getEventList();
                 
-        if (currentMarket.length() == 0 && accountList.size() > 0) {
-            currentMarket = accountList[0].Market__r.Name;
+        if (currentMarket.length() == 0) {
+            if (accountList.size() > 0) {
+                currentMarket = accountList[0].Market__r.Name;
+            } else if(vipAccountsList.size() > 0) {
+                currentMarket = vipAccountsList[0].Market_Name__c;
+            }
         }
 System.debug('[after account list] currentMarket: ' + currentMarket);
         
@@ -189,6 +196,9 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
 
     public list<Account> getAccountList(){
         return accountList;
+    }
+    public list<Accounts_VIP__c> getVipAccountList() {
+        return vipAccountsList;
     }
 
     public list<selectOption> getChannelOptions(){
@@ -306,15 +316,21 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
 
     public PageReference filter(){
         accountList.clear();
+        vipAccountsList.clear();
+
         String queryString =
             'SELECT Id, Channel__c, Name, Geolocation__Latitude__s, Geolocation__Longitude__s, Last_Visit_Date__c, Market__c, Market__r.Name, Outlet_Class__r.Name, ' +
                 'ShippingStreet, ShippingCity, ShippingState, Phone, Website, VIP_Account__c, Expense__c, Key_Product_Ranging__c, Description, Recommended_Food__c, Suggested_Serves__c ' +
             'FROM Account WHERE';
         String whereClause = '';
         if (isAfterHoursApp == '1') {
+            /*
             queryString = 'SELECT Account__c, Account__r.Channel__c, Account__r.Name, Account__r.Geolocation__Latitude__s, Account__r.Geolocation__Longitude__s, Account__r.Last_Visit_Date__c, Account__r.Market__c, Account__r.Market__r.Name, Account__r.Outlet_Class__r.Name, ' +
                 'Account__r.ShippingStreet, Account__r.ShippingCity, Account__r.ShippingState, Account__r.Phone, Account__r.Website, Account__r.VIP_Account__c, Account__r.Expense__c, Account__r.Key_Product_Ranging__c, Account__r.Description, Account__r.Recommended_Food__c, Account__r.Suggested_Serves__c ' +
-            'FROM Accounts_VIP__c WHERE ';
+            */
+            queryString = 'SELECT Account__c, Channel__c, Account_Name__c, Geolocation__Latitude__s, Geolocation__Longitude__s, Last_Visit_Date__c, Market__c, Market_Name__c, Outlet_Class__r.Name, ' +
+                'ShippingStreet__c, ShippingCity__c, ShippingState__c, Phone__c, Website__c, VIP_Account__c, Expense__c, Key_Product_Ranging__c, Description__c, Recommended_Food__c, Suggested_Serves__c ' +
+                'FROM Accounts_VIP__c WHERE ';
         } else {
             if(BFFriendly){
                 whereClause += ' VIP_Account__c = true ';
@@ -325,21 +341,23 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
             }            
         }
         // Remove inactive Accounts from map
-        if (whereClause.length() > 0) { whereClause += ' AND '; }
-        whereClause += (isAfterHoursApp=='1' ? ' Account__r.' : ' ') + 'Status__c != \'Inactive\' ';
+        if (isAfterHoursApp == '0') {
+            if (whereClause.length() > 0) { whereClause += ' AND '; }
+            whereClause += ' Status__c != \'Inactive\' ';
+        }
         
         if(channel != 'ALL'){
             if (whereClause.length() > 0) { whereClause += ' AND '; }
-            whereClause += (isAfterHoursApp=='1' ? ' Account__r.' : ' ') + 'Channel__c LIKE \''+channel+'%\' ';
+            whereClause += ' Channel__c LIKE \''+channel+'%\' ';
         }
         if (isAfterHoursApp == '0') {
             if(currentMarket != null || currentMarket != ''){
                 if (marketLevel == 'State'){
                     if (whereClause.length() > 0) { whereClause += ' AND '; }
-                    whereClause +=' Market__r.Name LIKE \'%'+currentMarket+'%\' ';
+                    whereClause +=' (Market__r.Name LIKE \'%'+currentMarket+'%\' OR Market__r.Name =\'Global Travel Retail\') ';
                 } else {
                     if (whereClause.length() > 0) { whereClause += ' AND '; }
-                    whereClause +=' Market__r.Country_ISO_Code_2__c = \''+currentMarket+'\' ';
+                    whereClause +=' (Market__r.Country_ISO_Code_2__c = \''+currentMarket+'\' OR Market__r.Name =\'Global Travel Retail\')';
                     //queryString+=' Shipping'+marketLevel+' = \''+currentMarket+'\' AND';
                 }
             }            
@@ -348,21 +366,39 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
         System.debug('[filter] lat: ' + lat + ', lon: ' + lon);
         if (lat != null && lat != '' && lon != null & lon != '') {
             if (whereClause.length() > 0) { whereClause += ' AND '; }
-            whereClause +=' DISTANCE('+(isAfterHoursApp=='1'?'Account__r.':'')+'Geolocation__c, GEOLOCATION('+lat+','+lon+'), \'' + distanceIdentifier + '\') < '+ radius;
-            whereClause +=' ORDER BY DISTANCE('+(isAfterHoursApp=='1'?'Account__r.':'')+'Geolocation__c, GEOLOCATION('+lat+','+lon+'), \'' + distanceIdentifier + '\')';
+            whereClause +=' DISTANCE(Geolocation__c, GEOLOCATION('+lat+','+lon+'), \'' + distanceIdentifier + '\') < '+ radius;
+            whereClause +=' ORDER BY DISTANCE(Geolocation__c, GEOLOCATION('+lat+','+lon+'), \'' + distanceIdentifier + '\')';
         }
         queryString += whereClause + ' LIMIT ' + results;
         System.debug(queryString);
         if (isAfterHoursApp == '0') {
 	        accountList = database.query(queryString);
+            myAccounts = JSON.serialize(accountList);
         } else {
             accountList.clear();
-            List<Accounts_VIP__c> vipAccountsList = database.query(queryString);
+            vipAccountsList = database.query(queryString);
+            myVIPAccounts = JSON.serialize(vipAccountsList);
+            /*
             for(Accounts_VIP__c vip : vipAccountsList) {
-				accountList.add(vip.Account__r);                
+				//accountList.add(vip.Account__r);                
+                accountList.add(new Account(Id=vip.Account__c, 
+                    Name=vip.Account_Name__c,
+                    Channel__c=vip.Channel__c,
+                    Outlet_Class__c=vip.Outlet_Class__c,
+                    ShippingStreet=vip.ShippingStreet__c,
+                    ShippingCity=vip.ShippingCity__c,
+                    ShippingState=vip.ShippingState__c,
+                    Phone=vip.Phone__c,
+                    Website=vip.Website__c,
+                    Geolocation__Latitude__s = vip.Geolocation__Latitude__s,
+                    Geolocation__Longitude__s = vip.Geolocation__Longitude__s
+                ));
             }
+            */
+
         }
-        if(accountList.size() <1){
+
+        if(accountList.size() < 1 && vipAccountsList.size() < 1){
             ApexPages.addMessage(new ApexPages.Message(ApexPages.severity.INFO, Label.No_Accounts_Returned));
             return null;
         }
@@ -372,8 +408,8 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
             currentMarket = accountList[0].Market__r.Name;
             getMarketConfiguration(currentMarket);            
         }
-		*/
-        myAccounts = JSON.serialize(accountList);
+        */
+
         return null;
     }
 

@@ -288,7 +288,7 @@
             list-style-type:    none;
             padding:            0px;
         }
-        .myAccountsDiv {
+        .myAccountsDiv, .myVIPAccountsDiv {
             display: none;
         }
         .flipRight {
@@ -691,19 +691,19 @@
         </script>       
         <apex:messages id="messages" styleClass="messages"/>
         <apex:Form id="filterForm">
-            <apex:actionFunction action="{!filter}" name="filterCon" rerender="myAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+            <apex:actionFunction action="{!filter}" name="filterCon" rerender="myAccountsDiv,myVIPAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
                 <apex:param name="lat" assignTo="{!lat}" value=""/>
                 <apex:param name="lon" assignTo="{!lon}" value=""/>
                 <apex:param name="currentMarket" assignTo="{!currentMarket}" value=""/>
                 <apex:param name="marketLevel" assignTo="{!marketLevel}" value=""/>
             </apex:actionFunction>
             
-            <apex:actionFunction action="{!eventFilter}" name="eventFilter" rerender="myAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+            <apex:actionFunction action="{!eventFilter}" name="eventFilter" rerender="myAccountsDiv,myVIPAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
                 <apex:param name="lat" assignTo="{!lat}" value=""/>
                 <apex:param name="lon" assignTo="{!lon}" value=""/>
             </apex:actionFunction>
             
-            <apex:actionFunction action="{!newAccountSurvey}" name="newSurvey" rerender="myAccountsDiv">
+            <apex:actionFunction action="{!newAccountSurvey}" name="newSurvey" rerender="myAccountsDiv,myVIPAccountsDiv">
                 <apex:param name="accountId" assignTo="{!selectedAccount}" value=""/>
                 <apex:param name="accountName" assignTo="{!selectedAccountName}" value=""/>
             </apex:actionFunction>
@@ -720,6 +720,7 @@
                 </div>
                 <div id="filters">
                     <apex:outputPanel styleClass="myAccountsDiv" id="myAccountsDiv">{!myAccounts}</apex:outputPanel>
+                    <apex:outputPanel styleClass="myVIPAccountsDiv" id="myVIPAccountsDiv">{!myVIPAccounts}</apex:outputPanel>
                     <ul>
                         <li>
                             <apex:selectList value="{!channel}" size="1" styleClass="selectList filterOption channelSelectList">
@@ -1134,7 +1135,17 @@
                     markers = {};
                 }
                 
-                var accounts = eval(document.getElementsByClassName('myAccountsDiv')[0].innerHTML);
+                var accountId = '';
+                var accountName = '';
+                var accountDescription = '';
+                var accountPhone = '';
+                var accountWebsite = '';
+                var accounts = [];
+                if (isAfterHoursApp=='0') {
+                    accounts = eval(document.getElementsByClassName('myAccountsDiv')[0].innerHTML);
+                } else {
+                    accounts = eval(document.getElementsByClassName('myVIPAccountsDiv')[0].innerHTML);
+                }
                 console.log('[createMap] accounts', accounts);
                 console.log('[createMap] lat: ', lat);
                 console.log('[createMap] lng: ', lng);
@@ -1148,8 +1159,11 @@
                 } else if (!marketConfigured) {
                     console.log('currentMarket: ', currentMarket);
                     console.log('marketList', marketList);
-                    
-                    currentMarket = accounts[0].Market__r.Name;
+                    if (isAfterHoursApp == '0') {
+                        currentMarket = accounts[0].Market__r.Name;
+                    } else {
+                        currentMarket = accounts[0].Market_Name__c;
+                    }
                     console.log('currentMarket: ', currentMarket);
                     for(var i = 0; i < marketList.length; i++) {
                    		if (marketList[i].Name == currentMarket) {
@@ -1259,13 +1273,19 @@
                     j$('#outletClassLegend .legendList').append('<li>'+value+': <span class="swatch" style="background-color:'+colorArray[index][1]+'"></span></li>');
                 });
                 j$('#outletClassLegend .legendList').append('<li>Other: <span class="swatch" style="background-color:'+colors.Black+'"></span></li>');
-                
+                console.log('outletClasses', outletClasses);
+
                 //Set up the markers for the map using the
                 //variable we queried for in our controller
                 var account;
                 for (var i=0; i<accounts.length;i++){
                     account = accounts[i];
+                    console.log('[createMap] account', account);
+                    try {
                     setupMarker();
+                    } catch(err) {
+                        console.log('exception thrown creating market for account: ' + account.Name, err);
+                    }
                 }
                 
                 var iw = new google.maps.InfoWindow();
@@ -1278,14 +1298,33 @@
                 map.fitBounds(mapBoundary);
                 
                 function setupMarker(){
+                    console.log('[setupMarket] account', account);
+                    if (isAfterHoursApp=='0') {
+                        accountId = account.Id;
+                        accountName = account.Name;
+                        accountDescription =  account.Description;
+                        accountPhone = account.Phone;
+                        accountWebsite = account.Website;
+                        accountShippingCity = account.ShippingCity;
+                        accountShippingStreet = account.ShippingStreet;
+                    } else {
+                        accountId = account.Account__c;
+                        accountName = account.Account_Name__c;
+                        accountDescription =  account.Description__c;
+                        accountPhone = account.Phone__c;
+                        accountWebsite = account.Website__c;
+                        accountShippingCity = account.ShippingCity__c;
+                        accountShippingStreet = account.ShippingStreet__c;
+                    }
+
                     // Determine if we are in Salesforce1 and set navigation link appropriately
                     try{
                         if(sforce.one){
-                            accountNavUrl = 'javascript:sforce.one.navigateToSObject(\'' + account.Id + '\')';
+                            accountNavUrl = 'javascript:sforce.one.navigateToSObject(\'' + accountId + '\')';
                         }
                     } catch(err) {
                         //console.log(err);
-                        accountNavUrl = urlPrefix + '/' + account.Id;
+                        accountNavUrl = urlPrefix + '/' + accountId;
                     }
                     
                     //Logic for directions URL
@@ -1301,10 +1340,10 @@
                     }
                     
                     //console.log(directionsURL);
-                    var content = '<a href="' + accountNavUrl + '">' + account.Name + '</a><br/>';
-                    content += account.ShippingStreet + '<br/>';
+                    var content = '<a href="' + accountNavUrl + '">' + accountName + '</a><br/>';
+                    content += accountShippingStreet + '<br/>';
                     if (account.VIP_Account__c) {
-                        content = '<a href="' + accountNavUrl + '" class="afterHours_title-bold" style="font-size: 1.5em; text-shadow: 1px 1px #999;white-space: normal; word-break: keep-all; overflow-wrap: normal;">' + account.Name.replace(/_/g,' ') + '</a><br />';
+                        content = '<a href="' + accountNavUrl + '" class="afterHours_title-bold" style="font-size: 1.5em; text-shadow: 1px 1px #999;white-space: normal; word-break: keep-all; overflow-wrap: normal;">' + accountName.replace(/_/g,' ') + '</a><br />';
                         content += '<div class="vipInfoContainer" style="max-width: 98%; white-space: normal; word-break: keep-all; overflow-wrap: normal; z-index: 99;">';
                         content += '<div>';
                         if (account.Key_Product_Ranging__c != undefined) {
@@ -1320,21 +1359,22 @@
                             content += '<span style="font-weight: bold; margin-left: 10px;">'+account.Expense__c+'</span>';
                         }
                         content += '</div>';
-                        if (account.Description != undefined) {
-                            content += '<div>'+account.Description+'</div>';
+                        if (account.Description != '') {
+                            content += '<div>'+accountDescription+'</div>';
                         }                        
                         content += '</div>';
-                        if (account.Website != undefined) {
-                            content += '<div><i class="fas fa-link" style="margin-right: 5px; margin-top: 5px;"></i><a href="http://'+account.Website+'">'+account.Website+'</a></div>';
+                        if (accountWebsite != '') {
+                            content += '<div><i class="fas fa-link" style="margin-right: 5px; margin-top: 5px;"></i><a href="http://'+accountWebsite+'">'+accountWebsite+'</a></div>';
                         }
-                        content += '<div style="margin-top: 5px;white-space: normal; word-break: keep-all; overflow-wrap: normal;"><i class="fas fa-map-marked" style="margin-right: 5px;"></i>' + account.ShippingStreet +', ' + account.ShippingCity + '</div><br/>';
+                        content += '<div style="margin-top: 5px;white-space: normal; word-break: keep-all; overflow-wrap: normal;"><i class="fas fa-map-marked" style="margin-right: 5px;"></i>' + accountShippingStreet +', ' + accountShippingCity + '</div><br/>';
                         
                     }
                     
                     content += '<div class="iconContainer">';
                     
-                    if (account.Phone != undefined) {
-                        var tel = account.Phone;
+                    console.log('[setupMarket] accountPhone', accountPhone);
+                    if (accountPhone && accountPhone != '') {
+                        var tel = accountPhone;
                         tel = tel.replace(/ /g,"").replace(/\(/g,"").replace(/\)/g,"").replace(/-/g,"");
                         //console.log(tel);
                         content += '<a class="iconLink" href="tel:' + tel+'"><i class="fas fa-2x fa-phone tc customIcon" title="Call"></i></a>';
@@ -1342,9 +1382,9 @@
                     
                     content += '<a class="iconLink" href="'+directionsURL+'" target="_blank"><i class="fas fa-2x fa-globe tc customIcon" title="Directions"></i></a>';
                     
-                    surveyUrl = urlPrefix + "/apex/AdHocSurvey?id=" + account.Id + "&skip=true";
-                    visitUrl = urlPrefix + "/apex/Account_Visit?id=" + account.Id;
-                    tableau = urlPrefix + "/apex/TableauAccountChart?id=" + account.Id;
+                    surveyUrl = urlPrefix + "/apex/AdHocSurvey?id=" + accountId + "&skip=true";
+                    visitUrl = urlPrefix + "/apex/Account_Visit?id=" + accountId;
+                    tableau = urlPrefix + "/apex/TableauAccountChart?id=" + accountId;
                     console.log('hasAccessToVisit', hasAccessToVisit);
                     console.log('isTableauReady', isTableauReady);
                     if(hasAccessToVisit) {
@@ -1487,7 +1527,13 @@
                 
                 j$('#loadingDiv').hide();
                 j$('.filterBtn').css('visibility','visible');
-                var accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                var accountJSON = '';
+                if (isAfterHoursApp=='0') {
+                    accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                } else {
+                    accountJSON = j$.parseJSON(j$('.myVIPAccountsDiv').html());
+                }
+
                 var accountDisplayHTML = '';
                 var accountTableHTML = '';
                 var keyProductRanging = [];
@@ -1499,23 +1545,37 @@
                     }
                 }
 
+                console.log('accountJSON', accountJSON);
                 j$.each(accountJSON, function() {
                     // Add account to accountDisplayHTML if not already on page
- 
-                    if(j$('#accountListUL li[data-accountid="' + this.Id + '"]').length == 0) {
+                    console.log('looping through accountJSON', this);
+                    if (isAfterHoursApp == '0') {
+                        accountId = this.Id;
+                        accountName = this.Name;
+                        accountShippingCity = this.ShippingCity;
+                        accountShippingStreet = this.ShippingStreet;
+                        accountDescription = this.Description;
+                    } else {
+                        accountId = this.Account__c;
+                        accountName = this.Account_Name__c;
+                        accountShippingCity = this.ShippingCity__c;
+                        accountShippingStreet = this.ShippingStreet__c;
+                        accountDescription = this.Description__c;
+                    }
+                    if(j$('#accountListUL li[data-accountid="' + accountId + '"]').length == 0) {
                         accountDisplayHTML += '<li class="accountLI" data-accountId="'+this.Id+'">';
-                        accountDisplayHTML += '<div class="accountName" >'+this.Name+'</div>';
-                        accountDisplayHTML += '<div class="accountStreet" >'+this.ShippingStreet+'</div>';
+                        accountDisplayHTML += '<div class="accountName" >'+accountName+'</div>';
+                        accountDisplayHTML += '<div class="accountStreet" >'+accountShippingStreet+'</div>';
                         accountDisplayHTML += '</li>';
 
                         if (isAfterHoursApp == '1') {
-                            accountTableHTML += '<tr class="accountLI" data-accountId="'+this.Id+'">';
-                            accountTableHTML += '<td class="accountName" data-accountId="'+this.Id+'" ><div>'+this.Name+'</div></td>';
-                            accountTableHTML += '<td class="accountStreet" style="min-width: 400px;"><div>'+this.ShippingStreet+'</div></td>';
-                            accountTableHTML += '<td class="accountStreet" style="min-width: 300px;"><div>'+this.ShippingCity+'</div></td>';
+                            accountTableHTML += '<tr class="accountLI" data-accountId="'+accountId+'">';
+                            accountTableHTML += '<td class="accountName" data-accountId="'+accountId+'" ><div>'+accountName+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 400px;"><div>'+accountShippingStreet+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 300px;"><div>'+accountShippingCity+'</div></td>';
                             accountTableHTML += '<td class="accountStreet" style="min-width: 300px;"><div>'+this.Expense__c+'</div></td>';
                             accountTableHTML += '<td class="accountStreet" style="min-width: 400px;"><div>'+this.Key_Product_Ranging__c+'</div></td>';
-                            accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Description+'</div></td>';
+                            accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+accountDescription+'</div></td>';
                             accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Recommended_Food__c+'</div></td>';
                             accountTableHTML += '<td class="accountStreet" style="min-width: 500px;"><div>'+this.Suggested_Serves__c+'</div></td>';
                         }
@@ -1808,7 +1868,13 @@
             }
             function filterAccountsByProductRanging(showAll, selectedRangings) {
                 var found = false;
-                var accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                var accountJSON;
+                if (isAfterHoursApp=='0') {
+                    accountJSON = j$.parseJSON(j$('.myAccountsDiv').html());
+                } else {
+                    accountJSON = j$.parseJSON(j$('.myVIPAccountsDiv').html());
+                }
+
                 console.log('accountJSON', accountJSON);
 				j$.each(accountJSON, function() {
                     if (showAll) {
