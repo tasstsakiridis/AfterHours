@@ -3,7 +3,7 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
     <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js'></script>
     
-    <link rel="stylesheet" href="https://www.b-fonline.com/salesforceresources/fontawesome-5.5.0-web/css/all.min.css" />
+    <link rel="stylesheet" href="https://staging.b-fonline.com/salesforceresources/fontawesome-5.5.0-web/css/all.min.css" />
     
     <script src="https://maps.googleapis.com/maps/api/js?client=gme-brownformancorporation&sensor=true&libraries=places"></script>
     <script src="https://www.b-fonline.com/salesforceresources/oms.min.js"></script>
@@ -1141,7 +1141,7 @@
                 var accountPhone = '';
                 var accountWebsite = '';
                 var accounts = [];
-                if (isAfterHoursApp=='0') {
+                if (isAfterHoursApp =='0') {
                     accounts = eval(document.getElementsByClassName('myAccountsDiv')[0].innerHTML);
                 } else {
                     accounts = eval(document.getElementsByClassName('myVIPAccountsDiv')[0].innerHTML);
@@ -1355,15 +1355,15 @@
                         if (account.Recommended_Food__c != undefined) {
                             content += '<span style="margin-right: 10px;"><i class="fas fa-utensils" style="margin-right: 5px;"></i>'+account.Recommended_Food__c+'</span>';
                         }
-                        if (account.Expense__c != null) {
+                        if (account.Expense__c != undefined && account.Expense__c != null) {
                             content += '<span style="font-weight: bold; margin-left: 10px;">'+account.Expense__c+'</span>';
                         }
                         content += '</div>';
-                        if (account.Description != '') {
+                        if (account.Description != undefined && account.Description != '') {
                             content += '<div>'+accountDescription+'</div>';
                         }                        
                         content += '</div>';
-                        if (accountWebsite != '') {
+                        if (accountWebsite != undefined && accountWebsite != '') {
                             content += '<div><i class="fas fa-link" style="margin-right: 5px; margin-top: 5px;"></i><a href="http://'+accountWebsite+'">'+accountWebsite+'</a></div>';
                         }
                         content += '<div style="margin-top: 5px;white-space: normal; word-break: keep-all; overflow-wrap: normal;"><i class="fas fa-map-marked" style="margin-right: 5px;"></i>' + accountShippingStreet +', ' + accountShippingCity + '</div><br/>';
