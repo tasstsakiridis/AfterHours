@@ -35,7 +35,7 @@ global with sharing class AccountsNearby {
     public String urlPrefix                     { get; set; }
     public Boolean showOnlyTheseAccounts        { get; set; }
     public Boolean enableGoogleSearch           { get; set; }
-    public Boolean isTableauReady               { get; set; }
+    public transient Boolean isTableauReady     { get; set; }
     
     public Boolean marketConfigured             { get; set; }
 
@@ -282,18 +282,17 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
     }
 
     private void getMarketConfiguration(String currentMarket) {
-        System.debug('get market configuration for market: ' + currentMarket);
+        System.debug('[getMarketConfiguration] get market configuration for market: ' + currentMarket);
         List<Market__c> mkt = [SELECT AccountsNearby_Calendar_Check_Default__c, AccountsNearby_Enable_Google_Search__c, Is_Tableau_Ready__c FROM Market__c WHERE Name = :currentMarket LIMIT 1];
         if(mkt.size() > 0) {
-            System.debug('market calendar default: ' + mkt[0].AccountsNearby_Calendar_Check_Default__c);
+            System.debug('[getMarketConfiguration] market calendar default: ' + mkt[0].AccountsNearby_Calendar_Check_Default__c);
             showOnlyTheseAccounts = mkt[0].AccountsNearby_Calendar_Check_Default__c;
-            System.debug('market enable google search: ' + mkt[0].AccountsNearby_Enable_Google_Search__c);
+            System.debug('[getMarketConfiguration] market enable google search: ' + mkt[0].AccountsNearby_Enable_Google_Search__c);
             enableGoogleSearch = mkt[0].AccountsNearby_Enable_Google_Search__c;
             isTableauReady = mkt[0].Is_Tableau_Ready__c;
-            System.debug('isTableauReady: ' + isTableauReady);
+            System.debug('[getMarketConfiguration] isTableauReady: ' + isTableauReady);
             marketConfigured = true;
         }
-        
     }
     
     public PageReference changeDay(){
@@ -371,13 +370,22 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
         }
         queryString += whereClause + ' LIMIT ' + results;
         System.debug(queryString);
+        
         if (isAfterHoursApp == '0') {
 	        accountList = database.query(queryString);
             myAccounts = JSON.serialize(accountList);
+            if (accountList != null && accountList.size() > 0) {
+                currentMarket = accountList[0].Market__r.Name;
+                getMarketConfiguration(currentMarket);
+            }
         } else {
             accountList.clear();
             vipAccountsList = database.query(queryString);
             myVIPAccounts = JSON.serialize(vipAccountsList);
+            if (vipAccountsList != null && vipAccountsList.size() > 0) {
+                currentMarket = vipAccountsList[0].Market_Name__c;
+                getMarketConfiguration(currentMarket);
+            }
             /*
             for(Accounts_VIP__c vip : vipAccountsList) {
 				//accountList.add(vip.Account__r);                
@@ -402,6 +410,7 @@ System.debug('[after account list] currentMarket: ' + currentMarket);
             ApexPages.addMessage(new ApexPages.Message(ApexPages.severity.INFO, Label.No_Accounts_Returned));
             return null;
         }
+
         /*
         System.debug('get accountList currentMarket: ' + currentMarket);
         if (!marketConfigured) { 

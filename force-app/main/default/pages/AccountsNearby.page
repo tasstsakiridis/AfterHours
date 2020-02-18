@@ -288,7 +288,7 @@
             list-style-type:    none;
             padding:            0px;
         }
-        .myAccountsDiv, .myVIPAccountsDiv {
+        .myAccountsDiv, .myVIPAccountsDiv, configPanelDiv {
             display: none;
         }
         .flipRight {
@@ -684,21 +684,21 @@
             var myLocationMarker;
             var showOnlyTheseAccounts = {!showOnlyTheseAccounts};
             var enableGoogleSearch = {!enableGoogleSearch};
-        	var isTableauReady = {!isTableauReady};
+        	//var isTableauReady = {!isTableauReady};
         	var marketConfigured = {!marketConfigured};
             var noAccountsFoundMessage = '{!$Label.NoAccountsFoundNearYourLocation}';
             var accountTableOpen = false;
         </script>       
         <apex:messages id="messages" styleClass="messages"/>
         <apex:Form id="filterForm">
-            <apex:actionFunction action="{!filter}" name="filterCon" rerender="myAccountsDiv,myVIPAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+            <apex:actionFunction action="{!filter}" name="filterCon" rerender="myAccountsDiv,myVIPAccountsDiv,configOutputPanel" onComplete="createMap('{!lat}','{!lon}', true)">
                 <apex:param name="lat" assignTo="{!lat}" value=""/>
                 <apex:param name="lon" assignTo="{!lon}" value=""/>
                 <apex:param name="currentMarket" assignTo="{!currentMarket}" value=""/>
                 <apex:param name="marketLevel" assignTo="{!marketLevel}" value=""/>
             </apex:actionFunction>
             
-            <apex:actionFunction action="{!eventFilter}" name="eventFilter" rerender="myAccountsDiv,myVIPAccountsDiv" onComplete="createMap('{!lat}','{!lon}', true)">
+            <apex:actionFunction action="{!eventFilter}" name="eventFilter" rerender="myAccountsDiv,myVIPAccountsDiv,configOutputPanel" onComplete="createMap('{!lat}','{!lon}', true)">
                 <apex:param name="lat" assignTo="{!lat}" value=""/>
                 <apex:param name="lon" assignTo="{!lon}" value=""/>
             </apex:actionFunction>
@@ -719,6 +719,9 @@
                     <div class="filterAccountsBtn fas fa-filter" id="finger"></div>
                 </div>
                 <div id="filters">
+                    <apex:outputPanel id="configOutputPanel" styleClass="configPanelDiv">
+                        <input type="hidden" id="isTableauReady" value="{!isTableauReady}" />
+                    </apex:outputPanel>
                     <apex:outputPanel styleClass="myAccountsDiv" id="myAccountsDiv">{!myAccounts}</apex:outputPanel>
                     <apex:outputPanel styleClass="myVIPAccountsDiv" id="myVIPAccountsDiv">{!myVIPAccounts}</apex:outputPanel>
                     <ul>
@@ -1141,6 +1144,10 @@
                 var accountPhone = '';
                 var accountWebsite = '';
                 var accounts = [];
+                var isTableauReady = document.getElementById('isTableauReady').value;
+                var serverIsTableauReady = '{!isTableauReady}';
+            	//var isTableauReady = {!isTableauReady};
+
                 if (isAfterHoursApp =='0') {
                     accounts = eval(document.getElementsByClassName('myAccountsDiv')[0].innerHTML);
                 } else {
@@ -1151,6 +1158,7 @@
                 console.log('[createMap] lng: ', lng);
                 
                 console.log('[createMap] istableauready: ', isTableauReady);
+                console.log('[createMap] server istablearyready: ', serverIsTableauReady);
                 console.log('[createMap] marketConfigured', marketConfigured);
                 if (accounts == undefined || accounts.length == 0) {
                     j$('#loadingDiv').hide();
@@ -1175,7 +1183,7 @@
                             break;
                         }
                     }
-                    console.log('isTableauReady', isTableauReady);
+                    console.log('[createMap.configureMarket] isTableauReady', isTableauReady);
 				}                    
                 
                 var currentPosition = new google.maps.LatLng(lat,lng);
@@ -1298,11 +1306,14 @@
                 map.fitBounds(mapBoundary);
                 
                 function setupMarker(){
-                    console.log('[setupMarket] account', account);
+                    console.log('[setupMarker] account', account);
+                    var isTableauReady = document.getElementById('isTableauReady').value;
+                    console.log('[setupMarker] isTableauReady', isTableauReady);
+
                     if (isAfterHoursApp=='0') {
                         accountId = account.Id;
                         accountName = account.Name;
-                        accountDescription =  account.Description;
+                        accountDescription = account.Description;
                         accountPhone = account.Phone;
                         accountWebsite = account.Website;
                         accountShippingCity = account.ShippingCity;
@@ -1310,7 +1321,7 @@
                     } else {
                         accountId = account.Account__c;
                         accountName = account.Account_Name__c;
-                        accountDescription =  account.Description__c;
+                        accountDescription = account.Description__c;
                         accountPhone = account.Phone__c;
                         accountWebsite = account.Website__c;
                         accountShippingCity = account.ShippingCity__c;
@@ -1359,8 +1370,8 @@
                             content += '<span style="font-weight: bold; margin-left: 10px;">'+account.Expense__c+'</span>';
                         }
                         content += '</div>';
-                        if (account.Description != undefined && account.Description != '') {
-                            content += '<div>'+accountDescription+'</div>';
+                        if (accountDescription != undefined && accountDescription != '') {
+                            content += '<div style="white-space: pre;" escape="false">'+accountDescription+'</div>';
                         }                        
                         content += '</div>';
                         if (accountWebsite != undefined && accountWebsite != '') {
@@ -1372,7 +1383,7 @@
                     
                     content += '<div class="iconContainer">';
                     
-                    console.log('[setupMarket] accountPhone', accountPhone);
+                    console.log('[setupMarker] accountPhone', accountPhone);
                     if (accountPhone && accountPhone != '') {
                         var tel = accountPhone;
                         tel = tel.replace(/ /g,"").replace(/\(/g,"").replace(/\)/g,"").replace(/-/g,"");
@@ -1385,8 +1396,7 @@
                     surveyUrl = urlPrefix + "/apex/AdHocSurvey?id=" + accountId + "&skip=true";
                     visitUrl = urlPrefix + "/apex/Account_Visit?id=" + accountId;
                     tableau = urlPrefix + "/apex/TableauAccountChart?id=" + accountId;
-                    console.log('hasAccessToVisit', hasAccessToVisit);
-                    console.log('isTableauReady', isTableauReady);
+                    console.log('[setupMarker] hasAccessToVisit', hasAccessToVisit);
                     if(hasAccessToVisit) {
                         try {
                             if (sforce.one) {
